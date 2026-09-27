@@ -1,0 +1,914 @@
+{
+ "ABW": {
+  "gec": "aa",
+  "text": "Dutch 78.7%, Colombian 6.6%, Venezuelan 5.5%, Dominican 2.8%, Haitian 1.3%, other 5.1% (2020 est.)"
+ },
+ "AFG": {
+  "gec": "af",
+  "text": "current, reliable statistical data on ethnicity in Afghanistan are not available; Afghanistan's 2004 Constitution cited Pashtun, Tajik, Hazara, Uzbek, Turkman, Baluch, Pashaie, Nuristani, Aymaq, Arab, Qirghiz, Qizilbash, Gujur, and Brahwui ethnicities; Afghanistan has dozens of other small ethnic groups"
+ },
+ "AGO": {
+  "gec": "ao",
+  "text": "Ovimbundu 37%, Kimbundu 25%, Bakongo 13%, Mestico (mixed European and native African) 2%, European 1%, other 22%"
+ },
+ "AIA": {
+  "gec": "av",
+  "text": "African/Black 85.3%, Hispanic 4.9%, mixed 3.8%, White 3.2%, East Indian/Indian 1%, other 1.6%, unspecified 0.3% (2011 est.)"
+ },
+ "ALB": {
+  "gec": "al",
+  "text": "Albanian 82.6%, Greek 0.9%, other 1% (including Vlach, Romani, Macedonian, Montenegrin, and Egyptian), unspecified 15.5% (2011 est.)"
+ },
+ "AND": {
+  "gec": "an",
+  "text": "Spanish 34.3%, Andorran 32.1%, Portuguese 10%, French 5.6%, other 18% (2024 est.)"
+ },
+ "ARE": {
+  "gec": "ae",
+  "text": "Emirati 11.6%, South Asian 59.4% (includes Indian 38.2%, Bangladeshi 9.5%, Pakistani 9.4%, other 2.3%), Egyptian 10.2%, Filipino 6.1%, other 12.8% (2015 est.)"
+ },
+ "ARG": {
+  "gec": "ar",
+  "text": "European (mostly Spanish and Italian descent) and Mestizo (mixed European and Indigenous ancestry) 97.2%, Indigenous 2.4%, African descent 0.4% (2010 est.)"
+ },
+ "ARM": {
+  "gec": "am",
+  "text": "Armenian 98.1%, Yezidi 1.1%; less than 1%: Russian, other, Assyrian, Kurd, Ukrainian, Greek (2022 est.)"
+ },
+ "ASM": {
+  "gec": "aq",
+  "text": "Pacific Islander 88.7% (includes Samoan 83.2%, Tongan 2.2%, other 3.3%), Asian 5.8% (includes Filipino 3.4%, other 2.4%), mixed 4.4%, other 1.1% (2020 est.)"
+ },
+ "ATG": {
+  "gec": "ac",
+  "text": "African descent 87.3%, mixed 4.7%, Hispanic 2.7%, White 1.6%, other 2.7%, unspecified 0.9% (2011 est.)"
+ },
+ "AUS": {
+  "gec": "as",
+  "text": "English 33%, Australian 29.9%, Irish 9.5%, Scottish 8.6%, Chinese 5.5%, Italian 4.4%, German 4%, Indian 3.1%, Australian Aboriginal 2.9%, Greek 1.7%, unspecified 4.7% (2021 est.)"
+ },
+ "AUT": {
+  "gec": "au",
+  "text": "Austrian 80.8%, German 2.6%, Bosnian and Herzegovinian 1.9%, Turkish 1.8%, Serbian 1.6%, Romanian 1.3%, other 10% (2018 est.)"
+ },
+ "AZE": {
+  "gec": "aj",
+  "text": "Azerbaijani 94.8%, other 1.8%; less than 1%: Talish, Russian, Avar, Sakhur, Tartar, Georgian, Jewish, Kurd<br><!--EndFragment --> (2019 est.)"
+ },
+ "BDI": {
+  "gec": "by",
+  "text": "Hutu, Tutsi, Twa, South Asian"
+ },
+ "BEL": {
+  "gec": "be",
+  "text": "Belgian 75.2%, Italian 4.1%, Moroccan 3.7%, French 2.4%, Turkish 2%, Dutch 2%, other 10.6% (2012 est.)"
+ },
+ "BEN": {
+  "gec": "bn",
+  "text": "Fon and related 38.4%, Adja and related 15.1%, Yoruba and related 12%, Bariba and related 9.6%, Fulani and related 8.6%, Ottamari and related 6.1%, Yoa-Lokpa and related 4.3%, Dendi and related 2.9%, other 0.9%, foreigner 1.9% (2013 est.)"
+ },
+ "BFA": {
+  "gec": "uv",
+  "text": "Mossi 53.7%, Fulani (Peuhl) 6.8%, Gurunsi 5.9%, Bissa 5.4%, Gurma 5.2%, Bobo 3.4%, Senufo 2.2%, Bissa 1.5%, Lobi 1.5%, Tuareg/Bella 0.1%, other 12.8%, foreign 0.7% (2021 est.)"
+ },
+ "BGD": {
+  "gec": "bg",
+  "text": "Bengali at least 99%, other indigenous ethnic groups 1% (2022 est.)"
+ },
+ "BGR": {
+  "gec": "bu",
+  "text": "Bulgarian 78.5%, Turkish 7.8%, Roma 4.1%, other 1.2%, unspecified 9.4% (2021 est.)"
+ },
+ "BHR": {
+  "gec": "ba",
+  "text": "Bahraini 47.4%, Asian 43.4%, other Arab 4.9%, African 1.4%, North American 1.1%, Gulf Co-operative countries 0.9%, European 0.8%, other 0.1% (2020 est.)"
+ },
+ "BHS": {
+  "gec": "bf",
+  "text": "African descent 90.6%, White 4.7%, mixed 2.1%, other 1.9%, unspecified 0.7% (2010 est.)"
+ },
+ "BIH": {
+  "gec": "bk",
+  "text": "Bosniak 50.1%, Serb 30.8%, Croat 15.4%, other 2.7%, not declared/no answer 1% (2013 est.)"
+ },
+ "BLM": {
+  "gec": "tb",
+  "text": "French, Portuguese, Caribbean, Afro-Caribbean"
+ },
+ "BLR": {
+  "gec": "bo",
+  "text": "Belarusian 83.7%, Russian 8.3%, Polish 3.1%, Ukrainian 1.7%, other 2.4%, unspecified 0.9% (2009 est.)"
+ },
+ "BLZ": {
+  "gec": "bh",
+  "text": "Mestizo 52.9%, Creole 25.9%, Maya 11.3%, Garifuna 6.1%, East Indian 3.9%, Mennonite 3.6%, White 1.2%, Asian 1%, other 1.2%, unknown 0.3% (2010 est.)"
+ },
+ "BMU": {
+  "gec": "bd",
+  "text": "African descent 52%, White 31%, mixed 9%, Asian 4%, other 4% (2010 est.)"
+ },
+ "BOL": {
+  "gec": "bl",
+  "text": "Mestizo (mixed White and Indigenous ancestry) 68%, Indigenous 20%, White 5%, Cholo/Chola 2%, African descent 1%, other 1%, unspecified 3%; 44% other Indigenous group, predominantly Quechua or Aymara (2009 est.)"
+ },
+ "BRA": {
+  "gec": "br",
+  "text": "mixed 45.3%, White 43.5%, Black 10.2%, Indigenous 0.6%, Asian 0.4% (2022 est.)"
+ },
+ "BRB": {
+  "gec": "bb",
+  "text": "African descent 92.4%, mixed 3.1%, White 2.7%, East Indian 1.3%, other 0.2%, unspecified 0.3% (2010 est.)"
+ },
+ "BRN": {
+  "gec": "bx",
+  "text": "Malay 67.4%, Chinese 9.6%, other 23% (2021 est.)"
+ },
+ "BTN": {
+  "gec": "bt",
+  "text": "Ngalop (also known as Bhote) 50%, ethnic Nepali 35% (predominantly Lhotshampas), indigenous or migrant tribes 15%"
+ },
+ "BWA": {
+  "gec": "bc",
+  "text": "Tswana (or Setswana) 79%, Kalanga 11%, Basarwa 3%, other, including Kgalagadi and people of European ancestry 7%"
+ },
+ "CAF": {
+  "gec": "ct",
+  "text": "Baya 28.8%, Banda 22.9%, Mandjia 9.9%, Sara 7.9%, M'Baka-Bantu 7.9%, Arab-Fulani (Peuhl) 6%, Mbum 6%, Ngbanki 5.5%, Zande-Nzakara 3%, other Central African Republic ethnic groups 2%, non-Central African Republic ethnic groups .1% (2003 est.)"
+ },
+ "CAN": {
+  "gec": "ca",
+  "text": "Canadian 15.6%, English 14.7%, Scottish 12.1%, French 11%, Irish 12.1%, German 8.1%, Chinese 4.7%, Italian 4.3%, First Nations 1.7%, Indian 3.7%, Ukrainian 3.5%, Metis 1.5% (2021 est.)"
+ },
+ "CHE": {
+  "gec": "sz",
+  "text": "Swiss 69.2%, German 4.2%, Italian 3.2%, Portuguese 2.5%, French 2.1%, Kosovan 1.1%, Turkish 1%, other 16.7% (2020 est.)"
+ },
+ "CHL": {
+  "gec": "ci",
+  "text": "White and non-Indigenous 88.9%, Mapuche 9.1%, Aymara 0.7%, other Indigenous groups 1% (includes Rapa Nui, Likan Antai, Quechua, Colla, Diaguita, Kawesqar, Yagan or Yamana), unspecified 0.3% (2012 est.)"
+ },
+ "CHN": {
+  "gec": "ch",
+  "text": "Han Chinese 91.1%, ethnic minorities 8.9% (includes Zhang, Hui, Manchu, Uighur, Miao, Yi, Tujia, Tibetan, Mongol, Dong, Buyei, Yao, Bai, Korean, Hani, Li, Kazakh, Dai, and other nationalities) (2021 est.)"
+ },
+ "CIV": {
+  "gec": "iv",
+  "text": "Akan 38%, Voltaique or Gur 22%, Northern Mande 22%, Kru 9.1%, Southern Mande 8.6%, other 0.3% (2021 est.)"
+ },
+ "CMR": {
+  "gec": "cm",
+  "text": "Bamileke-Bamu 22.2%, Biu-Mandara 16.4%, Arab-Choa/Hausa/Kanuri 13.5%, Beti/Bassa, Mbam 13.1%, Grassfields 9.9%, Adamawa-Ubangi, 9.8%, Cotier/Ngoe/Oroko 4.6%, Southwestern Bantu 4.3%, Kako/Meka 2.3%, foreign/other ethnic group 3.8% (2022 est.)"
+ },
+ "COD": {
+  "gec": "cg",
+  "text": "more than 200 African ethnic groups of which the majority are Bantu; the four largest groups - Mongo, Luba, Kongo (all Bantu), and the Mangbetu-Azande (Hamitic) - make up about 45% of the population"
+ },
+ "COG": {
+  "gec": "cf",
+  "text": "Kongo (Bakongo) 40.5%, Teke 16.9%, Mbochi 13.1%, foreigner 8.2%, Sangha 5.6%, Mbere/Mbeti/Kele 4.4%, Punu 4.3%, Pygmy 1.6%, Oubanguiens 1.6%, Duma 1.5%, Makaa 1.3%, other and unspecified 1% (2014-15 est.)"
+ },
+ "COK": {
+  "gec": "cw",
+  "text": "Cook Island Maori 77.4%, part Cook Island Maori 8.3%, Fijian 3.6%, New Zealand Maori/European 3.4%, Filipino 2.9%, other Pacific Islands 1.8%, other 2.6% (2021 est.)"
+ },
+ "COL": {
+  "gec": "co",
+  "text": "Mestizo and White 87.6%, Afro-Colombian (includes Mulatto, Raizal, and Palenquero) 6.8%, Indigenous 4.3%, unspecified 1.4% (2018 est.)"
+ },
+ "COM": {
+  "gec": "cn",
+  "text": "Antalote, Cafre, Makoa, Oimatsaha, Sakalava"
+ },
+ "CPV": {
+  "gec": "cv",
+  "text": "Creole (Mulatto) 71%, African 28%, European 1%"
+ },
+ "CRI": {
+  "gec": "cs",
+  "text": "White or Mestizo 83.6%, Mulatto 6.7%, Indigenous 2.4%, Black or African descent 1.1%, other 1.1%, none 2.9%, unspecified 2.2% (2011 est.)"
+ },
+ "CUB": {
+  "gec": "cu",
+  "text": "White 64.1%, Mulatto or mixed 26.6%, Black 9.3% (2012 est.)"
+ },
+ "CUW": {
+  "gec": "uc",
+  "text": "Curacaoan 75.4%, Dutch 6%, Dominican 3.6%, Colombian 3%, Bonairean, Sint Eustatian, Saban 1.5%, Haitian 1.2%, Surinamese 1.2%, Venezuelan 1.1%, Aruban 1.1%, other 5%, unspecified 0.9% (2011 est.)"
+ },
+ "CYM": {
+  "gec": "cj",
+  "text": "Cayman Islander 35.4%, Jamaican 24.8%, Filipino 5.5%, British 5.3%, American 5.2%, Honduran 4.2%, Canadian 3.3%, Indian 2.1%, Cuban 1.6%, Nicaraguan 1%, other 11.1%, unspecified 0.5% (2021 est.)"
+ },
+ "CYP": {
+  "gec": "cy",
+  "text": "Greek 98.8%, other 1% (includes Maronite, Armenian, Turkish-Cypriot), unspecified 0.2% (2011 est.)"
+ },
+ "CZE": {
+  "gec": "ez",
+  "text": "Czech 57.3%, Moravian 3.4%, other 7.7%, unspecified 31.6% (2021 est.)"
+ },
+ "DEU": {
+  "gec": "gm",
+  "text": "German 85.4%, Turkish 1.8%, Ukrainian 1.4%, Syrian 1.1%, Romanian 1%, Poland 1%, other/stateless/unspecified 8.3% (2022 est.)"
+ },
+ "DJI": {
+  "gec": "dj",
+  "text": "Somali 60%, Afar 35%, other 5% (mostly Yemeni Arab, also French, Ethiopian, and Italian)"
+ },
+ "DMA": {
+  "gec": "do",
+  "text": "African descent 84.5%, mixed 9%, Indigenous 3.8%, other 2.1%, unspecified 0.6% (2011 est.)"
+ },
+ "DNK": {
+  "gec": "da",
+  "text": "Danish (includes Greenlandic (who are predominantly Inuit) and Faroese) 84.2%, Turkish 1.1%, other 14.7% (largest groups are Polish, Romanian, Syrian, Ukrainian, German, and Iraqi) (2023 est.)"
+ },
+ "DOM": {
+  "gec": "dr",
+  "text": "mixed 70.4% (Mestizo/Indio 58%, Mulatto 12.4%), Black 15.8%, White 13.5%, other 0.3% (2014 est.)"
+ },
+ "DZA": {
+  "gec": "ag",
+  "text": "Arab-Amazigh 99%, European less than 1%"
+ },
+ "ECU": {
+  "gec": "ec",
+  "text": "Mestizo (mixed Indigenous and White) 77.5%, Montubio 7.7%, Indigenous 7.7%, White 2.2%, Afroecuadorian 2%, Mulatto 1.4%, Black 1.3%, other 0.1% (2022 est.)"
+ },
+ "EGY": {
+  "gec": "eg",
+  "text": "Egyptian 99.7%, other 0.3% (2006 est.)"
+ },
+ "ERI": {
+  "gec": "er",
+  "text": "Tigrinya 50%, Tigre 30%, Saho 4%, Afar 4%, Kunama 4%, Bilen 3%, Hedareb/Beja 2%, Nara 2%, Rashaida 1% (2021 est.)"
+ },
+ "ESH": {
+  "gec": "wi",
+  "text": "Arab, Berber"
+ },
+ "ESP": {
+  "gec": "sp",
+  "text": "Spanish 84.8%, Moroccan 1.7%, Romanian 1.2%, other 12.3% (2021 est.)"
+ },
+ "EST": {
+  "gec": "en",
+  "text": "Estonian 69.1%, Russian 23.7%, Ukrainian 2.1%, other 4.6%, unspecified 0.5% (2021 est.)"
+ },
+ "ETH": {
+  "gec": "et",
+  "text": "Oromo 35.8%, Amhara 24.1%, Somali 7.2%, Tigray 5.7%, Sidama 4.1%, Guragie 2.6%, Welaita 2.3%, Afar 2.2%, Silte 1.3%, Kefficho 1.2%, other 13.5% (2022 est.)"
+ },
+ "FIN": {
+  "gec": "fi",
+  "text": "Finnish, Swedish, Russian, Estonian, Romani, Sami"
+ },
+ "FJI": {
+  "gec": "fj",
+  "text": "iTaukei 56.8% (predominantly Melanesian with a Polynesian admixture), Indo-Fijian 37.5%, Rotuman 1.2%, other 4.5% (European, part European, other Pacific Islanders, Chinese) (2007 est.)"
+ },
+ "FRA": {
+  "gec": "fr",
+  "text": "Celtic and Latin with Teutonic, Slavic, North African (Algerian, Moroccan, Tunisian), Indochinese, Basque minorities"
+ },
+ "FRO": {
+  "gec": "fo",
+  "text": "Faroese 83.8% (Scandinavian and Anglo-Saxon descent), Danish 8.3%, Filipino 1.2%, other Nordic 0.9%, other 4.5% (includes Polish and Romanian) (2024 est.)"
+ },
+ "FSM": {
+  "gec": "fm",
+  "text": "Chuukese/Mortlockese 49.3%, Pohnpeian 29.8%, Kosraean 6.3%, Yapese 5.7%, Yap outer islanders 5.1%, Polynesian 1.6%, Asian 1.4%, other 0.8% (2010 est.)"
+ },
+ "GAB": {
+  "gec": "gb",
+  "text": "Fang 23.5%, Shira-Punu'Vii 20.6%, Nzabi-Duma 11.2%, Mbede-Teke 5.6%, Myene 4.4%, Kota-Kele 4.3%, Okande-Tsogho 1.6%, other 12.6%, foreigner 16.2% (2021 est.)"
+ },
+ "GBR": {
+  "gec": "uk",
+  "text": "White 87.2%, Black/African/Caribbean/black British 3%, Asian/Asian British: Indian 2.3%, Asian/Asian British: Pakistani 1.9%, mixed 2%, other 3.7% (2011 est.)"
+ },
+ "GEO": {
+  "gec": "gg",
+  "text": "Georgian 86.8%, Azeri 6.3%, Armenian 4.5%, other 2.3% (includes Russian, Ossetian, Yazidi, Ukrainian, Kist, Greek) (2014 est.)"
+ },
+ "GGY": {
+  "gec": "gk",
+  "text": "Guernsey 53.5%, UK and Ireland 23.8%, Portugal 2.1%, Latvia 1.4%, other Europe 2.7%, other Crown Dependencies 0.7%, other 5.3%, unspecified 10.5% (2022 est.)"
+ },
+ "GHA": {
+  "gec": "gh",
+  "text": "Akan 45.7%, Mole-Dagbani 18.5%, Ewe 12.8%, Ga-Dangme 7.1%, Gurma 6.4%, Guan 3.2%, Grusi 2.7%, Mande 2%, other 1.6% (2021 est.)"
+ },
+ "GIB": {
+  "gec": "gi",
+  "text": "Gibraltarian 79%, other British 13.2%, Spanish 2.1%, Moroccan 1.6%, other EU 2.4%, other 1.6% (2012 est.)"
+ },
+ "GIN": {
+  "gec": "gv",
+  "text": "Fulani (Peuhl) 33.4%, Malinke 29.4%, Susu 21.2%, Guerze 7.8%, Kissi 6.2%, Toma 1.6%, other/foreign 0.4% (2018 est.)"
+ },
+ "GMB": {
+  "gec": "ga",
+  "text": "Mandinka/Jahanka 33.3%, Fulani/Tukulur/Lorobo 18.2%, Wolof 12.9%, Jola/Karoninka 11%, Serahuleh 7.2%, Serer 3.5%, other 4%, non-Gambian 9.9% (2019-20 est.)"
+ },
+ "GNB": {
+  "gec": "pu",
+  "text": "Balanta 30%, Fulani 30%, Manjaco 14%, Mandinga 13%, Papel 7%, unspecified smaller ethnic groups 6% (2015 est.)"
+ },
+ "GNQ": {
+  "gec": "ek",
+  "text": "Fang 78.1%, Bubi 9.4%, Ndowe 2.8%, Nanguedambo 2.7%, Bisio 0.9%, foreigner 5.3%, other 0.7%, unspecified 0.2% (2011 est.)"
+ },
+ "GRC": {
+  "gec": "gr",
+  "text": "Greek 91.6%, Albanian 4.4%, other 4% (2011 est.)"
+ },
+ "GRD": {
+  "gec": "gj",
+  "text": "African descent 82.4%, mixed 13.3%, East Indian 2.2%, other 1.3%, unspecified 0.9% (2011 est.)"
+ },
+ "GRL": {
+  "gec": "gl",
+  "text": "Greenlandic 88.1%, Danish 7.1%, Filipino 1.6%, other Nordic peoples 0.9%, and other 2.3% (2024 est.)"
+ },
+ "GTM": {
+  "gec": "gt",
+  "text": "Mestizo (mixed Indigenous-Spanish - in local Spanish called Ladino) 56%, Maya 41.7%, Xinca (Indigenous, non-Maya) 1.8%, African descent 0.2%, Garifuna (mixed West and Central African, Island Carib, and Arawak) 0.1%, foreign 0.2% (2018 est.)"
+ },
+ "GUM": {
+  "gec": "gq",
+  "text": "Native Hawaiian and other Pacific Islander 46.1% (Chamorro 32.8%, Chuukese 6.7%, Palauan 1.4%, Pohnpeian 1.4%, Yapese 1%, other Native Hawaiian and other Pacific Islander 2.8%), Asian 35.5% (Filipino 29.1%, Korean 2.2%, Japanese 1.4%, Chinese (except Taiwanese) 1.3%, other Asian 1.5%), White 6.8%, African descent or African-American 0.9%, Indigenous 0.1%, other 0.6%, mixed 10% (2020 est.)"
+ },
+ "GUY": {
+  "gec": "gy",
+  "text": "East Indian 39.8%, African descent 29.3%, mixed 19.9%, Indigenous 10.5%, other 0.5% (includes Portuguese, Chinese, White) (2012 est.)"
+ },
+ "HKG": {
+  "gec": "hk",
+  "text": "Chinese 91.6%, Filipino 2.7%, Indonesian 1.9%, other 3.7% (2021 est.)"
+ },
+ "HND": {
+  "gec": "ho",
+  "text": "Mestizo (mixed Indigenous and European) 90%, Indigenous 7%, African descent 2%, White 1%"
+ },
+ "HRV": {
+  "gec": "hr",
+  "text": "Croat 91.6%, Serb 3.2%, other 3.9% (including Bosniak, Romani, Albanian, Italian, and Hungarian), unspecified 1.3% (2021 est.)"
+ },
+ "HTI": {
+  "gec": "ha",
+  "text": "Black 95%, mixed and White 5%"
+ },
+ "HUN": {
+  "gec": "hu",
+  "text": "Hungarian 84.3%, Romani 2.1%, German 1%, other 1.2%, unspecified 13.7% (2022 est.)"
+ },
+ "IDN": {
+  "gec": "id",
+  "text": "Javanese 40.1%, Sundanese 15.5%, Malay 3.7%, Batak 3.6%, Madurese 3%, Betawi 2.9%, Minangkabau 2.7%, Buginese 2.7%, Bantenese 2%, Banjarese 1.7%, Balinese 1.7%, Acehnese 1.4%, Dayak 1.4%, Sasak 1.3%, Chinese 1.2%, other 15% (2010 est.)"
+ },
+ "IMN": {
+  "gec": "im",
+  "text": "White 94.7%, Asian 3.1%, Mixed 1%, Black 0.6%, other 0.4% (2021 est.)"
+ },
+ "IND": {
+  "gec": "in",
+  "text": "Indo-Aryan 72%, Dravidian 25%, and other 3% (2000)"
+ },
+ "IRL": {
+  "gec": "ei",
+  "text": "Irish 76.6%, Irish travelers 0.6%, other White 9.9%, Asian 3.3%, Black 1.5%, other (includes Arab, Roma, and persons of mixed backgrounds) 2%, unspecified 2.6% (2022 est.)"
+ },
+ "IRN": {
+  "gec": "ir",
+  "text": "Persian, Azeri, Kurd, Lur, Baloch, Arab, Turkmen, and Turkic tribes"
+ },
+ "IRQ": {
+  "gec": "iz",
+  "text": "Arab 75-80%, Kurdish 15-20%, other 5% (includes Turkmen, Yezidi, Shabak, Kaka'i, Bedouin, Romani, Assyrian, Circassian, Sabaean-Mandaean, Persian)"
+ },
+ "ISL": {
+  "gec": "ic",
+  "text": "Icelandic 78.7%, Polish 5.8%, Danish 1%, Ukrainian 1%, other 13.5% (2024 est.)"
+ },
+ "ISR": {
+  "gec": "is",
+  "text": "Jewish 73.5% (of which Israel-born 79.7%, Europe/America/Oceania-born 14.3%, Africa-born 3.9%, Asia-born 2.1%), Arab 21.1%, other 5.4% (2022 est.)"
+ },
+ "ITA": {
+  "gec": "it",
+  "text": "Italian (includes small clusters of German-, French-, and Slovene-Italians in the north, Albanian-Italians, Croat-Italians, and Greek-Italians in the south)"
+ },
+ "JAM": {
+  "gec": "jm",
+  "text": "Black 92.1%, mixed 6.1%, East Indian 0.8%, other 0.4%, unspecified 0.7% (2011 est.)"
+ },
+ "JEY": {
+  "gec": "je",
+  "text": "Jersey 44.4%, British 30.5%, Portuguese/Madeiran 9.4%, Polish 3%, Irish 2.1%, other 10.6% (2021 est.)"
+ },
+ "JOR": {
+  "gec": "jo",
+  "text": "Jordanian 69.3%, Syrian 13.3%, Palestinian 6.7%, Egyptian 6.7%, Iraqi 1.4%, other 2.6% (2015 est.)"
+ },
+ "JPN": {
+  "gec": "ja",
+  "text": "Japanese 97.5%, Chinese 0.6%, Vietnam 0.4%, South Korean 0.3%, other 1.2% (includes Filipino, Brazilian, Nepalese, Indonesian, American, and Taiwanese) (2022 est.)"
+ },
+ "KAZ": {
+  "gec": "kz",
+  "text": "Kazakh 71%, Russian 14.9%, Uzbek 3.3%, Ukrainian 1.9%, Uyghurs 1.5%, German 1.1%, Tatar 1.1%, other 4.9%, unspecified 0.3% (2023 est.)"
+ },
+ "KEN": {
+  "gec": "ke",
+  "text": "Kikuyu 17.1%, Luhya 14.3%, Kalenjin 13.4%, Luo 10.7%, Kamba 9.8%, Somali 5.8%, Kisii 5.7%, Mijikenda 5.2%, Meru 4.2%, Maasai 2.5%, Turkana 2.1%,&nbsp;non-Kenyan 1%, other 8.2% (2019 est.)"
+ },
+ "KGZ": {
+  "gec": "kg",
+  "text": "Kyrgyz 73.8%, Uzbek 14.8%, Russian 5.1%, Dungan 1.1%, other 5.2% (includes Uyghur, Tajik, Turk, Kazakh, Tatar, Ukrainian, Korean, German) (2021 est.)"
+ },
+ "KHM": {
+  "gec": "cb",
+  "text": "Khmer 95.4%, Cham 2.4%, Chinese 1.5%, other 0.7% (2019-20 est.)"
+ },
+ "KIR": {
+  "gec": "kr",
+  "text": "I-Kiribati 95.78%, I-Kiribati/mixed 3.8%, Tuvaluan 0.2%, other 1.7% (2020 est.)"
+ },
+ "KNA": {
+  "gec": "sc",
+  "text": "African descent 92.5%, mixed 3%, White 2.1%, East Indian 1.5%, other 0.6%, unspecified 0.3% (2001 est.)"
+ },
+ "KOR": {
+  "gec": "ks",
+  "text": "Korean"
+ },
+ "KWT": {
+  "gec": "ku",
+  "text": "Kuwaiti 30.4%, other Arab 27.4%, Asian 40.3%, African 1%, other 0.9% (includes European, North American, South American, and Australian) (2018 est.)"
+ },
+ "LAO": {
+  "gec": "la",
+  "text": "Lao 53.2%, Khmou 11%, Hmong 9.2%, Phouthay 3.4%, Tai 3.1%, Makong 2.5%, Katong 2.2%, Lue 2%, Akha 1.8%, other 11.6% (2015 est.)"
+ },
+ "LBN": {
+  "gec": "le",
+  "text": "Arab 95%, Armenian 4%, other 1%"
+ },
+ "LBR": {
+  "gec": "li",
+  "text": "Kpelle 20.2%, Bassa 13.6%, Grebo 9.9%, Gio 7.9%, Mano 7.2%, Kru 5.5%, Lorma 4.8%, Krahn 4.5%, Kissi, 4.3%, Mandingo 4.2%, Vai 3.8%, Gola 3.8%, Gbandi 2.9%, Mende 1.7%, Sapo 1%, Belle 0.7%, Dey 0.3%, other Liberian ethnic group 0.4%, other African 3%, non-African 0.2% (2022 est.)"
+ },
+ "LBY": {
+  "gec": "ly",
+  "text": "Amazigh and Arab 97%, other 3% (includes Egyptian, Greek, Indian, Italian, Maltese, Pakistani, Tunisian, and Turkish)"
+ },
+ "LCA": {
+  "gec": "st",
+  "text": "Black/African descent 85.3%, mixed 10.9%, East Indian 2.2%, other 1.6%, unspecified 0.1% (2010 est.)"
+ },
+ "LIE": {
+  "gec": "ls",
+  "text": "Liechtensteiner 65.6%, Swiss 9.6%, Austrian 5.8%, German 4.5%, Italian 3.1%, other 11.4% (2021 est.)"
+ },
+ "LKA": {
+  "gec": "ce",
+  "text": "Sinhalese 74.9%, Sri Lankan Tamil 11.2%, Sri Lankan Moors 9.2%, Indian Tamil 4.2%, other 0.5% (2012 est.)"
+ },
+ "LSO": {
+  "gec": "lt",
+  "text": "Sotho 99.7%, other 0.3% (includes Kwena, Nguni (Hlubi and Phuthi), Zulu)"
+ },
+ "LTU": {
+  "gec": "lh",
+  "text": "Lithuanian 84.6%, Polish 6.5%, Russian 5%, Belarusian 1%, other 1.1%, unspecified 1.8% (2021 est.)"
+ },
+ "LUX": {
+  "gec": "lu",
+  "text": "Luxembourger 52.9%, Portuguese 14.5%, French 7.6%, Italian 3.7%, Belgian 3%, German 2%, Spanish 1.3%, Romania 1%, other 14% (2022 est.)"
+ },
+ "LVA": {
+  "gec": "lg",
+  "text": "Latvian 62.7%, Russian 24.5%, Belarusian 3.1%, Ukrainian 2.2%, Polish 2%, Lithuanian 1.1%, other 1.8%, unspecified 2.6% (2021 est.)"
+ },
+ "MAC": {
+  "gec": "mc",
+  "text": "Chinese 89.4%, Chinese and Portuguese 1%, Portuguese 0.8%, Chinese and non-Portuguese 0.2%, Portuguese and others 0.2%, other 8.5% (2021 est.)"
+ },
+ "MAF": {
+  "gec": "rn",
+  "text": "Creole (Mulatto), Black, Guadeloupe Mestizo (French-East Asian), White, East Indian, other"
+ },
+ "MAR": {
+  "gec": "mo",
+  "text": "Arab-Amazigh 99%, other 1%"
+ },
+ "MCO": {
+  "gec": "mn",
+  "text": "Monegasque 32.1%, French 19.9%, Italian 15.3%, British 5%, Belgian 2.3%, Swiss 2%, German 1.9%, Russian 1.8%, American 1.1%, Dutch 1.1%, Moroccan 1%, other 16.6% (2016 est.)"
+ },
+ "MDA": {
+  "gec": "md",
+  "text": "Moldovan 75.1%, Romanian 7%, Ukrainian 6.6%, Gagauz 4.6%, Russian 4.1%, Bulgarian 1.9%, other 0.8% (2014 est.)"
+ },
+ "MDG": {
+  "gec": "ma",
+  "text": "Malayo-Indonesian (Merina and related Betsileo), Cotiers (mixed African, Malayo-Indonesian, and Arab ancestry - Betsimisaraka, Tsimihety, Antaisaka, Sakalava), French, Indian, Creole, Comoran"
+ },
+ "MDV": {
+  "gec": "mv",
+  "text": "homogeneous mixture of Sinhalese, Dravidian, Arab, Australasian, and African resulting from historical changes in regional hegemony over marine trade routes"
+ },
+ "MEX": {
+  "gec": "mx",
+  "text": "Mestizo (Indigenous-Spanish) 62%, predominantly Indigenous 21%, Indigenous 7%, other 10% (mostly European) (2012 est.)"
+ },
+ "MHL": {
+  "gec": "rm",
+  "text": "Marshallese 95.6%, Filipino 1.1%, other 3.3% (2021 est.)"
+ },
+ "MKD": {
+  "gec": "mk",
+  "text": "Macedonian 58.4%, Albanian 24.3%, Turkish 3.9%, Romani 2.5%, Serb 1.3%, other 2.3%, no ethnic affiliation data available 7.2% (2021 est.)"
+ },
+ "MLI": {
+  "gec": "ml",
+  "text": "Bambara 33.3%, Fulani (Peuhl) 13.3%, Sarakole/Soninke/Marka 9.8%, Senufo/Manianka 9.6%, Malinke 8.8%, Dogon 8.7%, Sonrai 5.9%, Bobo 2.1%, Tuareg/Bella 1.7%, other Malian 6%, from members of Economic Community of West Africa 0.4%, other 0.3% (2018 est.)"
+ },
+ "MLT": {
+  "gec": "mt",
+  "text": "Maltese (descendants of ancient Carthaginians and Phoenicians with strong elements of Italian and other Mediterranean stock)"
+ },
+ "MMR": {
+  "gec": "bm",
+  "text": "Burman (Bamar) 68%, Shan 9%, Karen 7%, Rakhine 4%, Chinese 3%, Indian 2%, Mon 2%, other 5%"
+ },
+ "MNE": {
+  "gec": "mj",
+  "text": "Montenegrin 45%, Serbian 28.7%, Bosniak 8.7%, Albanian 4.9%, Muslim 3.3%, Romani 1%, Croat 1%, other 2.6%, unspecified 4.9% (2011 est.)"
+ },
+ "MNG": {
+  "gec": "mg",
+  "text": "Khalkh 83.8%, Kazak 3.8%, Durvud 2.6%, Bayad 2%, Buriad 1.4%, Zakhchin 1.2%, Dariganga 1.1%, other 4.1% (2020 est.)"
+ },
+ "MNP": {
+  "gec": "cq",
+  "text": "Asian 50% (includes Filipino 35.3%, Chinese 6.8%, Korean 4.2%, and other Asian 3.7%), Native Hawaiian or other Pacific Islander 34.9% (includes Chamorro 23.9%, Carolinian 4.6%, and other Native Hawaiian or Pacific Islander 6.4%), other 2.5%, two or more ethnicities or races 12.7% (2010 est.)"
+ },
+ "MOZ": {
+  "gec": "mz",
+  "text": "African 99% (Makhuwa, Tsonga, Lomwe, Sena, and others), Mestizo 0.8%, other (includes European, Indian, Pakistani, Chinese) 0.2% (2017 est.)"
+ },
+ "MRT": {
+  "gec": "mr",
+  "text": "Black Moors (Haratines - Arabic-speaking descendants of African origin who are or were enslaved by White Moors) 40%, White Moors (of Arab-Amazigh descent, known as Beydane) 30%, Sub-Saharan Mauritanians (non-Arabic speaking, largely resident in or originating from the Senegal River Valley, including Halpulaar, Fulani, Soninke, Wolof, and Bambara ethnic groups) 30%"
+ },
+ "MSR": {
+  "gec": "mh",
+  "text": "African/Black 86.2%, mixed 4.8%, Hispanic/Spanish 3%, Caucasian/White 2.7%, East Indian/Indian 1.6%, other 1.8% (2018 est.)"
+ },
+ "MUS": {
+  "gec": "mp",
+  "text": "Indo-Mauritian (compose approximately two thirds of the total population), Creole, Sino-Mauritian, Franco-Mauritian"
+ },
+ "MWI": {
+  "gec": "mi",
+  "text": "Chewa 34.3%, Lomwe 18.8%, Yao 13.2%, Ngoni 10.4%, Tumbuka 9.2%, Sena 3.8%, Mang'anja 3.2%, Tonga 1.8%, Nyanja 1.8%, Nkhonde 1%, other 2.2%, foreign 0.3% (2018 est.)"
+ },
+ "MYS": {
+  "gec": "my",
+  "text": "Bumiputera 63.8% (Malay 52.8% and indigenous peoples, including Orang Asli, Dayak, Anak Negeri, 11%), Chinese 20.6%, Indian 6%, other 0.6%, non-citizens 9% (2023 est.)"
+ },
+ "NAM": {
+  "gec": "wa",
+  "text": "Ovambo 50%, Kavangos 9%, Herero 7%, Damara 7%, mixed European and African ancestry 6.5%, European 6%, Nama 5%, Caprivian 4%, San 3%, Baster 2%, Tswana 0.5%"
+ },
+ "NCL": {
+  "gec": "nc",
+  "text": "Kanak 39.1%, European 27.1%, Wallisian, Futunian 8.2%, Tahitian 2.1%, Indonesian 1.4%, Ni-Vanuatu 1%, Vietnamese 0.9%, other 17.7%, unspecified 2.5% (2014 est.)"
+ },
+ "NER": {
+  "gec": "ng",
+  "text": "Hausa 53.1%, Zarma/Songhai 21.2%, Tuareg 11%, Fulani (Peuhl) 6.5%, Kanuri 5.9%, Gurma 0.8%, Arab 0.4%, Tubu 0.4%, other/unavailable 0.9% (2006 est.)"
+ },
+ "NGA": {
+  "gec": "ni",
+  "text": "Hausa 30%, Yoruba 15.5%, Igbo (Ibo) 15.2%, Fulani 6%, Tiv 2.4%, Kanuri/Beriberi 2.4%, Ibibio 1.8%, Ijaw/Izon 1.8%, other 24.9% (2018 est.)"
+ },
+ "NIC": {
+  "gec": "nu",
+  "text": "Mestizo (mixed Indigenous and White) 69%, White 17%, Black 9%, Indigenous 5%"
+ },
+ "NIU": {
+  "gec": "ne",
+  "text": "Niuean 65.4%, part-Niuean 14%, non-Niuean 20.6% (2017 est.)"
+ },
+ "NLD": {
+  "gec": "nl",
+  "text": "Dutch 75.4%, EU (excluding Dutch) 6.4%, Turkish 2.4%, Moroccan 2.4%, Surinamese 2.1%, Indonesian 2%, other 9.3% (2021 est.)"
+ },
+ "NOR": {
+  "gec": "no",
+  "text": "Norwegian 81.5% (includes about 60,000 Sami), other European 8.9%, other 9.6% (2021 est.)"
+ },
+ "NPL": {
+  "gec": "np",
+  "text": "Chhettri 16.5%, Brahman-Hill 11.3%, Magar 6.9%, Tharu 6.2%, Tamang 5.6%, Bishwokarma 5%, Musalman 4.9%, Newar 4.6%, Yadav 4.2%, Rai 2.2%, Pariyar 1.9%, Gurung 1.9%, Thakuri 1.7%, Mijar 1.6%, Teli 1.5%, Yakthung/Limbu 1.4%, Chamar/Harijan/Ram 1.4%, Koiri/Kushwaha 1.2%, other 20% (2021 est.)"
+ },
+ "NRU": {
+  "gec": "nr",
+  "text": "Nauruan 94.6%, I-Kiribati 2.2%, Fijian 1.3%, other 1.9% (2021 est.)"
+ },
+ "NZL": {
+  "gec": "nz",
+  "text": "European 64.1%, Maori 16.5%, Chinese 4.9%, Indian 4.7%, Samoan 3.9%, Tongan 1.8%, Cook Islands Maori 1.7%, English 1.5%, Filipino 1.5%, New Zealander 1%, other 13.7% (2018 est.)"
+ },
+ "OMN": {
+  "gec": "mu",
+  "text": "Arab, Baluchi, South Asian (Indian, Pakistani, Sri Lankan, Bangladeshi), African"
+ },
+ "PAK": {
+  "gec": "pk",
+  "text": "Punjabi 44.7%, Pashtun (Pathan) 15.4%, Sindhi 14.1%, Saraiki 8.4%, Muhajirs 7.6%, Baloch 3.6%, other 6.3%"
+ },
+ "PAN": {
+  "gec": "pm",
+  "text": "Mestizo (mixed Indigenous and White) 65%, Indigenous 12.3% (Ngabe 7.6%, Kuna 2.4%, Embera 0.9%, Bugle 0.8%, other 0.4%, unspecified 0.2%), Black or African descent 9.2%, Mulatto 6.8%, White 6.7% (2010 est.)"
+ },
+ "PCN": {
+  "gec": "pc",
+  "text": "descendants of the Bounty mutineers and their Tahitian wives"
+ },
+ "PER": {
+  "gec": "pe",
+  "text": "Mestizo (mixed Indigenous and White) 60.2%, Indigenous 25.8%, White 5.9%, African descent 3.6%, other (includes Chinese and Japanese descent) 1.2%, unspecified 3.3% (2017 est.)"
+ },
+ "PHL": {
+  "gec": "rp",
+  "text": "Tagalog 26%, Bisaya/Binisaya 14.3%, Ilocano 8%, Cebuano 8%, Illonggo 7.9%, Bikol/Bicol 6.5%, Waray 3.8%, Kapampangan 3%, Maguindanao 1.9%, Pangasinan 1.9%, other local ethnicities 18.5%, foreign ethnicities 0.2% (2020 est.)"
+ },
+ "PLW": {
+  "gec": "ps",
+  "text": "Palauan (Micronesian with Malayan and Melanesian admixtures) 70.6%, Carolinian 1.2%, Asian 26.5%, other 1.7% (2020 est.)"
+ },
+ "PNG": {
+  "gec": "pp",
+  "text": "Melanesian, Papuan, Negrito, Micronesian, Polynesian"
+ },
+ "POL": {
+  "gec": "pl",
+  "text": "Polish 96.9%, Silesian 1.1%, German 0.2%, Ukrainian 0.1%, other and unspecified 1.7% (2011 est.)"
+ },
+ "PRI": {
+  "gec": "rq",
+  "text": "White 75.8%, Black/African American 12.4%, other 8.5% (includes American Indian, Alaskan Native, Native Hawaiian, other Pacific Islander, and others), mixed 3.3% (2010 est.)"
+ },
+ "PRK": {
+  "gec": "kn",
+  "text": "racially homogeneous; there is a small Chinese community and a few ethnic Japanese"
+ },
+ "PRT": {
+  "gec": "po",
+  "text": "Portuguese 95%; citizens from Portugal&rsquo;s former colonies in Africa, Asia (Han Chinese), and South America (Brazilian) and other foreign born 5%"
+ },
+ "PRY": {
+  "gec": "pa",
+  "text": "Mestizo (mixed Spanish and Indigenous ancestry) 95%, other 5%"
+ },
+ "PYF": {
+  "gec": "fp",
+  "text": "Polynesian 78%, Chinese 12%, local French 6%, metropolitan French 4%"
+ },
+ "QAT": {
+  "gec": "qa",
+  "text": "non-Qatari 88.4%, Qatari 11.6% (2015 est.)"
+ },
+ "ROU": {
+  "gec": "ro",
+  "text": "Romanian 89.3%, Hungarian 6%, Romani 3.4%, Ukrainian 0.3%, German 0.1%, other 0.9% (2021 est.)"
+ },
+ "RUS": {
+  "gec": "rs",
+  "text": "Russian 77.7%, Tatar 3.7%, Ukrainian 1.4%, Bashkir 1.1%, Chuvash 1%, Chechen 1%, other 10.2%, unspecified 3.9% (2010 est.)"
+ },
+ "RWA": {
+  "gec": "rw",
+  "text": "Hutu, Tutsi, Twa"
+ },
+ "SAU": {
+  "gec": "sa",
+  "text": "Arab 90%, Afro-Asian 10%"
+ },
+ "SDN": {
+  "gec": "su",
+  "text": "Sudanese Arab (approximately 70%), Fur, Beja, Nuba, Ingessana, Uduk, Fallata, Masalit, Dajo, Gimir, Tunjur, Berti; there are over 500 ethnic groups"
+ },
+ "SEN": {
+  "gec": "sg",
+  "text": "Wolof 39.7%, Pulaar 27.5%, Sereer 16%, Mandinka 4.9%, Jola 4.2%, Soninke 2.4%, other 5.4% (includes Europeans and persons of Lebanese descent) (2019 est.)"
+ },
+ "SGP": {
+  "gec": "sn",
+  "text": "Chinese 74.2%, Malay 13.7%, Indian 8.9%, other 3.2% (2021 est.)"
+ },
+ "SLB": {
+  "gec": "bp",
+  "text": "Melanesian 95.3%, Polynesian 3.1%, Micronesian 1.2%, other 0.3% (2009 est.)"
+ },
+ "SLE": {
+  "gec": "sl",
+  "text": "Temne 35.4%, Mende 30.8%, Limba 8.8%, Kono 4.3%, Korankoh 4%, Fullah 3.8%, Mandingo 2.8%, Loko 2%, Sherbro 1.9%, Creole 1.2% (descendants of freed Jamaican slaves who were settled in the Freetown area in the late-18th century; also known as Krio), other 5% (2019 est.)"
+ },
+ "SLV": {
+  "gec": "es",
+  "text": "Mestizo 86.3%, White 12.7%, Indigenous 0.2% (includes Lenca, Kakawira, Nahua-Pipil), Black 0.1%, other 0.6% (2007 est.)"
+ },
+ "SMR": {
+  "gec": "sm",
+  "text": "Sammarinese, Italian"
+ },
+ "SOM": {
+  "gec": "so",
+  "text": "predominantly Somali with lesser numbers of Arabs, Bantus, and others"
+ },
+ "SPM": {
+  "gec": "sb",
+  "text": "Basques and Bretons (French fishermen)"
+ },
+ "SRB": {
+  "gec": "ri",
+  "text": "Serb 83.3%, Hungarian 3.5%, Romani 2.1%, Bosniak 2%, other 5.7%, undeclared or unknown 3.4% (2011 est.)"
+ },
+ "SSD": {
+  "gec": "od",
+  "text": "Dinka (Jieng) approximately 35-40%, Nuer (Naath) approximately 15%, Shilluk (Chollo), Azande, Bari, Kakwa, Kuku, Murle, Mandari, Didinga, Ndogo, Bviri, Lndi, Anuak, Bongo, Lango, Dungotona, Acholi, Baka, Fertit (2011 est.)"
+ },
+ "STP": {
+  "gec": "tp",
+  "text": "Mestico, Angolares (descendants of Angolan slaves), Forros (descendants of freed slaves), Servicais (contract laborers from Angola, Mozambique, and Cabo Verde), Tongas (children of servicais born on the islands), Europeans (primarily Portuguese), Asians (mostly Chinese)"
+ },
+ "SUR": {
+  "gec": "ns",
+  "text": "Hindustani (also known locally as \"East Indians\"; their ancestors emigrated from northern India in the latter part of the 19th century) 27.4%, Maroon (their African ancestors were brought to the country in the 17th and 18th centuries as slaves and escaped to the interior) 21.7%, Creole (mixed White and Black) 15.7%, Javanese 13.7%, mixed 13.4%, other 7.6%, unspecified 0.6% (2012 est.)"
+ },
+ "SVK": {
+  "gec": "lo",
+  "text": "Slovak 83.8%, Hungarian 7.8%, Romani 1.2%, other 1.8% (includes Czech, Ruthenian, Ukrainian, Russian, German, Polish), unspecified 5.4% (2021 est.)"
+ },
+ "SVN": {
+  "gec": "si",
+  "text": "Slovene 83.1%, Serb 2%, Croat 1.8%, Bosniak 1.1%, other or unspecified 12% (2002 est.)"
+ },
+ "SWE": {
+  "gec": "sw",
+  "text": "<p>Swedish 79.6%, Syrian 1.9%, Iraqi 1.4%, Finnish 1.3%, other 15.8%</p> (2022 est.)"
+ },
+ "SWZ": {
+  "gec": "wz",
+  "text": "<p>predominantly Swazi; smaller populations of other African ethnic groups, including the Zulu, as well as people of European ancestry</p>"
+ },
+ "SXM": {
+  "gec": "nn",
+  "text": "Saint Maarten 29.9%, Dominican Republic 10.2%, Haiti 7.8%, Jamaica 6.6%, Saint Martin 5.9%, Guyana 5%, Dominica 4.4%, Curacao 4.1%, Aruba 3.4%, Saint Kitts and Nevis 2.8%, India 2.6%, Netherlands 2.2%, US 1.6%, Suriname 1.4%, Saint Lucia 1.3%, Anguilla 1.1%, other 8%, unspecified 1.7% (2011 est.)"
+ },
+ "SYC": {
+  "gec": "se",
+  "text": "predominantly Creole (mainly of East African and Malagasy heritage); also French, Indian, Chinese, and Arab populations"
+ },
+ "SYR": {
+  "gec": "sy",
+  "text": "Arab ~50%, Alawite ~15%, Kurd ~10%, Levantine ~10%, other ~15% (includes Druze, Ismaili, Imami, Nusairi, Assyrian, Turkoman, Armenian)"
+ },
+ "TCA": {
+  "gec": "tk",
+  "text": "Black 87.6%, White 7.9%, mixed 2.5%, East Indian 1.3%, other 0.7% (2006 est.)"
+ },
+ "TCD": {
+  "gec": "cd",
+  "text": "Sara (Ngambaye/Sara/Madjingaye/Mbaye) 30.5%, Kanembu/Bornu/Buduma 9.8%, Arab 9.7%, Wadai/Maba/Masalit/Mimi 7%, Gorane 5.8%, Masa/Musseye/Musgum 4.9%, Bulala/Medogo/Kuka 3.7%, Marba/Lele/Mesme 3.5%, Mundang 2.7%, Bidiyo/Migaama/Kenga/Dangleat 2.5%, Dadjo/Kibet/Muro 2.4%, Tupuri/Kera 2%, Gabri/Kabalaye/Nanchere/Somrai 2%, Fulani/Fulbe/Bodore 1.8%, Karo/Zime/Peve 1.3%, Baguirmi/Barma 1.2%, Zaghawa/Bideyat/Kobe 1.1%, Tama/Assongori/Mararit 1.1%, Mesmedje/Massalat/Kadjakse 0.8%, other&nbsp; 4.6%, unspecified 1.7% (2014-15 est.)"
+ },
+ "TGO": {
+  "gec": "to",
+  "text": "Adja-Ewe/Mina 42.4%, Kabye/Tem 25.9%, Para-Gourma/Akan 17.1%, Akposso/Akebu 4.1%, Ana-Ife 3.2%, other Togolese 1.7%, foreigners 5.2%, no response 0.4% (2013-14 est.)"
+ },
+ "THA": {
+  "gec": "th",
+  "text": "Thai 97.5%, Burmese 1.3%, other 1.1%, unspecified &lt;0.1% (2015 est.)"
+ },
+ "TJK": {
+  "gec": "ti",
+  "text": "Tajik 84.3% (includes Pamiri and Yagnobi), Uzbek 13.8%, other 2% (includes Kyrgyz, Russian, Turkmen, Tatar, Arab) (2014 est.)"
+ },
+ "TKL": {
+  "gec": "tl",
+  "text": "Tokelauan 64.5%, part Tokelauan/Samoan 9.7%, part Tokelauan/Tuvaluan 2.8%, Tuvaluan 7.5%, Samoan 5.8%, other Pacific Islander 3.4%, other 5.6%, unspecified 0.8% (2016 est.)"
+ },
+ "TKM": {
+  "gec": "tx",
+  "text": "Turkmen 85%, Uzbek 5%, Russian 4%, other 6% (2003 est.)"
+ },
+ "TLS": {
+  "gec": "tt",
+  "text": "Austronesian (Malayo-Polynesian) (includes Tetun, Mambai, Tokodede, Galoli, Kemak, Baikeno), Melanesian-Papuan (includes Bunak, Fataluku, Bakasai), small Chinese minority"
+ },
+ "TON": {
+  "gec": "tn",
+  "text": "Tongan 96.5%, other (European, Fijian, Samoan, Indian, Chinese, other Pacific Islander, other Asian, other) 3.5% (2021 est.)"
+ },
+ "TTO": {
+  "gec": "td",
+  "text": "East Indian 35.4%, African descent 34.2%, mixed - other 15.3%, mixed - African/East Indian 7.7%, other 1.3%, unspecified 6.2% (2011 est.)"
+ },
+ "TUN": {
+  "gec": "ts",
+  "text": "Arab 98%, European 1%, Jewish and other 1%"
+ },
+ "TUR": {
+  "gec": "tu",
+  "text": "Turkish 70-75%, Kurdish 19%, other minorities 6-11% (2016 est.)"
+ },
+ "TUV": {
+  "gec": "tv",
+  "text": "Tuvaluan 97%, Tuvaluan/I-Kiribati 1.6%, Tuvaluan/other 0.8%, other 0.6% (2017 est.)"
+ },
+ "TWN": {
+  "gec": "tw",
+  "text": "Han Chinese (including Holo, who compose approximately 70% of Taiwan's population, Hakka, and other groups originating in mainland China) more than 95%, indigenous Malayo-Polynesian peoples 2.3%"
+ },
+ "TZA": {
+  "gec": "tz",
+  "text": "mainland - African 99% (of which 95% are Bantu consisting of more than 130 tribes), other 1% (consisting of Asian, European, and Arab); Zanzibar - Arab, African, mixed Arab and African"
+ },
+ "UGA": {
+  "gec": "ug",
+  "text": "Baganda 16.5%, Banyankole 9.6%, Basoga 8.8%, Bakiga 7.1%, Iteso 7%, Langi 6.3%, Bagisu 4.9%, Acholi 4.4%, Lugbara 3.3%, other 32.1% (2014 est.)"
+ },
+ "UKR": {
+  "gec": "up",
+  "text": "Ukrainian 77.8%, Russian 17.3%, Belarusian 0.6%, Moldovan 0.5%, Crimean Tatar 0.5%, Bulgarian 0.4%, Hungarian 0.3%, Romanian 0.3%, Polish 0.3%, Jewish 0.2%, other 1.8% (2001 est.)"
+ },
+ "URY": {
+  "gec": "uy",
+  "text": "White 87.7%, Black 4.6%, Indigenous 2.4%, other 0.3%, none or unspecified 5% (2011 est.)"
+ },
+ "USA": {
+  "gec": "us",
+  "text": "White 61.6%, Black or African American 12.4%, Asian 6%, Indigenous and Alaska native 1.1%, Native Hawaiian and Other Pacific Islander 0.2%, other 8.4%, two or more races 10.2% (2020 est.)"
+ },
+ "UZB": {
+  "gec": "uz",
+  "text": "Uzbek 83.8%, Tajik 4.8%, Kazakh 2.5%, Russian 2.3%, Karakalpak 2.2%, Tatar 1.5%, other 2.9% (2017 est.)"
+ },
+ "VAT": {
+  "gec": "vt",
+  "text": "Italian, Swiss, Argentinian, and other nationalities from around the world (2017)"
+ },
+ "VCT": {
+  "gec": "vc",
+  "text": "African descent 71.2%, mixed 23%, Indigenous 3%, East Indian/Indian 1.1%, European 1.5%, other 0.2% (2012 est.)"
+ },
+ "VEN": {
+  "gec": "ve",
+  "text": "unspecified Spanish, Italian, Portuguese, Arab, German, African, Indigenous"
+ },
+ "VGB": {
+  "gec": "vq",
+  "text": "African-American or African descent 71.4%, White 13.3%, Indigenous 0.4%, Native Hawaiian and other Pacific Islander 0.1%, other 6.3%, mixed 7.5% (2020 est.)"
+ },
+ "VNM": {
+  "gec": "vm",
+  "text": "Kinh (Viet) 85.3%, Tay 1.9%, Thai 1.9%, Muong 1.5%, Khmer 1.4%, Mong 1.4%, Nung 1.1%, other 5.5% (2019 est.)"
+ },
+ "VUT": {
+  "gec": "nh",
+  "text": "Ni-Vanuatu 99%, other 1% (European, Asian, other Melanesian, Polynesian, Micronesian, other) (2020 est.)"
+ },
+ "WLF": {
+  "gec": "wf",
+  "text": "Polynesian"
+ },
+ "WSM": {
+  "gec": "ws",
+  "text": "Samoan 96%, Samoan/New Zealander 2%, other 1.9% (2011 est.)"
+ },
+ "XKX": {
+  "gec": "kv",
+  "text": "Albanians 92.9%, Bosniaks 1.6%, Serbs 1.5%, Turk 1.1%, Ashkali 0.9%, Egyptian 0.7%, Gorani 0.6%, Romani 0.5%, other/unspecified 0.2% (2011 est.)"
+ },
+ "YEM": {
+  "gec": "ym",
+  "text": "predominantly Arab; but also Afro-Arab, South Asian, European"
+ },
+ "ZAF": {
+  "gec": "sf",
+  "text": "Black African 80.9%, Colored 8.8%, White 7.8%, Indian/Asian 2.6%  (2021 est.)"
+ },
+ "ZMB": {
+  "gec": "za",
+  "text": "Bemba 21%, Tonga 13.6%, Chewa 7.4%, Lozi 5.7%, Nsenga 5.3%, Tumbuka 4.4%, Ngoni 4%, Lala 3.1%, Kaonde 2.9%, Namwanga 2.8%, Lunda (north Western) 2.6%, Mambwe 2.5%, Luvale 2.2%, Lamba 2.1%, Ushi 1.9%, Lenje 1.6%, Bisa 1.6%, Mbunda 1.2%, other 13.8%, unspecified 0.4% (2010 est.)"
+ },
+ "ZWE": {
+  "gec": "zi",
+  "text": "African 99.6% (predominantly Shona; Ndebele is the second largest ethnic group), other (includes Caucasian, Asiatic, mixed race) 0.4% (2022 est.)"
+ }
+}

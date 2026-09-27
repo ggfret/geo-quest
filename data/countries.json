@@ -1,0 +1,7151 @@
+[
+ {
+  "id": "AFG",
+  "iso2": "af",
+  "iso_num": "004",
+  "name": "Afghanistan",
+  "names": [
+   "Afghanistan",
+   "Islamic Republic of Afghanistan",
+   "Afġānistān"
+  ],
+  "capitals": [
+   "Kabul"
+  ],
+  "capital_names": [
+   "Kabul"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRN",
+   "PAK",
+   "TKM",
+   "UZB",
+   "TJK",
+   "CHN"
+  ],
+  "landlocked": true,
+  "area_km2": 652230,
+  "latlng": [
+   33,
+   65
+  ]
+ },
+ {
+  "id": "ALB",
+  "iso2": "al",
+  "iso_num": "008",
+  "name": "Albania",
+  "names": [
+   "Albania",
+   "Republic of Albania",
+   "Shqipëri",
+   "Shqipëria",
+   "Shqipnia"
+  ],
+  "capitals": [
+   "Tirana"
+  ],
+  "capital_names": [
+   "Tirana"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "MNE",
+   "GRC",
+   "MKD",
+   "XKX"
+  ],
+  "landlocked": false,
+  "area_km2": 28748,
+  "latlng": [
+   41,
+   20
+  ]
+ },
+ {
+  "id": "DZA",
+  "iso2": "dz",
+  "iso_num": "012",
+  "name": "Algeria",
+  "names": [
+   "Algeria",
+   "People's Democratic Republic of Algeria",
+   "Dzayer",
+   "Algérie"
+  ],
+  "capitals": [
+   "Algiers"
+  ],
+  "capital_names": [
+   "Algiers"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "TUN",
+   "LBY",
+   "NER",
+   "ESH",
+   "MRT",
+   "MLI",
+   "MAR"
+  ],
+  "landlocked": false,
+  "area_km2": 2381741,
+  "latlng": [
+   28,
+   3
+  ]
+ },
+ {
+  "id": "ASM",
+  "iso2": "as",
+  "iso_num": "016",
+  "name": "American Samoa",
+  "names": [
+   "American Samoa",
+   "Amerika Sāmoa",
+   "Amelika Sāmoa",
+   "Sāmoa Amelika"
+  ],
+  "capitals": [
+   "Pago Pago"
+  ],
+  "capital_names": [
+   "Pago Pago"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 199,
+  "latlng": [
+   -14.33333333,
+   -170
+  ]
+ },
+ {
+  "id": "AND",
+  "iso2": "ad",
+  "iso_num": "020",
+  "name": "Andorra",
+  "names": [
+   "Andorra",
+   "Principality of Andorra",
+   "Principat d'Andorra"
+  ],
+  "capitals": [
+   "Andorra la Vella"
+  ],
+  "capital_names": [
+   "Andorra la Vella"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "FRA",
+   "ESP"
+  ],
+  "landlocked": true,
+  "area_km2": 468,
+  "latlng": [
+   42.5,
+   1.5
+  ]
+ },
+ {
+  "id": "AGO",
+  "iso2": "ao",
+  "iso_num": "024",
+  "name": "Angola",
+  "names": [
+   "Angola",
+   "Republic of Angola",
+   "República de Angola"
+  ],
+  "capitals": [
+   "Luanda"
+  ],
+  "capital_names": [
+   "Luanda"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "COG",
+   "COD",
+   "ZMB",
+   "NAM"
+  ],
+  "landlocked": false,
+  "area_km2": 1246700,
+  "latlng": [
+   -12.5,
+   18.5
+  ]
+ },
+ {
+  "id": "AIA",
+  "iso2": "ai",
+  "iso_num": "660",
+  "name": "Anguilla",
+  "names": [
+   "Anguilla"
+  ],
+  "capitals": [
+   "The Valley"
+  ],
+  "capital_names": [
+   "The Valley"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 91,
+  "latlng": [
+   18.25,
+   -63.16666666
+  ]
+ },
+ {
+  "id": "ATG",
+  "iso2": "ag",
+  "iso_num": "028",
+  "name": "Antigua and Barbuda",
+  "names": [
+   "Antigua and Barbuda",
+   "Antigua"
+  ],
+  "capitals": [
+   "Saint John's"
+  ],
+  "capital_names": [
+   "Saint John's"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 442,
+  "latlng": [
+   17.05,
+   -61.8
+  ]
+ },
+ {
+  "id": "ARG",
+  "iso2": "ar",
+  "iso_num": "032",
+  "name": "Argentina",
+  "names": [
+   "Argentina",
+   "Argentine Republic",
+   "República Argentina"
+  ],
+  "capitals": [
+   "Buenos Aires"
+  ],
+  "capital_names": [
+   "Buenos Aires"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BOL",
+   "BRA",
+   "CHL",
+   "PRY",
+   "URY"
+  ],
+  "landlocked": false,
+  "area_km2": 2780400,
+  "latlng": [
+   -34,
+   -64
+  ]
+ },
+ {
+  "id": "ARM",
+  "iso2": "am",
+  "iso_num": "051",
+  "name": "Armenia",
+  "names": [
+   "Armenia",
+   "Republic of Armenia",
+   "Hayastan"
+  ],
+  "capitals": [
+   "Yerevan"
+  ],
+  "capital_names": [
+   "Yerevan"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "AZE",
+   "GEO",
+   "IRN",
+   "TUR"
+  ],
+  "landlocked": true,
+  "area_km2": 29743,
+  "latlng": [
+   40,
+   45
+  ]
+ },
+ {
+  "id": "ABW",
+  "iso2": "aw",
+  "iso_num": "533",
+  "name": "Aruba",
+  "names": [
+   "Aruba"
+  ],
+  "capitals": [
+   "Oranjestad"
+  ],
+  "capital_names": [
+   "Oranjestad"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 180,
+  "latlng": [
+   12.5,
+   -69.96666666
+  ]
+ },
+ {
+  "id": "AUS",
+  "iso2": "au",
+  "iso_num": "036",
+  "name": "Australia",
+  "names": [
+   "Australia",
+   "Commonwealth of Australia"
+  ],
+  "capitals": [
+   "Canberra"
+  ],
+  "capital_names": [
+   "Canberra"
+  ],
+  "continent": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 7692024,
+  "latlng": [
+   -27,
+   133
+  ]
+ },
+ {
+  "id": "AUT",
+  "iso2": "at",
+  "iso_num": "040",
+  "name": "Austria",
+  "names": [
+   "Austria",
+   "Republic of Austria",
+   "Osterreich",
+   "Oesterreich"
+  ],
+  "capitals": [
+   "Vienna"
+  ],
+  "capital_names": [
+   "Vienna"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "CZE",
+   "DEU",
+   "HUN",
+   "ITA",
+   "LIE",
+   "SVK",
+   "SVN",
+   "CHE"
+  ],
+  "landlocked": true,
+  "area_km2": 83871,
+  "latlng": [
+   47.33333333,
+   13.33333333
+  ]
+ },
+ {
+  "id": "AZE",
+  "iso2": "az",
+  "iso_num": "031",
+  "name": "Azerbaijan",
+  "names": [
+   "Azerbaijan",
+   "Republic of Azerbaijan"
+  ],
+  "capitals": [
+   "Baku"
+  ],
+  "capital_names": [
+   "Baku"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "ARM",
+   "GEO",
+   "IRN",
+   "RUS",
+   "TUR"
+  ],
+  "landlocked": true,
+  "area_km2": 86600,
+  "latlng": [
+   40.5,
+   47.5
+  ]
+ },
+ {
+  "id": "BHS",
+  "iso2": "bs",
+  "iso_num": "044",
+  "name": "Bahamas",
+  "names": [
+   "Bahamas",
+   "Commonwealth of the Bahamas"
+  ],
+  "capitals": [
+   "Nassau"
+  ],
+  "capital_names": [
+   "Nassau"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 13943,
+  "latlng": [
+   24.25,
+   -76
+  ]
+ },
+ {
+  "id": "BHR",
+  "iso2": "bh",
+  "iso_num": "048",
+  "name": "Bahrain",
+  "names": [
+   "Bahrain",
+   "Kingdom of Bahrain",
+   "Mamlakat al-Baḥrayn"
+  ],
+  "capitals": [
+   "Manama"
+  ],
+  "capital_names": [
+   "Manama"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 765,
+  "latlng": [
+   26,
+   50.55
+  ]
+ },
+ {
+  "id": "BGD",
+  "iso2": "bd",
+  "iso_num": "050",
+  "name": "Bangladesh",
+  "names": [
+   "Bangladesh",
+   "People's Republic of Bangladesh",
+   "Gônôprôjatôntri Bangladesh"
+  ],
+  "capitals": [
+   "Dhaka"
+  ],
+  "capital_names": [
+   "Dhaka"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "MMR",
+   "IND"
+  ],
+  "landlocked": false,
+  "area_km2": 147570,
+  "latlng": [
+   24,
+   90
+  ]
+ },
+ {
+  "id": "BRB",
+  "iso2": "bb",
+  "iso_num": "052",
+  "name": "Barbados",
+  "names": [
+   "Barbados"
+  ],
+  "capitals": [
+   "Bridgetown"
+  ],
+  "capital_names": [
+   "Bridgetown"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 430,
+  "latlng": [
+   13.16666666,
+   -59.53333333
+  ]
+ },
+ {
+  "id": "BLR",
+  "iso2": "by",
+  "iso_num": "112",
+  "name": "Belarus",
+  "names": [
+   "Belarus",
+   "Republic of Belarus",
+   "Bielaruś"
+  ],
+  "capitals": [
+   "Minsk"
+  ],
+  "capital_names": [
+   "Minsk"
+  ],
+  "continent": "Europe",
+  "subregion": "Eastern Europe",
+  "type": "sovereign",
+  "borders": [
+   "LVA",
+   "LTU",
+   "POL",
+   "RUS",
+   "UKR"
+  ],
+  "landlocked": true,
+  "area_km2": 207600,
+  "latlng": [
+   53,
+   28
+  ]
+ },
+ {
+  "id": "BEL",
+  "iso2": "be",
+  "iso_num": "056",
+  "name": "Belgium",
+  "names": [
+   "Belgium",
+   "Kingdom of Belgium",
+   "België",
+   "Belgien",
+   "Belgique",
+   "Koninkrijk België",
+   "Royaume de Belgique",
+   "Königreich Belgien"
+  ],
+  "capitals": [
+   "Brussels"
+  ],
+  "capital_names": [
+   "Brussels"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "FRA",
+   "DEU",
+   "LUX",
+   "NLD"
+  ],
+  "landlocked": false,
+  "area_km2": 30528,
+  "latlng": [
+   50.83333333,
+   4
+  ]
+ },
+ {
+  "id": "BLZ",
+  "iso2": "bz",
+  "iso_num": "084",
+  "name": "Belize",
+  "names": [
+   "Belize"
+  ],
+  "capitals": [
+   "Belmopan"
+  ],
+  "capital_names": [
+   "Belmopan"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "GTM",
+   "MEX"
+  ],
+  "landlocked": false,
+  "area_km2": 22966,
+  "latlng": [
+   17.25,
+   -88.75
+  ]
+ },
+ {
+  "id": "BEN",
+  "iso2": "bj",
+  "iso_num": "204",
+  "name": "Benin",
+  "names": [
+   "Benin",
+   "Republic of Benin",
+   "République du Bénin"
+  ],
+  "capitals": [
+   "Porto-Novo"
+  ],
+  "capital_names": [
+   "Porto-Novo",
+   "Cotonou"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BFA",
+   "NER",
+   "NGA",
+   "TGO"
+  ],
+  "landlocked": false,
+  "area_km2": 112622,
+  "latlng": [
+   9.5,
+   2.25
+  ]
+ },
+ {
+  "id": "BMU",
+  "iso2": "bm",
+  "iso_num": "060",
+  "name": "Bermuda",
+  "names": [
+   "Bermuda",
+   "The Islands of Bermuda",
+   "The Bermudas",
+   "Somers Isles"
+  ],
+  "capitals": [
+   "Hamilton"
+  ],
+  "capital_names": [
+   "Hamilton"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 54,
+  "latlng": [
+   32.33333333,
+   -64.75
+  ]
+ },
+ {
+  "id": "BTN",
+  "iso2": "bt",
+  "iso_num": "064",
+  "name": "Bhutan",
+  "names": [
+   "Bhutan",
+   "Kingdom of Bhutan"
+  ],
+  "capitals": [
+   "Thimphu"
+  ],
+  "capital_names": [
+   "Thimphu"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "IND"
+  ],
+  "landlocked": true,
+  "area_km2": 38394,
+  "latlng": [
+   27.5,
+   90.5
+  ]
+ },
+ {
+  "id": "BOL",
+  "iso2": "bo",
+  "iso_num": "068",
+  "name": "Bolivia",
+  "names": [
+   "Bolivia",
+   "Plurinational State of Bolivia",
+   "Buliwya",
+   "Wuliwya",
+   "Estado Plurinacional de Bolivia",
+   "Buliwya Mamallaqta",
+   "Wuliwya Suyu",
+   "Tetã Volívia"
+  ],
+  "capitals": [
+   "Sucre"
+  ],
+  "capital_names": [
+   "Sucre",
+   "La Paz"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "ARG",
+   "BRA",
+   "CHL",
+   "PRY",
+   "PER"
+  ],
+  "landlocked": true,
+  "area_km2": 1098581,
+  "latlng": [
+   -17,
+   -65
+  ]
+ },
+ {
+  "id": "BIH",
+  "iso2": "ba",
+  "iso_num": "070",
+  "name": "Bosnia and Herzegovina",
+  "names": [
+   "Bosnia and Herzegovina",
+   "Bosnia-Herzegovina",
+   "Bosnia"
+  ],
+  "capitals": [
+   "Sarajevo"
+  ],
+  "capital_names": [
+   "Sarajevo"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "HRV",
+   "MNE",
+   "SRB"
+  ],
+  "landlocked": false,
+  "area_km2": 51209,
+  "latlng": [
+   44,
+   18
+  ]
+ },
+ {
+  "id": "BWA",
+  "iso2": "bw",
+  "iso_num": "072",
+  "name": "Botswana",
+  "names": [
+   "Botswana",
+   "Republic of Botswana",
+   "Lefatshe la Botswana"
+  ],
+  "capitals": [
+   "Gaborone"
+  ],
+  "capital_names": [
+   "Gaborone"
+  ],
+  "continent": "Africa",
+  "subregion": "Southern Africa",
+  "type": "sovereign",
+  "borders": [
+   "NAM",
+   "ZAF",
+   "ZMB",
+   "ZWE"
+  ],
+  "landlocked": true,
+  "area_km2": 582000,
+  "latlng": [
+   -22,
+   24
+  ]
+ },
+ {
+  "id": "BRA",
+  "iso2": "br",
+  "iso_num": "076",
+  "name": "Brazil",
+  "names": [
+   "Brazil",
+   "Federative Republic of Brazil",
+   "Brasil",
+   "República Federativa do Brasil"
+  ],
+  "capitals": [
+   "Brasília"
+  ],
+  "capital_names": [
+   "Brasília"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "ARG",
+   "BOL",
+   "COL",
+   "GUF",
+   "GUY",
+   "PRY",
+   "PER",
+   "SUR",
+   "URY",
+   "VEN"
+  ],
+  "landlocked": false,
+  "area_km2": 8515767,
+  "latlng": [
+   -10,
+   -55
+  ]
+ },
+ {
+  "id": "VGB",
+  "iso2": "vg",
+  "iso_num": "092",
+  "name": "British Virgin Islands",
+  "names": [
+   "British Virgin Islands",
+   "Virgin Islands"
+  ],
+  "capitals": [
+   "Road Town"
+  ],
+  "capital_names": [
+   "Road Town"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 151,
+  "latlng": [
+   18.431383,
+   -64.62305
+  ]
+ },
+ {
+  "id": "BRN",
+  "iso2": "bn",
+  "iso_num": "096",
+  "name": "Brunei",
+  "names": [
+   "Brunei",
+   "Brunei Darussalam",
+   "Nation of Brunei",
+   "the Abode of Peace"
+  ],
+  "capitals": [
+   "Bandar Seri Begawan"
+  ],
+  "capital_names": [
+   "Bandar Seri Begawan"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "MYS"
+  ],
+  "landlocked": false,
+  "area_km2": 5765,
+  "latlng": [
+   4.5,
+   114.66666666
+  ]
+ },
+ {
+  "id": "BGR",
+  "iso2": "bg",
+  "iso_num": "100",
+  "name": "Bulgaria",
+  "names": [
+   "Bulgaria",
+   "Republic of Bulgaria"
+  ],
+  "capitals": [
+   "Sofia"
+  ],
+  "capital_names": [
+   "Sofia"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "GRC",
+   "MKD",
+   "ROU",
+   "SRB",
+   "TUR"
+  ],
+  "landlocked": false,
+  "area_km2": 110879,
+  "latlng": [
+   43,
+   25
+  ]
+ },
+ {
+  "id": "BFA",
+  "iso2": "bf",
+  "iso_num": "854",
+  "name": "Burkina Faso",
+  "names": [
+   "Burkina Faso"
+  ],
+  "capitals": [
+   "Ouagadougou"
+  ],
+  "capital_names": [
+   "Ouagadougou"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BEN",
+   "CIV",
+   "GHA",
+   "MLI",
+   "NER",
+   "TGO"
+  ],
+  "landlocked": true,
+  "area_km2": 272967,
+  "latlng": [
+   13,
+   -2
+  ]
+ },
+ {
+  "id": "BDI",
+  "iso2": "bi",
+  "iso_num": "108",
+  "name": "Burundi",
+  "names": [
+   "Burundi",
+   "Republic of Burundi",
+   "Republika y'Uburundi",
+   "République du Burundi"
+  ],
+  "capitals": [
+   "Gitega"
+  ],
+  "capital_names": [
+   "Gitega"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "COD",
+   "RWA",
+   "TZA"
+  ],
+  "landlocked": true,
+  "area_km2": 27834,
+  "latlng": [
+   -3.5,
+   30
+  ]
+ },
+ {
+  "id": "KHM",
+  "iso2": "kh",
+  "iso_num": "116",
+  "name": "Cambodia",
+  "names": [
+   "Cambodia",
+   "Kingdom of Cambodia"
+  ],
+  "capitals": [
+   "Phnom Penh"
+  ],
+  "capital_names": [
+   "Phnom Penh"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "LAO",
+   "THA",
+   "VNM"
+  ],
+  "landlocked": false,
+  "area_km2": 181035,
+  "latlng": [
+   13,
+   105
+  ]
+ },
+ {
+  "id": "CMR",
+  "iso2": "cm",
+  "iso_num": "120",
+  "name": "Cameroon",
+  "names": [
+   "Cameroon",
+   "Republic of Cameroon",
+   "République du Cameroun"
+  ],
+  "capitals": [
+   "Yaoundé"
+  ],
+  "capital_names": [
+   "Yaoundé"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CAF",
+   "TCD",
+   "COG",
+   "GNQ",
+   "GAB",
+   "NGA"
+  ],
+  "landlocked": false,
+  "area_km2": 475442,
+  "latlng": [
+   6,
+   12
+  ]
+ },
+ {
+  "id": "CAN",
+  "iso2": "ca",
+  "iso_num": "124",
+  "name": "Canada",
+  "names": [
+   "Canada"
+  ],
+  "capitals": [
+   "Ottawa"
+  ],
+  "capital_names": [
+   "Ottawa"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "sovereign",
+  "borders": [
+   "USA"
+  ],
+  "landlocked": false,
+  "area_km2": 9984670,
+  "latlng": [
+   60,
+   -95
+  ]
+ },
+ {
+  "id": "CPV",
+  "iso2": "cv",
+  "iso_num": "132",
+  "name": "Cape Verde",
+  "names": [
+   "Cape Verde",
+   "Republic of Cabo Verde",
+   "República de Cabo Verde",
+   "Cabo Verde"
+  ],
+  "capitals": [
+   "Praia"
+  ],
+  "capital_names": [
+   "Praia"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 4033,
+  "latlng": [
+   16,
+   -24
+  ]
+ },
+ {
+  "id": "CYM",
+  "iso2": "ky",
+  "iso_num": "136",
+  "name": "Cayman Islands",
+  "names": [
+   "Cayman Islands"
+  ],
+  "capitals": [
+   "George Town"
+  ],
+  "capital_names": [
+   "George Town"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 264,
+  "latlng": [
+   19.5,
+   -80.5
+  ]
+ },
+ {
+  "id": "CAF",
+  "iso2": "cf",
+  "iso_num": "140",
+  "name": "Central African Republic",
+  "names": [
+   "Central African Republic",
+   "République centrafricaine",
+   "CAR"
+  ],
+  "capitals": [
+   "Bangui"
+  ],
+  "capital_names": [
+   "Bangui"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CMR",
+   "TCD",
+   "COD",
+   "COG",
+   "SSD",
+   "SDN"
+  ],
+  "landlocked": true,
+  "area_km2": 622984,
+  "latlng": [
+   7,
+   21
+  ]
+ },
+ {
+  "id": "TCD",
+  "iso2": "td",
+  "iso_num": "148",
+  "name": "Chad",
+  "names": [
+   "Chad",
+   "Republic of Chad",
+   "Tchad",
+   "République du Tchad"
+  ],
+  "capitals": [
+   "N'Djamena"
+  ],
+  "capital_names": [
+   "N'Djamena"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CMR",
+   "CAF",
+   "LBY",
+   "NER",
+   "NGA",
+   "SDN"
+  ],
+  "landlocked": true,
+  "area_km2": 1284000,
+  "latlng": [
+   15,
+   19
+  ]
+ },
+ {
+  "id": "CHL",
+  "iso2": "cl",
+  "iso_num": "152",
+  "name": "Chile",
+  "names": [
+   "Chile",
+   "Republic of Chile",
+   "República de Chile"
+  ],
+  "capitals": [
+   "Santiago"
+  ],
+  "capital_names": [
+   "Santiago"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "ARG",
+   "BOL",
+   "PER"
+  ],
+  "landlocked": false,
+  "area_km2": 756102,
+  "latlng": [
+   -30,
+   -71
+  ]
+ },
+ {
+  "id": "CHN",
+  "iso2": "cn",
+  "iso_num": "156",
+  "name": "China",
+  "names": [
+   "China",
+   "People's Republic of China",
+   "Zhōngguó",
+   "Zhonghua",
+   "Zhōnghuá Rénmín Gònghéguó"
+  ],
+  "capitals": [
+   "Beijing"
+  ],
+  "capital_names": [
+   "Beijing"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "BTN",
+   "MMR",
+   "HKG",
+   "IND",
+   "KAZ",
+   "NPL",
+   "PRK",
+   "KGZ",
+   "LAO",
+   "MAC",
+   "MNG",
+   "PAK",
+   "RUS",
+   "TJK",
+   "VNM"
+  ],
+  "landlocked": false,
+  "area_km2": 9706961,
+  "latlng": [
+   35,
+   105
+  ]
+ },
+ {
+  "id": "COL",
+  "iso2": "co",
+  "iso_num": "170",
+  "name": "Colombia",
+  "names": [
+   "Colombia",
+   "Republic of Colombia",
+   "República de Colombia"
+  ],
+  "capitals": [
+   "Bogotá"
+  ],
+  "capital_names": [
+   "Bogotá"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BRA",
+   "ECU",
+   "PAN",
+   "PER",
+   "VEN"
+  ],
+  "landlocked": false,
+  "area_km2": 1141748,
+  "latlng": [
+   4,
+   -72
+  ]
+ },
+ {
+  "id": "COM",
+  "iso2": "km",
+  "iso_num": "174",
+  "name": "Comoros",
+  "names": [
+   "Comoros",
+   "Union of the Comoros",
+   "Union des Comores",
+   "Udzima wa Komori",
+   "al-Ittiḥād al-Qumurī"
+  ],
+  "capitals": [
+   "Moroni"
+  ],
+  "capital_names": [
+   "Moroni"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 1862,
+  "latlng": [
+   -12.16666666,
+   44.25
+  ]
+ },
+ {
+  "id": "COK",
+  "iso2": "ck",
+  "iso_num": "184",
+  "name": "Cook Islands",
+  "names": [
+   "Cook Islands",
+   "Kūki 'Āirani"
+  ],
+  "capitals": [
+   "Avarua"
+  ],
+  "capital_names": [
+   "Avarua"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 236,
+  "latlng": [
+   -21.23333333,
+   -159.76666666
+  ]
+ },
+ {
+  "id": "CRI",
+  "iso2": "cr",
+  "iso_num": "188",
+  "name": "Costa Rica",
+  "names": [
+   "Costa Rica",
+   "Republic of Costa Rica",
+   "República de Costa Rica"
+  ],
+  "capitals": [
+   "San José"
+  ],
+  "capital_names": [
+   "San José"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "NIC",
+   "PAN"
+  ],
+  "landlocked": false,
+  "area_km2": 51100,
+  "latlng": [
+   10,
+   -84
+  ]
+ },
+ {
+  "id": "HRV",
+  "iso2": "hr",
+  "iso_num": "191",
+  "name": "Croatia",
+  "names": [
+   "Croatia",
+   "Republic of Croatia",
+   "Hrvatska",
+   "Republika Hrvatska"
+  ],
+  "capitals": [
+   "Zagreb"
+  ],
+  "capital_names": [
+   "Zagreb"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "BIH",
+   "HUN",
+   "MNE",
+   "SRB",
+   "SVN"
+  ],
+  "landlocked": false,
+  "area_km2": 56594,
+  "latlng": [
+   45.16666666,
+   15.5
+  ]
+ },
+ {
+  "id": "CUB",
+  "iso2": "cu",
+  "iso_num": "192",
+  "name": "Cuba",
+  "names": [
+   "Cuba",
+   "Republic of Cuba",
+   "República de Cuba"
+  ],
+  "capitals": [
+   "Havana"
+  ],
+  "capital_names": [
+   "Havana"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 109884,
+  "latlng": [
+   21.5,
+   -80
+  ]
+ },
+ {
+  "id": "CUW",
+  "iso2": "cw",
+  "iso_num": "531",
+  "name": "Curaçao",
+  "names": [
+   "Curaçao",
+   "Country of Curaçao",
+   "Kòrsou",
+   "Land Curaçao",
+   "Pais Kòrsou"
+  ],
+  "capitals": [
+   "Willemstad"
+  ],
+  "capital_names": [
+   "Willemstad"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 444,
+  "latlng": [
+   12.116667,
+   -68.933333
+  ]
+ },
+ {
+  "id": "CYP",
+  "iso2": "cy",
+  "iso_num": "196",
+  "name": "Cyprus",
+  "names": [
+   "Cyprus",
+   "Republic of Cyprus",
+   "Kýpros"
+  ],
+  "capitals": [
+   "Nicosia"
+  ],
+  "capital_names": [
+   "Nicosia"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 9251,
+  "latlng": [
+   35,
+   33
+  ]
+ },
+ {
+  "id": "CZE",
+  "iso2": "cz",
+  "iso_num": "203",
+  "name": "Czechia",
+  "names": [
+   "Czechia",
+   "Czech Republic",
+   "Česká republika",
+   "Česko"
+  ],
+  "capitals": [
+   "Prague"
+  ],
+  "capital_names": [
+   "Prague"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "DEU",
+   "POL",
+   "SVK"
+  ],
+  "landlocked": true,
+  "area_km2": 78865,
+  "latlng": [
+   49.75,
+   15.5
+  ]
+ },
+ {
+  "id": "COD",
+  "iso2": "cd",
+  "iso_num": "180",
+  "name": "DR Congo",
+  "names": [
+   "DR Congo",
+   "Democratic Republic of the Congo",
+   "Congo-Kinshasa",
+   "Democratic Republic of Congo",
+   "DRC"
+  ],
+  "capitals": [
+   "Kinshasa"
+  ],
+  "capital_names": [
+   "Kinshasa"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "AGO",
+   "BDI",
+   "CAF",
+   "COG",
+   "RWA",
+   "SSD",
+   "TZA",
+   "UGA",
+   "ZMB"
+  ],
+  "landlocked": false,
+  "area_km2": 2344858,
+  "latlng": [
+   0,
+   25
+  ]
+ },
+ {
+  "id": "DNK",
+  "iso2": "dk",
+  "iso_num": "208",
+  "name": "Denmark",
+  "names": [
+   "Denmark",
+   "Kingdom of Denmark",
+   "Danmark",
+   "Kongeriget Danmark"
+  ],
+  "capitals": [
+   "Copenhagen"
+  ],
+  "capital_names": [
+   "Copenhagen"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "DEU"
+  ],
+  "landlocked": false,
+  "area_km2": 43094,
+  "latlng": [
+   56,
+   10
+  ]
+ },
+ {
+  "id": "DJI",
+  "iso2": "dj",
+  "iso_num": "262",
+  "name": "Djibouti",
+  "names": [
+   "Djibouti",
+   "Republic of Djibouti",
+   "Jabuuti",
+   "Gabuuti",
+   "République de Djibouti",
+   "Gabuutih Ummuuno",
+   "Jamhuuriyadda Jabuuti"
+  ],
+  "capitals": [
+   "Djibouti"
+  ],
+  "capital_names": [
+   "Djibouti",
+   "Djibouti City"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "ERI",
+   "ETH",
+   "SOM"
+  ],
+  "landlocked": false,
+  "area_km2": 23200,
+  "latlng": [
+   11.5,
+   43
+  ]
+ },
+ {
+  "id": "DMA",
+  "iso2": "dm",
+  "iso_num": "212",
+  "name": "Dominica",
+  "names": [
+   "Dominica",
+   "Commonwealth of Dominica",
+   "Dominique"
+  ],
+  "capitals": [
+   "Roseau"
+  ],
+  "capital_names": [
+   "Roseau"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 751,
+  "latlng": [
+   15.41666666,
+   -61.33333333
+  ]
+ },
+ {
+  "id": "DOM",
+  "iso2": "do",
+  "iso_num": "214",
+  "name": "Dominican Republic",
+  "names": [
+   "Dominican Republic"
+  ],
+  "capitals": [
+   "Santo Domingo"
+  ],
+  "capital_names": [
+   "Santo Domingo"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [
+   "HTI"
+  ],
+  "landlocked": false,
+  "area_km2": 48671,
+  "latlng": [
+   19,
+   -70.66666666
+  ]
+ },
+ {
+  "id": "ECU",
+  "iso2": "ec",
+  "iso_num": "218",
+  "name": "Ecuador",
+  "names": [
+   "Ecuador",
+   "Republic of Ecuador",
+   "República del Ecuador"
+  ],
+  "capitals": [
+   "Quito"
+  ],
+  "capital_names": [
+   "Quito"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "COL",
+   "PER"
+  ],
+  "landlocked": false,
+  "area_km2": 276841,
+  "latlng": [
+   -2,
+   -77.5
+  ]
+ },
+ {
+  "id": "EGY",
+  "iso2": "eg",
+  "iso_num": "818",
+  "name": "Egypt",
+  "names": [
+   "Egypt",
+   "Arab Republic of Egypt"
+  ],
+  "capitals": [
+   "Cairo"
+  ],
+  "capital_names": [
+   "Cairo"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "ISR",
+   "LBY",
+   "PSE",
+   "SDN"
+  ],
+  "landlocked": false,
+  "area_km2": 1002450,
+  "latlng": [
+   27,
+   30
+  ]
+ },
+ {
+  "id": "SLV",
+  "iso2": "sv",
+  "iso_num": "222",
+  "name": "El Salvador",
+  "names": [
+   "El Salvador",
+   "Republic of El Salvador",
+   "República de El Salvador"
+  ],
+  "capitals": [
+   "San Salvador"
+  ],
+  "capital_names": [
+   "San Salvador"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "GTM",
+   "HND"
+  ],
+  "landlocked": false,
+  "area_km2": 21041,
+  "latlng": [
+   13.83333333,
+   -88.91666666
+  ]
+ },
+ {
+  "id": "GNQ",
+  "iso2": "gq",
+  "iso_num": "226",
+  "name": "Equatorial Guinea",
+  "names": [
+   "Equatorial Guinea",
+   "Republic of Equatorial Guinea",
+   "República de Guinea Ecuatorial",
+   "République de Guinée équatoriale",
+   "República da Guiné Equatorial"
+  ],
+  "capitals": [
+   "Malabo"
+  ],
+  "capital_names": [
+   "Malabo"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CMR",
+   "GAB"
+  ],
+  "landlocked": false,
+  "area_km2": 28051,
+  "latlng": [
+   2,
+   10
+  ]
+ },
+ {
+  "id": "ERI",
+  "iso2": "er",
+  "iso_num": "232",
+  "name": "Eritrea",
+  "names": [
+   "Eritrea",
+   "State of Eritrea",
+   "Dawlat Iritriyá",
+   "Iritriyā"
+  ],
+  "capitals": [
+   "Asmara"
+  ],
+  "capital_names": [
+   "Asmara"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DJI",
+   "ETH",
+   "SDN"
+  ],
+  "landlocked": false,
+  "area_km2": 117600,
+  "latlng": [
+   15,
+   39
+  ]
+ },
+ {
+  "id": "EST",
+  "iso2": "ee",
+  "iso_num": "233",
+  "name": "Estonia",
+  "names": [
+   "Estonia",
+   "Republic of Estonia",
+   "Eesti",
+   "Eesti Vabariik"
+  ],
+  "capitals": [
+   "Tallinn"
+  ],
+  "capital_names": [
+   "Tallinn"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "LVA",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 45227,
+  "latlng": [
+   59,
+   26
+  ]
+ },
+ {
+  "id": "SWZ",
+  "iso2": "sz",
+  "iso_num": "748",
+  "name": "Eswatini",
+  "names": [
+   "Eswatini",
+   "Kingdom of Eswatini",
+   "Swaziland",
+   "weSwatini",
+   "Swatini",
+   "Ngwane",
+   "Umbuso weSwatini"
+  ],
+  "capitals": [
+   "Lobamba"
+  ],
+  "capital_names": [
+   "Lobamba",
+   "Mbabane"
+  ],
+  "continent": "Africa",
+  "subregion": "Southern Africa",
+  "type": "sovereign",
+  "borders": [
+   "MOZ",
+   "ZAF"
+  ],
+  "landlocked": true,
+  "area_km2": 17364,
+  "latlng": [
+   -26.5,
+   31.5
+  ]
+ },
+ {
+  "id": "ETH",
+  "iso2": "et",
+  "iso_num": "231",
+  "name": "Ethiopia",
+  "names": [
+   "Ethiopia",
+   "Federal Democratic Republic of Ethiopia"
+  ],
+  "capitals": [
+   "Addis Ababa"
+  ],
+  "capital_names": [
+   "Addis Ababa"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DJI",
+   "ERI",
+   "KEN",
+   "SOM",
+   "SSD",
+   "SDN"
+  ],
+  "landlocked": true,
+  "area_km2": 1104300,
+  "latlng": [
+   8,
+   38
+  ]
+ },
+ {
+  "id": "FLK",
+  "iso2": "fk",
+  "iso_num": "238",
+  "name": "Falkland Islands",
+  "names": [
+   "Falkland Islands",
+   "Islas Malvinas",
+   "Falkland Islands (Malvinas)"
+  ],
+  "capitals": [
+   "Stanley"
+  ],
+  "capital_names": [
+   "Stanley"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 12173,
+  "latlng": [
+   -51.75,
+   -59
+  ]
+ },
+ {
+  "id": "FRO",
+  "iso2": "fo",
+  "iso_num": "234",
+  "name": "Faroe Islands",
+  "names": [
+   "Faroe Islands",
+   "Faeroe Islands"
+  ],
+  "capitals": [
+   "Tórshavn"
+  ],
+  "capital_names": [
+   "Tórshavn"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 1393,
+  "latlng": [
+   62,
+   -7
+  ]
+ },
+ {
+  "id": "FJI",
+  "iso2": "fj",
+  "iso_num": "242",
+  "name": "Fiji",
+  "names": [
+   "Fiji",
+   "Republic of Fiji",
+   "Viti",
+   "Matanitu ko Viti",
+   "Fijī Gaṇarājya"
+  ],
+  "capitals": [
+   "Suva"
+  ],
+  "capital_names": [
+   "Suva"
+  ],
+  "continent": "Oceania",
+  "subregion": "Melanesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 18272,
+  "latlng": [
+   -18,
+   175
+  ]
+ },
+ {
+  "id": "FIN",
+  "iso2": "fi",
+  "iso_num": "246",
+  "name": "Finland",
+  "names": [
+   "Finland",
+   "Republic of Finland",
+   "Suomi",
+   "Suomen tasavalta",
+   "Republiken Finland"
+  ],
+  "capitals": [
+   "Helsinki"
+  ],
+  "capital_names": [
+   "Helsinki"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "NOR",
+   "SWE",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 338424,
+  "latlng": [
+   64,
+   26
+  ]
+ },
+ {
+  "id": "FRA",
+  "iso2": "fr",
+  "iso_num": "250",
+  "name": "France",
+  "names": [
+   "France",
+   "French Republic",
+   "République française"
+  ],
+  "capitals": [
+   "Paris"
+  ],
+  "capital_names": [
+   "Paris"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "AND",
+   "BEL",
+   "DEU",
+   "ITA",
+   "LUX",
+   "MCO",
+   "ESP",
+   "CHE"
+  ],
+  "landlocked": false,
+  "area_km2": 551695,
+  "latlng": [
+   46,
+   2
+  ]
+ },
+ {
+  "id": "PYF",
+  "iso2": "pf",
+  "iso_num": "258",
+  "name": "French Polynesia",
+  "names": [
+   "French Polynesia",
+   "Polynésie française",
+   "Pōrīnetia Farāni"
+  ],
+  "capitals": [
+   "Papeetē"
+  ],
+  "capital_names": [
+   "Papeetē"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 4167,
+  "latlng": [
+   -15,
+   -140
+  ]
+ },
+ {
+  "id": "GAB",
+  "iso2": "ga",
+  "iso_num": "266",
+  "name": "Gabon",
+  "names": [
+   "Gabon",
+   "Gabonese Republic",
+   "République Gabonaise"
+  ],
+  "capitals": [
+   "Libreville"
+  ],
+  "capital_names": [
+   "Libreville"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CMR",
+   "COG",
+   "GNQ"
+  ],
+  "landlocked": false,
+  "area_km2": 267668,
+  "latlng": [
+   -1,
+   11.75
+  ]
+ },
+ {
+  "id": "GMB",
+  "iso2": "gm",
+  "iso_num": "270",
+  "name": "Gambia",
+  "names": [
+   "Gambia",
+   "Republic of the Gambia"
+  ],
+  "capitals": [
+   "Banjul"
+  ],
+  "capital_names": [
+   "Banjul"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "SEN"
+  ],
+  "landlocked": false,
+  "area_km2": 10689,
+  "latlng": [
+   13.46666666,
+   -16.56666666
+  ]
+ },
+ {
+  "id": "GEO",
+  "iso2": "ge",
+  "iso_num": "268",
+  "name": "Georgia",
+  "names": [
+   "Georgia",
+   "Sakartvelo"
+  ],
+  "capitals": [
+   "Tbilisi"
+  ],
+  "capital_names": [
+   "Tbilisi"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "ARM",
+   "AZE",
+   "RUS",
+   "TUR"
+  ],
+  "landlocked": false,
+  "area_km2": 69700,
+  "latlng": [
+   42,
+   43.5
+  ]
+ },
+ {
+  "id": "DEU",
+  "iso2": "de",
+  "iso_num": "276",
+  "name": "Germany",
+  "names": [
+   "Germany",
+   "Federal Republic of Germany",
+   "Bundesrepublik Deutschland"
+  ],
+  "capitals": [
+   "Berlin"
+  ],
+  "capital_names": [
+   "Berlin"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "BEL",
+   "CZE",
+   "DNK",
+   "FRA",
+   "LUX",
+   "NLD",
+   "POL",
+   "CHE"
+  ],
+  "landlocked": false,
+  "area_km2": 357114,
+  "latlng": [
+   51,
+   9
+  ]
+ },
+ {
+  "id": "GHA",
+  "iso2": "gh",
+  "iso_num": "288",
+  "name": "Ghana",
+  "names": [
+   "Ghana",
+   "Republic of Ghana"
+  ],
+  "capitals": [
+   "Accra"
+  ],
+  "capital_names": [
+   "Accra"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BFA",
+   "CIV",
+   "TGO"
+  ],
+  "landlocked": false,
+  "area_km2": 238533,
+  "latlng": [
+   8,
+   -2
+  ]
+ },
+ {
+  "id": "GIB",
+  "iso2": "gi",
+  "iso_num": "292",
+  "name": "Gibraltar",
+  "names": [
+   "Gibraltar"
+  ],
+  "capitals": [
+   "Gibraltar"
+  ],
+  "capital_names": [
+   "Gibraltar"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "territory",
+  "borders": [
+   "ESP"
+  ],
+  "landlocked": false,
+  "area_km2": 6,
+  "latlng": [
+   36.13333333,
+   -5.35
+  ]
+ },
+ {
+  "id": "GRC",
+  "iso2": "gr",
+  "iso_num": "300",
+  "name": "Greece",
+  "names": [
+   "Greece",
+   "Hellenic Republic",
+   "Elláda"
+  ],
+  "capitals": [
+   "Athens"
+  ],
+  "capital_names": [
+   "Athens"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "ALB",
+   "BGR",
+   "TUR",
+   "MKD"
+  ],
+  "landlocked": false,
+  "area_km2": 131990,
+  "latlng": [
+   39,
+   22
+  ]
+ },
+ {
+  "id": "GRL",
+  "iso2": "gl",
+  "iso_num": "304",
+  "name": "Greenland",
+  "names": [
+   "Greenland"
+  ],
+  "capitals": [
+   "Nuuk"
+  ],
+  "capital_names": [
+   "Nuuk"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 2166086,
+  "latlng": [
+   72,
+   -40
+  ]
+ },
+ {
+  "id": "GRD",
+  "iso2": "gd",
+  "iso_num": "308",
+  "name": "Grenada",
+  "names": [
+   "Grenada"
+  ],
+  "capitals": [
+   "St. George's"
+  ],
+  "capital_names": [
+   "St. George's"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 344,
+  "latlng": [
+   12.11666666,
+   -61.66666666
+  ]
+ },
+ {
+  "id": "GUM",
+  "iso2": "gu",
+  "iso_num": "316",
+  "name": "Guam",
+  "names": [
+   "Guam",
+   "Guåhån"
+  ],
+  "capitals": [
+   "Hagåtña"
+  ],
+  "capital_names": [
+   "Hagåtña"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 549,
+  "latlng": [
+   13.46666666,
+   144.78333333
+  ]
+ },
+ {
+  "id": "GTM",
+  "iso2": "gt",
+  "iso_num": "320",
+  "name": "Guatemala",
+  "names": [
+   "Guatemala",
+   "Republic of Guatemala"
+  ],
+  "capitals": [
+   "Guatemala City"
+  ],
+  "capital_names": [
+   "Guatemala City",
+   "Guatemala"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "BLZ",
+   "SLV",
+   "HND",
+   "MEX"
+  ],
+  "landlocked": false,
+  "area_km2": 108889,
+  "latlng": [
+   15.5,
+   -90.25
+  ]
+ },
+ {
+  "id": "GGY",
+  "iso2": "gg",
+  "iso_num": "831",
+  "name": "Guernsey",
+  "names": [
+   "Guernsey",
+   "Bailiwick of Guernsey",
+   "Bailliage de Guernesey"
+  ],
+  "capitals": [
+   "St. Peter Port"
+  ],
+  "capital_names": [
+   "St. Peter Port"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 78,
+  "latlng": [
+   49.46666666,
+   -2.58333333
+  ]
+ },
+ {
+  "id": "GIN",
+  "iso2": "gn",
+  "iso_num": "324",
+  "name": "Guinea",
+  "names": [
+   "Guinea",
+   "Republic of Guinea",
+   "République de Guinée"
+  ],
+  "capitals": [
+   "Conakry"
+  ],
+  "capital_names": [
+   "Conakry"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "CIV",
+   "GNB",
+   "LBR",
+   "MLI",
+   "SEN",
+   "SLE"
+  ],
+  "landlocked": false,
+  "area_km2": 245857,
+  "latlng": [
+   11,
+   -10
+  ]
+ },
+ {
+  "id": "GNB",
+  "iso2": "gw",
+  "iso_num": "624",
+  "name": "Guinea-Bissau",
+  "names": [
+   "Guinea-Bissau",
+   "Republic of Guinea-Bissau",
+   "República da Guiné-Bissau"
+  ],
+  "capitals": [
+   "Bissau"
+  ],
+  "capital_names": [
+   "Bissau"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "GIN",
+   "SEN"
+  ],
+  "landlocked": false,
+  "area_km2": 36125,
+  "latlng": [
+   12,
+   -15
+  ]
+ },
+ {
+  "id": "GUY",
+  "iso2": "gy",
+  "iso_num": "328",
+  "name": "Guyana",
+  "names": [
+   "Guyana",
+   "Co-operative Republic of Guyana"
+  ],
+  "capitals": [
+   "Georgetown"
+  ],
+  "capital_names": [
+   "Georgetown"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BRA",
+   "SUR",
+   "VEN"
+  ],
+  "landlocked": false,
+  "area_km2": 214969,
+  "latlng": [
+   5,
+   -59
+  ]
+ },
+ {
+  "id": "HTI",
+  "iso2": "ht",
+  "iso_num": "332",
+  "name": "Haiti",
+  "names": [
+   "Haiti",
+   "Republic of Haiti",
+   "République d'Haïti",
+   "Repiblik Ayiti"
+  ],
+  "capitals": [
+   "Port-au-Prince"
+  ],
+  "capital_names": [
+   "Port-au-Prince"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [
+   "DOM"
+  ],
+  "landlocked": false,
+  "area_km2": 27750,
+  "latlng": [
+   19,
+   -72.41666666
+  ]
+ },
+ {
+  "id": "HND",
+  "iso2": "hn",
+  "iso_num": "340",
+  "name": "Honduras",
+  "names": [
+   "Honduras",
+   "Republic of Honduras",
+   "República de Honduras"
+  ],
+  "capitals": [
+   "Tegucigalpa"
+  ],
+  "capital_names": [
+   "Tegucigalpa"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "GTM",
+   "SLV",
+   "NIC"
+  ],
+  "landlocked": false,
+  "area_km2": 112492,
+  "latlng": [
+   15,
+   -86.5
+  ]
+ },
+ {
+  "id": "HKG",
+  "iso2": "hk",
+  "iso_num": "344",
+  "name": "Hong Kong",
+  "names": [
+   "Hong Kong",
+   "Hong Kong Special Administrative Region of the People's Republic of China"
+  ],
+  "capitals": [],
+  "capital_names": [],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "territory",
+  "borders": [
+   "CHN"
+  ],
+  "landlocked": false,
+  "area_km2": 1104,
+  "latlng": [
+   22.267,
+   114.188
+  ]
+ },
+ {
+  "id": "HUN",
+  "iso2": "hu",
+  "iso_num": "348",
+  "name": "Hungary",
+  "names": [
+   "Hungary"
+  ],
+  "capitals": [
+   "Budapest"
+  ],
+  "capital_names": [
+   "Budapest"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "HRV",
+   "ROU",
+   "SRB",
+   "SVK",
+   "SVN",
+   "UKR"
+  ],
+  "landlocked": true,
+  "area_km2": 93028,
+  "latlng": [
+   47,
+   20
+  ]
+ },
+ {
+  "id": "ISL",
+  "iso2": "is",
+  "iso_num": "352",
+  "name": "Iceland",
+  "names": [
+   "Iceland",
+   "Island",
+   "Republic of Iceland"
+  ],
+  "capitals": [
+   "Reykjavik"
+  ],
+  "capital_names": [
+   "Reykjavik"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 103000,
+  "latlng": [
+   65,
+   -18
+  ]
+ },
+ {
+  "id": "IND",
+  "iso2": "in",
+  "iso_num": "356",
+  "name": "India",
+  "names": [
+   "India",
+   "Republic of India",
+   "Bhārat",
+   "Bharat Ganrajya"
+  ],
+  "capitals": [
+   "New Delhi"
+  ],
+  "capital_names": [
+   "New Delhi",
+   "Delhi"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "BGD",
+   "BTN",
+   "MMR",
+   "CHN",
+   "NPL",
+   "PAK"
+  ],
+  "landlocked": false,
+  "area_km2": 3287590,
+  "latlng": [
+   20,
+   77
+  ]
+ },
+ {
+  "id": "IDN",
+  "iso2": "id",
+  "iso_num": "360",
+  "name": "Indonesia",
+  "names": [
+   "Indonesia",
+   "Republic of Indonesia",
+   "Republik Indonesia"
+  ],
+  "capitals": [
+   "Jakarta"
+  ],
+  "capital_names": [
+   "Jakarta"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "TLS",
+   "MYS",
+   "PNG"
+  ],
+  "landlocked": false,
+  "area_km2": 1904569,
+  "latlng": [
+   -5,
+   120
+  ]
+ },
+ {
+  "id": "IRN",
+  "iso2": "ir",
+  "iso_num": "364",
+  "name": "Iran",
+  "names": [
+   "Iran",
+   "Islamic Republic of Iran",
+   "Jomhuri-ye Eslāmi-ye Irān"
+  ],
+  "capitals": [
+   "Tehran"
+  ],
+  "capital_names": [
+   "Tehran"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "ARM",
+   "AZE",
+   "IRQ",
+   "PAK",
+   "TUR",
+   "TKM"
+  ],
+  "landlocked": false,
+  "area_km2": 1648195,
+  "latlng": [
+   32,
+   53
+  ]
+ },
+ {
+  "id": "IRQ",
+  "iso2": "iq",
+  "iso_num": "368",
+  "name": "Iraq",
+  "names": [
+   "Iraq",
+   "Republic of Iraq"
+  ],
+  "capitals": [
+   "Baghdad"
+  ],
+  "capital_names": [
+   "Baghdad"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRN",
+   "JOR",
+   "KWT",
+   "SAU",
+   "SYR",
+   "TUR"
+  ],
+  "landlocked": false,
+  "area_km2": 438317,
+  "latlng": [
+   33,
+   44
+  ]
+ },
+ {
+  "id": "IRL",
+  "iso2": "ie",
+  "iso_num": "372",
+  "name": "Ireland",
+  "names": [
+   "Ireland",
+   "Republic of Ireland",
+   "Éire",
+   "Poblacht na hÉireann"
+  ],
+  "capitals": [
+   "Dublin"
+  ],
+  "capital_names": [
+   "Dublin"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "GBR"
+  ],
+  "landlocked": false,
+  "area_km2": 70273,
+  "latlng": [
+   53,
+   -8
+  ]
+ },
+ {
+  "id": "IMN",
+  "iso2": "im",
+  "iso_num": "833",
+  "name": "Isle of Man",
+  "names": [
+   "Isle of Man",
+   "Ellan Vannin",
+   "Mann",
+   "Mannin"
+  ],
+  "capitals": [
+   "Douglas"
+  ],
+  "capital_names": [
+   "Douglas"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 572,
+  "latlng": [
+   54.25,
+   -4.5
+  ]
+ },
+ {
+  "id": "ISR",
+  "iso2": "il",
+  "iso_num": "376",
+  "name": "Israel",
+  "names": [
+   "Israel",
+   "State of Israel",
+   "Medīnat Yisrā'el"
+  ],
+  "capitals": [
+   "Jerusalem"
+  ],
+  "capital_names": [
+   "Jerusalem"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "EGY",
+   "JOR",
+   "LBN",
+   "PSE",
+   "SYR"
+  ],
+  "landlocked": false,
+  "area_km2": 20770,
+  "latlng": [
+   31.47,
+   35.13
+  ]
+ },
+ {
+  "id": "ITA",
+  "iso2": "it",
+  "iso_num": "380",
+  "name": "Italy",
+  "names": [
+   "Italy",
+   "Italian Republic",
+   "Repubblica italiana"
+  ],
+  "capitals": [
+   "Rome"
+  ],
+  "capital_names": [
+   "Rome"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "FRA",
+   "SMR",
+   "SVN",
+   "CHE",
+   "VAT"
+  ],
+  "landlocked": false,
+  "area_km2": 301336,
+  "latlng": [
+   42.83333333,
+   12.83333333
+  ]
+ },
+ {
+  "id": "CIV",
+  "iso2": "ci",
+  "iso_num": "384",
+  "name": "Ivory Coast",
+  "names": [
+   "Ivory Coast",
+   "Republic of Côte d'Ivoire",
+   "Côte d'Ivoire",
+   "République de Côte d'Ivoire"
+  ],
+  "capitals": [
+   "Yamoussoukro"
+  ],
+  "capital_names": [
+   "Yamoussoukro",
+   "Abidjan"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BFA",
+   "GHA",
+   "GIN",
+   "LBR",
+   "MLI"
+  ],
+  "landlocked": false,
+  "area_km2": 322463,
+  "latlng": [
+   8,
+   -5
+  ]
+ },
+ {
+  "id": "JAM",
+  "iso2": "jm",
+  "iso_num": "388",
+  "name": "Jamaica",
+  "names": [
+   "Jamaica"
+  ],
+  "capitals": [
+   "Kingston"
+  ],
+  "capital_names": [
+   "Kingston"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 10991,
+  "latlng": [
+   18.25,
+   -77.5
+  ]
+ },
+ {
+  "id": "JPN",
+  "iso2": "jp",
+  "iso_num": "392",
+  "name": "Japan",
+  "names": [
+   "Japan",
+   "Nippon",
+   "Nihon"
+  ],
+  "capitals": [
+   "Tokyo"
+  ],
+  "capital_names": [
+   "Tokyo"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 377930,
+  "latlng": [
+   36,
+   138
+  ]
+ },
+ {
+  "id": "JEY",
+  "iso2": "je",
+  "iso_num": "832",
+  "name": "Jersey",
+  "names": [
+   "Jersey",
+   "Bailiwick of Jersey",
+   "Bailliage de Jersey",
+   "Bailliage dé Jèrri"
+  ],
+  "capitals": [
+   "Saint Helier"
+  ],
+  "capital_names": [
+   "Saint Helier"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 116,
+  "latlng": [
+   49.25,
+   -2.16666666
+  ]
+ },
+ {
+  "id": "JOR",
+  "iso2": "jo",
+  "iso_num": "400",
+  "name": "Jordan",
+  "names": [
+   "Jordan",
+   "Hashemite Kingdom of Jordan",
+   "al-Mamlakah al-Urdunīyah al-Hāshimīyah"
+  ],
+  "capitals": [
+   "Amman"
+  ],
+  "capital_names": [
+   "Amman"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRQ",
+   "ISR",
+   "PSE",
+   "SAU",
+   "SYR"
+  ],
+  "landlocked": false,
+  "area_km2": 89342,
+  "latlng": [
+   31,
+   36
+  ]
+ },
+ {
+  "id": "KAZ",
+  "iso2": "kz",
+  "iso_num": "398",
+  "name": "Kazakhstan",
+  "names": [
+   "Kazakhstan",
+   "Republic of Kazakhstan",
+   "Qazaqstan",
+   "Respublika Kazakhstan"
+  ],
+  "capitals": [
+   "Astana"
+  ],
+  "capital_names": [
+   "Astana",
+   "Nur-Sultan"
+  ],
+  "continent": "Asia",
+  "subregion": "Central Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "KGZ",
+   "RUS",
+   "TKM",
+   "UZB"
+  ],
+  "landlocked": true,
+  "area_km2": 2724900,
+  "latlng": [
+   48,
+   68
+  ]
+ },
+ {
+  "id": "KEN",
+  "iso2": "ke",
+  "iso_num": "404",
+  "name": "Kenya",
+  "names": [
+   "Kenya",
+   "Republic of Kenya",
+   "Jamhuri ya Kenya"
+  ],
+  "capitals": [
+   "Nairobi"
+  ],
+  "capital_names": [
+   "Nairobi"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "ETH",
+   "SOM",
+   "SSD",
+   "TZA",
+   "UGA"
+  ],
+  "landlocked": false,
+  "area_km2": 580367,
+  "latlng": [
+   1,
+   38
+  ]
+ },
+ {
+  "id": "KIR",
+  "iso2": "ki",
+  "iso_num": "296",
+  "name": "Kiribati",
+  "names": [
+   "Kiribati",
+   "Independent and Sovereign Republic of Kiribati",
+   "Republic of Kiribati",
+   "Ribaberiki Kiribati"
+  ],
+  "capitals": [
+   "South Tarawa"
+  ],
+  "capital_names": [
+   "South Tarawa",
+   "Tarawa"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 811,
+  "latlng": [
+   1.41666666,
+   173
+  ]
+ },
+ {
+  "id": "XKX",
+  "iso2": "xk",
+  "iso_num": "",
+  "name": "Kosovo",
+  "names": [
+   "Kosovo",
+   "Republic of Kosovo",
+   "Kosova"
+  ],
+  "capitals": [
+   "Pristina"
+  ],
+  "capital_names": [
+   "Pristina",
+   "Prishtina"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "partly recognised",
+  "borders": [
+   "ALB",
+   "MKD",
+   "MNE",
+   "SRB"
+  ],
+  "landlocked": true,
+  "area_km2": 10908,
+  "latlng": [
+   42.666667,
+   21.166667
+  ]
+ },
+ {
+  "id": "KWT",
+  "iso2": "kw",
+  "iso_num": "414",
+  "name": "Kuwait",
+  "names": [
+   "Kuwait",
+   "State of Kuwait",
+   "Dawlat al-Kuwait"
+  ],
+  "capitals": [
+   "Kuwait City"
+  ],
+  "capital_names": [
+   "Kuwait City",
+   "Kuwait"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRQ",
+   "SAU"
+  ],
+  "landlocked": false,
+  "area_km2": 17818,
+  "latlng": [
+   29.5,
+   45.75
+  ]
+ },
+ {
+  "id": "KGZ",
+  "iso2": "kg",
+  "iso_num": "417",
+  "name": "Kyrgyzstan",
+  "names": [
+   "Kyrgyzstan",
+   "Kyrgyz Republic",
+   "Kyrgyz Respublikasy"
+  ],
+  "capitals": [
+   "Bishkek"
+  ],
+  "capital_names": [
+   "Bishkek"
+  ],
+  "continent": "Asia",
+  "subregion": "Central Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "KAZ",
+   "TJK",
+   "UZB"
+  ],
+  "landlocked": true,
+  "area_km2": 199951,
+  "latlng": [
+   41,
+   75
+  ]
+ },
+ {
+  "id": "LAO",
+  "iso2": "la",
+  "iso_num": "418",
+  "name": "Laos",
+  "names": [
+   "Laos",
+   "Lao People's Democratic Republic",
+   "Lao",
+   "Sathalanalat Paxathipatai Paxaxon Lao"
+  ],
+  "capitals": [
+   "Vientiane"
+  ],
+  "capital_names": [
+   "Vientiane"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "MMR",
+   "KHM",
+   "CHN",
+   "THA",
+   "VNM"
+  ],
+  "landlocked": true,
+  "area_km2": 236800,
+  "latlng": [
+   18,
+   105
+  ]
+ },
+ {
+  "id": "LVA",
+  "iso2": "lv",
+  "iso_num": "428",
+  "name": "Latvia",
+  "names": [
+   "Latvia",
+   "Republic of Latvia",
+   "Latvijas Republika"
+  ],
+  "capitals": [
+   "Riga"
+  ],
+  "capital_names": [
+   "Riga"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "BLR",
+   "EST",
+   "LTU",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 64559,
+  "latlng": [
+   57,
+   25
+  ]
+ },
+ {
+  "id": "LBN",
+  "iso2": "lb",
+  "iso_num": "422",
+  "name": "Lebanon",
+  "names": [
+   "Lebanon",
+   "Lebanese Republic",
+   "Al-Jumhūrīyah Al-Libnānīyah"
+  ],
+  "capitals": [
+   "Beirut"
+  ],
+  "capital_names": [
+   "Beirut"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "ISR",
+   "SYR"
+  ],
+  "landlocked": false,
+  "area_km2": 10452,
+  "latlng": [
+   33.83333333,
+   35.83333333
+  ]
+ },
+ {
+  "id": "LSO",
+  "iso2": "ls",
+  "iso_num": "426",
+  "name": "Lesotho",
+  "names": [
+   "Lesotho",
+   "Kingdom of Lesotho",
+   "Muso oa Lesotho"
+  ],
+  "capitals": [
+   "Maseru"
+  ],
+  "capital_names": [
+   "Maseru"
+  ],
+  "continent": "Africa",
+  "subregion": "Southern Africa",
+  "type": "sovereign",
+  "borders": [
+   "ZAF"
+  ],
+  "landlocked": true,
+  "area_km2": 30355,
+  "latlng": [
+   -29.5,
+   28.5
+  ]
+ },
+ {
+  "id": "LBR",
+  "iso2": "lr",
+  "iso_num": "430",
+  "name": "Liberia",
+  "names": [
+   "Liberia",
+   "Republic of Liberia"
+  ],
+  "capitals": [
+   "Monrovia"
+  ],
+  "capital_names": [
+   "Monrovia"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "GIN",
+   "CIV",
+   "SLE"
+  ],
+  "landlocked": false,
+  "area_km2": 111369,
+  "latlng": [
+   6.5,
+   -9.5
+  ]
+ },
+ {
+  "id": "LBY",
+  "iso2": "ly",
+  "iso_num": "434",
+  "name": "Libya",
+  "names": [
+   "Libya",
+   "State of Libya",
+   "Dawlat Libya"
+  ],
+  "capitals": [
+   "Tripoli"
+  ],
+  "capital_names": [
+   "Tripoli"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "TCD",
+   "EGY",
+   "NER",
+   "SDN",
+   "TUN"
+  ],
+  "landlocked": false,
+  "area_km2": 1759540,
+  "latlng": [
+   25,
+   17
+  ]
+ },
+ {
+  "id": "LIE",
+  "iso2": "li",
+  "iso_num": "438",
+  "name": "Liechtenstein",
+  "names": [
+   "Liechtenstein",
+   "Principality of Liechtenstein",
+   "Fürstentum Liechtenstein"
+  ],
+  "capitals": [
+   "Vaduz"
+  ],
+  "capital_names": [
+   "Vaduz"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "CHE"
+  ],
+  "landlocked": true,
+  "area_km2": 160,
+  "latlng": [
+   47.26666666,
+   9.53333333
+  ]
+ },
+ {
+  "id": "LTU",
+  "iso2": "lt",
+  "iso_num": "440",
+  "name": "Lithuania",
+  "names": [
+   "Lithuania",
+   "Republic of Lithuania",
+   "Lietuvos Respublika"
+  ],
+  "capitals": [
+   "Vilnius"
+  ],
+  "capital_names": [
+   "Vilnius"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "BLR",
+   "LVA",
+   "POL",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 65300,
+  "latlng": [
+   56,
+   24
+  ]
+ },
+ {
+  "id": "LUX",
+  "iso2": "lu",
+  "iso_num": "442",
+  "name": "Luxembourg",
+  "names": [
+   "Luxembourg",
+   "Grand Duchy of Luxembourg",
+   "Grand-Duché de Luxembourg",
+   "Groussherzogtum Lëtzebuerg"
+  ],
+  "capitals": [
+   "Luxembourg"
+  ],
+  "capital_names": [
+   "Luxembourg",
+   "Luxembourg City"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "BEL",
+   "FRA",
+   "DEU"
+  ],
+  "landlocked": true,
+  "area_km2": 2586,
+  "latlng": [
+   49.75,
+   6.16666666
+  ]
+ },
+ {
+  "id": "MAC",
+  "iso2": "mo",
+  "iso_num": "446",
+  "name": "Macau",
+  "names": [
+   "Macau",
+   "Macao Special Administrative Region of the People's Republic of China",
+   "Macao",
+   "Região Administrativa Especial de Macau da República Popular da China"
+  ],
+  "capitals": [],
+  "capital_names": [],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "territory",
+  "borders": [
+   "CHN"
+  ],
+  "landlocked": false,
+  "area_km2": 30,
+  "latlng": [
+   22.16666666,
+   113.55
+  ]
+ },
+ {
+  "id": "MDG",
+  "iso2": "mg",
+  "iso_num": "450",
+  "name": "Madagascar",
+  "names": [
+   "Madagascar",
+   "Republic of Madagascar",
+   "Repoblikan'i Madagasikara",
+   "République de Madagascar"
+  ],
+  "capitals": [
+   "Antananarivo"
+  ],
+  "capital_names": [
+   "Antananarivo"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 587041,
+  "latlng": [
+   -20,
+   47
+  ]
+ },
+ {
+  "id": "MWI",
+  "iso2": "mw",
+  "iso_num": "454",
+  "name": "Malawi",
+  "names": [
+   "Malawi",
+   "Republic of Malawi"
+  ],
+  "capitals": [
+   "Lilongwe"
+  ],
+  "capital_names": [
+   "Lilongwe"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "MOZ",
+   "TZA",
+   "ZMB"
+  ],
+  "landlocked": true,
+  "area_km2": 118484,
+  "latlng": [
+   -13.5,
+   34
+  ]
+ },
+ {
+  "id": "MYS",
+  "iso2": "my",
+  "iso_num": "458",
+  "name": "Malaysia",
+  "names": [
+   "Malaysia"
+  ],
+  "capitals": [
+   "Kuala Lumpur"
+  ],
+  "capital_names": [
+   "Kuala Lumpur",
+   "Putrajaya"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "BRN",
+   "IDN",
+   "THA"
+  ],
+  "landlocked": false,
+  "area_km2": 330803,
+  "latlng": [
+   2.5,
+   112.5
+  ]
+ },
+ {
+  "id": "MDV",
+  "iso2": "mv",
+  "iso_num": "462",
+  "name": "Maldives",
+  "names": [
+   "Maldives",
+   "Republic of the Maldives",
+   "Maldive Islands",
+   "Dhivehi Raajjeyge Jumhooriyya"
+  ],
+  "capitals": [
+   "Malé"
+  ],
+  "capital_names": [
+   "Malé"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 300,
+  "latlng": [
+   3.25,
+   73
+  ]
+ },
+ {
+  "id": "MLI",
+  "iso2": "ml",
+  "iso_num": "466",
+  "name": "Mali",
+  "names": [
+   "Mali",
+   "Republic of Mali",
+   "République du Mali"
+  ],
+  "capitals": [
+   "Bamako"
+  ],
+  "capital_names": [
+   "Bamako"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "BFA",
+   "GIN",
+   "CIV",
+   "MRT",
+   "NER",
+   "SEN"
+  ],
+  "landlocked": true,
+  "area_km2": 1240192,
+  "latlng": [
+   17,
+   -4
+  ]
+ },
+ {
+  "id": "MLT",
+  "iso2": "mt",
+  "iso_num": "470",
+  "name": "Malta",
+  "names": [
+   "Malta",
+   "Republic of Malta",
+   "Repubblika ta' Malta"
+  ],
+  "capitals": [
+   "Valletta"
+  ],
+  "capital_names": [
+   "Valletta"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 316,
+  "latlng": [
+   35.83333333,
+   14.58333333
+  ]
+ },
+ {
+  "id": "MHL",
+  "iso2": "mh",
+  "iso_num": "584",
+  "name": "Marshall Islands",
+  "names": [
+   "Marshall Islands",
+   "Republic of the Marshall Islands",
+   "Aolepān Aorōkin M̧ajeļ"
+  ],
+  "capitals": [
+   "Majuro"
+  ],
+  "capital_names": [
+   "Majuro"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 181,
+  "latlng": [
+   9,
+   168
+  ]
+ },
+ {
+  "id": "MRT",
+  "iso2": "mr",
+  "iso_num": "478",
+  "name": "Mauritania",
+  "names": [
+   "Mauritania",
+   "Islamic Republic of Mauritania"
+  ],
+  "capitals": [
+   "Nouakchott"
+  ],
+  "capital_names": [
+   "Nouakchott"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "MLI",
+   "SEN",
+   "ESH"
+  ],
+  "landlocked": false,
+  "area_km2": 1030700,
+  "latlng": [
+   20,
+   -12
+  ]
+ },
+ {
+  "id": "MUS",
+  "iso2": "mu",
+  "iso_num": "480",
+  "name": "Mauritius",
+  "names": [
+   "Mauritius",
+   "Republic of Mauritius",
+   "République de Maurice"
+  ],
+  "capitals": [
+   "Port Louis"
+  ],
+  "capital_names": [
+   "Port Louis"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 2040,
+  "latlng": [
+   -20.28333333,
+   57.55
+  ]
+ },
+ {
+  "id": "MEX",
+  "iso2": "mx",
+  "iso_num": "484",
+  "name": "Mexico",
+  "names": [
+   "Mexico",
+   "United Mexican States",
+   "Mexicanos",
+   "Estados Unidos Mexicanos"
+  ],
+  "capitals": [
+   "Mexico City"
+  ],
+  "capital_names": [
+   "Mexico City"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "sovereign",
+  "borders": [
+   "BLZ",
+   "GTM",
+   "USA"
+  ],
+  "landlocked": false,
+  "area_km2": 1964375,
+  "latlng": [
+   23,
+   -102
+  ]
+ },
+ {
+  "id": "FSM",
+  "iso2": "fm",
+  "iso_num": "583",
+  "name": "Micronesia",
+  "names": [
+   "Micronesia",
+   "Federated States of Micronesia"
+  ],
+  "capitals": [
+   "Palikir"
+  ],
+  "capital_names": [
+   "Palikir"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 702,
+  "latlng": [
+   6.91666666,
+   158.25
+  ]
+ },
+ {
+  "id": "MDA",
+  "iso2": "md",
+  "iso_num": "498",
+  "name": "Moldova",
+  "names": [
+   "Moldova",
+   "Republic of Moldova",
+   "Republica Moldova"
+  ],
+  "capitals": [
+   "Chișinău"
+  ],
+  "capital_names": [
+   "Chișinău"
+  ],
+  "continent": "Europe",
+  "subregion": "Eastern Europe",
+  "type": "sovereign",
+  "borders": [
+   "ROU",
+   "UKR"
+  ],
+  "landlocked": true,
+  "area_km2": 33846,
+  "latlng": [
+   47,
+   29
+  ]
+ },
+ {
+  "id": "MCO",
+  "iso2": "mc",
+  "iso_num": "492",
+  "name": "Monaco",
+  "names": [
+   "Monaco",
+   "Principality of Monaco",
+   "Principauté de Monaco"
+  ],
+  "capitals": [
+   "Monaco"
+  ],
+  "capital_names": [
+   "Monaco",
+   "Monaco-Ville"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "FRA"
+  ],
+  "landlocked": false,
+  "area_km2": 2.02,
+  "latlng": [
+   43.73333333,
+   7.4
+  ]
+ },
+ {
+  "id": "MNG",
+  "iso2": "mn",
+  "iso_num": "496",
+  "name": "Mongolia",
+  "names": [
+   "Mongolia"
+  ],
+  "capitals": [
+   "Ulan Bator"
+  ],
+  "capital_names": [
+   "Ulan Bator"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "RUS"
+  ],
+  "landlocked": true,
+  "area_km2": 1564110,
+  "latlng": [
+   46,
+   105
+  ]
+ },
+ {
+  "id": "MNE",
+  "iso2": "me",
+  "iso_num": "499",
+  "name": "Montenegro",
+  "names": [
+   "Montenegro",
+   "Crna Gora"
+  ],
+  "capitals": [
+   "Podgorica"
+  ],
+  "capital_names": [
+   "Podgorica"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "ALB",
+   "BIH",
+   "HRV",
+   "XKX",
+   "SRB"
+  ],
+  "landlocked": false,
+  "area_km2": 13812,
+  "latlng": [
+   42.5,
+   19.3
+  ]
+ },
+ {
+  "id": "MSR",
+  "iso2": "ms",
+  "iso_num": "500",
+  "name": "Montserrat",
+  "names": [
+   "Montserrat"
+  ],
+  "capitals": [
+   "Plymouth"
+  ],
+  "capital_names": [
+   "Plymouth"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 102,
+  "latlng": [
+   16.75,
+   -62.2
+  ]
+ },
+ {
+  "id": "MAR",
+  "iso2": "ma",
+  "iso_num": "504",
+  "name": "Morocco",
+  "names": [
+   "Morocco",
+   "Kingdom of Morocco",
+   "Al-Mamlakah al-Maġribiyah"
+  ],
+  "capitals": [
+   "Rabat"
+  ],
+  "capital_names": [
+   "Rabat"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "ESH",
+   "ESP"
+  ],
+  "landlocked": false,
+  "area_km2": 446550,
+  "latlng": [
+   32,
+   -5
+  ]
+ },
+ {
+  "id": "MOZ",
+  "iso2": "mz",
+  "iso_num": "508",
+  "name": "Mozambique",
+  "names": [
+   "Mozambique",
+   "Republic of Mozambique",
+   "República de Moçambique"
+  ],
+  "capitals": [
+   "Maputo"
+  ],
+  "capital_names": [
+   "Maputo"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "MWI",
+   "ZAF",
+   "SWZ",
+   "TZA",
+   "ZMB",
+   "ZWE"
+  ],
+  "landlocked": false,
+  "area_km2": 801590,
+  "latlng": [
+   -18.25,
+   35
+  ]
+ },
+ {
+  "id": "MMR",
+  "iso2": "mm",
+  "iso_num": "104",
+  "name": "Myanmar",
+  "names": [
+   "Myanmar",
+   "Republic of the Union of Myanmar",
+   "Burma",
+   "Pyidaunzu Thanmăda Myăma Nainngandaw"
+  ],
+  "capitals": [
+   "Naypyidaw"
+  ],
+  "capital_names": [
+   "Naypyidaw",
+   "Nay Pyi Taw",
+   "Naypyitaw"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "BGD",
+   "CHN",
+   "IND",
+   "LAO",
+   "THA"
+  ],
+  "landlocked": false,
+  "area_km2": 676578,
+  "latlng": [
+   22,
+   98
+  ]
+ },
+ {
+  "id": "NAM",
+  "iso2": "na",
+  "iso_num": "516",
+  "name": "Namibia",
+  "names": [
+   "Namibia",
+   "Republic of Namibia",
+   "Namibië"
+  ],
+  "capitals": [
+   "Windhoek"
+  ],
+  "capital_names": [
+   "Windhoek"
+  ],
+  "continent": "Africa",
+  "subregion": "Southern Africa",
+  "type": "sovereign",
+  "borders": [
+   "AGO",
+   "BWA",
+   "ZAF",
+   "ZMB"
+  ],
+  "landlocked": false,
+  "area_km2": 825615,
+  "latlng": [
+   -22,
+   17
+  ]
+ },
+ {
+  "id": "NRU",
+  "iso2": "nr",
+  "iso_num": "520",
+  "name": "Nauru",
+  "names": [
+   "Nauru",
+   "Republic of Nauru",
+   "Naoero",
+   "Pleasant Island",
+   "Ripublik Naoero"
+  ],
+  "capitals": [
+   "Yaren"
+  ],
+  "capital_names": [
+   "Yaren"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 21,
+  "latlng": [
+   -0.53333333,
+   166.91666666
+  ]
+ },
+ {
+  "id": "NPL",
+  "iso2": "np",
+  "iso_num": "524",
+  "name": "Nepal",
+  "names": [
+   "Nepal",
+   "Federal Democratic Republic of Nepal",
+   "Loktāntrik Ganatantra Nepāl"
+  ],
+  "capitals": [
+   "Kathmandu"
+  ],
+  "capital_names": [
+   "Kathmandu"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "IND"
+  ],
+  "landlocked": true,
+  "area_km2": 147181,
+  "latlng": [
+   28,
+   84
+  ]
+ },
+ {
+  "id": "NLD",
+  "iso2": "nl",
+  "iso_num": "528",
+  "name": "Netherlands",
+  "names": [
+   "Netherlands",
+   "Kingdom of the Netherlands",
+   "Holland",
+   "Nederland"
+  ],
+  "capitals": [
+   "Amsterdam"
+  ],
+  "capital_names": [
+   "Amsterdam",
+   "The Hague"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "BEL",
+   "DEU"
+  ],
+  "landlocked": false,
+  "area_km2": 41850,
+  "latlng": [
+   52.5,
+   5.75
+  ]
+ },
+ {
+  "id": "NCL",
+  "iso2": "nc",
+  "iso_num": "540",
+  "name": "New Caledonia",
+  "names": [
+   "New Caledonia"
+  ],
+  "capitals": [
+   "Nouméa"
+  ],
+  "capital_names": [
+   "Nouméa"
+  ],
+  "continent": "Oceania",
+  "subregion": "Melanesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 18575,
+  "latlng": [
+   -21.5,
+   165.5
+  ]
+ },
+ {
+  "id": "NZL",
+  "iso2": "nz",
+  "iso_num": "554",
+  "name": "New Zealand",
+  "names": [
+   "New Zealand",
+   "Aotearoa"
+  ],
+  "capitals": [
+   "Wellington"
+  ],
+  "capital_names": [
+   "Wellington"
+  ],
+  "continent": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 270467,
+  "latlng": [
+   -41,
+   174
+  ]
+ },
+ {
+  "id": "NIC",
+  "iso2": "ni",
+  "iso_num": "558",
+  "name": "Nicaragua",
+  "names": [
+   "Nicaragua",
+   "Republic of Nicaragua",
+   "República de Nicaragua"
+  ],
+  "capitals": [
+   "Managua"
+  ],
+  "capital_names": [
+   "Managua"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "CRI",
+   "HND"
+  ],
+  "landlocked": false,
+  "area_km2": 130373,
+  "latlng": [
+   13,
+   -85
+  ]
+ },
+ {
+  "id": "NER",
+  "iso2": "ne",
+  "iso_num": "562",
+  "name": "Niger",
+  "names": [
+   "Niger",
+   "Republic of Niger",
+   "Nijar"
+  ],
+  "capitals": [
+   "Niamey"
+  ],
+  "capital_names": [
+   "Niamey"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "BEN",
+   "BFA",
+   "TCD",
+   "LBY",
+   "MLI",
+   "NGA"
+  ],
+  "landlocked": true,
+  "area_km2": 1267000,
+  "latlng": [
+   16,
+   8
+  ]
+ },
+ {
+  "id": "NGA",
+  "iso2": "ng",
+  "iso_num": "566",
+  "name": "Nigeria",
+  "names": [
+   "Nigeria",
+   "Federal Republic of Nigeria",
+   "Nijeriya",
+   "Naíjíríà"
+  ],
+  "capitals": [
+   "Abuja"
+  ],
+  "capital_names": [
+   "Abuja"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BEN",
+   "CMR",
+   "TCD",
+   "NER"
+  ],
+  "landlocked": false,
+  "area_km2": 923768,
+  "latlng": [
+   10,
+   8
+  ]
+ },
+ {
+  "id": "NIU",
+  "iso2": "nu",
+  "iso_num": "570",
+  "name": "Niue",
+  "names": [
+   "Niue"
+  ],
+  "capitals": [
+   "Alofi"
+  ],
+  "capital_names": [
+   "Alofi"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 260,
+  "latlng": [
+   -19.03333333,
+   -169.86666666
+  ]
+ },
+ {
+  "id": "PRK",
+  "iso2": "kp",
+  "iso_num": "408",
+  "name": "North Korea",
+  "names": [
+   "North Korea",
+   "Democratic People's Republic of Korea",
+   "DPRK",
+   "Chosŏn Minjujuŭi Inmin Konghwaguk",
+   "Korea North"
+  ],
+  "capitals": [
+   "Pyongyang"
+  ],
+  "capital_names": [
+   "Pyongyang"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "CHN",
+   "KOR",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 120538,
+  "latlng": [
+   40,
+   127
+  ]
+ },
+ {
+  "id": "MKD",
+  "iso2": "mk",
+  "iso_num": "807",
+  "name": "North Macedonia",
+  "names": [
+   "North Macedonia",
+   "Republic of North Macedonia",
+   "The former Yugoslav Republic of Macedonia",
+   "Macedonia"
+  ],
+  "capitals": [
+   "Skopje"
+  ],
+  "capital_names": [
+   "Skopje"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "ALB",
+   "BGR",
+   "GRC",
+   "XKX",
+   "SRB"
+  ],
+  "landlocked": true,
+  "area_km2": 25713,
+  "latlng": [
+   41.83333333,
+   22
+  ]
+ },
+ {
+  "id": "MNP",
+  "iso2": "mp",
+  "iso_num": "580",
+  "name": "Northern Mariana Islands",
+  "names": [
+   "Northern Mariana Islands",
+   "Commonwealth of the Northern Mariana Islands",
+   "Sankattan Siha Na Islas Mariånas"
+  ],
+  "capitals": [
+   "Saipan"
+  ],
+  "capital_names": [
+   "Saipan"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 464,
+  "latlng": [
+   15.2,
+   145.75
+  ]
+ },
+ {
+  "id": "NOR",
+  "iso2": "no",
+  "iso_num": "578",
+  "name": "Norway",
+  "names": [
+   "Norway",
+   "Kingdom of Norway",
+   "Norge",
+   "Noreg",
+   "Kongeriket Norge",
+   "Kongeriket Noreg"
+  ],
+  "capitals": [
+   "Oslo"
+  ],
+  "capital_names": [
+   "Oslo"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "FIN",
+   "SWE",
+   "RUS"
+  ],
+  "landlocked": false,
+  "area_km2": 323802,
+  "latlng": [
+   62,
+   10
+  ]
+ },
+ {
+  "id": "OMN",
+  "iso2": "om",
+  "iso_num": "512",
+  "name": "Oman",
+  "names": [
+   "Oman",
+   "Sultanate of Oman"
+  ],
+  "capitals": [
+   "Muscat"
+  ],
+  "capital_names": [
+   "Muscat"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "SAU",
+   "ARE",
+   "YEM"
+  ],
+  "landlocked": false,
+  "area_km2": 309500,
+  "latlng": [
+   21,
+   57
+  ]
+ },
+ {
+  "id": "PAK",
+  "iso2": "pk",
+  "iso_num": "586",
+  "name": "Pakistan",
+  "names": [
+   "Pakistan",
+   "Islamic Republic of Pakistan",
+   "Islāmī Jumhūriya'eh Pākistān"
+  ],
+  "capitals": [
+   "Islamabad"
+  ],
+  "capital_names": [
+   "Islamabad"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "CHN",
+   "IND",
+   "IRN"
+  ],
+  "landlocked": false,
+  "area_km2": 881912,
+  "latlng": [
+   30,
+   70
+  ]
+ },
+ {
+  "id": "PLW",
+  "iso2": "pw",
+  "iso_num": "585",
+  "name": "Palau",
+  "names": [
+   "Palau",
+   "Republic of Palau",
+   "Beluu er a Belau"
+  ],
+  "capitals": [
+   "Ngerulmud"
+  ],
+  "capital_names": [
+   "Ngerulmud"
+  ],
+  "continent": "Oceania",
+  "subregion": "Micronesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 459,
+  "latlng": [
+   7.5,
+   134.5
+  ]
+ },
+ {
+  "id": "PSE",
+  "iso2": "ps",
+  "iso_num": "275",
+  "name": "Palestine",
+  "names": [
+   "Palestine",
+   "State of Palestine",
+   "Dawlat Filasṭin"
+  ],
+  "capitals": [
+   "Ramallah"
+  ],
+  "capital_names": [
+   "Ramallah",
+   "East Jerusalem",
+   "Jerusalem"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "partly recognised",
+  "borders": [
+   "ISR",
+   "EGY",
+   "JOR"
+  ],
+  "landlocked": false,
+  "area_km2": 6220,
+  "latlng": [
+   31.9,
+   35.2
+  ]
+ },
+ {
+  "id": "PAN",
+  "iso2": "pa",
+  "iso_num": "591",
+  "name": "Panama",
+  "names": [
+   "Panama",
+   "Republic of Panama",
+   "República de Panamá"
+  ],
+  "capitals": [
+   "Panama City"
+  ],
+  "capital_names": [
+   "Panama City",
+   "Panama"
+  ],
+  "continent": "North America",
+  "subregion": "Central America",
+  "type": "sovereign",
+  "borders": [
+   "COL",
+   "CRI"
+  ],
+  "landlocked": false,
+  "area_km2": 75417,
+  "latlng": [
+   9,
+   -80
+  ]
+ },
+ {
+  "id": "PNG",
+  "iso2": "pg",
+  "iso_num": "598",
+  "name": "Papua New Guinea",
+  "names": [
+   "Papua New Guinea",
+   "Independent State of Papua New Guinea",
+   "Independen Stet bilong Papua Niugini"
+  ],
+  "capitals": [
+   "Port Moresby"
+  ],
+  "capital_names": [
+   "Port Moresby"
+  ],
+  "continent": "Oceania",
+  "subregion": "Melanesia",
+  "type": "sovereign",
+  "borders": [
+   "IDN"
+  ],
+  "landlocked": false,
+  "area_km2": 462840,
+  "latlng": [
+   -6,
+   147
+  ]
+ },
+ {
+  "id": "PRY",
+  "iso2": "py",
+  "iso_num": "600",
+  "name": "Paraguay",
+  "names": [
+   "Paraguay",
+   "Republic of Paraguay",
+   "República del Paraguay",
+   "Tetã Paraguái"
+  ],
+  "capitals": [
+   "Asunción"
+  ],
+  "capital_names": [
+   "Asunción"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "ARG",
+   "BOL",
+   "BRA"
+  ],
+  "landlocked": true,
+  "area_km2": 406752,
+  "latlng": [
+   -23,
+   -58
+  ]
+ },
+ {
+  "id": "PER",
+  "iso2": "pe",
+  "iso_num": "604",
+  "name": "Peru",
+  "names": [
+   "Peru",
+   "Republic of Peru",
+   "República del Perú"
+  ],
+  "capitals": [
+   "Lima"
+  ],
+  "capital_names": [
+   "Lima"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BOL",
+   "BRA",
+   "CHL",
+   "COL",
+   "ECU"
+  ],
+  "landlocked": false,
+  "area_km2": 1285216,
+  "latlng": [
+   -10,
+   -76
+  ]
+ },
+ {
+  "id": "PHL",
+  "iso2": "ph",
+  "iso_num": "608",
+  "name": "Philippines",
+  "names": [
+   "Philippines",
+   "Republic of the Philippines",
+   "Repúblika ng Pilipinas"
+  ],
+  "capitals": [
+   "Manila"
+  ],
+  "capital_names": [
+   "Manila"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 342353,
+  "latlng": [
+   13,
+   122
+  ]
+ },
+ {
+  "id": "PCN",
+  "iso2": "pn",
+  "iso_num": "612",
+  "name": "Pitcairn Islands",
+  "names": [
+   "Pitcairn Islands",
+   "Pitcairn Group of Islands",
+   "Pitcairn",
+   "Pitcairn Henderson Ducie and Oeno Islands"
+  ],
+  "capitals": [
+   "Adamstown"
+  ],
+  "capital_names": [
+   "Adamstown"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 47,
+  "latlng": [
+   -25.06666666,
+   -130.1
+  ]
+ },
+ {
+  "id": "POL",
+  "iso2": "pl",
+  "iso_num": "616",
+  "name": "Poland",
+  "names": [
+   "Poland",
+   "Republic of Poland",
+   "Rzeczpospolita Polska"
+  ],
+  "capitals": [
+   "Warsaw"
+  ],
+  "capital_names": [
+   "Warsaw"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "BLR",
+   "CZE",
+   "DEU",
+   "LTU",
+   "RUS",
+   "SVK",
+   "UKR"
+  ],
+  "landlocked": false,
+  "area_km2": 312679,
+  "latlng": [
+   52,
+   20
+  ]
+ },
+ {
+  "id": "PRT",
+  "iso2": "pt",
+  "iso_num": "620",
+  "name": "Portugal",
+  "names": [
+   "Portugal",
+   "Portuguese Republic",
+   "Portuguesa",
+   "República Portuguesa"
+  ],
+  "capitals": [
+   "Lisbon"
+  ],
+  "capital_names": [
+   "Lisbon"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "ESP"
+  ],
+  "landlocked": false,
+  "area_km2": 92090,
+  "latlng": [
+   39.5,
+   -8
+  ]
+ },
+ {
+  "id": "PRI",
+  "iso2": "pr",
+  "iso_num": "630",
+  "name": "Puerto Rico",
+  "names": [
+   "Puerto Rico",
+   "Commonwealth of Puerto Rico",
+   "Estado Libre Asociado de Puerto Rico"
+  ],
+  "capitals": [
+   "San Juan"
+  ],
+  "capital_names": [
+   "San Juan"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 8870,
+  "latlng": [
+   18.25,
+   -66.5
+  ]
+ },
+ {
+  "id": "QAT",
+  "iso2": "qa",
+  "iso_num": "634",
+  "name": "Qatar",
+  "names": [
+   "Qatar",
+   "State of Qatar",
+   "Dawlat Qaṭar"
+  ],
+  "capitals": [
+   "Doha"
+  ],
+  "capital_names": [
+   "Doha"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "SAU"
+  ],
+  "landlocked": false,
+  "area_km2": 11586,
+  "latlng": [
+   25.5,
+   51.25
+  ]
+ },
+ {
+  "id": "COG",
+  "iso2": "cg",
+  "iso_num": "178",
+  "name": "Republic of the Congo",
+  "names": [
+   "Republic of the Congo",
+   "Congo",
+   "Congo-Brazzaville",
+   "Congo Republic"
+  ],
+  "capitals": [
+   "Brazzaville"
+  ],
+  "capital_names": [
+   "Brazzaville"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "AGO",
+   "CMR",
+   "CAF",
+   "COD",
+   "GAB"
+  ],
+  "landlocked": false,
+  "area_km2": 342000,
+  "latlng": [
+   -1,
+   15
+  ]
+ },
+ {
+  "id": "ROU",
+  "iso2": "ro",
+  "iso_num": "642",
+  "name": "Romania",
+  "names": [
+   "Romania",
+   "Rumania",
+   "Roumania"
+  ],
+  "capitals": [
+   "Bucharest"
+  ],
+  "capital_names": [
+   "Bucharest"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "BGR",
+   "HUN",
+   "MDA",
+   "SRB",
+   "UKR"
+  ],
+  "landlocked": false,
+  "area_km2": 238391,
+  "latlng": [
+   46,
+   25
+  ]
+ },
+ {
+  "id": "RUS",
+  "iso2": "ru",
+  "iso_num": "643",
+  "name": "Russia",
+  "names": [
+   "Russia",
+   "Russian Federation"
+  ],
+  "capitals": [
+   "Moscow"
+  ],
+  "capital_names": [
+   "Moscow"
+  ],
+  "continent": "Europe",
+  "subregion": "Eastern Europe",
+  "type": "sovereign",
+  "borders": [
+   "AZE",
+   "BLR",
+   "CHN",
+   "EST",
+   "FIN",
+   "GEO",
+   "KAZ",
+   "PRK",
+   "LVA",
+   "LTU",
+   "MNG",
+   "NOR",
+   "POL",
+   "UKR"
+  ],
+  "landlocked": false,
+  "area_km2": 17098242,
+  "latlng": [
+   60,
+   100
+  ]
+ },
+ {
+  "id": "RWA",
+  "iso2": "rw",
+  "iso_num": "646",
+  "name": "Rwanda",
+  "names": [
+   "Rwanda",
+   "Republic of Rwanda",
+   "Repubulika y'u Rwanda",
+   "République du Rwanda"
+  ],
+  "capitals": [
+   "Kigali"
+  ],
+  "capital_names": [
+   "Kigali"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "BDI",
+   "COD",
+   "TZA",
+   "UGA"
+  ],
+  "landlocked": true,
+  "area_km2": 26338,
+  "latlng": [
+   -2,
+   30
+  ]
+ },
+ {
+  "id": "BLM",
+  "iso2": "bl",
+  "iso_num": "652",
+  "name": "Saint Barthélemy",
+  "names": [
+   "Saint Barthélemy",
+   "Collectivity of Saint Barthélemy",
+   "Collectivité de Saint-Barthélemy"
+  ],
+  "capitals": [
+   "Gustavia"
+  ],
+  "capital_names": [
+   "Gustavia"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 21,
+  "latlng": [
+   18.5,
+   -63.41666666
+  ]
+ },
+ {
+  "id": "SHN",
+  "iso2": "sh",
+  "iso_num": "654",
+  "name": "Saint Helena",
+  "names": [
+   "Saint Helena"
+  ],
+  "capitals": [
+   "Jamestown"
+  ],
+  "capital_names": [
+   "Jamestown"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 394,
+  "latlng": [
+   -15.95,
+   -5.72
+  ]
+ },
+ {
+  "id": "KNA",
+  "iso2": "kn",
+  "iso_num": "659",
+  "name": "Saint Kitts and Nevis",
+  "names": [
+   "Saint Kitts and Nevis",
+   "Federation of Saint Christopher and Nevis",
+   "St Kitts"
+  ],
+  "capitals": [
+   "Basseterre"
+  ],
+  "capital_names": [
+   "Basseterre"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 261,
+  "latlng": [
+   17.33333333,
+   -62.75
+  ]
+ },
+ {
+  "id": "LCA",
+  "iso2": "lc",
+  "iso_num": "662",
+  "name": "Saint Lucia",
+  "names": [
+   "Saint Lucia"
+  ],
+  "capitals": [
+   "Castries"
+  ],
+  "capital_names": [
+   "Castries"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 616,
+  "latlng": [
+   13.88333333,
+   -60.96666666
+  ]
+ },
+ {
+  "id": "MAF",
+  "iso2": "mf",
+  "iso_num": "663",
+  "name": "Saint Martin",
+  "names": [
+   "Saint Martin",
+   "Collectivity of Saint Martin",
+   "Collectivité de Saint-Martin",
+   "Saint Martin (French part)"
+  ],
+  "capitals": [
+   "Marigot"
+  ],
+  "capital_names": [
+   "Marigot"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [
+   "SXM"
+  ],
+  "landlocked": false,
+  "area_km2": 53,
+  "latlng": [
+   18.08333333,
+   -63.95
+  ]
+ },
+ {
+  "id": "SPM",
+  "iso2": "pm",
+  "iso_num": "666",
+  "name": "Saint Pierre and Miquelon",
+  "names": [
+   "Saint Pierre and Miquelon",
+   "Collectivité territoriale de Saint-Pierre-et-Miquelon"
+  ],
+  "capitals": [
+   "Saint-Pierre"
+  ],
+  "capital_names": [
+   "Saint-Pierre"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 242,
+  "latlng": [
+   46.83333333,
+   -56.33333333
+  ]
+ },
+ {
+  "id": "VCT",
+  "iso2": "vc",
+  "iso_num": "670",
+  "name": "Saint Vincent and the Grenadines",
+  "names": [
+   "Saint Vincent and the Grenadines",
+   "St Vincent"
+  ],
+  "capitals": [
+   "Kingstown"
+  ],
+  "capital_names": [
+   "Kingstown"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 389,
+  "latlng": [
+   13.25,
+   -61.2
+  ]
+ },
+ {
+  "id": "WSM",
+  "iso2": "ws",
+  "iso_num": "882",
+  "name": "Samoa",
+  "names": [
+   "Samoa",
+   "Independent State of Samoa"
+  ],
+  "capitals": [
+   "Apia"
+  ],
+  "capital_names": [
+   "Apia"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 2842,
+  "latlng": [
+   -13.58333333,
+   -172.33333333
+  ]
+ },
+ {
+  "id": "SMR",
+  "iso2": "sm",
+  "iso_num": "674",
+  "name": "San Marino",
+  "names": [
+   "San Marino",
+   "Most Serene Republic of San Marino",
+   "Republic of San Marino",
+   "Repubblica di San Marino"
+  ],
+  "capitals": [
+   "City of San Marino"
+  ],
+  "capital_names": [
+   "City of San Marino"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "ITA"
+  ],
+  "landlocked": true,
+  "area_km2": 61,
+  "latlng": [
+   43.76666666,
+   12.41666666
+  ]
+ },
+ {
+  "id": "SAU",
+  "iso2": "sa",
+  "iso_num": "682",
+  "name": "Saudi Arabia",
+  "names": [
+   "Saudi Arabia",
+   "Kingdom of Saudi Arabia",
+   "Saudi"
+  ],
+  "capitals": [
+   "Riyadh"
+  ],
+  "capital_names": [
+   "Riyadh"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRQ",
+   "JOR",
+   "KWT",
+   "OMN",
+   "QAT",
+   "ARE",
+   "YEM"
+  ],
+  "landlocked": false,
+  "area_km2": 2149690,
+  "latlng": [
+   25,
+   45
+  ]
+ },
+ {
+  "id": "SEN",
+  "iso2": "sn",
+  "iso_num": "686",
+  "name": "Senegal",
+  "names": [
+   "Senegal",
+   "Republic of Senegal",
+   "République du Sénégal"
+  ],
+  "capitals": [
+   "Dakar"
+  ],
+  "capital_names": [
+   "Dakar"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "GMB",
+   "GIN",
+   "GNB",
+   "MLI",
+   "MRT"
+  ],
+  "landlocked": false,
+  "area_km2": 196722,
+  "latlng": [
+   14,
+   -14
+  ]
+ },
+ {
+  "id": "SRB",
+  "iso2": "rs",
+  "iso_num": "688",
+  "name": "Serbia",
+  "names": [
+   "Serbia",
+   "Republic of Serbia",
+   "Srbija",
+   "Republika Srbija"
+  ],
+  "capitals": [
+   "Belgrade"
+  ],
+  "capital_names": [
+   "Belgrade"
+  ],
+  "continent": "Europe",
+  "subregion": "Southeast Europe",
+  "type": "sovereign",
+  "borders": [
+   "BIH",
+   "BGR",
+   "HRV",
+   "HUN",
+   "XKX",
+   "MKD",
+   "MNE",
+   "ROU"
+  ],
+  "landlocked": true,
+  "area_km2": 88361,
+  "latlng": [
+   44,
+   21
+  ]
+ },
+ {
+  "id": "SYC",
+  "iso2": "sc",
+  "iso_num": "690",
+  "name": "Seychelles",
+  "names": [
+   "Seychelles",
+   "Republic of Seychelles",
+   "Repiblik Sesel",
+   "République des Seychelles"
+  ],
+  "capitals": [
+   "Victoria"
+  ],
+  "capital_names": [
+   "Victoria"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 452,
+  "latlng": [
+   -4.58333333,
+   55.66666666
+  ]
+ },
+ {
+  "id": "SLE",
+  "iso2": "sl",
+  "iso_num": "694",
+  "name": "Sierra Leone",
+  "names": [
+   "Sierra Leone",
+   "Republic of Sierra Leone"
+  ],
+  "capitals": [
+   "Freetown"
+  ],
+  "capital_names": [
+   "Freetown"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "GIN",
+   "LBR"
+  ],
+  "landlocked": false,
+  "area_km2": 71740,
+  "latlng": [
+   8.5,
+   -11.5
+  ]
+ },
+ {
+  "id": "SGP",
+  "iso2": "sg",
+  "iso_num": "702",
+  "name": "Singapore",
+  "names": [
+   "Singapore",
+   "Republic of Singapore",
+   "Singapura",
+   "Republik Singapura"
+  ],
+  "capitals": [
+   "Singapore"
+  ],
+  "capital_names": [
+   "Singapore"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 710,
+  "latlng": [
+   1.36666666,
+   103.8
+  ]
+ },
+ {
+  "id": "SXM",
+  "iso2": "sx",
+  "iso_num": "534",
+  "name": "Sint Maarten",
+  "names": [
+   "Sint Maarten",
+   "Sint Maarten (Dutch part)"
+  ],
+  "capitals": [
+   "Philipsburg"
+  ],
+  "capital_names": [
+   "Philipsburg"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [
+   "MAF"
+  ],
+  "landlocked": false,
+  "area_km2": 34,
+  "latlng": [
+   18.033333,
+   -63.05
+  ]
+ },
+ {
+  "id": "SVK",
+  "iso2": "sk",
+  "iso_num": "703",
+  "name": "Slovakia",
+  "names": [
+   "Slovakia",
+   "Slovak Republic",
+   "Slovenská republika"
+  ],
+  "capitals": [
+   "Bratislava"
+  ],
+  "capital_names": [
+   "Bratislava"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "CZE",
+   "HUN",
+   "POL",
+   "UKR"
+  ],
+  "landlocked": true,
+  "area_km2": 49037,
+  "latlng": [
+   48.66666666,
+   19.5
+  ]
+ },
+ {
+  "id": "SVN",
+  "iso2": "si",
+  "iso_num": "705",
+  "name": "Slovenia",
+  "names": [
+   "Slovenia",
+   "Republic of Slovenia",
+   "Republika Slovenija"
+  ],
+  "capitals": [
+   "Ljubljana"
+  ],
+  "capital_names": [
+   "Ljubljana"
+  ],
+  "continent": "Europe",
+  "subregion": "Central Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "HRV",
+   "ITA",
+   "HUN"
+  ],
+  "landlocked": false,
+  "area_km2": 20273,
+  "latlng": [
+   46.11666666,
+   14.81666666
+  ]
+ },
+ {
+  "id": "SLB",
+  "iso2": "sb",
+  "iso_num": "090",
+  "name": "Solomon Islands",
+  "names": [
+   "Solomon Islands"
+  ],
+  "capitals": [
+   "Honiara"
+  ],
+  "capital_names": [
+   "Honiara"
+  ],
+  "continent": "Oceania",
+  "subregion": "Melanesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 28896,
+  "latlng": [
+   -8,
+   159
+  ]
+ },
+ {
+  "id": "SOM",
+  "iso2": "so",
+  "iso_num": "706",
+  "name": "Somalia",
+  "names": [
+   "Somalia",
+   "Federal Republic of Somalia",
+   "aṣ-Ṣūmāl",
+   "Jamhuuriyadda Federaalka Soomaaliya",
+   "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya"
+  ],
+  "capitals": [
+   "Mogadishu"
+  ],
+  "capital_names": [
+   "Mogadishu"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DJI",
+   "ETH",
+   "KEN"
+  ],
+  "landlocked": false,
+  "area_km2": 637657,
+  "latlng": [
+   10,
+   49
+  ]
+ },
+ {
+  "id": "ZAF",
+  "iso2": "za",
+  "iso_num": "710",
+  "name": "South Africa",
+  "names": [
+   "South Africa",
+   "Republic of South Africa",
+   "RSA",
+   "Suid-Afrika"
+  ],
+  "capitals": [
+   "Pretoria",
+   "Bloemfontein",
+   "Cape Town"
+  ],
+  "capital_names": [
+   "Pretoria",
+   "Bloemfontein",
+   "Cape Town"
+  ],
+  "continent": "Africa",
+  "subregion": "Southern Africa",
+  "type": "sovereign",
+  "borders": [
+   "BWA",
+   "LSO",
+   "MOZ",
+   "NAM",
+   "SWZ",
+   "ZWE"
+  ],
+  "landlocked": false,
+  "area_km2": 1221037,
+  "latlng": [
+   -29,
+   24
+  ]
+ },
+ {
+  "id": "KOR",
+  "iso2": "kr",
+  "iso_num": "410",
+  "name": "South Korea",
+  "names": [
+   "South Korea",
+   "Republic of Korea",
+   "Korea South"
+  ],
+  "capitals": [
+   "Seoul"
+  ],
+  "capital_names": [
+   "Seoul"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "PRK"
+  ],
+  "landlocked": false,
+  "area_km2": 100210,
+  "latlng": [
+   37,
+   127.5
+  ]
+ },
+ {
+  "id": "SSD",
+  "iso2": "ss",
+  "iso_num": "728",
+  "name": "South Sudan",
+  "names": [
+   "South Sudan",
+   "Republic of South Sudan"
+  ],
+  "capitals": [
+   "Juba"
+  ],
+  "capital_names": [
+   "Juba"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [
+   "CAF",
+   "COD",
+   "ETH",
+   "KEN",
+   "SDN",
+   "UGA"
+  ],
+  "landlocked": true,
+  "area_km2": 619745,
+  "latlng": [
+   7,
+   30
+  ]
+ },
+ {
+  "id": "ESP",
+  "iso2": "es",
+  "iso_num": "724",
+  "name": "Spain",
+  "names": [
+   "Spain",
+   "Kingdom of Spain",
+   "Reino de España"
+  ],
+  "capitals": [
+   "Madrid"
+  ],
+  "capital_names": [
+   "Madrid"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "AND",
+   "FRA",
+   "GIB",
+   "PRT",
+   "MAR"
+  ],
+  "landlocked": false,
+  "area_km2": 505992,
+  "latlng": [
+   40,
+   -4
+  ]
+ },
+ {
+  "id": "LKA",
+  "iso2": "lk",
+  "iso_num": "144",
+  "name": "Sri Lanka",
+  "names": [
+   "Sri Lanka",
+   "Democratic Socialist Republic of Sri Lanka",
+   "ilaṅkai"
+  ],
+  "capitals": [
+   "Sri Jayawardenepura Kotte"
+  ],
+  "capital_names": [
+   "Sri Jayawardenepura Kotte",
+   "Colombo",
+   "Sri Jayawardenepura",
+   "Kotte"
+  ],
+  "continent": "Asia",
+  "subregion": "Southern Asia",
+  "type": "sovereign",
+  "borders": [
+   "IND"
+  ],
+  "landlocked": false,
+  "area_km2": 65610,
+  "latlng": [
+   7,
+   81
+  ]
+ },
+ {
+  "id": "SDN",
+  "iso2": "sd",
+  "iso_num": "729",
+  "name": "Sudan",
+  "names": [
+   "Sudan",
+   "Republic of the Sudan",
+   "Jumhūrīyat as-Sūdān"
+  ],
+  "capitals": [
+   "Khartoum"
+  ],
+  "capital_names": [
+   "Khartoum"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "CAF",
+   "TCD",
+   "EGY",
+   "ERI",
+   "ETH",
+   "LBY",
+   "SSD"
+  ],
+  "landlocked": false,
+  "area_km2": 1886068,
+  "latlng": [
+   15,
+   30
+  ]
+ },
+ {
+  "id": "SUR",
+  "iso2": "sr",
+  "iso_num": "740",
+  "name": "Suriname",
+  "names": [
+   "Suriname",
+   "Republic of Suriname",
+   "Sarnam",
+   "Sranangron",
+   "Republiek Suriname"
+  ],
+  "capitals": [
+   "Paramaribo"
+  ],
+  "capital_names": [
+   "Paramaribo"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BRA",
+   "GUF",
+   "GUY"
+  ],
+  "landlocked": false,
+  "area_km2": 163820,
+  "latlng": [
+   4,
+   -56
+  ]
+ },
+ {
+  "id": "SWE",
+  "iso2": "se",
+  "iso_num": "752",
+  "name": "Sweden",
+  "names": [
+   "Sweden",
+   "Kingdom of Sweden",
+   "Konungariket Sverige"
+  ],
+  "capitals": [
+   "Stockholm"
+  ],
+  "capital_names": [
+   "Stockholm"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "FIN",
+   "NOR"
+  ],
+  "landlocked": false,
+  "area_km2": 450295,
+  "latlng": [
+   62,
+   15
+  ]
+ },
+ {
+  "id": "CHE",
+  "iso2": "ch",
+  "iso_num": "756",
+  "name": "Switzerland",
+  "names": [
+   "Switzerland",
+   "Swiss Confederation",
+   "Schweiz",
+   "Suisse",
+   "Svizzera",
+   "Svizra"
+  ],
+  "capitals": [
+   "Bern"
+  ],
+  "capital_names": [
+   "Bern",
+   "Berne"
+  ],
+  "continent": "Europe",
+  "subregion": "Western Europe",
+  "type": "sovereign",
+  "borders": [
+   "AUT",
+   "FRA",
+   "ITA",
+   "LIE",
+   "DEU"
+  ],
+  "landlocked": true,
+  "area_km2": 41284,
+  "latlng": [
+   47,
+   8
+  ]
+ },
+ {
+  "id": "SYR",
+  "iso2": "sy",
+  "iso_num": "760",
+  "name": "Syria",
+  "names": [
+   "Syria",
+   "Syrian Arab Republic"
+  ],
+  "capitals": [
+   "Damascus"
+  ],
+  "capital_names": [
+   "Damascus"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "IRQ",
+   "ISR",
+   "JOR",
+   "LBN",
+   "TUR"
+  ],
+  "landlocked": false,
+  "area_km2": 185180,
+  "latlng": [
+   35,
+   38
+  ]
+ },
+ {
+  "id": "STP",
+  "iso2": "st",
+  "iso_num": "678",
+  "name": "São Tomé and Príncipe",
+  "names": [
+   "São Tomé and Príncipe",
+   "Democratic Republic of São Tomé and Príncipe",
+   "República Democrática de São Tomé e Príncipe",
+   "Sao Tome"
+  ],
+  "capitals": [
+   "São Tomé"
+  ],
+  "capital_names": [
+   "São Tomé"
+  ],
+  "continent": "Africa",
+  "subregion": "Middle Africa",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 964,
+  "latlng": [
+   1,
+   7
+  ]
+ },
+ {
+  "id": "TWN",
+  "iso2": "tw",
+  "iso_num": "158",
+  "name": "Taiwan",
+  "names": [
+   "Taiwan",
+   "Republic of China (Taiwan)",
+   "Republic of China",
+   "Zhōnghuá Mínguó",
+   "Chinese Taipei"
+  ],
+  "capitals": [
+   "Taipei"
+  ],
+  "capital_names": [
+   "Taipei"
+  ],
+  "continent": "Asia",
+  "subregion": "Eastern Asia",
+  "type": "partly recognised",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 36193,
+  "latlng": [
+   23.5,
+   121
+  ]
+ },
+ {
+  "id": "TJK",
+  "iso2": "tj",
+  "iso_num": "762",
+  "name": "Tajikistan",
+  "names": [
+   "Tajikistan",
+   "Republic of Tajikistan",
+   "Toçikiston",
+   "Çumhuriyi Toçikiston"
+  ],
+  "capitals": [
+   "Dushanbe"
+  ],
+  "capital_names": [
+   "Dushanbe"
+  ],
+  "continent": "Asia",
+  "subregion": "Central Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "CHN",
+   "KGZ",
+   "UZB"
+  ],
+  "landlocked": true,
+  "area_km2": 143100,
+  "latlng": [
+   39,
+   71
+  ]
+ },
+ {
+  "id": "TZA",
+  "iso2": "tz",
+  "iso_num": "834",
+  "name": "Tanzania",
+  "names": [
+   "Tanzania",
+   "United Republic of Tanzania",
+   "Jamhuri ya Muungano wa Tanzania"
+  ],
+  "capitals": [
+   "Dodoma"
+  ],
+  "capital_names": [
+   "Dodoma"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "BDI",
+   "COD",
+   "KEN",
+   "MWI",
+   "MOZ",
+   "RWA",
+   "UGA",
+   "ZMB"
+  ],
+  "landlocked": false,
+  "area_km2": 945087,
+  "latlng": [
+   -6,
+   35
+  ]
+ },
+ {
+  "id": "THA",
+  "iso2": "th",
+  "iso_num": "764",
+  "name": "Thailand",
+  "names": [
+   "Thailand",
+   "Kingdom of Thailand",
+   "Prathet",
+   "Thai",
+   "Ratcha Anachak Thai"
+  ],
+  "capitals": [
+   "Bangkok"
+  ],
+  "capital_names": [
+   "Bangkok"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "MMR",
+   "KHM",
+   "LAO",
+   "MYS"
+  ],
+  "landlocked": false,
+  "area_km2": 513120,
+  "latlng": [
+   15,
+   100
+  ]
+ },
+ {
+  "id": "TLS",
+  "iso2": "tl",
+  "iso_num": "626",
+  "name": "Timor-Leste",
+  "names": [
+   "Timor-Leste",
+   "Democratic Republic of Timor-Leste",
+   "East Timor",
+   "Timor",
+   "República Democrática de Timor-Leste",
+   "Repúblika Demokrátika Timór-Leste",
+   "Timór Lorosa'e"
+  ],
+  "capitals": [
+   "Dili"
+  ],
+  "capital_names": [
+   "Dili"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "IDN"
+  ],
+  "landlocked": false,
+  "area_km2": 14874,
+  "latlng": [
+   -8.83333333,
+   125.91666666
+  ]
+ },
+ {
+  "id": "TGO",
+  "iso2": "tg",
+  "iso_num": "768",
+  "name": "Togo",
+  "names": [
+   "Togo",
+   "Togolese Republic",
+   "Togolese",
+   "République Togolaise"
+  ],
+  "capitals": [
+   "Lomé"
+  ],
+  "capital_names": [
+   "Lomé"
+  ],
+  "continent": "Africa",
+  "subregion": "Western Africa",
+  "type": "sovereign",
+  "borders": [
+   "BEN",
+   "BFA",
+   "GHA"
+  ],
+  "landlocked": false,
+  "area_km2": 56785,
+  "latlng": [
+   8,
+   1.16666666
+  ]
+ },
+ {
+  "id": "TKL",
+  "iso2": "tk",
+  "iso_num": "772",
+  "name": "Tokelau",
+  "names": [
+   "Tokelau"
+  ],
+  "capitals": [],
+  "capital_names": [],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 12,
+  "latlng": [
+   -9,
+   -172
+  ]
+ },
+ {
+  "id": "TON",
+  "iso2": "to",
+  "iso_num": "776",
+  "name": "Tonga",
+  "names": [
+   "Tonga",
+   "Kingdom of Tonga"
+  ],
+  "capitals": [
+   "Nuku'alofa"
+  ],
+  "capital_names": [
+   "Nuku'alofa"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 747,
+  "latlng": [
+   -20,
+   -175
+  ]
+ },
+ {
+  "id": "TTO",
+  "iso2": "tt",
+  "iso_num": "780",
+  "name": "Trinidad and Tobago",
+  "names": [
+   "Trinidad and Tobago",
+   "Republic of Trinidad and Tobago",
+   "Trinidad"
+  ],
+  "capitals": [
+   "Port of Spain"
+  ],
+  "capital_names": [
+   "Port of Spain"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 5130,
+  "latlng": [
+   11,
+   -61
+  ]
+ },
+ {
+  "id": "TUN",
+  "iso2": "tn",
+  "iso_num": "788",
+  "name": "Tunisia",
+  "names": [
+   "Tunisia",
+   "Tunisian Republic",
+   "Republic of Tunisia",
+   "al-Jumhūriyyah at-Tūnisiyyah"
+  ],
+  "capitals": [
+   "Tunis"
+  ],
+  "capital_names": [
+   "Tunis"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "sovereign",
+  "borders": [
+   "DZA",
+   "LBY"
+  ],
+  "landlocked": false,
+  "area_km2": 163610,
+  "latlng": [
+   34,
+   9
+  ]
+ },
+ {
+  "id": "TKM",
+  "iso2": "tm",
+  "iso_num": "795",
+  "name": "Turkmenistan",
+  "names": [
+   "Turkmenistan"
+  ],
+  "capitals": [
+   "Ashgabat"
+  ],
+  "capital_names": [
+   "Ashgabat"
+  ],
+  "continent": "Asia",
+  "subregion": "Central Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "IRN",
+   "KAZ",
+   "UZB"
+  ],
+  "landlocked": true,
+  "area_km2": 488100,
+  "latlng": [
+   40,
+   60
+  ]
+ },
+ {
+  "id": "TCA",
+  "iso2": "tc",
+  "iso_num": "796",
+  "name": "Turks and Caicos Islands",
+  "names": [
+   "Turks and Caicos Islands"
+  ],
+  "capitals": [
+   "Cockburn Town"
+  ],
+  "capital_names": [
+   "Cockburn Town"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 948,
+  "latlng": [
+   21.75,
+   -71.58333333
+  ]
+ },
+ {
+  "id": "TUV",
+  "iso2": "tv",
+  "iso_num": "798",
+  "name": "Tuvalu",
+  "names": [
+   "Tuvalu"
+  ],
+  "capitals": [
+   "Funafuti"
+  ],
+  "capital_names": [
+   "Funafuti"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 26,
+  "latlng": [
+   -8,
+   178
+  ]
+ },
+ {
+  "id": "TUR",
+  "iso2": "tr",
+  "iso_num": "792",
+  "name": "Türkiye",
+  "names": [
+   "Türkiye",
+   "Republic of Türkiye",
+   "Republic of Turkey",
+   "Türkiye Cumhuriyeti",
+   "Turkey"
+  ],
+  "capitals": [
+   "Ankara"
+  ],
+  "capital_names": [
+   "Ankara"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "ARM",
+   "AZE",
+   "BGR",
+   "GEO",
+   "GRC",
+   "IRN",
+   "IRQ",
+   "SYR"
+  ],
+  "landlocked": false,
+  "area_km2": 783562,
+  "latlng": [
+   39,
+   35
+  ]
+ },
+ {
+  "id": "UGA",
+  "iso2": "ug",
+  "iso_num": "800",
+  "name": "Uganda",
+  "names": [
+   "Uganda",
+   "Republic of Uganda",
+   "Jamhuri ya Uganda"
+  ],
+  "capitals": [
+   "Kampala"
+  ],
+  "capital_names": [
+   "Kampala"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "COD",
+   "KEN",
+   "RWA",
+   "SSD",
+   "TZA"
+  ],
+  "landlocked": true,
+  "area_km2": 241550,
+  "latlng": [
+   1,
+   32
+  ]
+ },
+ {
+  "id": "UKR",
+  "iso2": "ua",
+  "iso_num": "804",
+  "name": "Ukraine",
+  "names": [
+   "Ukraine",
+   "Ukrayina"
+  ],
+  "capitals": [
+   "Kyiv"
+  ],
+  "capital_names": [
+   "Kyiv",
+   "Kiev"
+  ],
+  "continent": "Europe",
+  "subregion": "Eastern Europe",
+  "type": "sovereign",
+  "borders": [
+   "BLR",
+   "HUN",
+   "MDA",
+   "POL",
+   "ROU",
+   "RUS",
+   "SVK"
+  ],
+  "landlocked": false,
+  "area_km2": 603500,
+  "latlng": [
+   49,
+   32
+  ]
+ },
+ {
+  "id": "ARE",
+  "iso2": "ae",
+  "iso_num": "784",
+  "name": "United Arab Emirates",
+  "names": [
+   "United Arab Emirates",
+   "UAE",
+   "Emirates"
+  ],
+  "capitals": [
+   "Abu Dhabi"
+  ],
+  "capital_names": [
+   "Abu Dhabi"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "OMN",
+   "SAU"
+  ],
+  "landlocked": false,
+  "area_km2": 83600,
+  "latlng": [
+   24,
+   54
+  ]
+ },
+ {
+  "id": "GBR",
+  "iso2": "gb",
+  "iso_num": "826",
+  "name": "United Kingdom",
+  "names": [
+   "United Kingdom",
+   "United Kingdom of Great Britain and Northern Ireland",
+   "UK",
+   "Great Britain",
+   "Britain"
+  ],
+  "capitals": [
+   "London"
+  ],
+  "capital_names": [
+   "London"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "sovereign",
+  "borders": [
+   "IRL"
+  ],
+  "landlocked": false,
+  "area_km2": 242900,
+  "latlng": [
+   54,
+   -2
+  ]
+ },
+ {
+  "id": "USA",
+  "iso2": "us",
+  "iso_num": "840",
+  "name": "United States",
+  "names": [
+   "United States",
+   "United States of America",
+   "US",
+   "USA",
+   "America"
+  ],
+  "capitals": [
+   "Washington D.C."
+  ],
+  "capital_names": [
+   "Washington D.C.",
+   "Washington",
+   "Washington DC"
+  ],
+  "continent": "North America",
+  "subregion": "North America",
+  "type": "sovereign",
+  "borders": [
+   "CAN",
+   "MEX"
+  ],
+  "landlocked": false,
+  "area_km2": 9372610,
+  "latlng": [
+   38,
+   -97
+  ]
+ },
+ {
+  "id": "VIR",
+  "iso2": "vi",
+  "iso_num": "850",
+  "name": "United States Virgin Islands",
+  "names": [
+   "United States Virgin Islands",
+   "Virgin Islands of the United States",
+   "US Virgin Islands"
+  ],
+  "capitals": [
+   "Charlotte Amalie"
+  ],
+  "capital_names": [
+   "Charlotte Amalie"
+  ],
+  "continent": "North America",
+  "subregion": "Caribbean",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 347,
+  "latlng": [
+   18.35,
+   -64.933333
+  ]
+ },
+ {
+  "id": "URY",
+  "iso2": "uy",
+  "iso_num": "858",
+  "name": "Uruguay",
+  "names": [
+   "Uruguay",
+   "Oriental Republic of Uruguay",
+   "República Oriental del Uruguay"
+  ],
+  "capitals": [
+   "Montevideo"
+  ],
+  "capital_names": [
+   "Montevideo"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "ARG",
+   "BRA"
+  ],
+  "landlocked": false,
+  "area_km2": 181034,
+  "latlng": [
+   -33,
+   -56
+  ]
+ },
+ {
+  "id": "UZB",
+  "iso2": "uz",
+  "iso_num": "860",
+  "name": "Uzbekistan",
+  "names": [
+   "Uzbekistan",
+   "Republic of Uzbekistan"
+  ],
+  "capitals": [
+   "Tashkent"
+  ],
+  "capital_names": [
+   "Tashkent"
+  ],
+  "continent": "Asia",
+  "subregion": "Central Asia",
+  "type": "sovereign",
+  "borders": [
+   "AFG",
+   "KAZ",
+   "KGZ",
+   "TJK",
+   "TKM"
+  ],
+  "landlocked": true,
+  "area_km2": 447400,
+  "latlng": [
+   41,
+   64
+  ]
+ },
+ {
+  "id": "VUT",
+  "iso2": "vu",
+  "iso_num": "548",
+  "name": "Vanuatu",
+  "names": [
+   "Vanuatu",
+   "Republic of Vanuatu",
+   "Ripablik blong Vanuatu",
+   "République de Vanuatu"
+  ],
+  "capitals": [
+   "Port Vila"
+  ],
+  "capital_names": [
+   "Port Vila"
+  ],
+  "continent": "Oceania",
+  "subregion": "Melanesia",
+  "type": "sovereign",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 12189,
+  "latlng": [
+   -16,
+   167
+  ]
+ },
+ {
+  "id": "VAT",
+  "iso2": "va",
+  "iso_num": "336",
+  "name": "Vatican City",
+  "names": [
+   "Vatican City",
+   "Vatican City State",
+   "Holy See (Vatican City State)",
+   "Vatican",
+   "Stato della Città del Vaticano",
+   "Holy See"
+  ],
+  "capitals": [
+   "Vatican City"
+  ],
+  "capital_names": [
+   "Vatican City",
+   "Vatican"
+  ],
+  "continent": "Europe",
+  "subregion": "Southern Europe",
+  "type": "sovereign",
+  "borders": [
+   "ITA"
+  ],
+  "landlocked": true,
+  "area_km2": 0.44,
+  "latlng": [
+   41.9,
+   12.45
+  ]
+ },
+ {
+  "id": "VEN",
+  "iso2": "ve",
+  "iso_num": "862",
+  "name": "Venezuela",
+  "names": [
+   "Venezuela",
+   "Bolivarian Republic of Venezuela",
+   "República Bolivariana de Venezuela"
+  ],
+  "capitals": [
+   "Caracas"
+  ],
+  "capital_names": [
+   "Caracas"
+  ],
+  "continent": "South America",
+  "subregion": "South America",
+  "type": "sovereign",
+  "borders": [
+   "BRA",
+   "COL",
+   "GUY"
+  ],
+  "landlocked": false,
+  "area_km2": 916445,
+  "latlng": [
+   8,
+   -66
+  ]
+ },
+ {
+  "id": "VNM",
+  "iso2": "vn",
+  "iso_num": "704",
+  "name": "Vietnam",
+  "names": [
+   "Vietnam",
+   "Socialist Republic of Vietnam",
+   "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+   "Viet Nam"
+  ],
+  "capitals": [
+   "Hanoi"
+  ],
+  "capital_names": [
+   "Hanoi"
+  ],
+  "continent": "Asia",
+  "subregion": "South-Eastern Asia",
+  "type": "sovereign",
+  "borders": [
+   "KHM",
+   "CHN",
+   "LAO"
+  ],
+  "landlocked": false,
+  "area_km2": 331212,
+  "latlng": [
+   16.16666666,
+   107.83333333
+  ]
+ },
+ {
+  "id": "WLF",
+  "iso2": "wf",
+  "iso_num": "876",
+  "name": "Wallis and Futuna",
+  "names": [
+   "Wallis and Futuna",
+   "Territory of the Wallis and Futuna Islands",
+   "Territoire des îles Wallis et Futuna"
+  ],
+  "capitals": [
+   "Mata-Utu"
+  ],
+  "capital_names": [
+   "Mata-Utu"
+  ],
+  "continent": "Oceania",
+  "subregion": "Polynesia",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 142,
+  "latlng": [
+   -13.3,
+   -176.2
+  ]
+ },
+ {
+  "id": "ESH",
+  "iso2": "eh",
+  "iso_num": "732",
+  "name": "Western Sahara",
+  "names": [
+   "Western Sahara",
+   "Sahrawi Arab Democratic Republic",
+   "Taneẓroft Tutrimt"
+  ],
+  "capitals": [
+   "El Aaiún"
+  ],
+  "capital_names": [
+   "El Aaiún",
+   "Laayoune"
+  ],
+  "continent": "Africa",
+  "subregion": "Northern Africa",
+  "type": "partly recognised",
+  "borders": [
+   "DZA",
+   "MRT",
+   "MAR"
+  ],
+  "landlocked": false,
+  "area_km2": 266000,
+  "latlng": [
+   24.5,
+   -13
+  ]
+ },
+ {
+  "id": "YEM",
+  "iso2": "ye",
+  "iso_num": "887",
+  "name": "Yemen",
+  "names": [
+   "Yemen",
+   "Republic of Yemen",
+   "Yemeni Republic",
+   "al-Jumhūriyyah al-Yamaniyyah"
+  ],
+  "capitals": [
+   "Sana'a"
+  ],
+  "capital_names": [
+   "Sana'a"
+  ],
+  "continent": "Asia",
+  "subregion": "Western Asia",
+  "type": "sovereign",
+  "borders": [
+   "OMN",
+   "SAU"
+  ],
+  "landlocked": false,
+  "area_km2": 527968,
+  "latlng": [
+   15,
+   48
+  ]
+ },
+ {
+  "id": "ZMB",
+  "iso2": "zm",
+  "iso_num": "894",
+  "name": "Zambia",
+  "names": [
+   "Zambia",
+   "Republic of Zambia"
+  ],
+  "capitals": [
+   "Lusaka"
+  ],
+  "capital_names": [
+   "Lusaka"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "AGO",
+   "BWA",
+   "COD",
+   "MWI",
+   "MOZ",
+   "NAM",
+   "TZA",
+   "ZWE"
+  ],
+  "landlocked": true,
+  "area_km2": 752612,
+  "latlng": [
+   -15,
+   30
+  ]
+ },
+ {
+  "id": "ZWE",
+  "iso2": "zw",
+  "iso_num": "716",
+  "name": "Zimbabwe",
+  "names": [
+   "Zimbabwe",
+   "Republic of Zimbabwe"
+  ],
+  "capitals": [
+   "Harare"
+  ],
+  "capital_names": [
+   "Harare"
+  ],
+  "continent": "Africa",
+  "subregion": "Eastern Africa",
+  "type": "sovereign",
+  "borders": [
+   "BWA",
+   "MOZ",
+   "ZAF",
+   "ZMB"
+  ],
+  "landlocked": true,
+  "area_km2": 390757,
+  "latlng": [
+   -20,
+   30
+  ]
+ },
+ {
+  "id": "ALA",
+  "iso2": "ax",
+  "iso_num": "248",
+  "name": "Åland Islands",
+  "names": [
+   "Åland Islands",
+   "Aaland",
+   "Aland",
+   "Ahvenanmaa"
+  ],
+  "capitals": [
+   "Mariehamn"
+  ],
+  "capital_names": [
+   "Mariehamn"
+  ],
+  "continent": "Europe",
+  "subregion": "Northern Europe",
+  "type": "territory",
+  "borders": [],
+  "landlocked": false,
+  "area_km2": 1580,
+  "latlng": [
+   60.116667,
+   19.9
+  ]
+ }
+]

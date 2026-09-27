@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="intro">
+  <h1>Learn the world, one guess at a time.</h1>
+  <p>{{ country_count }} countries and territories. The site learns what you know and asks more about what you don't.</p>
+</section>
+
+<section class="games">
+  {% for game in games %}
+    {% set xp = me.per_game.get(game.slug, 0) %}
+    {% if game.ready %}
+      <a class="game-card" href="/{{ game.slug }}">
+    {% else %}
+      <div class="game-card soon">
+    {% endif %}
+        <div class="game-icon">{{ game.icon }}</div>
+        <div class="game-body">
+          <h2>{{ game.name }}</h2>
+          <p>{{ game.blurb }}</p>
+        </div>
+        <div class="game-foot">
+          {% if game.ready %}<span>{{ xp }} XP</span>{% else %}<span class="badge">Coming soon</span>{% endif %}
+        </div>
+    {% if game.ready %}</a>{% else %}</div>{% endif %}
+  {% endfor %}
+</section>
+{% endblock %}

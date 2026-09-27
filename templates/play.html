@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play" id="play" data-game="{{ game.slug }}">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <span>Streak <b id="streak">0</b> · Session <b id="session">0 / 0</b></span>
+  </div>
+
+  <div class="prompt" id="prompt" aria-live="polite"></div>
+
+  <form class="answer-form" id="answer-form" autocomplete="off">
+    <input id="guess" type="text" placeholder="{{ game.placeholder }}"
+           autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Your answer">
+    <button type="submit" class="primary">Guess</button>
+    <button type="button" class="ghost" id="skip">I don't know</button>
+  </form>
+
+  <div class="choices" id="choices" hidden></div>
+
+  <div class="reveal" id="reveal" hidden>
+    <div class="verdict" id="verdict"></div>
+    <div class="tip" id="tip" hidden></div>
+    <div class="locator" id="locator" hidden></div>
+    <p class="fact" id="fact"></p>
+    <p class="info" id="info"></p>
+    <button type="button" class="primary" id="next">Next <kbd>Enter</kbd></button>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='game.js') }}"></script>
+{% endblock %}

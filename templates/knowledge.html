@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}My Knowledge · Geo Quest{% endblock %}
+
+{% block content %}
+{% set game_by_slug = {} %}
+{% for g in games %}{% set _ = game_by_slug.update({g.slug: g}) %}{% endfor %}
+{% macro pct(x) %}{{ (x * 100) | round | int }}%{% endmacro %}
+
+<section class="intro">
+  <h1>My Knowledge</h1>
+  <p>Based on {{ stats.total_answers }} answer{{ "" if stats.total_answers == 1 else "s" }}.
+     A country counts as <b>known</b> once you've got it right about four times in a row.</p>
+</section>
+
+{% if not stats.total_answers %}
+  <section class="card empty">
+    <p>Nothing here yet. Play a few rounds and come back to see what you know.</p>
+    <p>{% for g in games %}<a href="/{{ g.slug }}">{{ g.icon }} {{ g.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  </section>
+{% else %}
+
+<section class="k-tiles">
+  {% for g in games %}
+    {% set s = stats.games.get(g.slug) %}
+    <a class="k-tile" href="/{{ g.slug }}">
+      <div class="k-tile-head">{{ g.icon }} {{ g.name }}</div>
+      <div class="k-big">{{ s.known }}<span> / {{ s.pool }} known</span></div>
+      <div class="bar"><div style="width: {{ (s.known / s.pool * 100) | round(1) }}%"></div></div>
+      <div class="k-small">
+        {% if s.answered %}{{ pct(s.accuracy) }} right · {{ s.answered }} answers · {{ s.xp }} XP
+        {% else %}Not played yet{% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</section>
+
+{% if stats.best_areas or stats.worst_areas %}
+<section class="k-two">
+  <div class="card">
+    <h2>Easiest for you</h2>
+    {% for a in stats.best_areas %}
+      <div class="k-area"><span>{{ game_by_slug[a.game].icon }} {{ game_by_slug[a.game].name }} · {{ a.region }}</span><b>{{ pct(a.accuracy) }}</b><small>of {{ a.answered }}</small></div>
+    {% else %}<p class="muted">Keep playing — you need at least 5 answers in an area.</p>{% endfor %}
+  </div>
+  <div class="card">
+    <h2>Needs work</h2>
+    {% for a in stats.worst_areas %}
+      <div class="k-area"><span>{{ game_by_slug[a.game].icon }} {{ game_by_slug[a.game].name }} · {{ a.region }}</span><b>{{ pct(a.accuracy) }}</b><small>of {{ a.answered }}</small></div>
+    {% else %}<p class="muted">Nothing below 80% yet. Nice.</p>{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="card">
+  <div class="k-head">
+    <h2>Mastery map</h2>
+    <div class="tabs" id="map-tabs" role="tablist">
+      {% for g in games %}<button type="button" role="tab" data-game="{{ g.slug }}">{{ g.icon }} {{ g.name }}</button>{% endfor %}
+    </div>
+  </div>
+  <div class="k-map" id="k-map"><div class="tooltip" id="tooltip" hidden></div></div>
+  <div class="k-langs" id="k-langs" hidden></div>
+  <div class="legend" aria-label="Legend">
+    <span class="swatch unseen"></span> Not seen
+    <span class="legend-ramp">
+      {% for i in range(6) %}<span class="swatch m{{ i }}"></span>{% endfor %}
+    </span>
+    Struggling → Mastered
+  </div>
+</section>
+
+<section class="card">
+  <h2>Accuracy by continent</h2>
+  <div class="table-wrap">
+    <table class="k-table" id="k-table"></table>
+  </div>
+  <p class="muted small">Areas with fewer than 5 answers show as —.</p>
+</section>
+
+<section class="k-two">
+  <div class="card">
+    <h2>Hardest for you</h2>
+    {% for i in stats.hardest %}
+      <div class="k-area"><span>{{ game_by_slug[i.game].icon }} {{ i.name }}</span><b>{{ i.correct }} / {{ i.seen }}</b><small>right</small></div>
+    {% else %}<p class="muted">Nothing you've missed twice yet.</p>{% endfor %}
+  </div>
+  <div class="card">
+    <h2>Most common mix-ups</h2>
+    {% for m in stats.mixups %}
+      <div class="k-area"><span>{{ game_by_slug[m.game].icon }} {{ m.answer }} <span class="muted">— you said</span> {{ m.guessed }}</span><b>×{{ m.times }}</b></div>
+    {% else %}<p class="muted">No mix-ups yet.</p>{% endfor %}
+  </div>
+</section>
+
+<script id="stats" type="application/json">{{ {"areas": stats.areas, "mastery": stats.mastery, "pools": pools, "names": names, "lang_groups": lang_groups} | tojson }}</script>
+<script src="{{ url_for('static', filename='knowledge.js') }}"></script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Geo Quest{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="{{ url_for('index') }}">Geo<span>Quest</span></a>
+      <a class="nav-link" href="{{ url_for('knowledge_page') }}">📊 My Knowledge</a>
+      <div class="xpbox" id="xpbox">
+        <div class="xpline">
+          <span><b id="lvl">Lv {{ me.level }}</b> · <span id="title">{{ me.title }}</span></span>
+          <span id="xptext">{{ me.into }} / {{ me.need }} XP</span>
+        </div>
+        <div class="bar"><div id="xpbar" style="width: {{ (me.into / me.need * 100) | round(1) }}%"></div></div>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      Country data: <a href="https://github.com/mledoze/countries">mledoze/countries</a> (ODbL) ·
+      Maps: <a href="https://www.naturalearthdata.com/">Natural Earth</a> ·
+      Flags: <a href="https://flagcdn.com/">flagcdn.com</a> ·
+      Ethnic groups: <a href="https://github.com/factbook/factbook.json">CIA World Factbook</a>
+    </footer>
+  </div>
+</body>
+</html>

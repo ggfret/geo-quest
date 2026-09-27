@@ -1,0 +1,429 @@
+{
+ "groups": {
+  "cyrillic": {"name": "Cyrillic alphabet"},
+  "romance": {"name": "Romance languages"},
+  "germanic": {"name": "Germanic languages", "fill": "nordic"},
+  "nordic": {"name": "Nordic languages", "fill": "germanic"},
+  "slavic-latin": {"name": "Slavic languages in Latin letters"},
+  "baltic-uralic": {"name": "Baltic and Finno-Ugric languages"},
+  "arabic-script": {"name": "Arabic script", "fill": "unique"},
+  "indic": {"name": "South Asian scripts"},
+  "se-asian": {"name": "Southeast Asian scripts", "fill": "east-asian"},
+  "east-asian": {"name": "East Asian scripts", "fill": "se-asian"},
+  "unique": {"name": "Alphabets of their own", "fill": "arabic-script"},
+  "turkic": {"name": "Turkic languages in Latin letters", "fill": "latin-world"},
+  "latin-world": {"name": "Latin-script languages of Asia and Africa", "fill": "turkic"},
+  "europe-other": {"name": "Other European languages"}
+ },
+ "languages": {
+  "Russian": {"group": "cyrillic", "countries": ["RUS", "BLR", "KAZ", "KGZ"],
+   "tell": "Russian has ы, э and ъ, and no і. The letters ї, є, ґ (Ukrainian) and ў (Belarusian) never appear.",
+   "sentences": [
+    ["Я хотел бы заказать чашку чая.", "I would like to order a cup of tea."],
+    ["Завтра мы поедем на дачу.", "Tomorrow we're going to the summer house."],
+    ["Где находится ближайшая станция метро?", "Where is the nearest metro station?"]]},
+  "Ukrainian": {"group": "cyrillic", "countries": ["UKR"],
+   "tell": "і, ї, є and ґ are Ukrainian letters. Ukrainian has no ы, э or ъ, which are very common in Russian.",
+   "sentences": [
+    ["Я хотів би замовити чашку чаю.", "I would like to order a cup of tea."],
+    ["Завтра ми поїдемо до бабусі в село.", "Tomorrow we'll go to grandma's in the village."],
+    ["Де знаходиться найближча станція метро?", "Where is the nearest metro station?"]]},
+  "Belarusian": {"group": "cyrillic", "countries": ["BLR"],
+   "tell": "ў (u with a breve) is found only in Belarusian. It uses і like Ukrainian, but also ы and э like Russian.",
+   "sentences": [
+    ["Я хацеў бы замовіць кубак гарбаты.", "I would like to order a cup of tea."],
+    ["Заўтра мы паедзем да бабулі ў вёску.", "Tomorrow we'll go to grandma's in the village."],
+    ["Дзе знаходзіцца бліжэйшая станцыя метро?", "Where is the nearest metro station?"]]},
+  "Bulgarian": {"group": "cyrillic", "countries": ["BGR"],
+   "tell": "Bulgarian uses ъ as an ordinary vowel (съм, във) and never has ы or э. Nouns carry 'the' as an ending: -та, -то, -ът.",
+   "sentences": [
+    ["Бих искал чаша кафе, моля.", "I would like a cup of coffee, please."],
+    ["Утре отиваме на море с приятелите.", "Tomorrow we're going to the seaside with friends."],
+    ["Къде е най-близката спирка на автобуса?", "Where is the nearest bus stop?"]]},
+  "Serbian": {"group": "cyrillic", "countries": ["SRB", "MNE", "BIH"],
+   "tell": "Serbian has its own letters ђ and ћ, and also uses ј, љ, њ and џ. It has no я, ю, щ or ы.",
+   "sentences": [
+    ["Желео бих шољу кафе, молим.", "I would like a cup of coffee, please."],
+    ["Сутра идемо на море са пријатељима.", "Tomorrow we're going to the seaside with friends."],
+    ["Где је најближа аутобуска станица?", "Where is the nearest bus station?"]]},
+  "Macedonian": {"group": "cyrillic", "countries": ["MKD"],
+   "tell": "ѓ and ќ are found only in Macedonian (ѕ is rare elsewhere too). Like Serbian it uses ј, љ, њ, but not ђ or ћ.",
+   "sentences": [
+    ["Би сакал една кафе, ве молам.", "I would like a coffee, please."],
+    ["Утре одиме на езеро со пријателите.", "Tomorrow we're going to the lake with friends."],
+    ["Каде е најблиската автобуска станица?", "Where is the nearest bus station?"]]},
+  "Kazakh": {"group": "cyrillic", "countries": ["KAZ"],
+   "tell": "Kazakh adds ә, ғ, қ, ң, ө, ұ, ү, һ and і to the Russian alphabet. ә, қ and ұ are the giveaways.",
+   "sentences": [
+    ["Маған бір кесе шай беріңізші.", "Please give me a cup of tea."],
+    ["Ертең біз тауға барамыз.", "Tomorrow we're going to the mountains."],
+    ["Қазақстан өте үлкен ел.", "Kazakhstan is a very big country."]]},
+  "Mongolian": {"group": "cyrillic", "countries": ["MNG"],
+   "tell": "Mongolian uses ө and ү a lot, often doubled (өө, үү, аа), but has none of Kazakh's ә, ғ, қ.",
+   "sentences": [
+    ["Би нэг аяга цай уумаар байна.", "I would like to drink a cup of tea."],
+    ["Маргааш бид хөдөө явна.", "Tomorrow we're going to the countryside."],
+    ["Монгол улс их өргөн уудам.", "Mongolia is very vast."]]},
+
+  "Spanish": {"group": "romance", "countries": ["ESP", "MEX", "COL", "ARG", "PER", "VEN", "CHL", "ECU", "GTM", "CUB", "BOL", "DOM", "HND", "PRY", "SLV", "NIC", "CRI", "PAN", "URY", "PRI", "GNQ"],
+   "tell": "ñ, and questions that start with ¿ or ¡, are uniquely Spanish. There's lots of 'que', 'el' and 'los', and words ending in -ción.",
+   "sentences": [
+    ["Me gustaría pedir una taza de café con leche, por favor.", "I would like to order a cup of coffee with milk, please."],
+    ["Mañana vamos a visitar a mis abuelos en el pueblo.", "Tomorrow we're going to visit my grandparents in the village."],
+    ["¿Dónde está la biblioteca más cercana?", "Where is the nearest library?"]]},
+  "Portuguese": {"group": "romance", "countries": ["PRT", "BRA", "AGO", "MOZ", "CPV", "GNB", "STP", "TLS"],
+   "tell": "ã and õ (with a tilde) and endings like -ção, -ções are Portuguese. Look for 'não', 'você' and 'muito'.",
+   "sentences": [
+    ["Eu gostaria de um café sem açúcar, por favor.", "I would like a coffee without sugar, please."],
+    ["Amanhã vamos à praia com os nossos amigos.", "Tomorrow we're going to the beach with our friends."],
+    ["Não consigo encontrar as minhas chaves em lado nenhum.", "I can't find my keys anywhere."]]},
+  "French": {"group": "romance", "countries": ["FRA", "BEL", "CHE", "LUX", "MCO", "CAN", "SEN", "CIV", "MLI", "HTI", "COD", "MDG", "CMR"],
+   "tell": "French has many accents (é, è, ê, à, ç), apostrophes (l', d', j', qu') and silent endings (-ent, -ez). Look for 'je', 'est', 'les' and 'vous'.",
+   "sentences": [
+    ["Je voudrais réserver une table pour deux personnes ce soir.", "I would like to book a table for two people this evening."],
+    ["Il fait très beau aujourd'hui, allons nous promener.", "The weather is lovely today, let's go for a walk."],
+    ["Où se trouve la gare, s'il vous plaît ?", "Where is the train station, please?"]]},
+  "Italian": {"group": "romance", "countries": ["ITA", "SMR", "VAT", "CHE"],
+   "tell": "Almost every Italian word ends in a vowel, and there are lots of double consonants (-tt-, -ll-, -zz-). Look for 'che', 'gli', 'sono' and 'il'.",
+   "sentences": [
+    ["Vorrei un bicchiere d'acqua, per favore.", "I would like a glass of water, please."],
+    ["Domani andiamo al mare con i nostri amici.", "Tomorrow we're going to the seaside with our friends."],
+    ["Non ho mai visto un tramonto così bello.", "I've never seen such a beautiful sunset."]]},
+  "Romanian": {"group": "romance", "countries": ["ROU", "MDA"],
+   "tell": "ă, â, î, ș and ț are Romanian. The 'the' goes on the end of words: 'prietenii' means 'the friends'.",
+   "sentences": [
+    ["Aș dori o cafea cu lapte, vă rog.", "I would like a coffee with milk, please."],
+    ["Mâine mergem la munte cu prietenii.", "Tomorrow we're going to the mountains with friends."],
+    ["Unde este cea mai apropiată stație de autobuz?", "Where is the nearest bus stop?"]]},
+  "Catalan": {"group": "romance", "countries": ["AND", "ESP"],
+   "tell": "Catalan has l·l (with a middle dot), à, è, ò, and words ending in -ny or -ix. Look for 'amb', 'és', 'els', 'molt' and 'més'.",
+   "sentences": [
+    ["Voldria un cafè amb llet, si us plau.", "I would like a coffee with milk, please."],
+    ["Demà anirem a la platja amb els amics.", "Tomorrow we'll go to the beach with our friends."],
+    ["La ciutat és molt més bonica a la nit.", "The city is much more beautiful at night."]]},
+
+  "English": {"group": "germanic", "countries": ["GBR", "USA", "CAN", "AUS", "NZL", "IRL", "JAM", "NGA", "GHA", "KEN"],
+   "tell": "English has no accents at all, and uses lots of 'the', 'th', 'w' and words like 'is', 'and' and 'you'.",
+   "sentences": [
+    ["The weather is lovely today, so let's go for a walk in the park.", ""],
+    ["I forgot my umbrella at the office again.", ""],
+    ["Could you tell me where the nearest train station is?", ""]]},
+  "German": {"group": "germanic", "countries": ["DEU", "AUT", "CHE", "LIE", "LUX"],
+   "tell": "ß, plus ä, ö and ü, are German. Every noun starts with a capital letter. Look for 'ich', 'nicht', 'und' and 'sch'.",
+   "sentences": [
+    ["Ich habe gestern einen sehr interessanten Film gesehen.", "Yesterday I saw a very interesting film."],
+    ["Könnten Sie mir bitte helfen, den Bahnhof zu finden?", "Could you please help me find the train station?"],
+    ["Wir fahren im Sommer mit dem Fahrrad an die Ostsee.", "In summer we're cycling to the Baltic Sea."]]},
+  "Dutch": {"group": "germanic", "countries": ["NLD", "BEL", "SUR", "ABW", "CUW", "SXM"],
+   "tell": "The 'ij' combination and double vowels (aa, ee, oo, uu) are Dutch. Look for 'het', 'een', 'niet' and 'zijn'.",
+   "sentences": [
+    ["Ik heb gisteren een heel mooi boek gelezen.", "Yesterday I read a really nice book."],
+    ["Waar is het dichtstbijzijnde station?", "Where is the nearest station?"],
+    ["We gaan dit weekend fietsen langs de grachten.", "This weekend we're cycling along the canals."]]},
+  "Afrikaans": {"group": "germanic", "countries": ["ZAF", "NAM"],
+   "tell": "Afrikaans looks like simplified Dutch. It puts 'nie' twice in negative sentences, uses 'is' and 'het' for everyone, and has ê and ë. Look for 'ek' (I) and 'jy' (you).",
+   "sentences": [
+    ["Ek wil graag 'n koppie koffie hê, asseblief.", "I would like a cup of coffee, please."],
+    ["Ons gaan môre strand toe met ons vriende.", "Tomorrow we're going to the beach with our friends."],
+    ["Ek het nie my sleutels gekry nie.", "I didn't find my keys."]]},
+
+  "Swedish": {"group": "nordic", "countries": ["SWE", "FIN", "ALA"],
+   "tell": "Swedish uses ä and ö (like German), where Norwegian and Danish use æ and ø. Look for 'och', 'jag' and 'inte'.",
+   "sentences": [
+    ["Jag skulle vilja ha en kopp kaffe, tack.", "I would like a cup of coffee, please."],
+    ["Vi ska åka till landet i sommar.", "We're going to the countryside this summer."],
+    ["Hur mycket kostar den här tröjan?", "How much does this sweater cost?"]]},
+  "Norwegian": {"group": "nordic", "countries": ["NOR"],
+   "tell": "Norwegian has æ, ø and å like Danish, but it's spelled closer to how it sounds: 'meg', 'deg' and 'hva', where Danish has 'mig', 'dig' and 'hvad'. Look for 'ikke' and 'jeg'.",
+   "sentences": [
+    ["Jeg liker å gå på tur i fjellet om helgene.", "I like hiking in the mountains at weekends."],
+    ["Hvor ligger nærmeste bensinstasjon?", "Where is the nearest petrol station?"],
+    ["Vi spiste middag hos bestemor i går.", "We had dinner at grandma's yesterday."]]},
+  "Danish": {"group": "nordic", "countries": ["DNK", "FRO", "GRL"],
+   "tell": "Danish has æ, ø and å like Norwegian, but with 'soft' spellings like 'mig', 'dig', 'hvad' and 'af', and endings like -de and -ge.",
+   "sentences": [
+    ["Jeg vil gerne have en kop kaffe, tak.", "I would like a cup of coffee, please."],
+    ["Vi cykler til stranden i morgen tidlig.", "We're cycling to the beach early tomorrow."],
+    ["Hvad hedder du, og hvor kommer du fra?", "What's your name, and where are you from?"]]},
+  "Icelandic": {"group": "nordic", "countries": ["ISL"],
+   "tell": "þ (thorn) and ð (eth) are the giveaways. Only Icelandic still uses þ; Faroese has ð but not þ.",
+   "sentences": [
+    ["Ég elska að horfa á norðurljósin á veturna.", "I love watching the northern lights in winter."],
+    ["Hvar er næsta sundlaug?", "Where is the nearest swimming pool?"],
+    ["Veðrið er mjög gott í dag.", "The weather is very good today."]]},
+
+  "Polish": {"group": "slavic-latin", "countries": ["POL"],
+   "tell": "ł, ą, ę, ś, ć, ź and ż are Polish, along with lots of 'sz', 'cz' and 'rz'. It has no č or š.",
+   "sentences": [
+    ["Chciałbym zamówić kawę z mlekiem, proszę.", "I would like to order a coffee with milk, please."],
+    ["Jutro jedziemy w góry z przyjaciółmi.", "Tomorrow we're going to the mountains with friends."],
+    ["Gdzie jest najbliższy przystanek autobusowy?", "Where is the nearest bus stop?"]]},
+  "Czech": {"group": "slavic-latin", "countries": ["CZE"],
+   "tell": "ř, ě and ů (u with a ring) are found only in Czech.",
+   "sentences": [
+    ["Zítra pojedeme na výlet do hor.", "Tomorrow we're going on a trip to the mountains."],
+    ["Kde je nejbližší zastávka tramvaje?", "Where is the nearest tram stop?"],
+    ["Dám si jedno pivo, prosím.", "I'll have a beer, please."]]},
+  "Slovak": {"group": "slavic-latin", "countries": ["SVK"],
+   "tell": "Slovak has ä, ô, ľ, ĺ and ŕ, but none of Czech's ř, ě or ů.",
+   "sentences": [
+    ["Zajtra pôjdeme na výlet do hôr.", "Tomorrow we're going on a trip to the mountains."],
+    ["Kde je najbližšia zastávka električky?", "Where is the nearest tram stop?"],
+    ["Dám si jedno pivo, prosím. Ďakujem!", "I'll have a beer, please. Thank you!"]]},
+  "Slovene": {"group": "slavic-latin", "countries": ["SVN"],
+   "tell": "Slovene uses only three special letters (č, š, ž), with no ć or đ like Croatian. Look for 'je', 'sem' and 'bom'.",
+   "sentences": [
+    ["Jutri gremo na izlet v hribe.", "Tomorrow we're going on a trip to the hills."],
+    ["Kje je najbližja avtobusna postaja?", "Where is the nearest bus station?"],
+    ["Rad bi eno kavo z mlekom, prosim.", "I'd like a coffee with milk, please."]]},
+  "Croatian": {"group": "slavic-latin", "countries": ["HRV", "BIH"],
+   "tell": "Croatian has both č and ć, plus đ (d with a stroke). Look for 'je', 'sam', 'ću' and 'što'.",
+   "sentences": [
+    ["Sutra idemo na more s prijateljima.", "Tomorrow we're going to the seaside with friends."],
+    ["Gdje je najbliža autobusna stanica?", "Where is the nearest bus station?"],
+    ["Htio bih šalicu kave, molim.", "I would like a cup of coffee, please."]]},
+
+  "Finnish": {"group": "baltic-uralic", "countries": ["FIN"],
+   "tell": "Finnish has lots of doubled vowels and consonants (aa, ää, kk, tt), ä and ö, and very long words. It has no b, f or š in native words.",
+   "sentences": [
+    ["Minä rakastan saunomista talvella.", "I love going to the sauna in winter."],
+    ["Missä on lähin rautatieasema?", "Where is the nearest railway station?"],
+    ["Tänään on todella kaunis päivä.", "Today is a really beautiful day."]]},
+  "Estonian": {"group": "baltic-uralic", "countries": ["EST"],
+   "tell": "õ is the Estonian giveaway. It looks like Finnish, with doubled letters and ä, ö and ü, but Finnish has no õ or ü.",
+   "sentences": [
+    ["Ma tahaksin tassi kohvi, palun.", "I would like a cup of coffee, please."],
+    ["Homme läheme sõpradega randa.", "Tomorrow we're going to the beach with friends."],
+    ["Kus on lähim bussipeatus?", "Where is the nearest bus stop?"]]},
+  "Hungarian": {"group": "baltic-uralic", "countries": ["HUN"],
+   "tell": "ő and ű (with a double accent) are found only in Hungarian. Look for 'sz', 'gy', 'cs' and 'zs'.",
+   "sentences": [
+    ["Szeretnék egy csésze kávét kérni.", "I would like to ask for a cup of coffee."],
+    ["Holnap elmegyünk a Balatonra.", "Tomorrow we're going to Lake Balaton."],
+    ["Hol van a legközelebbi metróállomás?", "Where is the nearest metro station?"]]},
+  "Lithuanian": {"group": "baltic-uralic", "countries": ["LTU"],
+   "tell": "Lithuanian has ą, ę, į and ų (with a little hook underneath) plus ė and ū. Words often end in -as, -is or -us.",
+   "sentences": [
+    ["Norėčiau puodelio kavos, prašau.", "I would like a cup of coffee, please."],
+    ["Rytoj važiuojame prie jūros su draugais.", "Tomorrow we're going to the seaside with friends."],
+    ["Kur yra artimiausia autobusų stotelė?", "Where is the nearest bus stop?"]]},
+  "Latvian": {"group": "baltic-uralic", "countries": ["LVA"],
+   "tell": "Latvian marks long vowels with a line (ā, ē, ī, ū) and has ķ, ļ, ņ and ģ (with a comma underneath).",
+   "sentences": [
+    ["Es vēlētos tasi kafijas, lūdzu.", "I would like a cup of coffee, please."],
+    ["Rīt mēs brauksim uz jūru ar draugiem.", "Tomorrow we'll drive to the sea with friends."],
+    ["Kur ir tuvākā autobusa pietura?", "Where is the nearest bus stop?"]]},
+
+  "Arabic": {"group": "arabic-script", "countries": ["SAU", "EGY", "DZA", "MAR", "IRQ", "SYR", "JOR", "LBY", "TUN", "YEM", "OMN", "ARE", "SDN", "LBN", "KWT", "QAT", "BHR", "MRT", "PSE"],
+   "tell": "Arabic has lots of ال ('al-', meaning 'the') at the start of words and ة at word ends, but none of the extra letters پ, چ, ژ or گ used in Persian and Urdu.",
+   "sentences": [
+    ["أود أن أطلب فنجان قهوة من فضلك.", "I would like to order a cup of coffee, please."],
+    ["سنذهب إلى البحر غداً مع أصدقائنا.", "We'll go to the sea tomorrow with our friends."],
+    ["أين أقرب محطة قطار؟", "Where is the nearest train station?"]]},
+  "Persian": {"group": "arabic-script", "countries": ["IRN", "AFG", "TJK"],
+   "tell": "Persian adds پ, چ, ژ and گ. Look for 'است' (is), 'می' before verbs, and few ال or ة.",
+   "sentences": [
+    ["می‌خواهم یک فنجان چای سفارش بدهم.", "I want to order a cup of tea."],
+    ["فردا با دوستانم به کوه می‌رویم.", "Tomorrow I'm going to the mountains with my friends."],
+    ["نزدیک‌ترین ایستگاه مترو کجاست؟", "Where is the nearest metro station?"]]},
+  "Urdu": {"group": "arabic-script", "countries": ["PAK", "IND"],
+   "tell": "Urdu has ٹ, ڈ and ڑ (with a small ط on top) and ے at word ends. Look for 'ہے' (is) at the end of sentences.",
+   "sentences": [
+    ["مجھے ایک کپ چائے چاہیے۔", "I want a cup of tea."],
+    ["کل ہم اپنے دوستوں کے ساتھ بازار جائیں گے۔", "Tomorrow we'll go to the market with our friends."],
+    ["سب سے قریبی ریلوے اسٹیشن کہاں ہے؟", "Where is the nearest railway station?"]]},
+  "Pashto": {"group": "arabic-script", "countries": ["AFG", "PAK"],
+   "tell": "Pashto has its own letters ښ, ږ, ځ, څ and ړ, and ې and ۍ at word ends.",
+   "sentences": [
+    ["زه یوه پیاله چای غواړم.", "I want a cup of tea."],
+    ["سبا موږ بازار ته ځو.", "Tomorrow we're going to the market."],
+    ["ته څنګه یې؟", "How are you?"]]},
+
+  "Hindi": {"group": "indic", "countries": ["IND"],
+   "tell": "Hindi uses Devanagari, with a line along the top of the letters. Sentences often end in 'है' or 'हैं' and '।'.",
+   "sentences": [
+    ["मुझे एक कप चाय चाहिए।", "I want a cup of tea."],
+    ["कल हम अपने दोस्तों के साथ बाज़ार जाएँगे।", "Tomorrow we'll go to the market with our friends."],
+    ["सबसे नज़दीकी रेलवे स्टेशन कहाँ है?", "Where is the nearest railway station?"]]},
+  "Nepali": {"group": "indic", "countries": ["NPL"],
+   "tell": "Nepali uses the same Devanagari script as Hindi, but sentences end in 'छ', 'छु' or 'हो' instead of 'है'.",
+   "sentences": [
+    ["मलाई एक कप चिया चाहियो।", "I want a cup of tea."],
+    ["भोलि हामी साथीहरूसँग बजार जान्छौं।", "Tomorrow we're going to the market with friends."],
+    ["नेपाल सुन्दर देश हो।", "Nepal is a beautiful country."]]},
+  "Bengali": {"group": "indic", "countries": ["BGD", "IND"],
+   "tell": "Bengali also has a top line, but with triangle-shaped letters like ব, ক and ত, and 'আ' at the start of words.",
+   "sentences": [
+    ["আমি এক কাপ চা চাই।", "I want a cup of tea."],
+    ["আগামীকাল আমরা বন্ধুদের সাথে বাজারে যাব।", "Tomorrow we'll go to the market with friends."],
+    ["সবচেয়ে কাছের রেলস্টেশন কোথায়?", "Where is the nearest railway station?"]]},
+  "Punjabi": {"group": "indic", "countries": ["IND", "PAK"],
+   "tell": "Punjabi is written in Gurmukhi, which has a top line too. Look for ੳ and ੲ, and 'ਹੈ' at the end.",
+   "sentences": [
+    ["ਮੈਨੂੰ ਇੱਕ ਕੱਪ ਚਾਹ ਚਾਹੀਦੀ ਹੈ।", "I need a cup of tea."],
+    ["ਕੱਲ੍ਹ ਅਸੀਂ ਦੋਸਤਾਂ ਨਾਲ ਬਾਜ਼ਾਰ ਜਾਵਾਂਗੇ।", "Tomorrow we'll go to the market with friends."],
+    ["ਤੁਹਾਡਾ ਨਾਮ ਕੀ ਹੈ?", "What is your name?"]]},
+  "Tamil": {"group": "indic", "countries": ["IND", "LKA", "SGP"],
+   "tell": "Tamil letters are round and loopy, with no line on top. Look for ழ and many 'ம்', 'ன்' endings with a dot on top.",
+   "sentences": [
+    ["எனக்கு ஒரு கப் டீ வேண்டும்.", "I want a cup of tea."],
+    ["நாளை நாங்கள் கடற்கரைக்கு போகிறோம்.", "Tomorrow we're going to the beach."],
+    ["உங்கள் பெயர் என்ன?", "What is your name?"]]},
+
+  "Thai": {"group": "se-asian", "countries": ["THA"],
+   "tell": "Thai letters have little loops at the start of each stroke, and there are no spaces between words. Look for ๆ, and 'ครับ' or 'ค่ะ' at the end of sentences.",
+   "sentences": [
+    ["ขอกาแฟหนึ่งแก้วครับ", "One coffee, please."],
+    ["พรุ่งนี้เราจะไปทะเลกับเพื่อน", "Tomorrow we're going to the sea with friends."],
+    ["สถานีรถไฟที่ใกล้ที่สุดอยู่ที่ไหน", "Where is the nearest train station?"]]},
+  "Lao": {"group": "se-asian", "countries": ["LAO"],
+   "tell": "Lao looks like a rounder, simpler Thai, with fewer loops and fewer letters. Look for ຂ, ບ and ໃ, and 'ບໍ່' (not).",
+   "sentences": [
+    ["ສະບາຍດີ, ເຈົ້າສະບາຍດີບໍ່?", "Hello, how are you?"],
+    ["ຂ້ອຍຢາກກິນເຂົ້າໜຽວ", "I want to eat sticky rice."],
+    ["ຂອບໃຈຫຼາຍໆ", "Thank you very much."]]},
+  "Khmer": {"group": "se-asian", "countries": ["KHM"],
+   "tell": "Khmer is very ornate, with small letters stacked underneath others (subscripts). It looks 'taller' and busier than Thai or Lao.",
+   "sentences": [
+    ["សួស្តី តើអ្នកសុខសប្បាយទេ?", "Hello, how are you?"],
+    ["ខ្ញុំចង់ញ៉ាំបាយ", "I want to eat rice."],
+    ["អរគុណច្រើន", "Thank you very much."]]},
+  "Burmese": {"group": "se-asian", "countries": ["MMR"],
+   "tell": "Burmese letters are almost all built from circles and half-circles, like ဝ, ရ and မ.",
+   "sentences": [
+    ["မင်္ဂလာပါ", "Hello."],
+    ["ကျွန်တော် ထမင်းစားချင်တယ်", "I want to eat rice."],
+    ["ကျေးဇူးတင်ပါတယ်", "Thank you."]]},
+
+  "Chinese": {"group": "east-asian", "countries": ["CHN", "TWN", "SGP", "HKG", "MAC"],
+   "tell": "Chinese uses only characters (汉字), none of the curly Japanese kana (の, は, を) or Korean circles and lines.",
+   "sentences": [
+    ["我想要一杯咖啡，谢谢。", "I'd like a cup of coffee, thanks."],
+    ["明天我们要去公园散步。", "Tomorrow we're going for a walk in the park."],
+    ["最近的地铁站在哪里？", "Where is the nearest metro station?"]]},
+  "Japanese": {"group": "east-asian", "countries": ["JPN"],
+   "tell": "Japanese mixes Chinese characters with simple curly kana like の, は, を, ます and katakana like コーヒー.",
+   "sentences": [
+    ["コーヒーを一杯お願いします。", "One coffee, please."],
+    ["明日は友達と海に行きます。", "Tomorrow I'm going to the sea with friends."],
+    ["一番近い駅はどこですか？", "Where is the nearest station?"]]},
+  "Korean": {"group": "east-asian", "countries": ["KOR", "PRK"],
+   "tell": "Korean Hangul builds syllable blocks from circles (ㅇ), lines and angles, like 커피, and words are separated by spaces.",
+   "sentences": [
+    ["커피 한 잔 주세요.", "A cup of coffee, please."],
+    ["내일 친구들과 바다에 갈 거예요.", "Tomorrow I'll go to the sea with friends."],
+    ["가장 가까운 지하철역이 어디예요?", "Where is the nearest subway station?"]]},
+
+  "Greek": {"group": "unique", "countries": ["GRC", "CYP"],
+   "tell": "The Greek alphabet has α, β, γ, δ, λ, π, σ and ς (a final s), with accents on the stressed vowel (ά, ή, ό).",
+   "sentences": [
+    ["Θα ήθελα ένα ποτήρι νερό, παρακαλώ.", "I would like a glass of water, please."],
+    ["Αύριο θα πάμε στη θάλασσα.", "Tomorrow we'll go to the sea."],
+    ["Πού είναι ο πλησιέστερος σταθμός του μετρό;", "Where is the nearest metro station?"]]},
+  "Georgian": {"group": "unique", "countries": ["GEO"],
+   "tell": "Georgian's rounded, bubbly letters (ა, ბ, გ, დ) have no capitals and no top line.",
+   "sentences": [
+    ["გამარჯობა, როგორ ხარ?", "Hello, how are you?"],
+    ["მე მიყვარს საქართველო.", "I love Georgia."],
+    ["დიდი მადლობა.", "Thank you very much."]]},
+  "Armenian": {"group": "unique", "countries": ["ARM"],
+   "tell": "Armenian letters look a bit like Latin letters with hooks and tails (ե, ի, ս). Look for the common pair 'ու'.",
+   "sentences": [
+    ["Բարև, ինչպե՞ս ես։", "Hello, how are you?"],
+    ["Ես սիրում եմ Հայաստանը։", "I love Armenia."],
+    ["Շնորհակալություն։", "Thank you."]]},
+  "Hebrew": {"group": "unique", "countries": ["ISR"],
+   "tell": "Hebrew is written right to left in square letters with no joining between them (unlike Arabic). Look for ש, ה and ם.",
+   "sentences": [
+    ["הייתי רוצה כוס קפה, בבקשה.", "I would like a cup of coffee, please."],
+    ["מחר אנחנו נוסעים לים עם חברים.", "Tomorrow we're going to the sea with friends."],
+    ["איפה התחנה הקרובה ביותר?", "Where is the nearest station?"]]},
+  "Amharic": {"group": "unique", "countries": ["ETH"],
+   "tell": "Amharic (Ge'ez script) uses syllable symbols with little legs and loops, like ሰ, ላ, ም, separated by ፡ or spaces.",
+   "sentences": [
+    ["ሰላም፣ እንዴት ነህ?", "Hello, how are you?"],
+    ["ቡና እወዳለሁ።", "I love coffee."],
+    ["አመሰግናለሁ።", "Thank you."]]},
+
+  "Turkish": {"group": "turkic", "countries": ["TUR", "CYP"],
+   "tell": "ı (i without a dot) and ğ are Turkish, along with ş, ç, ö and ü. Turkish has no ə.",
+   "sentences": [
+    ["Bir fincan çay alabilir miyim, lütfen?", "Could I have a cup of tea, please?"],
+    ["Yarın arkadaşlarımla denize gideceğiz.", "Tomorrow we'll go to the seaside with my friends."],
+    ["En yakın otobüs durağı nerede?", "Where is the nearest bus stop?"]]},
+  "Azerbaijani": {"group": "turkic", "countries": ["AZE"],
+   "tell": "ə (upside-down e) is the Azerbaijani giveaway. It also uses q and x more than Turkish does.",
+   "sentences": [
+    ["Mən bir fincan çay istəyirəm.", "I want a cup of tea."],
+    ["Sabah dostlarımla dənizə gedəcəyik.", "Tomorrow we'll go to the sea with my friends."],
+    ["Ən yaxın avtobus dayanacağı haradadır?", "Where is the nearest bus stop?"]]},
+  "Uzbek": {"group": "turkic", "countries": ["UZB"],
+   "tell": "Uzbek writes oʻ and gʻ with an apostrophe-like mark, and uses 'sh' and 'ch' instead of ş and ç. It has no ı or ə.",
+   "sentences": [
+    ["Men bir piyola choy ichmoqchiman.", "I want to drink a cup of tea."],
+    ["Ertaga doʻstlarim bilan bozorga boramiz.", "Tomorrow we're going to the market with my friends."],
+    ["Eng yaqin avtobus bekati qayerda?", "Where is the nearest bus stop?"]]},
+
+  "Vietnamese": {"group": "latin-world", "countries": ["VNM"],
+   "tell": "Vietnamese stacks accents on vowels (ế, ộ, ữ) and has ư, ơ, ă and đ. Words are short, usually one syllable each.",
+   "sentences": [
+    ["Tôi muốn gọi một ly cà phê sữa đá.", "I'd like to order an iced coffee with milk."],
+    ["Ngày mai chúng tôi sẽ đi biển với bạn bè.", "Tomorrow we'll go to the beach with friends."],
+    ["Ga tàu gần nhất ở đâu?", "Where is the nearest train station?"]]},
+  "Indonesian": {"group": "latin-world", "countries": ["IDN"],
+   "tell": "Indonesian has plain letters with no accents. Look for 'yang', 'dan', 'tidak' and 'saya', and Indonesian words like 'bisa' and 'mobil' where Malay says 'boleh' and 'kereta'.",
+   "sentences": [
+    ["Saya ingin memesan secangkir kopi.", "I want to order a cup of coffee."],
+    ["Besok kami akan pergi ke pantai bersama teman-teman.", "Tomorrow we'll go to the beach with friends."],
+    ["Apakah kamu bisa naik mobil ke sana?", "Can you get there by car?"]]},
+  "Malay": {"group": "latin-world", "countries": ["MYS", "BRN", "SGP"],
+   "tell": "Malay is almost the same as Indonesian. Malay words include 'boleh' (can), 'kereta' (car), 'awak' (you) and 'percuma' (free).",
+   "sentences": [
+    ["Saya hendak memesan secawan kopi.", "I'd like to order a cup of coffee."],
+    ["Boleh awak pergi ke sana dengan kereta?", "Can you go there by car?"],
+    ["Esok kami akan pergi ke pantai bersama kawan-kawan.", "Tomorrow we'll go to the beach with friends."]]},
+  "Tagalog": {"group": "latin-world", "countries": ["PHL"],
+   "tell": "Look for 'ng', 'mga', 'ang', 'sa' and 'ako', and repeated syllables like 'pupunta'.",
+   "sentences": [
+    ["Gusto ko ng isang tasang kape.", "I'd like a cup of coffee."],
+    ["Pupunta kami sa dagat bukas kasama ang mga kaibigan.", "We're going to the sea tomorrow with friends."],
+    ["Saan ang pinakamalapit na istasyon ng tren?", "Where is the nearest train station?"]]},
+  "Swahili": {"group": "latin-world", "countries": ["KEN", "TZA", "UGA", "COD"],
+   "tell": "Swahili words start with prefixes like ni-, wa-, ku-, ki- and m-, and end in vowels. Look for 'ch', 'ng' and 'na'.",
+   "sentences": [
+    ["Ningependa kikombe cha chai, tafadhali.", "I would like a cup of tea, please."],
+    ["Kesho tutaenda ufukweni na marafiki zetu.", "Tomorrow we'll go to the beach with our friends."],
+    ["Kituo cha basi kilicho karibu kiko wapi?", "Where is the nearest bus stop?"]]},
+
+  "Irish": {"group": "europe-other", "countries": ["IRL"],
+   "tell": "Irish has accents on vowels (á, é, í, ó, ú) and combinations like 'bh', 'mh', 'dh' and 'ch'. Look for 'tá' (is).",
+   "sentences": [
+    ["Conas atá tú?", "How are you?"],
+    ["Tá áthas orm bualadh leat.", "I'm glad to meet you."],
+    ["Go raibh míle maith agat.", "Thank you very much (literally: a thousand goods to you)."]]},
+  "Welsh": {"group": "europe-other", "countries": ["GBR"],
+   "tell": "Welsh uses w and y as vowels, and has lots of 'dd', 'll' and 'ch'. Look for 'yn', 'y' and 'mae'.",
+   "sentences": [
+    ["Bore da! Sut wyt ti?", "Good morning! How are you?"],
+    ["Rydw i'n hoffi coffi.", "I like coffee."],
+    ["Diolch yn fawr iawn.", "Thank you very much."]]},
+  "Basque": {"group": "europe-other", "countries": ["ESP", "FRA"],
+   "tell": "Basque isn't related to any other language. It uses lots of k, z, x, tx and tz, and words ending in -ak, -ko or -en. Look for 'eta' (and).",
+   "sentences": [
+    ["Kaixo, zer moduz?", "Hello, how are you?"],
+    ["Kafe bat nahi dut, mesedez.", "I'd like a coffee, please."],
+    ["Eskerrik asko etortzeagatik.", "Thanks for coming."]]},
+  "Maltese": {"group": "europe-other", "countries": ["MLT"],
+   "tell": "Maltese is related to Arabic but written in Latin letters: ħ, għ, ċ, ż and ġ are the giveaways.",
+   "sentences": [
+    ["Nixtieq kafè, jekk jogħġbok.", "I'd like a coffee, please."],
+    ["Grazzi ħafna!", "Thank you very much!"],
+    ["Għada se mmorru l-baħar.", "Tomorrow we'll go to the sea."]]},
+  "Albanian": {"group": "europe-other", "countries": ["ALB", "XKX", "MKD"],
+   "tell": "ë appears everywhere in Albanian, plus ç and combinations like 'xh', 'gj', 'dh' and 'sh'.",
+   "sentences": [
+    ["Unë dua një kafe, ju lutem.", "I want a coffee, please."],
+    ["Nesër do të shkojmë në det me shokët.", "Tomorrow we'll go to the sea with friends."],
+    ["Faleminderit shumë!", "Thank you very much!"]]}
+ }
+}

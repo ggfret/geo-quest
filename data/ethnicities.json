@@ -1,0 +1,6862 @@
+{
+ "ABW": {
+  "groups": [
+   [
+    "Dutch",
+    78.7,
+    null
+   ],
+   [
+    "Colombian",
+    6.6,
+    null
+   ],
+   [
+    "Venezuelan",
+    5.5,
+    null
+   ],
+   [
+    "Dominican",
+    2.8,
+    null
+   ],
+   [
+    "Haitian",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    5.1,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "AGO": {
+  "groups": [
+   [
+    "Ovimbundu",
+    37.0,
+    null
+   ],
+   [
+    "Kimbundu",
+    25.0,
+    null
+   ],
+   [
+    "Bakongo",
+    13.0,
+    null
+   ],
+   [
+    "Mestico",
+    2.0,
+    null
+   ],
+   [
+    "European",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    22.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "AIA": {
+  "groups": [
+   [
+    "African/Black",
+    85.3,
+    null
+   ],
+   [
+    "Hispanic",
+    4.9,
+    null
+   ],
+   [
+    "mixed",
+    3.8,
+    null
+   ],
+   [
+    "White",
+    3.2,
+    null
+   ],
+   [
+    "East Indian/Indian",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    1.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "ALB": {
+  "groups": [
+   [
+    "Albanian",
+    82.6,
+    "???"
+   ],
+   [
+    "Greek",
+    0.9,
+    null
+   ],
+   [
+    "unspecified",
+    15.5,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "AND": {
+  "groups": [
+   [
+    "Spanish",
+    34.3,
+    null
+   ],
+   [
+    "Andorran",
+    32.1,
+    "???"
+   ],
+   [
+    "Portuguese",
+    10.0,
+    null
+   ],
+   [
+    "French",
+    5.6,
+    null
+   ],
+   [
+    "other",
+    18.0,
+    null
+   ]
+  ],
+  "year": "2024"
+ },
+ "ARE": {
+  "groups": [
+   [
+    "South Asian",
+    59.4,
+    null
+   ],
+   [
+    "Emirati",
+    11.6,
+    "???"
+   ],
+   [
+    "Egyptian",
+    10.2,
+    null
+   ],
+   [
+    "Filipino",
+    6.1,
+    null
+   ],
+   [
+    "other",
+    12.8,
+    null
+   ]
+  ],
+  "year": "2015"
+ },
+ "ARG": {
+  "groups": [
+   [
+    "European and Mestizo",
+    97.2,
+    null
+   ],
+   [
+    "Indigenous",
+    2.4,
+    null
+   ],
+   [
+    "African descent",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "ARM": {
+  "groups": [
+   [
+    "Armenian",
+    98.1,
+    "???"
+   ],
+   [
+    "Yezidi",
+    1.1,
+    null
+   ],
+   [
+    "less than",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "ASM": {
+  "groups": [
+   [
+    "Pacific Islander",
+    88.7,
+    null
+   ],
+   [
+    "Asian",
+    5.8,
+    null
+   ],
+   [
+    "mixed",
+    4.4,
+    null
+   ],
+   [
+    "other",
+    1.1,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "ATG": {
+  "groups": [
+   [
+    "African descent",
+    87.3,
+    null
+   ],
+   [
+    "mixed",
+    4.7,
+    null
+   ],
+   [
+    "Hispanic",
+    2.7,
+    null
+   ],
+   [
+    "White",
+    1.6,
+    null
+   ],
+   [
+    "other",
+    2.7,
+    null
+   ],
+   [
+    "unspecified",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "AUS": {
+  "groups": [
+   [
+    "English",
+    33.0,
+    null
+   ],
+   [
+    "Australian",
+    29.9,
+    "???"
+   ],
+   [
+    "Irish",
+    9.5,
+    null
+   ],
+   [
+    "Scottish",
+    8.6,
+    null
+   ],
+   [
+    "Chinese",
+    5.5,
+    null
+   ],
+   [
+    "Italian",
+    4.4,
+    null
+   ],
+   [
+    "German",
+    4.0,
+    null
+   ],
+   [
+    "Indian",
+    3.1,
+    null
+   ],
+   [
+    "Australian Aboriginal",
+    2.9,
+    "??? Aboriginal"
+   ],
+   [
+    "Greek",
+    1.7,
+    null
+   ],
+   [
+    "unspecified",
+    4.7,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "AUT": {
+  "groups": [
+   [
+    "Austrian",
+    80.8,
+    "???"
+   ],
+   [
+    "German",
+    2.6,
+    null
+   ],
+   [
+    "Bosnian and Herzegovinian",
+    1.9,
+    null
+   ],
+   [
+    "Turkish",
+    1.8,
+    null
+   ],
+   [
+    "Serbian",
+    1.6,
+    null
+   ],
+   [
+    "Romanian",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    10.0,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "AZE": {
+  "groups": [
+   [
+    "Azerbaijani",
+    94.8,
+    "???"
+   ],
+   [
+    "less than",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    1.8,
+    null
+   ]
+  ],
+  "year": "2019"
+ },
+ "BEL": {
+  "groups": [
+   [
+    "Belgian",
+    75.2,
+    "???"
+   ],
+   [
+    "Italian",
+    4.1,
+    null
+   ],
+   [
+    "Moroccan",
+    3.7,
+    null
+   ],
+   [
+    "French",
+    2.4,
+    null
+   ],
+   [
+    "Turkish",
+    2.0,
+    null
+   ],
+   [
+    "Dutch",
+    2.0,
+    null
+   ],
+   [
+    "other",
+    10.6,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "BEN": {
+  "groups": [
+   [
+    "Fon and related",
+    38.4,
+    null
+   ],
+   [
+    "Adja and related",
+    15.1,
+    null
+   ],
+   [
+    "Yoruba and related",
+    12.0,
+    null
+   ],
+   [
+    "Bariba and related",
+    9.6,
+    null
+   ],
+   [
+    "Fulani and related",
+    8.6,
+    null
+   ],
+   [
+    "Ottamari and related",
+    6.1,
+    null
+   ],
+   [
+    "Yoa-Lokpa and related",
+    4.3,
+    null
+   ],
+   [
+    "Dendi and related",
+    2.9,
+    null
+   ],
+   [
+    "foreigner",
+    1.9,
+    null
+   ],
+   [
+    "other",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2013"
+ },
+ "BFA": {
+  "groups": [
+   [
+    "Mossi",
+    53.7,
+    null
+   ],
+   [
+    "Fulani",
+    6.8,
+    null
+   ],
+   [
+    "Gurunsi",
+    5.9,
+    null
+   ],
+   [
+    "Bissa",
+    5.4,
+    null
+   ],
+   [
+    "Gurma",
+    5.2,
+    null
+   ],
+   [
+    "Bobo",
+    3.4,
+    null
+   ],
+   [
+    "Senufo",
+    2.2,
+    null
+   ],
+   [
+    "Bissa",
+    1.5,
+    null
+   ],
+   [
+    "Lobi",
+    1.5,
+    null
+   ],
+   [
+    "foreign",
+    0.7,
+    null
+   ],
+   [
+    "Tuareg/Bella",
+    0.1,
+    null
+   ],
+   [
+    "other",
+    12.8,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "BGD": {
+  "groups": [
+   [
+    "Bengali at least",
+    99.0,
+    null
+   ],
+   [
+    "other indigenous ethnic groups",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "BGR": {
+  "groups": [
+   [
+    "Bulgarian",
+    78.5,
+    "???"
+   ],
+   [
+    "Turkish",
+    7.8,
+    null
+   ],
+   [
+    "Roma",
+    4.1,
+    null
+   ],
+   [
+    "unspecified",
+    9.4,
+    null
+   ],
+   [
+    "other",
+    1.2,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "BHR": {
+  "groups": [
+   [
+    "Bahraini",
+    47.4,
+    "???"
+   ],
+   [
+    "Asian",
+    43.4,
+    null
+   ],
+   [
+    "other Arab",
+    4.9,
+    null
+   ],
+   [
+    "African",
+    1.4,
+    null
+   ],
+   [
+    "North American",
+    1.1,
+    null
+   ],
+   [
+    "Gulf Co-operative countries",
+    0.9,
+    null
+   ],
+   [
+    "European",
+    0.8,
+    null
+   ],
+   [
+    "other",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "BHS": {
+  "groups": [
+   [
+    "African descent",
+    90.6,
+    null
+   ],
+   [
+    "White",
+    4.7,
+    null
+   ],
+   [
+    "mixed",
+    2.1,
+    null
+   ],
+   [
+    "other",
+    1.9,
+    null
+   ],
+   [
+    "unspecified",
+    0.7,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "BIH": {
+  "groups": [
+   [
+    "Bosniak",
+    50.1,
+    "???"
+   ],
+   [
+    "Serb",
+    30.8,
+    null
+   ],
+   [
+    "Croat",
+    15.4,
+    null
+   ],
+   [
+    "not declared/no answer",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    2.7,
+    null
+   ]
+  ],
+  "year": "2013"
+ },
+ "BLR": {
+  "groups": [
+   [
+    "Belarusian",
+    83.7,
+    "???"
+   ],
+   [
+    "Russian",
+    8.3,
+    null
+   ],
+   [
+    "Polish",
+    3.1,
+    null
+   ],
+   [
+    "Ukrainian",
+    1.7,
+    null
+   ],
+   [
+    "other",
+    2.4,
+    null
+   ],
+   [
+    "unspecified",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2009"
+ },
+ "BLZ": {
+  "groups": [
+   [
+    "Mestizo",
+    52.9,
+    null
+   ],
+   [
+    "Creole",
+    25.9,
+    null
+   ],
+   [
+    "Maya",
+    11.3,
+    null
+   ],
+   [
+    "Garifuna",
+    6.1,
+    null
+   ],
+   [
+    "East Indian",
+    3.9,
+    null
+   ],
+   [
+    "Mennonite",
+    3.6,
+    null
+   ],
+   [
+    "White",
+    1.2,
+    null
+   ],
+   [
+    "Asian",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    1.2,
+    null
+   ],
+   [
+    "unknown",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "BMU": {
+  "groups": [
+   [
+    "African descent",
+    52.0,
+    null
+   ],
+   [
+    "White",
+    31.0,
+    null
+   ],
+   [
+    "mixed",
+    9.0,
+    null
+   ],
+   [
+    "Asian",
+    4.0,
+    null
+   ],
+   [
+    "other",
+    4.0,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "BOL": {
+  "groups": [
+   [
+    "Mestizo",
+    68.0,
+    null
+   ],
+   [
+    "Indigenous",
+    20.0,
+    null
+   ],
+   [
+    "White",
+    5.0,
+    null
+   ],
+   [
+    "Cholo/Chola",
+    2.0,
+    null
+   ],
+   [
+    "African descent",
+    1.0,
+    null
+   ],
+   [
+    "unspecified",
+    3.0,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2009"
+ },
+ "BRA": {
+  "groups": [
+   [
+    "mixed",
+    45.3,
+    null
+   ],
+   [
+    "White",
+    43.5,
+    null
+   ],
+   [
+    "Black",
+    10.2,
+    null
+   ],
+   [
+    "Indigenous",
+    0.6,
+    null
+   ],
+   [
+    "Asian",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "BRB": {
+  "groups": [
+   [
+    "African descent",
+    92.4,
+    null
+   ],
+   [
+    "mixed",
+    3.1,
+    null
+   ],
+   [
+    "White",
+    2.7,
+    null
+   ],
+   [
+    "East Indian",
+    1.3,
+    null
+   ],
+   [
+    "unspecified",
+    0.3,
+    null
+   ],
+   [
+    "other",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "BRN": {
+  "groups": [
+   [
+    "Malay",
+    67.4,
+    null
+   ],
+   [
+    "Chinese",
+    9.6,
+    null
+   ],
+   [
+    "other",
+    23.0,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "BTN": {
+  "groups": [
+   [
+    "Ngalop",
+    50.0,
+    null
+   ],
+   [
+    "ethnic Nepali",
+    35.0,
+    null
+   ],
+   [
+    "indigenous or migrant tribes",
+    15.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "BWA": {
+  "groups": [
+   [
+    "Tswana",
+    79.0,
+    null
+   ],
+   [
+    "Kalanga",
+    11.0,
+    null
+   ],
+   [
+    "including Kgalagadi and people of European ancestry",
+    7.0,
+    null
+   ],
+   [
+    "Basarwa",
+    3.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "CAF": {
+  "groups": [
+   [
+    "Baya",
+    28.8,
+    null
+   ],
+   [
+    "Banda",
+    22.9,
+    null
+   ],
+   [
+    "Mandjia",
+    9.9,
+    null
+   ],
+   [
+    "Sara",
+    7.9,
+    null
+   ],
+   [
+    "M'Baka-Bantu",
+    7.9,
+    null
+   ],
+   [
+    "Arab-Fulani",
+    6.0,
+    null
+   ],
+   [
+    "Mbum",
+    6.0,
+    null
+   ],
+   [
+    "Ngbanki",
+    5.5,
+    null
+   ],
+   [
+    "Zande-Nzakara",
+    3.0,
+    null
+   ],
+   [
+    "other Central African Republic ethnic groups",
+    2.0,
+    "other ??? ethnic groups"
+   ]
+  ],
+  "year": "2003"
+ },
+ "CAN": {
+  "groups": [
+   [
+    "Canadian",
+    15.6,
+    "???"
+   ],
+   [
+    "English",
+    14.7,
+    null
+   ],
+   [
+    "Scottish",
+    12.1,
+    null
+   ],
+   [
+    "Irish",
+    12.1,
+    null
+   ],
+   [
+    "French",
+    11.0,
+    null
+   ],
+   [
+    "German",
+    8.1,
+    null
+   ],
+   [
+    "Chinese",
+    4.7,
+    null
+   ],
+   [
+    "Italian",
+    4.3,
+    null
+   ],
+   [
+    "Indian",
+    3.7,
+    null
+   ],
+   [
+    "Ukrainian",
+    3.5,
+    null
+   ],
+   [
+    "First Nations",
+    1.7,
+    null
+   ],
+   [
+    "Metis",
+    1.5,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "CHE": {
+  "groups": [
+   [
+    "Swiss",
+    69.2,
+    "???"
+   ],
+   [
+    "German",
+    4.2,
+    null
+   ],
+   [
+    "Italian",
+    3.2,
+    null
+   ],
+   [
+    "Portuguese",
+    2.5,
+    null
+   ],
+   [
+    "French",
+    2.1,
+    null
+   ],
+   [
+    "Kosovan",
+    1.1,
+    null
+   ],
+   [
+    "Turkish",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    16.7,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "CHL": {
+  "groups": [
+   [
+    "White and non-Indigenous",
+    88.9,
+    null
+   ],
+   [
+    "Mapuche",
+    9.1,
+    null
+   ],
+   [
+    "other Indigenous groups",
+    1.0,
+    null
+   ],
+   [
+    "Aymara",
+    0.7,
+    null
+   ],
+   [
+    "unspecified",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "CHN": {
+  "groups": [
+   [
+    "Han Chinese",
+    91.1,
+    "Han ???"
+   ],
+   [
+    "ethnic minorities",
+    8.9,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "CIV": {
+  "groups": [
+   [
+    "Akan",
+    38.0,
+    null
+   ],
+   [
+    "Voltaique or Gur",
+    22.0,
+    null
+   ],
+   [
+    "Northern Mande",
+    22.0,
+    null
+   ],
+   [
+    "Kru",
+    9.1,
+    null
+   ],
+   [
+    "Southern Mande",
+    8.6,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "CMR": {
+  "groups": [
+   [
+    "Bamileke-Bamu",
+    22.2,
+    null
+   ],
+   [
+    "Biu-Mandara",
+    16.4,
+    null
+   ],
+   [
+    "Arab-Choa/Hausa/Kanuri",
+    13.5,
+    null
+   ],
+   [
+    "Mbam",
+    13.1,
+    null
+   ],
+   [
+    "Grassfields",
+    9.9,
+    null
+   ],
+   [
+    "Cotier/Ngoe/Oroko",
+    4.6,
+    null
+   ],
+   [
+    "Southwestern Bantu",
+    4.3,
+    null
+   ],
+   [
+    "foreign/other ethnic group",
+    3.8,
+    null
+   ],
+   [
+    "Kako/Meka",
+    2.3,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "COG": {
+  "groups": [
+   [
+    "Kongo",
+    40.5,
+    null
+   ],
+   [
+    "Teke",
+    16.9,
+    null
+   ],
+   [
+    "Mbochi",
+    13.1,
+    null
+   ],
+   [
+    "foreigner",
+    8.2,
+    null
+   ],
+   [
+    "Sangha",
+    5.6,
+    null
+   ],
+   [
+    "Mbere/Mbeti/Kele",
+    4.4,
+    null
+   ],
+   [
+    "Punu",
+    4.3,
+    null
+   ],
+   [
+    "Pygmy",
+    1.6,
+    null
+   ],
+   [
+    "Oubanguiens",
+    1.6,
+    null
+   ],
+   [
+    "Duma",
+    1.5,
+    null
+   ],
+   [
+    "Makaa",
+    1.3,
+    null
+   ],
+   [
+    "other and unspecified",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "COK": {
+  "groups": [
+   [
+    "Cook Island Maori",
+    77.4,
+    "??? Island Maori"
+   ],
+   [
+    "part Cook Island Maori",
+    8.3,
+    "part ??? Island Maori"
+   ],
+   [
+    "Fijian",
+    3.6,
+    null
+   ],
+   [
+    "New Zealand Maori/European",
+    3.4,
+    null
+   ],
+   [
+    "Filipino",
+    2.9,
+    null
+   ],
+   [
+    "other Pacific Islands",
+    1.8,
+    null
+   ],
+   [
+    "other",
+    2.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "COL": {
+  "groups": [
+   [
+    "Mestizo and White",
+    87.6,
+    null
+   ],
+   [
+    "Afro-Colombian",
+    6.8,
+    "Afro-???"
+   ],
+   [
+    "Indigenous",
+    4.3,
+    null
+   ],
+   [
+    "unspecified",
+    1.4,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "CPV": {
+  "groups": [
+   [
+    "Creole",
+    71.0,
+    null
+   ],
+   [
+    "African",
+    28.0,
+    null
+   ],
+   [
+    "European",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "CRI": {
+  "groups": [
+   [
+    "White or Mestizo",
+    83.6,
+    null
+   ],
+   [
+    "Mulatto",
+    6.7,
+    null
+   ],
+   [
+    "Indigenous",
+    2.4,
+    null
+   ],
+   [
+    "Black or African descent",
+    1.1,
+    null
+   ],
+   [
+    "none",
+    2.9,
+    null
+   ],
+   [
+    "unspecified",
+    2.2,
+    null
+   ],
+   [
+    "other",
+    1.1,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "CUB": {
+  "groups": [
+   [
+    "White",
+    64.1,
+    null
+   ],
+   [
+    "Mulatto or mixed",
+    26.6,
+    null
+   ],
+   [
+    "Black",
+    9.3,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "CUW": {
+  "groups": [
+   [
+    "Curacaoan",
+    75.4,
+    "???"
+   ],
+   [
+    "Dutch",
+    6.0,
+    null
+   ],
+   [
+    "Dominican",
+    3.6,
+    null
+   ],
+   [
+    "Colombian",
+    3.0,
+    null
+   ],
+   [
+    "Saban",
+    1.5,
+    null
+   ],
+   [
+    "Haitian",
+    1.2,
+    null
+   ],
+   [
+    "Surinamese",
+    1.2,
+    null
+   ],
+   [
+    "Venezuelan",
+    1.1,
+    null
+   ],
+   [
+    "Aruban",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ],
+   [
+    "unspecified",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "CYM": {
+  "groups": [
+   [
+    "Cayman Islander",
+    35.4,
+    "??? Islander"
+   ],
+   [
+    "Jamaican",
+    24.8,
+    null
+   ],
+   [
+    "Filipino",
+    5.5,
+    null
+   ],
+   [
+    "British",
+    5.3,
+    null
+   ],
+   [
+    "American",
+    5.2,
+    null
+   ],
+   [
+    "Honduran",
+    4.2,
+    null
+   ],
+   [
+    "Canadian",
+    3.3,
+    null
+   ],
+   [
+    "Indian",
+    2.1,
+    null
+   ],
+   [
+    "Cuban",
+    1.6,
+    null
+   ],
+   [
+    "Nicaraguan",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    11.1,
+    null
+   ],
+   [
+    "unspecified",
+    0.5,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "CYP": {
+  "groups": [
+   [
+    "Greek",
+    98.8,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ],
+   [
+    "unspecified",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "CZE": {
+  "groups": [
+   [
+    "Czech",
+    57.3,
+    "???"
+   ],
+   [
+    "Moravian",
+    3.4,
+    null
+   ],
+   [
+    "unspecified",
+    31.6,
+    null
+   ],
+   [
+    "other",
+    7.7,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "DEU": {
+  "groups": [
+   [
+    "German",
+    85.4,
+    "???"
+   ],
+   [
+    "other/stateless/unspecified",
+    8.3,
+    null
+   ],
+   [
+    "Turkish",
+    1.8,
+    null
+   ],
+   [
+    "Ukrainian",
+    1.4,
+    null
+   ],
+   [
+    "Syrian",
+    1.1,
+    null
+   ],
+   [
+    "Romanian",
+    1.0,
+    null
+   ],
+   [
+    "Poland",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "DJI": {
+  "groups": [
+   [
+    "Somali",
+    60.0,
+    null
+   ],
+   [
+    "Afar",
+    35.0,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "DMA": {
+  "groups": [
+   [
+    "African descent",
+    84.5,
+    null
+   ],
+   [
+    "mixed",
+    9.0,
+    null
+   ],
+   [
+    "Indigenous",
+    3.8,
+    null
+   ],
+   [
+    "other",
+    2.1,
+    null
+   ],
+   [
+    "unspecified",
+    0.6,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "DNK": {
+  "groups": [
+   [
+    "Danish",
+    84.2,
+    "???"
+   ],
+   [
+    "Turkish",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    14.7,
+    null
+   ]
+  ],
+  "year": "2023"
+ },
+ "DOM": {
+  "groups": [
+   [
+    "mixed",
+    70.4,
+    null
+   ],
+   [
+    "Black",
+    15.8,
+    null
+   ],
+   [
+    "White",
+    13.5,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "DZA": {
+  "groups": [
+   [
+    "Arab-Amazigh",
+    99.0,
+    null
+   ],
+   [
+    "European",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "ECU": {
+  "groups": [
+   [
+    "Mestizo",
+    77.5,
+    null
+   ],
+   [
+    "Montubio",
+    7.7,
+    null
+   ],
+   [
+    "Indigenous",
+    7.7,
+    null
+   ],
+   [
+    "White",
+    2.2,
+    null
+   ],
+   [
+    "Afroecuadorian",
+    2.0,
+    null
+   ],
+   [
+    "Mulatto",
+    1.4,
+    null
+   ],
+   [
+    "Black",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "ERI": {
+  "groups": [
+   [
+    "Tigrinya",
+    50.0,
+    null
+   ],
+   [
+    "Tigre",
+    30.0,
+    null
+   ],
+   [
+    "Saho",
+    4.0,
+    null
+   ],
+   [
+    "Afar",
+    4.0,
+    null
+   ],
+   [
+    "Kunama",
+    4.0,
+    null
+   ],
+   [
+    "Bilen",
+    3.0,
+    null
+   ],
+   [
+    "Hedareb/Beja",
+    2.0,
+    null
+   ],
+   [
+    "Nara",
+    2.0,
+    null
+   ],
+   [
+    "Rashaida",
+    1.0,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "ESP": {
+  "groups": [
+   [
+    "Spanish",
+    84.8,
+    "???"
+   ],
+   [
+    "Moroccan",
+    1.7,
+    null
+   ],
+   [
+    "Romanian",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    12.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "EST": {
+  "groups": [
+   [
+    "Estonian",
+    69.1,
+    "???"
+   ],
+   [
+    "Russian",
+    23.7,
+    null
+   ],
+   [
+    "Ukrainian",
+    2.1,
+    null
+   ],
+   [
+    "other",
+    4.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.5,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "ETH": {
+  "groups": [
+   [
+    "Oromo",
+    35.8,
+    null
+   ],
+   [
+    "Amhara",
+    24.1,
+    null
+   ],
+   [
+    "Somali",
+    7.2,
+    null
+   ],
+   [
+    "Tigray",
+    5.7,
+    null
+   ],
+   [
+    "Sidama",
+    4.1,
+    null
+   ],
+   [
+    "Guragie",
+    2.6,
+    null
+   ],
+   [
+    "Welaita",
+    2.3,
+    null
+   ],
+   [
+    "Afar",
+    2.2,
+    null
+   ],
+   [
+    "Silte",
+    1.3,
+    null
+   ],
+   [
+    "Kefficho",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    13.5,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "FJI": {
+  "groups": [
+   [
+    "iTaukei",
+    56.8,
+    null
+   ],
+   [
+    "Indo-Fijian",
+    37.5,
+    "Indo-???"
+   ],
+   [
+    "Rotuman",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    4.5,
+    null
+   ]
+  ],
+  "year": "2007"
+ },
+ "FRO": {
+  "groups": [
+   [
+    "Faroese",
+    83.8,
+    "???"
+   ],
+   [
+    "Danish",
+    8.3,
+    null
+   ],
+   [
+    "Filipino",
+    1.2,
+    null
+   ],
+   [
+    "other Nordic",
+    0.9,
+    null
+   ],
+   [
+    "other",
+    4.5,
+    null
+   ]
+  ],
+  "year": "2024"
+ },
+ "FSM": {
+  "groups": [
+   [
+    "Chuukese/Mortlockese",
+    49.3,
+    null
+   ],
+   [
+    "Pohnpeian",
+    29.8,
+    null
+   ],
+   [
+    "Kosraean",
+    6.3,
+    null
+   ],
+   [
+    "Yapese",
+    5.7,
+    null
+   ],
+   [
+    "Yap outer islanders",
+    5.1,
+    null
+   ],
+   [
+    "Polynesian",
+    1.6,
+    null
+   ],
+   [
+    "Asian",
+    1.4,
+    null
+   ],
+   [
+    "other",
+    0.8,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "GAB": {
+  "groups": [
+   [
+    "Fang",
+    23.5,
+    null
+   ],
+   [
+    "Shira-Punu'Vii",
+    20.6,
+    null
+   ],
+   [
+    "foreigner",
+    16.2,
+    null
+   ],
+   [
+    "Nzabi-Duma",
+    11.2,
+    null
+   ],
+   [
+    "Mbede-Teke",
+    5.6,
+    null
+   ],
+   [
+    "Myene",
+    4.4,
+    null
+   ],
+   [
+    "Kota-Kele",
+    4.3,
+    null
+   ],
+   [
+    "Okande-Tsogho",
+    1.6,
+    null
+   ],
+   [
+    "other",
+    12.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "GBR": {
+  "groups": [
+   [
+    "White",
+    87.2,
+    null
+   ],
+   [
+    "Black/African/Caribbean/black British",
+    3.0,
+    "Black/African/Caribbean/black ???"
+   ],
+   [
+    "Asian/Asian British: Indian",
+    2.3,
+    "Asian/Asian ???: Indian"
+   ],
+   [
+    "mixed",
+    2.0,
+    null
+   ],
+   [
+    "Asian/Asian British: Pakistani",
+    1.9,
+    "Asian/Asian ???: Pakistani"
+   ],
+   [
+    "other",
+    3.7,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "GEO": {
+  "groups": [
+   [
+    "Georgian",
+    86.8,
+    "???"
+   ],
+   [
+    "Azeri",
+    6.3,
+    null
+   ],
+   [
+    "Armenian",
+    4.5,
+    null
+   ],
+   [
+    "other",
+    2.3,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "GGY": {
+  "groups": [
+   [
+    "Guernsey",
+    53.5,
+    "???"
+   ],
+   [
+    "UK and Ireland",
+    23.8,
+    null
+   ],
+   [
+    "other Europe",
+    2.7,
+    null
+   ],
+   [
+    "Portugal",
+    2.1,
+    null
+   ],
+   [
+    "Latvia",
+    1.4,
+    null
+   ],
+   [
+    "other Crown Dependencies",
+    0.7,
+    null
+   ],
+   [
+    "unspecified",
+    10.5,
+    null
+   ],
+   [
+    "other",
+    5.3,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "GHA": {
+  "groups": [
+   [
+    "Akan",
+    45.7,
+    null
+   ],
+   [
+    "Mole-Dagbani",
+    18.5,
+    null
+   ],
+   [
+    "Ewe",
+    12.8,
+    null
+   ],
+   [
+    "Ga-Dangme",
+    7.1,
+    null
+   ],
+   [
+    "Gurma",
+    6.4,
+    null
+   ],
+   [
+    "Guan",
+    3.2,
+    null
+   ],
+   [
+    "Grusi",
+    2.7,
+    null
+   ],
+   [
+    "Mande",
+    2.0,
+    null
+   ],
+   [
+    "other",
+    1.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "GIB": {
+  "groups": [
+   [
+    "Gibraltarian",
+    79.0,
+    "???"
+   ],
+   [
+    "other British",
+    13.2,
+    null
+   ],
+   [
+    "other EU",
+    2.4,
+    null
+   ],
+   [
+    "Spanish",
+    2.1,
+    null
+   ],
+   [
+    "Moroccan",
+    1.6,
+    null
+   ],
+   [
+    "other",
+    1.6,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "GIN": {
+  "groups": [
+   [
+    "Fulani",
+    33.4,
+    null
+   ],
+   [
+    "Malinke",
+    29.4,
+    null
+   ],
+   [
+    "Susu",
+    21.2,
+    null
+   ],
+   [
+    "Guerze",
+    7.8,
+    null
+   ],
+   [
+    "Kissi",
+    6.2,
+    null
+   ],
+   [
+    "Toma",
+    1.6,
+    null
+   ],
+   [
+    "other/foreign",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "GMB": {
+  "groups": [
+   [
+    "Mandinka/Jahanka",
+    33.3,
+    null
+   ],
+   [
+    "Fulani/Tukulur/Lorobo",
+    18.2,
+    null
+   ],
+   [
+    "Wolof",
+    12.9,
+    null
+   ],
+   [
+    "Jola/Karoninka",
+    11.0,
+    null
+   ],
+   [
+    "non-Gambian",
+    9.9,
+    "non-???"
+   ],
+   [
+    "Serahuleh",
+    7.2,
+    null
+   ],
+   [
+    "Serer",
+    3.5,
+    null
+   ],
+   [
+    "other",
+    4.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "GNB": {
+  "groups": [
+   [
+    "Balanta",
+    30.0,
+    null
+   ],
+   [
+    "Fulani",
+    30.0,
+    null
+   ],
+   [
+    "Manjaco",
+    14.0,
+    null
+   ],
+   [
+    "Mandinga",
+    13.0,
+    null
+   ],
+   [
+    "Papel",
+    7.0,
+    null
+   ],
+   [
+    "unspecified smaller ethnic groups",
+    6.0,
+    null
+   ]
+  ],
+  "year": "2015"
+ },
+ "GNQ": {
+  "groups": [
+   [
+    "Fang",
+    78.1,
+    null
+   ],
+   [
+    "Bubi",
+    9.4,
+    null
+   ],
+   [
+    "foreigner",
+    5.3,
+    null
+   ],
+   [
+    "Ndowe",
+    2.8,
+    null
+   ],
+   [
+    "Nanguedambo",
+    2.7,
+    null
+   ],
+   [
+    "Bisio",
+    0.9,
+    null
+   ],
+   [
+    "other",
+    0.7,
+    null
+   ],
+   [
+    "unspecified",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "GRC": {
+  "groups": [
+   [
+    "Greek",
+    91.6,
+    "???"
+   ],
+   [
+    "Albanian",
+    4.4,
+    null
+   ],
+   [
+    "other",
+    4.0,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "GRD": {
+  "groups": [
+   [
+    "African descent",
+    82.4,
+    null
+   ],
+   [
+    "mixed",
+    13.3,
+    null
+   ],
+   [
+    "East Indian",
+    2.2,
+    null
+   ],
+   [
+    "other",
+    1.3,
+    null
+   ],
+   [
+    "unspecified",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "GRL": {
+  "groups": [
+   [
+    "Greenlandic",
+    88.1,
+    "???"
+   ],
+   [
+    "Danish",
+    7.1,
+    null
+   ],
+   [
+    "Filipino",
+    1.6,
+    null
+   ],
+   [
+    "other Nordic peoples",
+    0.9,
+    null
+   ],
+   [
+    "other",
+    2.3,
+    null
+   ]
+  ],
+  "year": "2024"
+ },
+ "GTM": {
+  "groups": [
+   [
+    "Mestizo",
+    56.0,
+    null
+   ],
+   [
+    "Maya",
+    41.7,
+    null
+   ],
+   [
+    "Xinca",
+    1.8,
+    null
+   ],
+   [
+    "African descent",
+    0.2,
+    null
+   ],
+   [
+    "foreign",
+    0.2,
+    null
+   ],
+   [
+    "Garifuna",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "GUM": {
+  "groups": [
+   [
+    "Native Hawaiian and other Pacific Islander",
+    46.1,
+    null
+   ],
+   [
+    "Asian",
+    35.5,
+    null
+   ],
+   [
+    "mixed",
+    10.0,
+    null
+   ],
+   [
+    "White",
+    6.8,
+    null
+   ],
+   [
+    "African descent or African-American",
+    0.9,
+    null
+   ],
+   [
+    "Indigenous",
+    0.1,
+    null
+   ],
+   [
+    "other",
+    0.6,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "GUY": {
+  "groups": [
+   [
+    "East Indian",
+    39.8,
+    null
+   ],
+   [
+    "African descent",
+    29.3,
+    null
+   ],
+   [
+    "mixed",
+    19.9,
+    null
+   ],
+   [
+    "Indigenous",
+    10.5,
+    null
+   ],
+   [
+    "other",
+    0.5,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "HKG": {
+  "groups": [
+   [
+    "Chinese",
+    91.6,
+    null
+   ],
+   [
+    "Filipino",
+    2.7,
+    null
+   ],
+   [
+    "Indonesian",
+    1.9,
+    null
+   ],
+   [
+    "other",
+    3.7,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "HND": {
+  "groups": [
+   [
+    "Mestizo",
+    90.0,
+    null
+   ],
+   [
+    "Indigenous",
+    7.0,
+    null
+   ],
+   [
+    "African descent",
+    2.0,
+    null
+   ],
+   [
+    "White",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "HRV": {
+  "groups": [
+   [
+    "Croat",
+    91.6,
+    "???"
+   ],
+   [
+    "Serb",
+    3.2,
+    null
+   ],
+   [
+    "other",
+    3.9,
+    null
+   ],
+   [
+    "unspecified",
+    1.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "HTI": {
+  "groups": [
+   [
+    "Black",
+    95.0,
+    null
+   ],
+   [
+    "mixed and White",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "HUN": {
+  "groups": [
+   [
+    "Hungarian",
+    84.3,
+    "???"
+   ],
+   [
+    "Romani",
+    2.1,
+    null
+   ],
+   [
+    "German",
+    1.0,
+    null
+   ],
+   [
+    "unspecified",
+    13.7,
+    null
+   ],
+   [
+    "other",
+    1.2,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "IDN": {
+  "groups": [
+   [
+    "Javanese",
+    40.1,
+    null
+   ],
+   [
+    "Sundanese",
+    15.5,
+    null
+   ],
+   [
+    "Malay",
+    3.7,
+    null
+   ],
+   [
+    "Batak",
+    3.6,
+    null
+   ],
+   [
+    "Madurese",
+    3.0,
+    null
+   ],
+   [
+    "Betawi",
+    2.9,
+    null
+   ],
+   [
+    "Minangkabau",
+    2.7,
+    null
+   ],
+   [
+    "Buginese",
+    2.7,
+    null
+   ],
+   [
+    "Bantenese",
+    2.0,
+    null
+   ],
+   [
+    "Banjarese",
+    1.7,
+    null
+   ],
+   [
+    "Balinese",
+    1.7,
+    null
+   ],
+   [
+    "Acehnese",
+    1.4,
+    null
+   ],
+   [
+    "Dayak",
+    1.4,
+    null
+   ],
+   [
+    "Sasak",
+    1.3,
+    null
+   ],
+   [
+    "Chinese",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    15.0,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "IMN": {
+  "groups": [
+   [
+    "White",
+    94.7,
+    null
+   ],
+   [
+    "Asian",
+    3.1,
+    null
+   ],
+   [
+    "Mixed",
+    1.0,
+    null
+   ],
+   [
+    "Black",
+    0.6,
+    null
+   ],
+   [
+    "other",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "IND": {
+  "groups": [
+   [
+    "Indo-Aryan",
+    72.0,
+    null
+   ],
+   [
+    "Dravidian",
+    25.0,
+    null
+   ],
+   [
+    "other",
+    3.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "IRL": {
+  "groups": [
+   [
+    "Irish",
+    76.6,
+    "???"
+   ],
+   [
+    "other White",
+    9.9,
+    null
+   ],
+   [
+    "Asian",
+    3.3,
+    null
+   ],
+   [
+    "Black",
+    1.5,
+    null
+   ],
+   [
+    "Irish travelers",
+    0.6,
+    "??? travelers"
+   ],
+   [
+    "unspecified",
+    2.6,
+    null
+   ],
+   [
+    "other",
+    2.0,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "IRQ": {
+  "groups": [
+   [
+    "Arab",
+    77.5,
+    null
+   ],
+   [
+    "Kurdish",
+    17.5,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "ISL": {
+  "groups": [
+   [
+    "Icelandic",
+    78.7,
+    "???"
+   ],
+   [
+    "Polish",
+    5.8,
+    null
+   ],
+   [
+    "Danish",
+    1.0,
+    null
+   ],
+   [
+    "Ukrainian",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    13.5,
+    null
+   ]
+  ],
+  "year": "2024"
+ },
+ "ISR": {
+  "groups": [
+   [
+    "Jewish",
+    73.5,
+    null
+   ],
+   [
+    "Arab",
+    21.1,
+    null
+   ],
+   [
+    "other",
+    5.4,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "JAM": {
+  "groups": [
+   [
+    "Black",
+    92.1,
+    null
+   ],
+   [
+    "mixed",
+    6.1,
+    null
+   ],
+   [
+    "East Indian",
+    0.8,
+    null
+   ],
+   [
+    "unspecified",
+    0.7,
+    null
+   ],
+   [
+    "other",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "JEY": {
+  "groups": [
+   [
+    "Jersey",
+    44.4,
+    "???"
+   ],
+   [
+    "British",
+    30.5,
+    null
+   ],
+   [
+    "Portuguese/Madeiran",
+    9.4,
+    null
+   ],
+   [
+    "Polish",
+    3.0,
+    null
+   ],
+   [
+    "Irish",
+    2.1,
+    null
+   ],
+   [
+    "other",
+    10.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "JOR": {
+  "groups": [
+   [
+    "Jordanian",
+    69.3,
+    "???"
+   ],
+   [
+    "Syrian",
+    13.3,
+    null
+   ],
+   [
+    "Palestinian",
+    6.7,
+    null
+   ],
+   [
+    "Egyptian",
+    6.7,
+    null
+   ],
+   [
+    "Iraqi",
+    1.4,
+    null
+   ],
+   [
+    "other",
+    2.6,
+    null
+   ]
+  ],
+  "year": "2015"
+ },
+ "JPN": {
+  "groups": [
+   [
+    "Japanese",
+    97.5,
+    "???"
+   ],
+   [
+    "Chinese",
+    0.6,
+    null
+   ],
+   [
+    "Vietnam",
+    0.4,
+    null
+   ],
+   [
+    "South Korean",
+    0.3,
+    null
+   ],
+   [
+    "other",
+    1.2,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "KAZ": {
+  "groups": [
+   [
+    "Kazakh",
+    71.0,
+    "???"
+   ],
+   [
+    "Russian",
+    14.9,
+    null
+   ],
+   [
+    "Uzbek",
+    3.3,
+    null
+   ],
+   [
+    "Ukrainian",
+    1.9,
+    null
+   ],
+   [
+    "Uyghurs",
+    1.5,
+    null
+   ],
+   [
+    "German",
+    1.1,
+    null
+   ],
+   [
+    "Tatar",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    4.9,
+    null
+   ],
+   [
+    "unspecified",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2023"
+ },
+ "KEN": {
+  "groups": [
+   [
+    "Kikuyu",
+    17.1,
+    null
+   ],
+   [
+    "Luhya",
+    14.3,
+    null
+   ],
+   [
+    "Kalenjin",
+    13.4,
+    null
+   ],
+   [
+    "Luo",
+    10.7,
+    null
+   ],
+   [
+    "Kamba",
+    9.8,
+    null
+   ],
+   [
+    "Somali",
+    5.8,
+    null
+   ],
+   [
+    "Kisii",
+    5.7,
+    null
+   ],
+   [
+    "Mijikenda",
+    5.2,
+    null
+   ],
+   [
+    "Meru",
+    4.2,
+    null
+   ],
+   [
+    "Maasai",
+    2.5,
+    null
+   ],
+   [
+    "Turkana",
+    2.1,
+    null
+   ],
+   [
+    "non-Kenyan",
+    1.0,
+    "non-???"
+   ],
+   [
+    "other",
+    8.2,
+    null
+   ]
+  ],
+  "year": "2019"
+ },
+ "KGZ": {
+  "groups": [
+   [
+    "Kyrgyz",
+    73.8,
+    "???"
+   ],
+   [
+    "Uzbek",
+    14.8,
+    null
+   ],
+   [
+    "Russian",
+    5.1,
+    null
+   ],
+   [
+    "Dungan",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    5.2,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "KHM": {
+  "groups": [
+   [
+    "Khmer",
+    95.4,
+    null
+   ],
+   [
+    "Cham",
+    2.4,
+    null
+   ],
+   [
+    "Chinese",
+    1.5,
+    null
+   ],
+   [
+    "other",
+    0.7,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "KIR": {
+  "groups": [
+   [
+    "I-Kiribati",
+    95.8,
+    "I-???"
+   ],
+   [
+    "I-Kiribati/mixed",
+    3.8,
+    "I-???/mixed"
+   ],
+   [
+    "Tuvaluan",
+    0.2,
+    null
+   ],
+   [
+    "other",
+    1.7,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "KNA": {
+  "groups": [
+   [
+    "African descent",
+    92.5,
+    null
+   ],
+   [
+    "mixed",
+    3.0,
+    null
+   ],
+   [
+    "White",
+    2.1,
+    null
+   ],
+   [
+    "East Indian",
+    1.5,
+    null
+   ],
+   [
+    "other",
+    0.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2001"
+ },
+ "KWT": {
+  "groups": [
+   [
+    "Asian",
+    40.3,
+    null
+   ],
+   [
+    "Kuwaiti",
+    30.4,
+    "???"
+   ],
+   [
+    "other Arab",
+    27.4,
+    null
+   ],
+   [
+    "African",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "LAO": {
+  "groups": [
+   [
+    "Lao",
+    53.2,
+    "???"
+   ],
+   [
+    "Khmou",
+    11.0,
+    null
+   ],
+   [
+    "Hmong",
+    9.2,
+    null
+   ],
+   [
+    "Phouthay",
+    3.4,
+    null
+   ],
+   [
+    "Tai",
+    3.1,
+    null
+   ],
+   [
+    "Makong",
+    2.5,
+    null
+   ],
+   [
+    "Katong",
+    2.2,
+    null
+   ],
+   [
+    "Lue",
+    2.0,
+    null
+   ],
+   [
+    "Akha",
+    1.8,
+    null
+   ],
+   [
+    "other",
+    11.6,
+    null
+   ]
+  ],
+  "year": "2015"
+ },
+ "LBN": {
+  "groups": [
+   [
+    "Arab",
+    95.0,
+    null
+   ],
+   [
+    "Armenian",
+    4.0,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "LBR": {
+  "groups": [
+   [
+    "Kpelle",
+    20.2,
+    null
+   ],
+   [
+    "Bassa",
+    13.6,
+    null
+   ],
+   [
+    "Grebo",
+    9.9,
+    null
+   ],
+   [
+    "Gio",
+    7.9,
+    null
+   ],
+   [
+    "Mano",
+    7.2,
+    null
+   ],
+   [
+    "Kru",
+    5.5,
+    null
+   ],
+   [
+    "Lorma",
+    4.8,
+    null
+   ],
+   [
+    "Krahn",
+    4.5,
+    null
+   ],
+   [
+    "Mandingo",
+    4.2,
+    null
+   ],
+   [
+    "Vai",
+    3.8,
+    null
+   ],
+   [
+    "Gola",
+    3.8,
+    null
+   ],
+   [
+    "other African",
+    3.0,
+    null
+   ],
+   [
+    "Gbandi",
+    2.9,
+    null
+   ],
+   [
+    "Mende",
+    1.7,
+    null
+   ],
+   [
+    "Sapo",
+    1.0,
+    null
+   ],
+   [
+    "Belle",
+    0.7,
+    null
+   ],
+   [
+    "other Liberian ethnic group",
+    0.4,
+    "other ??? ethnic group"
+   ],
+   [
+    "Dey",
+    0.3,
+    null
+   ],
+   [
+    "non-African",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "LBY": {
+  "groups": [
+   [
+    "Amazigh and Arab",
+    97.0,
+    null
+   ],
+   [
+    "other",
+    3.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "LCA": {
+  "groups": [
+   [
+    "Black/African descent",
+    85.3,
+    null
+   ],
+   [
+    "mixed",
+    10.9,
+    null
+   ],
+   [
+    "East Indian",
+    2.2,
+    null
+   ],
+   [
+    "other",
+    1.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "LIE": {
+  "groups": [
+   [
+    "Liechtensteiner",
+    65.6,
+    "???"
+   ],
+   [
+    "Swiss",
+    9.6,
+    null
+   ],
+   [
+    "Austrian",
+    5.8,
+    null
+   ],
+   [
+    "German",
+    4.5,
+    null
+   ],
+   [
+    "Italian",
+    3.1,
+    null
+   ],
+   [
+    "other",
+    11.4,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "LKA": {
+  "groups": [
+   [
+    "Sinhalese",
+    74.9,
+    null
+   ],
+   [
+    "Sri Lankan Tamil",
+    11.2,
+    "Sri ??? Tamil"
+   ],
+   [
+    "Sri Lankan Moors",
+    9.2,
+    "Sri ??? Moors"
+   ],
+   [
+    "Indian Tamil",
+    4.2,
+    null
+   ],
+   [
+    "other",
+    0.5,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "LSO": {
+  "groups": [
+   [
+    "Sotho",
+    99.7,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "LTU": {
+  "groups": [
+   [
+    "Lithuanian",
+    84.6,
+    "???"
+   ],
+   [
+    "Polish",
+    6.5,
+    null
+   ],
+   [
+    "Russian",
+    5.0,
+    null
+   ],
+   [
+    "Belarusian",
+    1.0,
+    null
+   ],
+   [
+    "unspecified",
+    1.8,
+    null
+   ],
+   [
+    "other",
+    1.1,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "LUX": {
+  "groups": [
+   [
+    "Luxembourger",
+    52.9,
+    "???"
+   ],
+   [
+    "Portuguese",
+    14.5,
+    null
+   ],
+   [
+    "French",
+    7.6,
+    null
+   ],
+   [
+    "Italian",
+    3.7,
+    null
+   ],
+   [
+    "Belgian",
+    3.0,
+    null
+   ],
+   [
+    "German",
+    2.0,
+    null
+   ],
+   [
+    "Spanish",
+    1.3,
+    null
+   ],
+   [
+    "Romania",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    14.0,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "LVA": {
+  "groups": [
+   [
+    "Latvian",
+    62.7,
+    "???"
+   ],
+   [
+    "Russian",
+    24.5,
+    null
+   ],
+   [
+    "Belarusian",
+    3.1,
+    null
+   ],
+   [
+    "Ukrainian",
+    2.2,
+    null
+   ],
+   [
+    "Polish",
+    2.0,
+    null
+   ],
+   [
+    "Lithuanian",
+    1.1,
+    null
+   ],
+   [
+    "unspecified",
+    2.6,
+    null
+   ],
+   [
+    "other",
+    1.8,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "MAC": {
+  "groups": [
+   [
+    "Chinese",
+    89.4,
+    null
+   ],
+   [
+    "Chinese and Portuguese",
+    1.0,
+    null
+   ],
+   [
+    "Portuguese",
+    0.8,
+    null
+   ],
+   [
+    "Chinese and non-Portuguese",
+    0.2,
+    null
+   ],
+   [
+    "Portuguese and others",
+    0.2,
+    null
+   ],
+   [
+    "other",
+    8.5,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "MAR": {
+  "groups": [
+   [
+    "Arab-Amazigh",
+    99.0,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "MCO": {
+  "groups": [
+   [
+    "Monegasque",
+    32.1,
+    "???"
+   ],
+   [
+    "French",
+    19.9,
+    null
+   ],
+   [
+    "Italian",
+    15.3,
+    null
+   ],
+   [
+    "British",
+    5.0,
+    null
+   ],
+   [
+    "Belgian",
+    2.3,
+    null
+   ],
+   [
+    "Swiss",
+    2.0,
+    null
+   ],
+   [
+    "German",
+    1.9,
+    null
+   ],
+   [
+    "Russian",
+    1.8,
+    null
+   ],
+   [
+    "American",
+    1.1,
+    null
+   ],
+   [
+    "Dutch",
+    1.1,
+    null
+   ],
+   [
+    "Moroccan",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    16.6,
+    null
+   ]
+  ],
+  "year": "2016"
+ },
+ "MDA": {
+  "groups": [
+   [
+    "Moldovan",
+    75.1,
+    "???"
+   ],
+   [
+    "Romanian",
+    7.0,
+    null
+   ],
+   [
+    "Ukrainian",
+    6.6,
+    null
+   ],
+   [
+    "Gagauz",
+    4.6,
+    null
+   ],
+   [
+    "Russian",
+    4.1,
+    null
+   ],
+   [
+    "Bulgarian",
+    1.9,
+    null
+   ],
+   [
+    "other",
+    0.8,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "MEX": {
+  "groups": [
+   [
+    "Mestizo",
+    62.0,
+    null
+   ],
+   [
+    "predominantly Indigenous",
+    21.0,
+    null
+   ],
+   [
+    "Indigenous",
+    7.0,
+    null
+   ],
+   [
+    "other",
+    10.0,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "MHL": {
+  "groups": [
+   [
+    "Marshallese",
+    95.6,
+    "???"
+   ],
+   [
+    "Filipino",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    3.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "MKD": {
+  "groups": [
+   [
+    "Macedonian",
+    58.4,
+    "???"
+   ],
+   [
+    "Albanian",
+    24.3,
+    null
+   ],
+   [
+    "no ethnic affiliation data available",
+    7.2,
+    null
+   ],
+   [
+    "Turkish",
+    3.9,
+    null
+   ],
+   [
+    "Romani",
+    2.5,
+    null
+   ],
+   [
+    "Serb",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    2.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "MLI": {
+  "groups": [
+   [
+    "Bambara",
+    33.3,
+    null
+   ],
+   [
+    "Fulani",
+    13.3,
+    null
+   ],
+   [
+    "Sarakole/Soninke/Marka",
+    9.8,
+    null
+   ],
+   [
+    "Senufo/Manianka",
+    9.6,
+    null
+   ],
+   [
+    "Malinke",
+    8.8,
+    "???"
+   ],
+   [
+    "Dogon",
+    8.7,
+    null
+   ],
+   [
+    "other Malian",
+    6.0,
+    "other ???"
+   ],
+   [
+    "Sonrai",
+    5.9,
+    null
+   ],
+   [
+    "Bobo",
+    2.1,
+    null
+   ],
+   [
+    "Tuareg/Bella",
+    1.7,
+    null
+   ],
+   [
+    "from members of Economic Community of West Africa",
+    0.4,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "MMR": {
+  "groups": [
+   [
+    "Burman",
+    68.0,
+    null
+   ],
+   [
+    "Shan",
+    9.0,
+    null
+   ],
+   [
+    "Karen",
+    7.0,
+    null
+   ],
+   [
+    "Rakhine",
+    4.0,
+    null
+   ],
+   [
+    "Chinese",
+    3.0,
+    null
+   ],
+   [
+    "Indian",
+    2.0,
+    null
+   ],
+   [
+    "Mon",
+    2.0,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "MNE": {
+  "groups": [
+   [
+    "Montenegrin",
+    45.0,
+    "???"
+   ],
+   [
+    "Serbian",
+    28.7,
+    null
+   ],
+   [
+    "Bosniak",
+    8.7,
+    null
+   ],
+   [
+    "Albanian",
+    4.9,
+    null
+   ],
+   [
+    "Muslim",
+    3.3,
+    null
+   ],
+   [
+    "Romani",
+    1.0,
+    null
+   ],
+   [
+    "Croat",
+    1.0,
+    null
+   ],
+   [
+    "unspecified",
+    4.9,
+    null
+   ],
+   [
+    "other",
+    2.6,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "MNG": {
+  "groups": [
+   [
+    "Khalkh",
+    83.8,
+    null
+   ],
+   [
+    "Kazak",
+    3.8,
+    null
+   ],
+   [
+    "Durvud",
+    2.6,
+    null
+   ],
+   [
+    "Bayad",
+    2.0,
+    null
+   ],
+   [
+    "Buriad",
+    1.4,
+    null
+   ],
+   [
+    "Zakhchin",
+    1.2,
+    null
+   ],
+   [
+    "Dariganga",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    4.1,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "MNP": {
+  "groups": [
+   [
+    "Asian",
+    50.0,
+    null
+   ],
+   [
+    "Native Hawaiian or other Pacific Islander",
+    34.9,
+    null
+   ],
+   [
+    "two or more ethnicities or races",
+    12.7,
+    null
+   ],
+   [
+    "other",
+    2.5,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "MOZ": {
+  "groups": [
+   [
+    "African",
+    99.0,
+    null
+   ],
+   [
+    "Mestizo",
+    0.8,
+    null
+   ],
+   [
+    "other",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2017"
+ },
+ "MRT": {
+  "groups": [
+   [
+    "Black Moors",
+    40.0,
+    null
+   ],
+   [
+    "White Moors",
+    30.0,
+    null
+   ],
+   [
+    "Sub-Saharan Mauritanians",
+    30.0,
+    "Sub-Saharan ???"
+   ]
+  ],
+  "year": null
+ },
+ "MSR": {
+  "groups": [
+   [
+    "African/Black",
+    86.2,
+    null
+   ],
+   [
+    "mixed",
+    4.8,
+    null
+   ],
+   [
+    "Hispanic/Spanish",
+    3.0,
+    null
+   ],
+   [
+    "Caucasian/White",
+    2.7,
+    null
+   ],
+   [
+    "East Indian/Indian",
+    1.6,
+    null
+   ],
+   [
+    "other",
+    1.8,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "MWI": {
+  "groups": [
+   [
+    "Chewa",
+    34.3,
+    null
+   ],
+   [
+    "Lomwe",
+    18.8,
+    null
+   ],
+   [
+    "Yao",
+    13.2,
+    null
+   ],
+   [
+    "Ngoni",
+    10.4,
+    null
+   ],
+   [
+    "Tumbuka",
+    9.2,
+    null
+   ],
+   [
+    "Sena",
+    3.8,
+    null
+   ],
+   [
+    "Mang'anja",
+    3.2,
+    null
+   ],
+   [
+    "Tonga",
+    1.8,
+    null
+   ],
+   [
+    "Nyanja",
+    1.8,
+    null
+   ],
+   [
+    "Nkhonde",
+    1.0,
+    null
+   ],
+   [
+    "foreign",
+    0.3,
+    null
+   ],
+   [
+    "other",
+    2.2,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "MYS": {
+  "groups": [
+   [
+    "Bumiputera",
+    63.8,
+    null
+   ],
+   [
+    "Chinese",
+    20.6,
+    null
+   ],
+   [
+    "non-citizens",
+    9.0,
+    null
+   ],
+   [
+    "Indian",
+    6.0,
+    null
+   ],
+   [
+    "other",
+    0.6,
+    null
+   ]
+  ],
+  "year": "2023"
+ },
+ "NAM": {
+  "groups": [
+   [
+    "Ovambo",
+    50.0,
+    null
+   ],
+   [
+    "Kavangos",
+    9.0,
+    null
+   ],
+   [
+    "Herero",
+    7.0,
+    null
+   ],
+   [
+    "Damara",
+    7.0,
+    null
+   ],
+   [
+    "mixed European and African ancestry",
+    6.5,
+    null
+   ],
+   [
+    "European",
+    6.0,
+    null
+   ],
+   [
+    "Nama",
+    5.0,
+    null
+   ],
+   [
+    "Caprivian",
+    4.0,
+    null
+   ],
+   [
+    "San",
+    3.0,
+    null
+   ],
+   [
+    "Baster",
+    2.0,
+    null
+   ],
+   [
+    "Tswana",
+    0.5,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "NCL": {
+  "groups": [
+   [
+    "Kanak",
+    39.1,
+    null
+   ],
+   [
+    "European",
+    27.1,
+    null
+   ],
+   [
+    "Futunian",
+    8.2,
+    null
+   ],
+   [
+    "Tahitian",
+    2.1,
+    null
+   ],
+   [
+    "Indonesian",
+    1.4,
+    null
+   ],
+   [
+    "Ni-Vanuatu",
+    1.0,
+    null
+   ],
+   [
+    "Vietnamese",
+    0.9,
+    null
+   ],
+   [
+    "other",
+    17.7,
+    null
+   ],
+   [
+    "unspecified",
+    2.5,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "NER": {
+  "groups": [
+   [
+    "Hausa",
+    53.1,
+    null
+   ],
+   [
+    "Zarma/Songhai",
+    21.2,
+    null
+   ],
+   [
+    "Tuareg",
+    11.0,
+    null
+   ],
+   [
+    "Fulani",
+    6.5,
+    null
+   ],
+   [
+    "Kanuri",
+    5.9,
+    null
+   ],
+   [
+    "other/unavailable",
+    0.9,
+    null
+   ],
+   [
+    "Gurma",
+    0.8,
+    null
+   ],
+   [
+    "Arab",
+    0.4,
+    null
+   ],
+   [
+    "Tubu",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2006"
+ },
+ "NGA": {
+  "groups": [
+   [
+    "Hausa",
+    30.0,
+    null
+   ],
+   [
+    "Yoruba",
+    15.5,
+    null
+   ],
+   [
+    "Igbo",
+    15.2,
+    null
+   ],
+   [
+    "Fulani",
+    6.0,
+    null
+   ],
+   [
+    "Tiv",
+    2.4,
+    null
+   ],
+   [
+    "Kanuri/Beriberi",
+    2.4,
+    null
+   ],
+   [
+    "Ibibio",
+    1.8,
+    null
+   ],
+   [
+    "Ijaw/Izon",
+    1.8,
+    null
+   ],
+   [
+    "other",
+    24.9,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "NIC": {
+  "groups": [
+   [
+    "Mestizo",
+    69.0,
+    null
+   ],
+   [
+    "White",
+    17.0,
+    null
+   ],
+   [
+    "Black",
+    9.0,
+    null
+   ],
+   [
+    "Indigenous",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "NLD": {
+  "groups": [
+   [
+    "Dutch",
+    75.4,
+    "???"
+   ],
+   [
+    "EU",
+    6.4,
+    null
+   ],
+   [
+    "Turkish",
+    2.4,
+    null
+   ],
+   [
+    "Moroccan",
+    2.4,
+    null
+   ],
+   [
+    "Surinamese",
+    2.1,
+    null
+   ],
+   [
+    "Indonesian",
+    2.0,
+    null
+   ],
+   [
+    "other",
+    9.3,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "NOR": {
+  "groups": [
+   [
+    "Norwegian",
+    81.5,
+    "???"
+   ],
+   [
+    "other European",
+    8.9,
+    null
+   ],
+   [
+    "other",
+    9.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "NPL": {
+  "groups": [
+   [
+    "Chhettri",
+    16.5,
+    null
+   ],
+   [
+    "Brahman-Hill",
+    11.3,
+    null
+   ],
+   [
+    "Magar",
+    6.9,
+    null
+   ],
+   [
+    "Tharu",
+    6.2,
+    null
+   ],
+   [
+    "Tamang",
+    5.6,
+    null
+   ],
+   [
+    "Bishwokarma",
+    5.0,
+    null
+   ],
+   [
+    "Musalman",
+    4.9,
+    null
+   ],
+   [
+    "Newar",
+    4.6,
+    null
+   ],
+   [
+    "Yadav",
+    4.2,
+    null
+   ],
+   [
+    "Rai",
+    2.2,
+    null
+   ],
+   [
+    "Pariyar",
+    1.9,
+    null
+   ],
+   [
+    "Gurung",
+    1.9,
+    null
+   ],
+   [
+    "Thakuri",
+    1.7,
+    null
+   ],
+   [
+    "Mijar",
+    1.6,
+    null
+   ],
+   [
+    "Teli",
+    1.5,
+    null
+   ],
+   [
+    "Yakthung/Limbu",
+    1.4,
+    null
+   ],
+   [
+    "Chamar/Harijan/Ram",
+    1.4,
+    null
+   ],
+   [
+    "Koiri/Kushwaha",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    20.0,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "NRU": {
+  "groups": [
+   [
+    "Nauruan",
+    94.6,
+    "???"
+   ],
+   [
+    "I-Kiribati",
+    2.2,
+    null
+   ],
+   [
+    "Fijian",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    1.9,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "NZL": {
+  "groups": [
+   [
+    "European",
+    64.1,
+    null
+   ],
+   [
+    "Maori",
+    16.5,
+    null
+   ],
+   [
+    "Chinese",
+    4.9,
+    null
+   ],
+   [
+    "Indian",
+    4.7,
+    null
+   ],
+   [
+    "Samoan",
+    3.9,
+    null
+   ],
+   [
+    "Tongan",
+    1.8,
+    null
+   ],
+   [
+    "Cook Islands Maori",
+    1.7,
+    null
+   ],
+   [
+    "English",
+    1.5,
+    null
+   ],
+   [
+    "Filipino",
+    1.5,
+    null
+   ],
+   [
+    "New Zealander",
+    1.0,
+    "New ???"
+   ],
+   [
+    "other",
+    13.7,
+    null
+   ]
+  ],
+  "year": "2018"
+ },
+ "PAK": {
+  "groups": [
+   [
+    "Punjabi",
+    44.7,
+    null
+   ],
+   [
+    "Pashtun",
+    15.4,
+    null
+   ],
+   [
+    "Sindhi",
+    14.1,
+    null
+   ],
+   [
+    "Saraiki",
+    8.4,
+    null
+   ],
+   [
+    "Muhajirs",
+    7.6,
+    null
+   ],
+   [
+    "Baloch",
+    3.6,
+    null
+   ],
+   [
+    "other",
+    6.3,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "PAN": {
+  "groups": [
+   [
+    "Mestizo",
+    65.0,
+    null
+   ],
+   [
+    "Indigenous",
+    12.3,
+    null
+   ],
+   [
+    "Black or African descent",
+    9.2,
+    null
+   ],
+   [
+    "Mulatto",
+    6.8,
+    null
+   ],
+   [
+    "White",
+    6.7,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "PER": {
+  "groups": [
+   [
+    "Mestizo",
+    60.2,
+    null
+   ],
+   [
+    "Indigenous",
+    25.8,
+    null
+   ],
+   [
+    "White",
+    5.9,
+    null
+   ],
+   [
+    "African descent",
+    3.6,
+    null
+   ],
+   [
+    "unspecified",
+    3.3,
+    null
+   ],
+   [
+    "other",
+    1.2,
+    null
+   ]
+  ],
+  "year": "2017"
+ },
+ "PHL": {
+  "groups": [
+   [
+    "Tagalog",
+    26.0,
+    null
+   ],
+   [
+    "other local ethnicities",
+    18.5,
+    null
+   ],
+   [
+    "Bisaya/Binisaya",
+    14.3,
+    null
+   ],
+   [
+    "Ilocano",
+    8.0,
+    null
+   ],
+   [
+    "Cebuano",
+    8.0,
+    null
+   ],
+   [
+    "Illonggo",
+    7.9,
+    null
+   ],
+   [
+    "Bikol/Bicol",
+    6.5,
+    null
+   ],
+   [
+    "Waray",
+    3.8,
+    null
+   ],
+   [
+    "Kapampangan",
+    3.0,
+    null
+   ],
+   [
+    "Maguindanao",
+    1.9,
+    null
+   ],
+   [
+    "Pangasinan",
+    1.9,
+    null
+   ],
+   [
+    "foreign ethnicities",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "PLW": {
+  "groups": [
+   [
+    "Palauan",
+    70.6,
+    "???"
+   ],
+   [
+    "Asian",
+    26.5,
+    null
+   ],
+   [
+    "Carolinian",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    1.7,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "POL": {
+  "groups": [
+   [
+    "Polish",
+    96.9,
+    "???"
+   ],
+   [
+    "other and unspecified",
+    1.7,
+    null
+   ],
+   [
+    "Silesian",
+    1.1,
+    null
+   ],
+   [
+    "German",
+    0.2,
+    null
+   ],
+   [
+    "Ukrainian",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "PRI": {
+  "groups": [
+   [
+    "White",
+    75.8,
+    null
+   ],
+   [
+    "Black/African American",
+    12.4,
+    null
+   ],
+   [
+    "mixed",
+    3.3,
+    null
+   ],
+   [
+    "other",
+    8.5,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "PRT": {
+  "groups": [
+   [
+    "Portuguese",
+    95.0,
+    "???"
+   ],
+   [
+    "South America and other foreign born",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "PRY": {
+  "groups": [
+   [
+    "Mestizo",
+    95.0,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "PYF": {
+  "groups": [
+   [
+    "Polynesian",
+    78.0,
+    "???"
+   ],
+   [
+    "Chinese",
+    12.0,
+    null
+   ],
+   [
+    "local French",
+    6.0,
+    "local ???"
+   ],
+   [
+    "metropolitan French",
+    4.0,
+    "metropolitan ???"
+   ]
+  ],
+  "year": null
+ },
+ "ROU": {
+  "groups": [
+   [
+    "Romanian",
+    89.3,
+    "???"
+   ],
+   [
+    "Hungarian",
+    6.0,
+    null
+   ],
+   [
+    "Romani",
+    3.4,
+    "???"
+   ],
+   [
+    "Ukrainian",
+    0.3,
+    null
+   ],
+   [
+    "German",
+    0.1,
+    null
+   ],
+   [
+    "other",
+    0.9,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "RUS": {
+  "groups": [
+   [
+    "Russian",
+    77.7,
+    "???"
+   ],
+   [
+    "Tatar",
+    3.7,
+    null
+   ],
+   [
+    "Ukrainian",
+    1.4,
+    null
+   ],
+   [
+    "Bashkir",
+    1.1,
+    null
+   ],
+   [
+    "Chuvash",
+    1.0,
+    null
+   ],
+   [
+    "Chechen",
+    1.0,
+    null
+   ],
+   [
+    "other",
+    10.2,
+    null
+   ],
+   [
+    "unspecified",
+    3.9,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "SAU": {
+  "groups": [
+   [
+    "Arab",
+    90.0,
+    null
+   ],
+   [
+    "Afro-Asian",
+    10.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "SEN": {
+  "groups": [
+   [
+    "Wolof",
+    39.7,
+    null
+   ],
+   [
+    "Pulaar",
+    27.5,
+    null
+   ],
+   [
+    "Sereer",
+    16.0,
+    null
+   ],
+   [
+    "Mandinka",
+    4.9,
+    null
+   ],
+   [
+    "Jola",
+    4.2,
+    null
+   ],
+   [
+    "Soninke",
+    2.4,
+    null
+   ],
+   [
+    "other",
+    5.4,
+    null
+   ]
+  ],
+  "year": "2019"
+ },
+ "SGP": {
+  "groups": [
+   [
+    "Chinese",
+    74.2,
+    null
+   ],
+   [
+    "Malay",
+    13.7,
+    null
+   ],
+   [
+    "Indian",
+    8.9,
+    null
+   ],
+   [
+    "other",
+    3.2,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "SLB": {
+  "groups": [
+   [
+    "Melanesian",
+    95.3,
+    null
+   ],
+   [
+    "Polynesian",
+    3.1,
+    null
+   ],
+   [
+    "Micronesian",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2009"
+ },
+ "SLE": {
+  "groups": [
+   [
+    "Temne",
+    35.4,
+    null
+   ],
+   [
+    "Mende",
+    30.8,
+    null
+   ],
+   [
+    "Limba",
+    8.8,
+    null
+   ],
+   [
+    "Kono",
+    4.3,
+    null
+   ],
+   [
+    "Korankoh",
+    4.0,
+    null
+   ],
+   [
+    "Fullah",
+    3.8,
+    null
+   ],
+   [
+    "Mandingo",
+    2.8,
+    null
+   ],
+   [
+    "Loko",
+    2.0,
+    null
+   ],
+   [
+    "Sherbro",
+    1.9,
+    null
+   ],
+   [
+    "Creole",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    5.0,
+    null
+   ]
+  ],
+  "year": "2019"
+ },
+ "SLV": {
+  "groups": [
+   [
+    "Mestizo",
+    86.3,
+    null
+   ],
+   [
+    "White",
+    12.7,
+    null
+   ],
+   [
+    "Indigenous",
+    0.2,
+    null
+   ],
+   [
+    "Black",
+    0.1,
+    null
+   ],
+   [
+    "other",
+    0.6,
+    null
+   ]
+  ],
+  "year": "2007"
+ },
+ "SRB": {
+  "groups": [
+   [
+    "Serb",
+    83.3,
+    "???"
+   ],
+   [
+    "Hungarian",
+    3.5,
+    null
+   ],
+   [
+    "undeclared or unknown",
+    3.4,
+    null
+   ],
+   [
+    "Romani",
+    2.1,
+    null
+   ],
+   [
+    "Bosniak",
+    2.0,
+    null
+   ],
+   [
+    "other",
+    5.7,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "SUR": {
+  "groups": [
+   [
+    "Hindustani",
+    27.4,
+    null
+   ],
+   [
+    "Maroon",
+    21.7,
+    null
+   ],
+   [
+    "Creole",
+    15.7,
+    null
+   ],
+   [
+    "Javanese",
+    13.7,
+    null
+   ],
+   [
+    "mixed",
+    13.4,
+    null
+   ],
+   [
+    "other",
+    7.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.6,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "SVK": {
+  "groups": [
+   [
+    "Slovak",
+    83.8,
+    "???"
+   ],
+   [
+    "Hungarian",
+    7.8,
+    null
+   ],
+   [
+    "Romani",
+    1.2,
+    null
+   ],
+   [
+    "unspecified",
+    5.4,
+    null
+   ],
+   [
+    "other",
+    1.8,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "SVN": {
+  "groups": [
+   [
+    "Slovene",
+    83.1,
+    "???"
+   ],
+   [
+    "other or unspecified",
+    12.0,
+    null
+   ],
+   [
+    "Serb",
+    2.0,
+    null
+   ],
+   [
+    "Croat",
+    1.8,
+    null
+   ],
+   [
+    "Bosniak",
+    1.1,
+    null
+   ]
+  ],
+  "year": "2002"
+ },
+ "SWE": {
+  "groups": [
+   [
+    "Swedish",
+    79.6,
+    "???"
+   ],
+   [
+    "Syrian",
+    1.9,
+    null
+   ],
+   [
+    "Iraqi",
+    1.4,
+    null
+   ],
+   [
+    "Finnish",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    15.8,
+    null
+   ]
+  ],
+  "year": "2022"
+ },
+ "SXM": {
+  "groups": [
+   [
+    "Saint Maarten",
+    29.9,
+    "Saint ???"
+   ],
+   [
+    "Dominican Republic",
+    10.2,
+    null
+   ],
+   [
+    "Haiti",
+    7.8,
+    null
+   ],
+   [
+    "Jamaica",
+    6.6,
+    null
+   ],
+   [
+    "Saint Martin",
+    5.9,
+    null
+   ],
+   [
+    "Guyana",
+    5.0,
+    null
+   ],
+   [
+    "Dominica",
+    4.4,
+    null
+   ],
+   [
+    "Curacao",
+    4.1,
+    null
+   ],
+   [
+    "Aruba",
+    3.4,
+    null
+   ],
+   [
+    "Saint Kitts and Nevis",
+    2.8,
+    null
+   ],
+   [
+    "India",
+    2.6,
+    null
+   ],
+   [
+    "Netherlands",
+    2.2,
+    null
+   ],
+   [
+    "US",
+    1.6,
+    null
+   ],
+   [
+    "Suriname",
+    1.4,
+    null
+   ],
+   [
+    "Saint Lucia",
+    1.3,
+    null
+   ],
+   [
+    "Anguilla",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    8.0,
+    null
+   ],
+   [
+    "unspecified",
+    1.7,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "SYR": {
+  "groups": [
+   [
+    "Arab",
+    50.0,
+    null
+   ],
+   [
+    "Alawite",
+    15.0,
+    null
+   ],
+   [
+    "Kurd",
+    10.0,
+    null
+   ],
+   [
+    "Levantine",
+    10.0,
+    null
+   ],
+   [
+    "other",
+    15.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "TCA": {
+  "groups": [
+   [
+    "Black",
+    87.6,
+    null
+   ],
+   [
+    "White",
+    7.9,
+    null
+   ],
+   [
+    "mixed",
+    2.5,
+    null
+   ],
+   [
+    "East Indian",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    0.7,
+    null
+   ]
+  ],
+  "year": "2006"
+ },
+ "TCD": {
+  "groups": [
+   [
+    "Sara",
+    30.5,
+    null
+   ],
+   [
+    "Kanembu/Bornu/Buduma",
+    9.8,
+    null
+   ],
+   [
+    "Arab",
+    9.7,
+    null
+   ],
+   [
+    "Wadai/Maba/Masalit/Mimi",
+    7.0,
+    null
+   ],
+   [
+    "Gorane",
+    5.8,
+    null
+   ],
+   [
+    "Masa/Musseye/Musgum",
+    4.9,
+    null
+   ],
+   [
+    "Bulala/Medogo/Kuka",
+    3.7,
+    null
+   ],
+   [
+    "Marba/Lele/Mesme",
+    3.5,
+    null
+   ],
+   [
+    "Mundang",
+    2.7,
+    null
+   ],
+   [
+    "Bidiyo/Migaama/Kenga/Dangleat",
+    2.5,
+    null
+   ],
+   [
+    "Dadjo/Kibet/Muro",
+    2.4,
+    null
+   ],
+   [
+    "Tupuri/Kera",
+    2.0,
+    null
+   ],
+   [
+    "Gabri/Kabalaye/Nanchere/Somrai",
+    2.0,
+    null
+   ],
+   [
+    "Fulani/Fulbe/Bodore",
+    1.8,
+    null
+   ],
+   [
+    "Karo/Zime/Peve",
+    1.3,
+    null
+   ],
+   [
+    "Baguirmi/Barma",
+    1.2,
+    null
+   ],
+   [
+    "Zaghawa/Bideyat/Kobe",
+    1.1,
+    null
+   ],
+   [
+    "Tama/Assongori/Mararit",
+    1.1,
+    null
+   ],
+   [
+    "Mesmedje/Massalat/Kadjakse",
+    0.8,
+    null
+   ],
+   [
+    "other",
+    4.6,
+    null
+   ],
+   [
+    "unspecified",
+    1.7,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "TGO": {
+  "groups": [
+   [
+    "Adja-Ewe/Mina",
+    42.4,
+    null
+   ],
+   [
+    "Kabye/Tem",
+    25.9,
+    null
+   ],
+   [
+    "Para-Gourma/Akan",
+    17.1,
+    null
+   ],
+   [
+    "foreigners",
+    5.2,
+    null
+   ],
+   [
+    "Akposso/Akebu",
+    4.1,
+    null
+   ],
+   [
+    "Ana-Ife",
+    3.2,
+    null
+   ],
+   [
+    "other Togolese",
+    1.7,
+    "other ???"
+   ],
+   [
+    "no response",
+    0.4,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "THA": {
+  "groups": [
+   [
+    "Thai",
+    97.5,
+    "???"
+   ],
+   [
+    "Burmese",
+    1.3,
+    null
+   ],
+   [
+    "other",
+    1.1,
+    null
+   ],
+   [
+    "unspecified",
+    0.1,
+    null
+   ]
+  ],
+  "year": "2015"
+ },
+ "TJK": {
+  "groups": [
+   [
+    "Tajik",
+    84.3,
+    "???"
+   ],
+   [
+    "Uzbek",
+    13.8,
+    null
+   ],
+   [
+    "other",
+    2.0,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "TKL": {
+  "groups": [
+   [
+    "Tokelauan",
+    64.5,
+    "???"
+   ],
+   [
+    "part Tokelauan/Samoan",
+    9.7,
+    "part ???/Samoan"
+   ],
+   [
+    "Tuvaluan",
+    7.5,
+    null
+   ],
+   [
+    "Samoan",
+    5.8,
+    null
+   ],
+   [
+    "other Pacific Islander",
+    3.4,
+    null
+   ],
+   [
+    "part Tokelauan/Tuvaluan",
+    2.8,
+    "part ???/Tuvaluan"
+   ],
+   [
+    "other",
+    5.6,
+    null
+   ],
+   [
+    "unspecified",
+    0.8,
+    null
+   ]
+  ],
+  "year": "2016"
+ },
+ "TKM": {
+  "groups": [
+   [
+    "Turkmen",
+    85.0,
+    "???"
+   ],
+   [
+    "Uzbek",
+    5.0,
+    null
+   ],
+   [
+    "Russian",
+    4.0,
+    null
+   ],
+   [
+    "other",
+    6.0,
+    null
+   ]
+  ],
+  "year": "2003"
+ },
+ "TTO": {
+  "groups": [
+   [
+    "East Indian",
+    35.4,
+    null
+   ],
+   [
+    "African descent",
+    34.2,
+    null
+   ],
+   [
+    "mixed - other",
+    15.3,
+    null
+   ],
+   [
+    "mixed - African/East Indian",
+    7.7,
+    null
+   ],
+   [
+    "unspecified",
+    6.2,
+    null
+   ],
+   [
+    "other",
+    1.3,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "TUN": {
+  "groups": [
+   [
+    "Arab",
+    98.0,
+    null
+   ],
+   [
+    "European",
+    1.0,
+    null
+   ],
+   [
+    "Jewish and other",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "TUR": {
+  "groups": [
+   [
+    "Turkish",
+    72.5,
+    "???"
+   ],
+   [
+    "Kurdish",
+    19.0,
+    null
+   ],
+   [
+    "other minorities",
+    8.5,
+    null
+   ]
+  ],
+  "year": "2016"
+ },
+ "TWN": {
+  "groups": [
+   [
+    "Han Chinese",
+    95.0,
+    null
+   ],
+   [
+    "indigenous Malayo-Polynesian peoples",
+    2.3,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "TZA": {
+  "groups": [
+   [
+    "mainland - African",
+    99.0,
+    null
+   ],
+   [
+    "other",
+    1.0,
+    null
+   ]
+  ],
+  "year": null
+ },
+ "UGA": {
+  "groups": [
+   [
+    "Baganda",
+    16.5,
+    null
+   ],
+   [
+    "Banyankole",
+    9.6,
+    null
+   ],
+   [
+    "Basoga",
+    8.8,
+    null
+   ],
+   [
+    "Bakiga",
+    7.1,
+    null
+   ],
+   [
+    "Iteso",
+    7.0,
+    null
+   ],
+   [
+    "Langi",
+    6.3,
+    null
+   ],
+   [
+    "Bagisu",
+    4.9,
+    null
+   ],
+   [
+    "Acholi",
+    4.4,
+    null
+   ],
+   [
+    "Lugbara",
+    3.3,
+    null
+   ],
+   [
+    "other",
+    32.1,
+    null
+   ]
+  ],
+  "year": "2014"
+ },
+ "UKR": {
+  "groups": [
+   [
+    "Ukrainian",
+    77.8,
+    "???"
+   ],
+   [
+    "Russian",
+    17.3,
+    null
+   ],
+   [
+    "Belarusian",
+    0.6,
+    null
+   ],
+   [
+    "Moldovan",
+    0.5,
+    null
+   ],
+   [
+    "Crimean Tatar",
+    0.5,
+    null
+   ],
+   [
+    "Bulgarian",
+    0.4,
+    null
+   ],
+   [
+    "Hungarian",
+    0.3,
+    null
+   ],
+   [
+    "Romanian",
+    0.3,
+    null
+   ],
+   [
+    "Polish",
+    0.3,
+    null
+   ],
+   [
+    "Jewish",
+    0.2,
+    null
+   ],
+   [
+    "other",
+    1.8,
+    null
+   ]
+  ],
+  "year": "2001"
+ },
+ "URY": {
+  "groups": [
+   [
+    "White",
+    87.7,
+    null
+   ],
+   [
+    "none or unspecified",
+    5.0,
+    null
+   ],
+   [
+    "Black",
+    4.6,
+    null
+   ],
+   [
+    "Indigenous",
+    2.4,
+    null
+   ],
+   [
+    "other",
+    0.3,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "USA": {
+  "groups": [
+   [
+    "White",
+    61.6,
+    null
+   ],
+   [
+    "Black or African American",
+    12.4,
+    null
+   ],
+   [
+    "two or more races",
+    10.2,
+    null
+   ],
+   [
+    "Asian",
+    6.0,
+    null
+   ],
+   [
+    "Indigenous and Alaska native",
+    1.1,
+    null
+   ],
+   [
+    "Native Hawaiian and Other Pacific Islander",
+    0.2,
+    null
+   ],
+   [
+    "other",
+    8.4,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "UZB": {
+  "groups": [
+   [
+    "Uzbek",
+    83.8,
+    "???"
+   ],
+   [
+    "Tajik",
+    4.8,
+    null
+   ],
+   [
+    "Kazakh",
+    2.5,
+    null
+   ],
+   [
+    "Russian",
+    2.3,
+    null
+   ],
+   [
+    "Karakalpak",
+    2.2,
+    null
+   ],
+   [
+    "Tatar",
+    1.5,
+    null
+   ],
+   [
+    "other",
+    2.9,
+    null
+   ]
+  ],
+  "year": "2017"
+ },
+ "VCT": {
+  "groups": [
+   [
+    "African descent",
+    71.2,
+    null
+   ],
+   [
+    "mixed",
+    23.0,
+    null
+   ],
+   [
+    "Indigenous",
+    3.0,
+    null
+   ],
+   [
+    "European",
+    1.5,
+    null
+   ],
+   [
+    "East Indian/Indian",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2012"
+ },
+ "VGB": {
+  "groups": [
+   [
+    "African-American or African descent",
+    71.4,
+    null
+   ],
+   [
+    "White",
+    13.3,
+    null
+   ],
+   [
+    "mixed",
+    7.5,
+    null
+   ],
+   [
+    "Indigenous",
+    0.4,
+    null
+   ],
+   [
+    "Native Hawaiian and other Pacific Islander",
+    0.1,
+    "Native Hawaiian and other Pacific ???"
+   ],
+   [
+    "other",
+    6.3,
+    null
+   ]
+  ],
+  "year": "2020"
+ },
+ "VNM": {
+  "groups": [
+   [
+    "Kinh",
+    85.3,
+    null
+   ],
+   [
+    "Tay",
+    1.9,
+    null
+   ],
+   [
+    "Thai",
+    1.9,
+    null
+   ],
+   [
+    "Muong",
+    1.5,
+    null
+   ],
+   [
+    "Khmer",
+    1.4,
+    null
+   ],
+   [
+    "Mong",
+    1.4,
+    null
+   ],
+   [
+    "Nung",
+    1.1,
+    null
+   ],
+   [
+    "other",
+    5.5,
+    null
+   ]
+  ],
+  "year": "2019"
+ },
+ "XKX": {
+  "groups": [
+   [
+    "Albanians",
+    92.9,
+    null
+   ],
+   [
+    "Bosniaks",
+    1.6,
+    null
+   ],
+   [
+    "Serbs",
+    1.5,
+    null
+   ],
+   [
+    "Turk",
+    1.1,
+    null
+   ],
+   [
+    "Ashkali",
+    0.9,
+    null
+   ],
+   [
+    "Egyptian",
+    0.7,
+    null
+   ],
+   [
+    "Gorani",
+    0.6,
+    null
+   ],
+   [
+    "Romani",
+    0.5,
+    null
+   ],
+   [
+    "other/unspecified",
+    0.2,
+    null
+   ]
+  ],
+  "year": "2011"
+ },
+ "ZAF": {
+  "groups": [
+   [
+    "Black African",
+    80.9,
+    null
+   ],
+   [
+    "Colored",
+    8.8,
+    null
+   ],
+   [
+    "White",
+    7.8,
+    null
+   ],
+   [
+    "Indian/Asian",
+    2.6,
+    null
+   ]
+  ],
+  "year": "2021"
+ },
+ "ZMB": {
+  "groups": [
+   [
+    "Bemba",
+    21.0,
+    null
+   ],
+   [
+    "Tonga",
+    13.6,
+    null
+   ],
+   [
+    "Chewa",
+    7.4,
+    null
+   ],
+   [
+    "Lozi",
+    5.7,
+    null
+   ],
+   [
+    "Nsenga",
+    5.3,
+    null
+   ],
+   [
+    "Tumbuka",
+    4.4,
+    null
+   ],
+   [
+    "Ngoni",
+    4.0,
+    null
+   ],
+   [
+    "Lala",
+    3.1,
+    null
+   ],
+   [
+    "Kaonde",
+    2.9,
+    null
+   ],
+   [
+    "Namwanga",
+    2.8,
+    null
+   ],
+   [
+    "Lunda",
+    2.6,
+    null
+   ],
+   [
+    "Mambwe",
+    2.5,
+    null
+   ],
+   [
+    "Luvale",
+    2.2,
+    null
+   ],
+   [
+    "Lamba",
+    2.1,
+    null
+   ],
+   [
+    "Ushi",
+    1.9,
+    null
+   ],
+   [
+    "Lenje",
+    1.6,
+    null
+   ],
+   [
+    "Bisa",
+    1.6,
+    null
+   ],
+   [
+    "Mbunda",
+    1.2,
+    null
+   ],
+   [
+    "other",
+    13.8,
+    null
+   ],
+   [
+    "unspecified",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2010"
+ },
+ "ZWE": {
+  "groups": [
+   [
+    "African",
+    99.6,
+    null
+   ],
+   [
+    "other",
+    0.4,
+    null
+   ]
+  ],
+  "year": "2022"
+ }
+}
