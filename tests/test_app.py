@@ -237,3 +237,24 @@ def test_claiming_progress_from_before_accounts(tmp_path, monkeypatch):
     browser.post("/signup", data={"username": "gabriel", "password": "12345678", "claim": "1"})
     assert browser.get("/api/me").get_json()["xp"] == 10
     assert "Keep the progress" not in geo_app.app.test_client().get("/signup").get_data(as_text=True)
+
+
+def test_invite_code(anon):
+    geo_app.app.config["INVITE_CODE"] = "atlas"
+    try:
+        assert "Invite code" in anon.get("/signup").get_data(as_text=True)
+        wrong = anon.post("/signup", data={"username": "eve", "password": "12345678", "invite": "nope"})
+        assert "invite code" in wrong.get_data(as_text=True)
+        ok = anon.post("/signup", data={"username": "ana", "password": "12345678", "invite": "atlas"})
+        assert ok.status_code == 302
+    finally:
+        geo_app.app.config["INVITE_CODE"] = None
+
+
+def test_too_many_wrong_passwords(anon):
+    anon.post("/signup", data={"username": "ana", "password": "12345678"})
+    anon.post("/logout")
+    for _ in range(5):
+        anon.post("/login", data={"username": "ana", "password": "guess-guess"})
+    locked = anon.post("/login", data={"username": "ana", "password": "12345678"})
+    assert "Too many wrong passwords" in locked.get_data(as_text=True)

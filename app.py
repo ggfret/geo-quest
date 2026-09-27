@@ -22,6 +22,8 @@ app = Flask(__name__)
 app.config.update(
     PERMANENT_SESSION_LIFETIME=timedelta(days=30),
     SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=os.environ.get("GEO_HTTPS") == "1",  # online: only send the login cookie over HTTPS
+    INVITE_CODE=os.environ.get("GEO_INVITE_CODE"),             # online: only people with this code can sign up
 )
 
 
@@ -116,6 +118,8 @@ def signup():
             user_id = auth.sign_up(
                 db, request.form.get("username", ""), request.form.get("password", ""),
                 claim_legacy=bool(request.form.get("claim")),
+                invite=request.form.get("invite", ""),
+                required_invite=app.config["INVITE_CODE"],
             )
             start_session(user_id)
             return redirect(safe_next(request.args.get("next")))

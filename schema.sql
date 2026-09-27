@@ -42,3 +42,9 @@ CREATE TABLE IF NOT EXISTS items (
     region TEXT NOT NULL,            -- continent for country games, writing system for languages
     PRIMARY KEY (game, item_id)
 );
+
+-- Wrong passwords, to slow down anyone guessing: 5 per username per 10 minutes.
+CREATE TABLE IF NOT EXISTS login_failures (
+    username TEXT NOT NULL,
+    at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

@@ -35,7 +35,7 @@ git clone https://github.com/ggfret/geo-quest.git
 cd geo-quest
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 python app.py
 ```
 
@@ -43,7 +43,7 @@ Then open http://127.0.0.1:5070.
 
 Create an account on the sign-up page. Progress is saved in `geo.db`, which is created on first run and ignored by git, so it stays on your machine.
 
-Logins are kept in a signed cookie. Locally, the signing key is generated into `instance/secret_key` (also ignored by git). When running online, set the `GEO_SECRET_KEY` environment variable to a long random string instead.
+Logins are kept in a signed cookie. Locally, the signing key is generated into `instance/secret_key` (also ignored by git). To put the site online for friends, follow [DEPLOY.md](DEPLOY.md).
 
 Run the tests with `pytest`.
 
@@ -94,7 +94,6 @@ python scripts/build_ethnicities.py
 
 - A more detailed map for tiny countries in Outlines
 - More fact cards
-- Deploy it online
 
 ## License
 

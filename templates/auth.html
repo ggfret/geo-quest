@@ -21,6 +21,11 @@
       <input name="password" type="password" required
              {% if mode == "signup" %}minlength="8" autocomplete="new-password"{% else %}autocomplete="current-password"{% endif %}>
     </label>
+    {% if mode == "signup" and config.INVITE_CODE %}
+      <label>Invite code
+        <input name="invite" required autocomplete="off" value="{{ request.form.get('invite', '') }}">
+      </label>
+    {% endif %}
     {% if mode == "signup" and legacy %}
       <label class="check">
         <input type="checkbox" name="claim" value="1" checked>
