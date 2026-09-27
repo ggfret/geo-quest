@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}{{ "Sign up" if mode == "signup" else "Log in" }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card auth">
+  <h1>{{ "Create an account" if mode == "signup" else "Welcome back" }}</h1>
+  <p class="muted">
+    {% if mode == "signup" %}Your XP and progress are saved to your account.
+    {% else %}Log in to keep learning where you left off.{% endif %}
+  </p>
+
+  {% if error %}<p class="form-error" role="alert">{{ error }}</p>{% endif %}
+
+  <form method="post" class="auth-form">
+    <label>Username
+      <input name="username" autocomplete="username" required minlength="3" maxlength="20"
+             pattern="[A-Za-z0-9_]+" value="{{ request.form.get('username', '') }}" autofocus>
+    </label>
+    <label>Password
+      <input name="password" type="password" required
+             {% if mode == "signup" %}minlength="8" autocomplete="new-password"{% else %}autocomplete="current-password"{% endif %}>
+    </label>
+    {% if mode == "signup" and legacy %}
+      <label class="check">
+        <input type="checkbox" name="claim" value="1" checked>
+        Keep the progress already on this computer ({{ legacy }} answers)
+      </label>
+    {% endif %}
+    <button class="primary" type="submit">{{ "Sign up" if mode == "signup" else "Log in" }}</button>
+  </form>
+
+  <p class="muted small">
+    {% if mode == "signup" %}Already have an account? <a href="{{ url_for('login', next=request.args.get('next')) }}">Log in</a>
+    {% else %}New here? <a href="{{ url_for('signup', next=request.args.get('next')) }}">Create an account</a>{% endif %}
+  </p>
+</section>
+{% endblock %}

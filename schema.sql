@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL UNIQUE,
+    password_hash TEXT,              -- NULL only for progress saved before accounts existed
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -31,8 +32,6 @@ CREATE TABLE IF NOT EXISTS mastery (
     last_seen TEXT,
     PRIMARY KEY (user_id, game, item_id)
 );
-
-INSERT OR IGNORE INTO users (id, name) VALUES (1, 'me');
 
 -- Every askable item per game, with a readable name and a region, so stats can be
 -- grouped with plain SQL (e.g. accuracy by continent). Refilled from the data files on startup.

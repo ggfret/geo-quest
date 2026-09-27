@@ -6,10 +6,18 @@ import app as geo_app
 
 
 @pytest.fixture
-def client(tmp_path, monkeypatch):
+def anon(tmp_path, monkeypatch):
+    """A browser with no account, on a fresh database."""
     monkeypatch.setattr(geo_app, "DATABASE", tmp_path / "test.db")
     geo_app.init_db()
     return geo_app.app.test_client()
+
+
+@pytest.fixture
+def client(anon):
+    """A logged-in player (user id 1)."""
+    anon.post("/signup", data={"username": "tester", "password": "correct horse"})
+    return anon
 
 
 def test_pages_load(client):
@@ -162,3 +170,70 @@ def test_knowledge_report(client):
     assert "Most common mix-ups" in page and "Romania" in page
     m = client.get("/api/map").get_json()
     assert m["width"] == 1000 and "NOR" in m["paths"]
+
+
+# ---------- Accounts ----------
+
+def test_pages_need_login(anon):
+    assert anon.get("/flags").status_code == 302
+    assert anon.get("/flags").headers["Location"].startswith("/login")
+    assert anon.get("/api/flags/next").status_code == 401
+    assert anon.get("/login").status_code == 200 and anon.get("/signup").status_code == 200
+
+
+def test_signup_login_logout(anon):
+    r = anon.post("/signup?next=/capitals", data={"username": "ana", "password": "12345678"})
+    assert r.status_code == 302 and r.headers["Location"] == "/capitals"
+    assert "ana" in anon.get("/").get_data(as_text=True)
+
+    anon.post("/logout")
+    assert anon.get("/").status_code == 302
+
+    bad = anon.post("/login", data={"username": "ana", "password": "wrong-password"})
+    assert "Wrong username or password" in bad.get_data(as_text=True)
+    ok = anon.post("/login", data={"username": "ANA", "password": "12345678"})  # usernames ignore case
+    assert ok.status_code == 302 and anon.get("/").status_code == 200
+
+
+def test_signup_rules(anon):
+    too_short = anon.post("/signup", data={"username": "ab", "password": "12345678"})
+    assert "3–20" in too_short.get_data(as_text=True)
+    weak = anon.post("/signup", data={"username": "abc", "password": "short"})
+    assert "at least 8" in weak.get_data(as_text=True)
+    anon.post("/signup", data={"username": "abc", "password": "12345678"})
+    anon.post("/logout")
+    taken = anon.post("/signup", data={"username": "ABC", "password": "12345678"})
+    assert "taken" in taken.get_data(as_text=True)
+
+
+def test_players_have_separate_progress(anon):
+    anon.post("/signup", data={"username": "ana", "password": "12345678"})
+    anon.post("/api/flags/answer", json={"item_id": "NOR", "guess": "Norway"})
+    anon.post("/logout")
+    anon.post("/signup", data={"username": "ben", "password": "12345678"})
+    assert anon.get("/api/me").get_json()["xp"] == 0
+
+    board = anon.get("/leaderboard").get_data(as_text=True).split("<tbody>")[1]
+    assert board.index("ana") < board.index("ben")  # ana has more XP, so she's first
+
+
+def test_claiming_progress_from_before_accounts(tmp_path, monkeypatch):
+    """A database from before accounts: user 1 'me' with answers and no password."""
+    db_path = tmp_path / "old.db"
+    old = sqlite3.connect(db_path)
+    old.executescript("""
+        CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL UNIQUE,
+                            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+        INSERT INTO users (id, name) VALUES (1, 'me');
+    """)
+    old.close()
+    monkeypatch.setattr(geo_app, "DATABASE", db_path)
+    geo_app.init_db()  # adds the password column
+    with sqlite3.connect(db_path) as db:
+        db.execute("INSERT INTO attempts (user_id, game, item_id, guess, correct, xp) VALUES (1, 'flags', 'NOR', 'Norway', 1, 10)")
+
+    browser = geo_app.app.test_client()
+    assert "Keep the progress already on this computer (1 answers)" in browser.get("/signup").get_data(as_text=True)
+    browser.post("/signup", data={"username": "gabriel", "password": "12345678", "claim": "1"})
+    assert browser.get("/api/me").get_json()["xp"] == 10
+    assert "Keep the progress" not in geo_app.app.test_client().get("/signup").get_data(as_text=True)

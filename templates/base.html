@@ -10,14 +10,22 @@
   <div class="wrap">
     <header class="site-header">
       <a class="brand" href="{{ url_for('index') }}">Geo<span>Quest</span></a>
-      <a class="nav-link" href="{{ url_for('knowledge_page') }}">📊 My Knowledge</a>
-      <div class="xpbox" id="xpbox">
-        <div class="xpline">
-          <span><b id="lvl">Lv {{ me.level }}</b> · <span id="title">{{ me.title }}</span></span>
-          <span id="xptext">{{ me.into }} / {{ me.need }} XP</span>
+      {% if me %}
+        <nav class="nav">
+          <a class="nav-link" href="{{ url_for('knowledge_page') }}">📊 My Knowledge</a>
+          <a class="nav-link" href="{{ url_for('leaderboard') }}">🏆 Leaderboard</a>
+        </nav>
+        <div class="xpbox" id="xpbox">
+          <div class="xpline">
+            <span><b>{{ me.name }}</b> · <b id="lvl">Lv {{ me.level }}</b> · <span id="title">{{ me.title }}</span></span>
+            <span id="xptext">{{ me.into }} / {{ me.need }} XP</span>
+          </div>
+          <div class="bar"><div id="xpbar" style="width: {{ (me.into / me.need * 100) | round(1) }}%"></div></div>
         </div>
-        <div class="bar"><div id="xpbar" style="width: {{ (me.into / me.need * 100) | round(1) }}%"></div></div>
-      </div>
+        <form method="post" action="{{ url_for('logout') }}" class="logout">
+          <button type="submit" class="ghost small-btn">Log out</button>
+        </form>
+      {% endif %}
     </header>
 
     <main>

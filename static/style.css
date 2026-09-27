@@ -216,3 +216,21 @@ a.k-tile:hover { border-color: var(--accent); }
 .cell-num { font-variant-numeric: tabular-nums; display: inline-block; min-width: 3ch; }
 .cell-bar { display: inline-block; width: 60px; height: 6px; background: var(--surface-2); border-radius: 99px; margin-left: 8px; vertical-align: middle; overflow: hidden; }
 .cell-bar span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+
+/* Accounts */
+.nav { display: flex; gap: 14px; }
+.logout { margin: 0; }
+.small-btn { padding: 6px 12px; font-size: 13px; }
+.auth { max-width: 420px; margin: 24px auto; }
+.auth h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.02em; }
+.auth-form { display: flex; flex-direction: column; gap: 14px; margin: 18px 0; }
+.auth-form label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: 14px; }
+.auth-form input:not([type="checkbox"]) {
+  font: inherit; font-weight: 400; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--bg); color: var(--text);
+}
+.auth-form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.auth-form .check { flex-direction: row; align-items: center; gap: 8px; font-weight: 400; }
+.form-error { background: color-mix(in srgb, var(--bad) 14%, var(--surface)); border-radius: 10px; padding: 10px 14px; margin: 12px 0 0; }
+.num { text-align: right !important; font-variant-numeric: tabular-nums; }
+.leaderboard tr.you { background: var(--accent-soft); }

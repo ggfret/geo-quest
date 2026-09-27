@@ -21,6 +21,7 @@ After every answer you get something to help you remember: a fact card, a lookal
 - **Forgiving typing:** accents, upper/lower case and small typos are fine, and alternative names count ("USA", "Holland", "Burma"). A *different* real country is always wrong, and is saved as a mix-up.
 - **Spaced repetition:** each country has a mastery level from 0 to 5 in each game. Weak and new countries come up often; mastered ones rarely.
 - **XP and levels** shared across all games, with streak bonuses.
+- **Accounts and a leaderboard:** each player signs up with a username and password (stored hashed) and gets their own progress. The leaderboard ranks everyone by total XP and XP in the last 7 days.
 - **My Knowledge page:** mastery maps per game, accuracy by continent, your easiest and hardest areas, and your most common mix-ups.
 - 233 countries and territories, including partly recognised states (Taiwan, Kosovo) and self-governing territories (Greenland, Faroe Islands, Hong Kong).
 - Responsive layout with automatic light and dark mode.
@@ -40,7 +41,9 @@ python app.py
 
 Then open http://127.0.0.1:5070.
 
-Your progress is saved in `geo.db`, which is created on first run and ignored by git, so it stays on your machine.
+Create an account on the sign-up page. Progress is saved in `geo.db`, which is created on first run and ignored by git, so it stays on your machine.
+
+Logins are kept in a signed cookie. Locally, the signing key is generated into `instance/secret_key` (also ignored by git). When running online, set the `GEO_SECRET_KEY` environment variable to a long random string instead.
 
 Run the tests with `pytest`.
 
@@ -52,6 +55,7 @@ games.py            The five games: what each asks, which answers count, what it
 answers.py          The answer checker (accents, alternative names, typo tolerance)
 progress.py         XP, levels and spaced repetition (which country to ask next)
 knowledge.py        SQL queries behind the My Knowledge page
+auth.py             Sign up, log in (hashed passwords) and the leaderboard query
 schema.sql          Tables: users, attempts, mastery, items
 templates/          HTML pages (Jinja templates)
 static/             game.js (play loop), knowledge.js, style.css, world.svg
@@ -88,7 +92,6 @@ python scripts/build_ethnicities.py
 
 ## Ideas for later
 
-- User accounts, so friends can play and compare
 - A more detailed map for tiny countries in Outlines
 - More fact cards
 - Deploy it online

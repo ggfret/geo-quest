@@ -1,9 +1,13 @@
+import os
 import re
+import secrets
 import sqlite3
+from datetime import timedelta
 from pathlib import Path
 
-from flask import Flask, abort, g, jsonify, render_template, request
+from flask import Flask, abort, g, jsonify, redirect, render_template, request, session, url_for
 
+import auth
 import knowledge
 import progress
 from answers import Result, check
@@ -15,6 +19,24 @@ WORLD_SIZE = [float(n) for n in re.search(
     r'viewBox="0 0 (\S+) (\S+)"', (BASE_DIR / "static" / "world.svg").read_text()).groups()]
 
 app = Flask(__name__)
+app.config.update(
+    PERMANENT_SESSION_LIFETIME=timedelta(days=30),
+    SESSION_COOKIE_SAMESITE="Lax",
+)
+
+
+def load_secret_key():
+    """Signs the login cookie. From GEO_SECRET_KEY if set (online), else a random key kept in instance/."""
+    if os.environ.get("GEO_SECRET_KEY"):
+        return os.environ["GEO_SECRET_KEY"]
+    path = BASE_DIR / "instance" / "secret_key"
+    if not path.exists():
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(secrets.token_hex(32))
+    return path.read_text().strip()
+
+
+app.secret_key = load_secret_key()
 
 
 def get_db():
@@ -34,13 +56,32 @@ def close_db(exc):
 def init_db():
     with sqlite3.connect(DATABASE) as db:
         db.executescript((BASE_DIR / "schema.sql").read_text())
+        auth.migrate(db)
         db.execute("DELETE FROM items")
         db.executemany("INSERT INTO items (game, item_id, name, region) VALUES (?, ?, ?, ?)", item_rows())
 
 
 def current_user_id():
-    # Single player for now. When logins arrive, this is the one place to change.
-    return 1
+    return session.get("user_id")
+
+
+PUBLIC_ENDPOINTS = {"login", "signup", "static"}
+
+
+@app.before_request
+def require_login():
+    """Everything except the login and sign-up pages needs an account."""
+    if request.endpoint in PUBLIC_ENDPOINTS or current_user_id():
+        return None
+    if request.path.startswith("/api/"):
+        return jsonify({"error": "Please log in."}), 401
+    return redirect(url_for("login", next=request.path))
+
+
+def start_session(user_id):
+    session.clear()
+    session["user_id"] = user_id
+    session.permanent = True
 
 
 def ready_game(slug):
@@ -52,8 +93,61 @@ def ready_game(slug):
 
 @app.context_processor
 def inject_progress():
-    """Makes `me` (XP, level, title) available in every template, for the header."""
-    return {"me": progress.summary(get_db(), current_user_id())}
+    """Makes `me` (name, XP, level, title) available in every template, for the header."""
+    user_id = current_user_id()
+    if not user_id:
+        return {"me": None}
+    name = get_db().execute("SELECT name FROM users WHERE id = ?", (user_id,)).fetchone()
+    return {"me": {**progress.summary(get_db(), user_id), "name": name["name"] if name else "?"}}
+
+
+def safe_next(target):
+    """Only redirect back to pages on this site after logging in."""
+    return target if target and target.startswith("/") and not target.startswith("//") else url_for("index")
+
+
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    db = get_db()
+    legacy = auth.unclaimed_answers(db)
+    error = None
+    if request.method == "POST":
+        try:
+            user_id = auth.sign_up(
+                db, request.form.get("username", ""), request.form.get("password", ""),
+                claim_legacy=bool(request.form.get("claim")),
+            )
+            start_session(user_id)
+            return redirect(safe_next(request.args.get("next")))
+        except auth.AuthError as e:
+            error = str(e)
+    return render_template("auth.html", mode="signup", error=error, legacy=legacy)
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    error = None
+    if request.method == "POST":
+        try:
+            start_session(auth.log_in(get_db(), request.form.get("username", ""), request.form.get("password", "")))
+            return redirect(safe_next(request.args.get("next")))
+        except auth.AuthError as e:
+            error = str(e)
+    return render_template("auth.html", mode="login", error=error, legacy=0)
+
+
+@app.post("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("login"))
+
+
+@app.route("/leaderboard")
+def leaderboard():
+    rows = auth.leaderboard(get_db())
+    for row in rows:
+        row["level"] = progress.level_info(row["xp"])["level"]
+    return render_template("leaderboard.html", rows=rows)
 
 
 @app.route("/")

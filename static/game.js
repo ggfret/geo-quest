@@ -6,8 +6,14 @@ let current = null;   // { item_id, prompt } being asked now
 let upcoming = null;  // next question, fetched early so "Next" is instant
 let session = { right: 0, total: 0 };
 
+// If the login has expired, go to the login page and come back here afterwards.
+function checkLogin(res) {
+  if (res.status === 401) location.href = `/login?next=${encodeURIComponent(location.pathname)}`;
+  return res;
+}
+
 async function fetchQuestion() {
-  const res = await fetch(`/api/${slug}/next`);
+  const res = checkLogin(await fetch(`/api/${slug}/next`));
   const question = await res.json();
   if (question.prompt.image) new Image().src = question.prompt.image; // preload
   return question;
@@ -89,11 +95,11 @@ async function submit(skip = false, choice = null) {
   $("answer-form").hidden = true;
   document.querySelectorAll(".choice").forEach((b) => (b.disabled = true));
 
-  const res = await fetch(`/api/${slug}/answer`, {
+  const res = checkLogin(await fetch(`/api/${slug}/answer`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ item_id: current.item_id, guess, skip, context: current.prompt.context }),
-  });
+  }));
   answering = false;
   const r = await res.json();
   showResult(r, guess);

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Leaderboard · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="intro">
+  <h1>Leaderboard</h1>
+  <p>Everyone on this site, ranked by total XP.</p>
+</section>
+
+<section class="card">
+  <div class="table-wrap">
+    <table class="k-table leaderboard">
+      <thead>
+        <tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Level</th>
+            <th scope="col" class="num">XP</th><th scope="col" class="num">Last 7 days</th>
+            <th scope="col" class="num">Answers</th><th scope="col" class="num">Right</th></tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+          <tr{% if me and r.name == me.name %} class="you"{% endif %}>
+            <td>{{ loop.index }}</td>
+            <th scope="row">{{ r.name }}{% if me and r.name == me.name %} <span class="muted">(you)</span>{% endif %}</th>
+            <td>{{ r.level }}</td>
+            <td class="num">{{ r.xp }}</td>
+            <td class="num">{{ r.week_xp }}</td>
+            <td class="num">{{ r.answers }}</td>
+            <td class="num">{% if r.answers %}{{ (r.accuracy * 100) | round | int }}%{% else %}—{% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
