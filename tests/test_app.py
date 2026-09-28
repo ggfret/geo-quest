@@ -1,3 +1,4 @@
+import re
 import sqlite3
 
 import pytest
@@ -5,28 +6,17 @@ import pytest
 import app as geo_app
 
 
-@pytest.fixture
-def anon(tmp_path, monkeypatch):
-    """A browser with no account, on a fresh database."""
-    monkeypatch.setattr(geo_app, "DATABASE", tmp_path / "test.db")
-    geo_app.init_db()
-    return geo_app.app.test_client()
-
-
-@pytest.fixture
-def client(anon):
-    """A logged-in player (user id 1)."""
-    anon.post("/signup", data={"username": "tester", "password": "correct horse"})
-    return anon
-
-
-def test_pages_load(client):
-    assert client.get("/").status_code == 200
-    assert client.get("/flags").status_code == 200
-    assert client.get("/capitals").status_code == 200
-    assert client.get("/outlines").status_code == 200
-    assert client.get("/languages").status_code == 200
-    assert client.get("/ethnicities").status_code == 200
+@pytest.mark.parametrize("path", [
+    "/", "/flags", "/capitals", "/outlines", "/languages", "/ethnicities",
+    "/pin", "/hotcold", "/neighbours", "/nameall", "/higherlower",
+    "/knowledge", "/leaderboard", "/leaderboard?tab=all", "/leaderboard?tab=records",
+])
+def test_pages_load(client, path):
+    response = client.get(path)
+    assert response.status_code == 200
+    # Two elements with the same id break the page scripts (they find the first one only).
+    ids = re.findall(r'\sid="([^"]+)"', response.get_data(as_text=True))
+    assert len(ids) == len(set(ids)), f"duplicate ids on {path}: {[i for i in ids if ids.count(i) > 1]}"
 
 
 def test_flag_round(client):
@@ -41,7 +31,8 @@ def test_flag_round(client):
     assert r["correct"] and r["typo"] and r["xp"] == 10 and r["fact"]
 
     r = client.post("/api/flags/answer", json={"item_id": "NOR", "guess": "", "skip": True}).get_json()
-    assert not r["correct"] and r["skipped"] and r["me"]["xp"] == 10
+    assert not r["correct"] and r["skipped"]
+    assert r["me"]["xp"] == 10 + 10  # the answer, plus the "First steps" badge
 
 
 def test_rejects_unknown_items(client):
@@ -151,7 +142,7 @@ def test_knowledge_report(client):
         answer("flags", item, guess)
     answer("languages", "Ukrainian", "Russian")
 
-    geo_app_db = sqlite3.connect(geo_app.DATABASE)
+    geo_app_db = sqlite3.connect(geo_app.app.config["DATABASE"])
     geo_app_db.row_factory = sqlite3.Row
     import knowledge
     report = knowledge.report(geo_app_db, 1)
@@ -227,7 +218,7 @@ def test_claiming_progress_from_before_accounts(tmp_path, monkeypatch):
         INSERT INTO users (id, name) VALUES (1, 'me');
     """)
     old.close()
-    monkeypatch.setattr(geo_app, "DATABASE", db_path)
+    monkeypatch.setitem(geo_app.app.config, "DATABASE", db_path)
     geo_app.init_db()  # adds the password column
     with sqlite3.connect(db_path) as db:
         db.execute("INSERT INTO attempts (user_id, game, item_id, guess, correct, xp) VALUES (1, 'flags', 'NOR', 'Norway', 1, 10)")
@@ -235,7 +226,7 @@ def test_claiming_progress_from_before_accounts(tmp_path, monkeypatch):
     browser = geo_app.app.test_client()
     assert "Keep the progress already on this computer (1 answers)" in browser.get("/signup").get_data(as_text=True)
     browser.post("/signup", data={"username": "gabriel", "password": "12345678", "claim": "1"})
-    assert browser.get("/api/me").get_json()["xp"] == 10
+    assert browser.get("/api/me").get_json()["xp"] == 10  # badges are only checked after the next answer
     assert "Keep the progress" not in geo_app.app.test_client().get("/signup").get_data(as_text=True)
 
 

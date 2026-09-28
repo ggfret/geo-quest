@@ -5,26 +5,33 @@ import sqlite3
 from datetime import timedelta
 from pathlib import Path
 
-from flask import Flask, abort, g, jsonify, redirect, render_template, request, session, url_for
+from flask import Flask, abort, jsonify, redirect, render_template, request, session, url_for
 
+import achievements
 import auth
+import challenges
 import knowledge
+import leaderboard
 import progress
 from answers import Result, check
+from database import close_db, current_user_id, get_db
 from games import COUNTRIES, GAME_BY_SLUG, GAMES, LANGS, LANGUAGES, OUTLINES, item_rows
 
 BASE_DIR = Path(__file__).parent
-DATABASE = BASE_DIR / "geo.db"
 WORLD_SIZE = [float(n) for n in re.search(
     r'viewBox="0 0 (\S+) (\S+)"', (BASE_DIR / "static" / "world.svg").read_text()).groups()]
+ALL_GAMES = [*GAMES, *challenges.CHALLENGES]
 
 app = Flask(__name__)
 app.config.update(
+    DATABASE=Path(os.environ.get("GEO_DATABASE", BASE_DIR / "geo.db")),  # GEO_DATABASE: use another database file
     PERMANENT_SESSION_LIFETIME=timedelta(days=30),
     SESSION_COOKIE_SAMESITE="Lax",
     SESSION_COOKIE_SECURE=os.environ.get("GEO_HTTPS") == "1",  # online: only send the login cookie over HTTPS
     INVITE_CODE=os.environ.get("GEO_INVITE_CODE"),             # online: only people with this code can sign up
 )
+app.register_blueprint(challenges.bp)
+app.teardown_appcontext(close_db)
 
 
 def load_secret_key():
@@ -41,30 +48,13 @@ def load_secret_key():
 app.secret_key = load_secret_key()
 
 
-def get_db():
-    if "db" not in g:
-        g.db = sqlite3.connect(DATABASE)
-        g.db.row_factory = sqlite3.Row
-    return g.db
-
-
-@app.teardown_appcontext
-def close_db(exc):
-    db = g.pop("db", None)
-    if db is not None:
-        db.close()
-
-
 def init_db():
-    with sqlite3.connect(DATABASE) as db:
+    with sqlite3.connect(app.config["DATABASE"]) as db:
         db.executescript((BASE_DIR / "schema.sql").read_text())
         auth.migrate(db)
         db.execute("DELETE FROM items")
-        db.executemany("INSERT INTO items (game, item_id, name, region) VALUES (?, ?, ?, ?)", item_rows())
-
-
-def current_user_id():
-    return session.get("user_id")
+        db.executemany("INSERT INTO items (game, item_id, name, region) VALUES (?, ?, ?, ?)",
+                       [*item_rows(), *challenges.item_rows()])
 
 
 PUBLIC_ENDPOINTS = {"login", "signup", "static"}
@@ -95,7 +85,7 @@ def ready_game(slug):
 
 @app.context_processor
 def inject_progress():
-    """Makes `me` (name, XP, level, title) available in every template, for the header."""
+    """Makes `me` (name, XP, level, streak, daily goal) available in every template, for the header."""
     user_id = current_user_id()
     if not user_id:
         return {"me": None}
@@ -147,16 +137,40 @@ def logout():
 
 
 @app.route("/leaderboard")
-def leaderboard():
-    rows = auth.leaderboard(get_db())
-    for row in rows:
-        row["level"] = progress.level_info(row["xp"])["level"]
-    return render_template("leaderboard.html", rows=rows)
+def leaderboard_page():
+    db = get_db()
+    tab = request.args.get("tab", "week")
+    if tab not in ("week", "all", "records"):
+        tab = "week"
+    return render_template(
+        "leaderboard.html",
+        tab=tab,
+        rows=leaderboard.all_time(db) if tab == "all" else leaderboard.weekly(db),
+        records=leaderboard.records(db) if tab == "records" else None,
+        nameall_variants=challenges.nameall.VARIANTS,
+        higherlower_variants=challenges.higherlower.VARIANTS,
+        me_id=current_user_id(),
+    )
 
 
 @app.route("/")
 def index():
-    return render_template("index.html", games=GAMES, country_count=len(COUNTRIES))
+    db, user_id = get_db(), current_user_id()
+    due = progress.due_counts(db, user_id)
+    week = leaderboard.weekly(db)
+    rank = next((i + 1 for i, p in enumerate(week) if p["id"] == user_id), None)
+    return render_template(
+        "index.html",
+        quizzes=GAMES,
+        map_games=challenges.CHALLENGES,
+        country_count=len(COUNTRIES),
+        due=due,
+        due_total=sum(due.values()),
+        review_game=next((g for g in ALL_GAMES if due and g.slug == max(due, key=due.get)), None),
+        rank=rank,
+        players=len(week),
+        known=knowledge.per_game(db, user_id),
+    )
 
 
 @app.route("/knowledge")
@@ -167,19 +181,26 @@ def knowledge_page():
         lang_groups.setdefault(LANGUAGES["groups"][info["group"]]["name"], []).append(lang)
     return render_template(
         "knowledge.html",
-        games=GAMES,
+        games=ALL_GAMES,
+        map_tabs=[g for g in ALL_GAMES if g.pool],
         stats=stats,
-        pools={g.slug: g.pool for g in GAMES},
+        pools={g.slug: g.pool for g in ALL_GAMES if g.pool},
         names={c["id"]: c["name"] for c in COUNTRIES},
         lang_groups=lang_groups,
+        nameall_variants=challenges.nameall.VARIANTS,
+        higherlower_variants=challenges.higherlower.VARIANTS,
     )
 
 
 @app.route("/api/map")
 def api_map():
-    """Every country's shape on the world map, for colouring by mastery. Cached by the browser."""
-    paths = {cid: o["loc"]["path"] for cid, o in OUTLINES.items() if o["loc"]["path"]}
-    response = jsonify({"width": WORLD_SIZE[0], "height": WORLD_SIZE[1], "paths": paths})
+    """Every country's shape on the world map (plus box and centre, for tiny ones). Cached by the browser."""
+    response = jsonify({
+        "width": WORLD_SIZE[0],
+        "height": WORLD_SIZE[1],
+        "paths": {cid: o["loc"]["path"] for cid, o in OUTLINES.items() if o["loc"]["path"]},
+        "places": {cid: {"box": o["loc"]["box"], "cx": o["loc"]["cx"], "cy": o["loc"]["cy"]} for cid, o in OUTLINES.items()},
+    })
     response.cache_control.max_age = 86400
     return response
 
@@ -222,14 +243,14 @@ def api_answer(slug):
         "guessed": game.guessed(result.guessed_id) if result.guessed_id else None,
         "xp": xp,
         "streak": progress.current_streak(db, user_id, slug),
-        "me": progress.summary(db, user_id),
         "locator": game.locate(item_id),
         "guessed_locator": game.locate(result.guessed_id) if result.guessed_id not in (None, item_id) else [],
         **game.explain(item_id, result.guessed_id, guess, data.get("context")),
+        **achievements.after_play(db, user_id),
     })
 
 
 init_db()
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5070)
+    app.run(debug=True, port=int(os.environ.get("PORT", 5070)))

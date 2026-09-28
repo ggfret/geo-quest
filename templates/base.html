@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}Geo Quest{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='common.js') }}"></script>
 </head>
 <body>
   <div class="wrap">
@@ -13,18 +14,26 @@
       {% if me %}
         <nav class="nav">
           <a class="nav-link" href="{{ url_for('knowledge_page') }}">📊 My Knowledge</a>
-          <a class="nav-link" href="{{ url_for('leaderboard') }}">🏆 Leaderboard</a>
+          <a class="nav-link" href="{{ url_for('leaderboard_page') }}">🏆 Leaderboard</a>
         </nav>
-        <div class="xpbox" id="xpbox">
+        <div class="me-stats">
+          <span class="streak{% if me.played_today %} done{% endif %}" id="streak"
+                title="Days in a row you've played. Play today to keep it going.">🔥 <b id="streak-days">{{ me.streak }}</b></span>
+          <span class="goal{% if me.today_xp >= me.daily_goal %} done{% endif %}" id="goal" title="Daily goal: {{ me.daily_goal }} XP">
+            <svg class="ring" viewBox="0 0 24 24" aria-hidden="true">
+              <circle class="ring-bg" cx="12" cy="12" r="9"/>
+              <circle class="ring-fill" id="goal-ring" cx="12" cy="12" r="9"/>
+            </svg>
+            <span id="goal-text">{{ [me.today_xp, me.daily_goal] | min }}/{{ me.daily_goal }}</span>
+          </span>
+        </div>
+        <div class="xpbox" id="xpbox" data-me='{{ me | tojson }}'>
           <div class="xpline">
             <span><b>{{ me.name }}</b> · <b id="lvl">Lv {{ me.level }}</b> · <span id="title">{{ me.title }}</span></span>
             <span id="xptext">{{ me.into }} / {{ me.need }} XP</span>
           </div>
           <div class="bar"><div id="xpbar" style="width: {{ (me.into / me.need * 100) | round(1) }}%"></div></div>
         </div>
-        <form method="post" action="{{ url_for('logout') }}" class="logout">
-          <button type="submit" class="ghost small-btn">Log out</button>
-        </form>
       {% endif %}
     </header>
 
@@ -33,10 +42,15 @@
     </main>
 
     <footer class="site-footer">
+      {% if me %}
+        <form method="post" action="{{ url_for('logout') }}" class="logout">
+          Logged in as <b>{{ me.name }}</b> · <button type="submit" class="link-btn">Log out</button>
+        </form>
+      {% endif %}
       Country data: <a href="https://github.com/mledoze/countries">mledoze/countries</a> (ODbL) ·
       Maps: <a href="https://www.naturalearthdata.com/">Natural Earth</a> ·
       Flags: <a href="https://flagcdn.com/">flagcdn.com</a> ·
-      Ethnic groups: <a href="https://github.com/factbook/factbook.json">CIA World Factbook</a>
+      Ethnic groups and statistics: <a href="https://github.com/factbook/factbook.json">CIA World Factbook</a>
     </footer>
   </div>
 </body>

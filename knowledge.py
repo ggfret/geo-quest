@@ -1,8 +1,15 @@
 """The 'My Knowledge' page: what you know well, what you don't, and what you mix up.
 
-Everything is computed with SQL from the `attempts`, `mastery` and `items` tables.
+Everything is computed with SQL from the `attempts`, `mastery`, `items` and `runs` tables.
 """
 
+from datetime import timedelta
+
+import achievements
+import leaderboard
+import progress
+
+CHART_DAYS = 30
 MASTERED_BOX = 4       # box 4-5 counts as "known"
 MIN_AREA_ANSWERS = 5   # a game + region needs this many answers before we judge it
 MIN_ITEM_ANSWERS = 2   # an item needs this many answers before it can be "hardest"
@@ -22,6 +29,10 @@ def report(db, user_id):
         "easiest": items(db, user_id, hardest=False),
         "mixups": mixups(db, user_id),
         "mastery": mastery_by_game(db, user_id),
+        "due": progress.due_counts(db, user_id),
+        "daily": daily_xp(db, user_id),
+        "achievements": achievements.listing(db, user_id),
+        "bests": leaderboard.personal_bests(db, user_id),
         "total_answers": db.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?", (user_id,)).fetchone()[0],
     }
 
@@ -40,15 +51,21 @@ def per_game(db, user_id):
             GROUP BY i.game
         ),
         answers AS (
-            SELECT game, COUNT(*) AS answered, AVG(correct) AS accuracy, SUM(xp) AS xp
+            SELECT game, COUNT(*) AS answered, AVG(correct) AS accuracy
             FROM attempts WHERE user_id = ?
             GROUP BY game
+        ),
+        xp AS (
+            SELECT game, SUM(xp) AS xp FROM xp_events WHERE user_id = ? GROUP BY game
         )
-        SELECT pool.game, pool.pool, pool.seen, COALESCE(pool.known, 0) AS known,
-               COALESCE(answers.answered, 0) AS answered, answers.accuracy, COALESCE(answers.xp, 0) AS xp
-        FROM pool LEFT JOIN answers USING (game)
+        SELECT games.game, pool.pool, COALESCE(pool.seen, 0) AS seen, COALESCE(pool.known, 0) AS known,
+               COALESCE(answers.answered, 0) AS answered, answers.accuracy, COALESCE(xp.xp, 0) AS xp
+        FROM (SELECT game FROM pool UNION SELECT game FROM answers) AS games
+        LEFT JOIN pool USING (game)
+        LEFT JOIN answers USING (game)
+        LEFT JOIN xp USING (game)
         """,
-        (MASTERED_BOX, user_id, user_id),
+        (MASTERED_BOX, user_id, user_id, user_id),
     ).fetchall()
     return {row["game"]: dict(row) for row in rows}
 
@@ -108,9 +125,28 @@ def mixups(db, user_id, limit=10):
 
 
 def mastery_by_game(db, user_id):
-    """{game: {item id: [box, seen, correct]}} for colouring the maps."""
+    """{game: {item id: [box, seen, correct, due for review]}} for colouring the maps."""
     result = {}
-    for row in db.execute("SELECT game, item_id, box, seen, correct FROM mastery WHERE user_id = ?", (user_id,)):
-        result.setdefault(row["game"], {})[row["item_id"]] = [row["box"], row["seen"], row["correct"]]
+    rows = db.execute(
+        f"SELECT m.game, m.item_id, m.box, m.seen, m.correct, m.box >= 1 AND {progress.DUE_SQL} AS due "
+        "FROM mastery m WHERE m.user_id = ?",
+        (user_id,),
+    )
+    for row in rows:
+        result.setdefault(row["game"], {})[row["item_id"]] = [row["box"], row["seen"], row["correct"], bool(row["due"])]
+    return result
+
+
+def daily_xp(db, user_id, days=CHART_DAYS):
+    """XP per day for the last 30 days (UTC), oldest first, including days with none."""
+    per_day = {day: xp for day, xp in db.execute(
+        "SELECT date(at), SUM(xp) FROM xp_events WHERE user_id = ? AND at >= date('now', ?) GROUP BY date(at)",
+        (user_id, f"-{days - 1} days"),
+    )}
+    today = progress.today_utc()
+    result = []
+    for i in range(days - 1, -1, -1):
+        day = (today - timedelta(days=i)).isoformat()
+        result.append({"date": day, "xp": per_day.get(day, 0)})
     return result
 

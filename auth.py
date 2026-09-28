@@ -86,22 +86,3 @@ def log_in(db, username, password):
     db.commit()
     return row["id"]
 
-
-def leaderboard(db, limit=50):
-    rows = db.execute(
-        """
-        SELECT u.name,
-               COALESCE(SUM(a.xp), 0) AS xp,
-               COALESCE(SUM(CASE WHEN a.created_at >= datetime('now', '-7 days') THEN a.xp END), 0) AS week_xp,
-               COUNT(a.id) AS answers,
-               AVG(a.correct) AS accuracy
-        FROM users u
-        LEFT JOIN attempts a ON a.user_id = u.id
-        WHERE u.password_hash IS NOT NULL
-        GROUP BY u.id
-        ORDER BY xp DESC, answers DESC
-        LIMIT ?
-        """,
-        (limit,),
-    ).fetchall()
-    return [dict(row) for row in rows]

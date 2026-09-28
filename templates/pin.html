@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play wide">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <span>Streak <b id="streak-count">0</b> · Session <b id="session">0 / 0</b></span>
+  </div>
+
+  <div class="map-prompt">
+    <img id="prompt-flag" class="flag tiny" alt="" hidden>
+    <span>Where is <b id="prompt-name">…</b>?</span>
+  </div>
+
+  <div class="map-frame" id="map">
+    <div class="map-banner" id="banner" hidden>
+      <div class="verdict" id="verdict"></div>
+      <button type="button" class="primary" id="next">Next <kbd>Enter</kbd></button>
+    </div>
+  </div>
+  <p class="map-help">Click to drop a pin · scroll, pinch or use + / − to zoom · drag to move (the map wraps around)</p>
+
+  <div class="actions" id="ask">
+    <button type="button" class="primary" id="confirm" disabled>Confirm pin <kbd>Enter</kbd></button>
+  </div>
+
+  <div class="reveal" id="reveal" hidden>
+    <p class="fact" id="fact"></p>
+    <p class="info" id="info"></p>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='worldmap.js') }}"></script>
+<script src="{{ url_for('static', filename='pin.js') }}"></script>
+{% endblock %}

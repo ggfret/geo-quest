@@ -1,0 +1,1826 @@
+{
+ "ABW": {
+  "gec": "aa",
+  "population": "125,063 (2024 est.)",
+  "life": "78.5 years (2024 est.)",
+  "gdp": "$40,500 (2023 est.)",
+  "elevation": "Ceru Jamanota 188 m",
+  "coastline": "68.5 km"
+ },
+ "AFG": {
+  "gec": "af",
+  "population": "49,474,805 (2025 est.)",
+  "life": "54.4 years (2024 est.)",
+  "gdp": "$2,000 (2023 est.)",
+  "elevation": "Noshak 7,492 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "AGO": {
+  "gec": "ao",
+  "population": "38,984,796 (2025 est.)",
+  "life": "62.9 years (2024 est.)",
+  "gdp": "$7,300 (2024 est.)",
+  "elevation": "Moco 2,620 m",
+  "coastline": "1,600 km"
+ },
+ "AIA": {
+  "gec": "av",
+  "population": "19,416 (2024 est.)",
+  "life": "82.6 years (2024 est.)",
+  "gdp": "$31,000 (2024 est.)",
+  "elevation": "Crocus Hill 73 m",
+  "coastline": "61 km"
+ },
+ "ALB": {
+  "gec": "al",
+  "population": "2,551,837 (2025 est.)",
+  "life": "79.9 years (2024 est.)",
+  "gdp": "$18,900 (2024 est.)",
+  "elevation": "Maja e Korabit (Golem Korab) 2,764 m",
+  "coastline": "362 km"
+ },
+ "AND": {
+  "gec": "an",
+  "population": "85,370 (2024 est.)",
+  "life": "83.8 years (2024 est.)",
+  "gdp": "$65,900 (2024 est.)",
+  "elevation": "Pic de Coma Pedrosa 2,946 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "ARE": {
+  "gec": "ae",
+  "population": "10,093,593 (2025 est.)",
+  "life": "79.9 years (2024 est.)",
+  "gdp": "$68,600 (2024 est.)",
+  "elevation": "Jabal Bil 'Ays 1,905 m",
+  "coastline": "1,318 km"
+ },
+ "ARG": {
+  "gec": "ar",
+  "population": "45,418,098 (2025 est.)",
+  "life": "78.8 years (2024 est.)",
+  "gdp": "$26,500 (2024 est.)",
+  "elevation": "Cerro Aconcagua (located in the northwestern corner of the province of Mendoza; highest point in South America) 6,962 m",
+  "coastline": "4,989 km"
+ },
+ "ARM": {
+  "gec": "am",
+  "population": "2,963,837 (2025 est.)",
+  "life": "76.7 years (2024 est.)",
+  "gdp": "$20,100 (2024 est.)",
+  "elevation": "Aragats Lerrnagagat' 4,090 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "ASM": {
+  "gec": "aq",
+  "population": "43,268 (2025 est.)",
+  "life": "75.8 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Lata Mountain 964 m",
+  "coastline": "116 km"
+ },
+ "ATG": {
+  "gec": "ac",
+  "population": "102,634 (2024 est.)",
+  "life": "78.3 years (2024 est.)",
+  "gdp": "$29,600 (2024 est.)",
+  "elevation": "Mount Obama 402 m",
+  "coastline": "153 km"
+ },
+ "AUS": {
+  "gec": "as",
+  "population": "27,490,921 (2025 est.)",
+  "life": "83.5 years (2024 est.)",
+  "gdp": "$60,100 (2024 est.)",
+  "elevation": "Mount Kosciuszko 2,228 m",
+  "coastline": "25,760 km"
+ },
+ "AUT": {
+  "gec": "au",
+  "population": "9,174,390 (2025 est.)",
+  "life": "82.7 years (2024 est.)",
+  "gdp": "$63,300 (2024 est.)",
+  "elevation": "Grossglockner 3,798 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "AZE": {
+  "gec": "aj",
+  "population": "10,694,370 (2025 est.)",
+  "life": "75.9 years (2024 est.)",
+  "gdp": "$22,100 (2024 est.)",
+  "elevation": "Bazarduzu Dagi 4,466 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BDI": {
+  "gec": "by",
+  "population": "13,590,102 (2024 est.)",
+  "life": "68.1 years (2024 est.)",
+  "gdp": "$800 (2024 est.)",
+  "elevation": "unnamed elevation on Mukike Range 2,685 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BEL": {
+  "gec": "be",
+  "population": "11,960,170 (2025 est.)",
+  "life": "82.3 years (2024 est.)",
+  "gdp": "$63,100 (2024 est.)",
+  "elevation": "Botrange 694 m",
+  "coastline": "66.5 km"
+ },
+ "BEN": {
+  "gec": "bn",
+  "population": "15,186,090 (2025 est.)",
+  "life": "63 years (2024 est.)",
+  "gdp": "$3,900 (2024 est.)",
+  "elevation": "unnamed elevation 675 m; located 2.5 km southeast of the town of Kotopounga",
+  "coastline": "121 km"
+ },
+ "BFA": {
+  "gec": "uv",
+  "population": "23,490,300 (2025 est.)",
+  "life": "64.2 years (2024 est.)",
+  "gdp": "$2,500 (2024 est.)",
+  "elevation": "Tena Kourou 749 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BGD": {
+  "gec": "bg",
+  "population": "174,370,536 (2025 est.)",
+  "life": "75.2 years (2024 est.)",
+  "gdp": "$8,500 (2024 est.)",
+  "elevation": "Mowdok Taung 1,060 m",
+  "coastline": "580 km"
+ },
+ "BGR": {
+  "gec": "bu",
+  "population": "6,737,997 (2025 est.)",
+  "life": "76.1 years (2024 est.)",
+  "gdp": "$34,100 (2024 est.)",
+  "elevation": "Musala 2,925 m",
+  "coastline": "354 km"
+ },
+ "BHR": {
+  "gec": "ba",
+  "population": "1,566,888 (2024 est.)",
+  "life": "80.4 years (2024 est.)",
+  "gdp": "$59,100 (2024 est.)",
+  "elevation": "Jabal ad Dukhan 135 m",
+  "coastline": "161 km"
+ },
+ "BHS": {
+  "gec": "bf",
+  "population": "415,306 (2025 est.)",
+  "life": "76.7 years (2024 est.)",
+  "gdp": "$36,200 (2024 est.)",
+  "elevation": "1.3 km NE of Old Bight on Cat Island 64 m",
+  "coastline": "3,542 km"
+ },
+ "BIH": {
+  "gec": "bk",
+  "population": "3,653,499 (2025 est.)",
+  "life": "78.5 years (2024 est.)",
+  "gdp": "$20,400 (2024 est.)",
+  "elevation": "Maglic 2,386 m",
+  "coastline": "20 km"
+ },
+ "BLM": {
+  "gec": "tb",
+  "population": "7,079 (2025 est.)",
+  "life": "81 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Morne du Vitet 286 m",
+  "coastline": null
+ },
+ "BLR": {
+  "gec": "bo",
+  "population": "9,460,972 (2025 est.)",
+  "life": "74.7 years (2024 est.)",
+  "gdp": "$29,000 (2024 est.)",
+  "elevation": "Dzyarzhynskaya Hara 346 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BLZ": {
+  "gec": "bh",
+  "population": "421,960 (2025 est.)",
+  "life": "74.3 years (2024 est.)",
+  "gdp": "$13,300 (2024 est.)",
+  "elevation": "Doyle's Delight 1,124 m",
+  "coastline": "386 km"
+ },
+ "BMU": {
+  "gec": "bd",
+  "population": "72,800 (2024 est.)",
+  "life": "82.5 years (2024 est.)",
+  "gdp": "$105,300 (2024 est.)",
+  "elevation": "Town Hill 79 m",
+  "coastline": "103 km"
+ },
+ "BOL": {
+  "gec": "bl",
+  "population": "12,436,103 (2025 est.)",
+  "life": "72.5 years (2024 est.)",
+  "gdp": "$9,800 (2024 est.)",
+  "elevation": "Nevado Sajama 6,542 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BRA": {
+  "gec": "br",
+  "population": "221,359,387 (2025 est.)",
+  "life": "76.3 years (2024 est.)",
+  "gdp": "$19,600 (2024 est.)",
+  "elevation": "Pico da Neblina 2,994 m",
+  "coastline": "7,491 km"
+ },
+ "BRB": {
+  "gec": "bb",
+  "population": "304,139 (2024 est.)",
+  "life": "79 years (2024 est.)",
+  "gdp": "$19,900 (2024 est.)",
+  "elevation": "Mount Hillaby 336 m",
+  "coastline": "97 km"
+ },
+ "BRN": {
+  "gec": "bx",
+  "population": "491,900 (2024 est.)",
+  "life": "78.9 years (2024 est.)",
+  "gdp": "$79,200 (2024 est.)",
+  "elevation": "Bukit Pagon 1,850 m",
+  "coastline": "161 km"
+ },
+ "BTN": {
+  "gec": "bt",
+  "population": "892,877 (2025 est.)",
+  "life": "73.7 years (2024 est.)",
+  "gdp": "$14,600 (2023 est.)",
+  "elevation": "Gangkar Puensum 7,570 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "BWA": {
+  "gec": "bc",
+  "population": "2,521,534 (2025 est.)",
+  "life": "66.4 years (2024 est.)",
+  "gdp": "$18,100 (2024 est.)",
+  "elevation": "Manyelanong Hill 1,495 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "CAF": {
+  "gec": "ct",
+  "population": "5,750,570 (2025 est.)",
+  "life": "56.4 years (2024 est.)",
+  "gdp": "$1,100 (2024 est.)",
+  "elevation": "Mont Ngaoui 1,410 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "CAN": {
+  "gec": "ca",
+  "population": "39,187,155 (2025 est.)",
+  "life": "84.2 years (2024 est.)",
+  "gdp": "$56,700 (2024 est.)",
+  "elevation": "Mount Logan 5,959 m",
+  "coastline": "202,080 km"
+ },
+ "CHE": {
+  "gec": "sz",
+  "population": "8,925,741 (2025 est.)",
+  "life": "83.9 years (2024 est.)",
+  "gdp": "$82,000 (2024 est.)",
+  "elevation": "Dufourspitze on Monte Rosa 4,634 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "CHL": {
+  "gec": "ci",
+  "population": "19,091,343 (2025 est.)",
+  "life": "80.3 years (2024 est.)",
+  "gdp": "$30,200 (2024 est.)",
+  "elevation": "Nevado Ojos del Salado 6,893 m (highest volcano in the world)",
+  "coastline": "6,435 km"
+ },
+ "CHN": {
+  "gec": "ch",
+  "population": "1,407,181,209 (2025 est.)",
+  "life": "78.7 years (2024 est.)",
+  "gdp": "$23,800 (2024 est.)",
+  "elevation": "Mount Everest (highest peak in Asia and highest point on earth above sea level) 8,849 m",
+  "coastline": "14,500 km"
+ },
+ "CIV": {
+  "gec": "iv",
+  "population": "31,855,971 (2025 est.)",
+  "life": "63.2 years (2024 est.)",
+  "gdp": "$6,700 (2024 est.)",
+  "elevation": "Monts Nimba 1,752 m",
+  "coastline": "515 km"
+ },
+ "CMR": {
+  "gec": "cm",
+  "population": "31,518,954 (2025 est.)",
+  "life": "64.2 years (2024 est.)",
+  "gdp": "$4,900 (2024 est.)",
+  "elevation": "Fako on Mont Cameroun 4,045 m",
+  "coastline": "402 km"
+ },
+ "COD": {
+  "gec": "cg",
+  "population": "119,038,825 (2025 est.)",
+  "life": "62.6 years (2024 est.)",
+  "gdp": "$1,500 (2024 est.)",
+  "elevation": "Pic Marguerite on Mont Ngaliema (Mount Stanley) 5,110 m",
+  "coastline": "37 km"
+ },
+ "COG": {
+  "gec": "cf",
+  "population": "6,097,665 (2024 est.)",
+  "life": "72.9 years (2024 est.)",
+  "gdp": "$6,200 (2024 est.)",
+  "elevation": "Mont Nabeba 1,020 m",
+  "coastline": "169 km"
+ },
+ "COK": {
+  "gec": "cw",
+  "population": "7,592 (2025 est.)",
+  "life": "77.6 years (2024 est.)",
+  "gdp": "$29,800 (2024 est.)",
+  "elevation": "Te Manga 652 m",
+  "coastline": "120 km"
+ },
+ "COL": {
+  "gec": "co",
+  "population": "49,842,298 (2025 est.)",
+  "life": "74.9 years (2024 est.)",
+  "gdp": "$18,500 (2024 est.)",
+  "elevation": "Pico Cristobal Colon 5,730 m",
+  "coastline": "3,208 km (Caribbean Sea 1,760 km, North Pacific Ocean 1,448 km)"
+ },
+ "COM": {
+  "gec": "cn",
+  "population": "911,707 (2025 est.)",
+  "life": "67.8 years (2024 est.)",
+  "gdp": "$3,600 (2024 est.)",
+  "elevation": "Karthala 2,360 m",
+  "coastline": "340 km"
+ },
+ "CPV": {
+  "gec": "cv",
+  "population": "611,014 (2024 est.)",
+  "life": "74.3 years (2024 est.)",
+  "gdp": "$9,900 (2024 est.)",
+  "elevation": "Mt. Fogo (a volcano on Fogo Island) 2,829 m",
+  "coastline": "965 km"
+ },
+ "CRI": {
+  "gec": "cs",
+  "population": "5,304,932 (2025 est.)",
+  "life": "80.3 years (2024 est.)",
+  "gdp": "$27,000 (2024 est.)",
+  "elevation": "Cerro Chirripo 3,819 m",
+  "coastline": "1,290 km"
+ },
+ "CUB": {
+  "gec": "cu",
+  "population": "10,059,519 (2025 est.)",
+  "life": "80.1 years (2024 est.)",
+  "gdp": "$23,700 (2024 est.)",
+  "elevation": "Pico Turquino 1,974 m",
+  "coastline": "3,735 km"
+ },
+ "CUW": {
+  "gec": "uc",
+  "population": "153,289 (2024 est.)",
+  "life": "79.9 years (2024 est.)",
+  "gdp": "$27,700 (2023 est.)",
+  "elevation": "Mt. Christoffel 372 m",
+  "coastline": "364 km"
+ },
+ "CYM": {
+  "gec": "cj",
+  "population": "66,653 (2024 est.)",
+  "life": "82.5 years (2024 est.)",
+  "gdp": "$78,100 (2023 est.)",
+  "elevation": "1 km SW of The Bluff on Cayman Brac 50 m",
+  "coastline": "160 km"
+ },
+ "CYP": {
+  "gec": "cy",
+  "population": "1,332,293 (2025 est.)",
+  "life": "80.2 years (2024 est.)",
+  "gdp": "$53,300 (2024 est.)",
+  "elevation": "Mount Olympus 1,951 m",
+  "coastline": "648 km"
+ },
+ "CZE": {
+  "gec": "ez",
+  "population": "10,838,703 (2025 est.)",
+  "life": "78.6 years (2024 est.)",
+  "gdp": "$48,000 (2024 est.)",
+  "elevation": "Snezka 1,602 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "DEU": {
+  "gec": "gm",
+  "population": "84,012,284 (2025 est.)",
+  "life": "81.9 years (2024 est.)",
+  "gdp": "$62,800 (2024 est.)",
+  "elevation": "Zugspitze 2,963 m",
+  "coastline": "2,389 km"
+ },
+ "DJI": {
+  "gec": "dj",
+  "population": "1,013,703 (2025 est.)",
+  "life": "65.9 years (2024 est.)",
+  "gdp": "$6,800 (2024 est.)",
+  "elevation": "Moussa Ali 2,021 m",
+  "coastline": "314 km"
+ },
+ "DMA": {
+  "gec": "do",
+  "population": "74,661 (2024 est.)",
+  "life": "78.7 years (2024 est.)",
+  "gdp": "$18,700 (2024 est.)",
+  "elevation": "Morne Diablotins 1,447 m",
+  "coastline": "148 km"
+ },
+ "DNK": {
+  "gec": "da",
+  "population": "6,051,491 (2025 est.)",
+  "life": "82.1 years (2024 est.)",
+  "gdp": "$73,700 (2024 est.)",
+  "elevation": "Store Mollehoj 171 m",
+  "coastline": "7,314 km"
+ },
+ "DOM": {
+  "gec": "dr",
+  "population": "10,899,292 (2025 est.)",
+  "life": "72.6 years (2024 est.)",
+  "gdp": "$24,200 (2024 est.)",
+  "elevation": "Pico Duarte 3,098 m",
+  "coastline": "1,288 km"
+ },
+ "DZA": {
+  "gec": "ag",
+  "population": "47,735,685 (2025 est.)",
+  "life": "77.9 years (2024 est.)",
+  "gdp": "$15,400 (2024 est.)",
+  "elevation": "Tahat 2,908 m",
+  "coastline": "998 km"
+ },
+ "ECU": {
+  "gec": "ec",
+  "population": "18,479,841 (2025 est.)",
+  "life": "74.9 years (2024 est.)",
+  "gdp": "$13,900 (2024 est.)",
+  "elevation": "Chimborazo 6,267",
+  "coastline": "2,237 km"
+ },
+ "EGY": {
+  "gec": "eg",
+  "population": "112,870,457 (2025 est.)",
+  "life": "75 years (2024 est.)",
+  "gdp": "$16,800 (2024 est.)",
+  "elevation": "Mount Catherine 2,629 m",
+  "coastline": "2,450 km"
+ },
+ "ERI": {
+  "gec": "er",
+  "population": "6,416,435 (2025 est.)",
+  "life": "67.5 years (2024 est.)",
+  "gdp": "$700 (2024 est.)",
+  "elevation": "Soira 3,018 m",
+  "coastline": "2,234 km (mainland on Red Sea 1,151 km; islands in Red Sea 1,083 km)"
+ },
+ "ESH": {
+  "gec": "wi",
+  "population": "652,271 (July 2020 est.)",
+  "life": "64.5 years",
+  "gdp": null,
+  "elevation": "unnamed elevation 805 m",
+  "coastline": "1,110 km"
+ },
+ "ESP": {
+  "gec": "sp",
+  "population": "47,280,433 (2024 est.)",
+  "life": "83 years (2024 est.)",
+  "gdp": "$48,400 (2024 est.)",
+  "elevation": "Pico de Teide (Tenerife) on Canary Islands 3,718 m",
+  "coastline": "4,964 km"
+ },
+ "EST": {
+  "gec": "en",
+  "population": "1,340,478 (2025 est.)",
+  "life": "78.4 years (2024 est.)",
+  "gdp": "$41,500 (2024 est.)",
+  "elevation": "Suur Munamagi 318 m",
+  "coastline": "3,794 km"
+ },
+ "ETH": {
+  "gec": "et",
+  "population": "121,372,632 (2025 est.)",
+  "life": "67.7 years (2024 est.)",
+  "gdp": "$2,900 (2024 est.)",
+  "elevation": "Ras Dejen 4,550 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "FIN": {
+  "gec": "fi",
+  "population": "5,550,449 (2025 est.)",
+  "life": "82.2 years (2024 est.)",
+  "gdp": "$55,600 (2024 est.)",
+  "elevation": "Halti (alternatively Haltia, Haltitunturi, Haltiatunturi) 1,328 m",
+  "coastline": "1,250 km"
+ },
+ "FJI": {
+  "gec": "fj",
+  "population": "951,611 (2024 est.)",
+  "life": "74.8 years (2024 est.)",
+  "gdp": "$14,100 (2024 est.)",
+  "elevation": "Tomanivi 1,324 m",
+  "coastline": "1,129 km"
+ },
+ "FRA": {
+  "gec": "fr",
+  "population": "68,512,806 (2025 est.)",
+  "life": "82.6 years (2024 est.)",
+  "gdp": "$54,500 (2024 est.)",
+  "elevation": "Mont Blanc 4,810",
+  "coastline": "4,853 km"
+ },
+ "FRO": {
+  "gec": "fo",
+  "population": "52,933 (2024 est.)",
+  "life": "81.7 years (2024 est.)",
+  "gdp": "$70,400 (2023 est.)",
+  "elevation": "Slaettaratindur 882 m",
+  "coastline": "1,117 km"
+ },
+ "FSM": {
+  "gec": "fm",
+  "population": "99,603 (2024 est.)",
+  "life": "75 years (2024 est.)",
+  "gdp": "$3,800 (2024 est.)",
+  "elevation": "Nanlaud on Pohnpei 782 m",
+  "coastline": "6,112 km"
+ },
+ "GAB": {
+  "gec": "gb",
+  "population": "2,513,738 (2025 est.)",
+  "life": "70.4 years (2024 est.)",
+  "gdp": "$18,900 (2024 est.)",
+  "elevation": "Mont Bengoue 1,050 m",
+  "coastline": "885 km"
+ },
+ "GBR": {
+  "gec": "uk",
+  "population": "68,751,311 (2025 est.)",
+  "life": "82.2 years (2024 est.)",
+  "gdp": "$52,500 (2024 est.)",
+  "elevation": "Ben Nevis 1,345 m",
+  "coastline": "12,429 km"
+ },
+ "GEO": {
+  "gec": "gg",
+  "population": "4,900,961 (2024 est.)",
+  "life": "72.8 years (2024 est.)",
+  "gdp": "$25,000 (2024 est.)",
+  "elevation": "Mt'a Shkhara 5,193 m",
+  "coastline": "310 km"
+ },
+ "GGY": {
+  "gec": "gk",
+  "population": "67,923 (2025 est.)",
+  "life": "83.6 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Le Moulin on Sark 114 m",
+  "coastline": "50 km"
+ },
+ "GHA": {
+  "gec": "gh",
+  "population": "35,336,133 (2025 est.)",
+  "life": "70.1 years (2024 est.)",
+  "gdp": "$7,100 (2024 est.)",
+  "elevation": "Mount Afadjato 885 m",
+  "coastline": "539 km"
+ },
+ "GIB": {
+  "gec": "gi",
+  "population": "29,733 (2025 est.)",
+  "life": "80.9 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Rock of Gibraltar 426 m",
+  "coastline": "12 km"
+ },
+ "GIN": {
+  "gec": "gv",
+  "population": "14,374,590 (2025 est.)",
+  "life": "64.6 years (2024 est.)",
+  "gdp": "$4,000 (2024 est.)",
+  "elevation": "Mont Nimba 1,752 m",
+  "coastline": "320 km"
+ },
+ "GMB": {
+  "gec": "ga",
+  "population": "2,523,327 (2024 est.)",
+  "life": "68.4 years (2024 est.)",
+  "gdp": "$3,000 (2024 est.)",
+  "elevation": "unnamed elevation 63 m; 3 km southeast of the town of Sabi",
+  "coastline": "80 km"
+ },
+ "GNB": {
+  "gec": "pu",
+  "population": "2,132,325 (2024 est.)",
+  "life": "64.5 years (2024 est.)",
+  "gdp": "$2,700 (2024 est.)",
+  "elevation": "Dongol Ronde 277 m",
+  "coastline": "350 km"
+ },
+ "GNQ": {
+  "gec": "ek",
+  "population": "1,795,834 (2024 est.)",
+  "life": "63.9 years (2024 est.)",
+  "gdp": "$15,500 (2024 est.)",
+  "elevation": "Pico Basile 3,008 m",
+  "coastline": "296 km"
+ },
+ "GRC": {
+  "gec": "gr",
+  "population": "10,424,536 (2025 est.)",
+  "life": "81.9 years (2024 est.)",
+  "gdp": "$37,800 (2024 est.)",
+  "elevation": "Mount Olympus 2,917",
+  "coastline": "13,676 km"
+ },
+ "GRD": {
+  "gec": "gj",
+  "population": "114,621 (2024 est.)",
+  "life": "76.3 years (2024 est.)",
+  "gdp": "$17,700 (2024 est.)",
+  "elevation": "Mount Saint Catherine 840 m",
+  "coastline": "121 km"
+ },
+ "GRL": {
+  "gec": "gl",
+  "population": "57,751 (2024 est.)",
+  "life": "74.5 years (2024 est.)",
+  "gdp": "$71,000 (2023 est.)",
+  "elevation": "Gunnbjorn Fjeld 3,694 m",
+  "coastline": "44,087 km"
+ },
+ "GTM": {
+  "gec": "gt",
+  "population": "18,255,216 (2024 est.)",
+  "life": "73.5 years (2024 est.)",
+  "gdp": "$12,600 (2024 est.)",
+  "elevation": "Volcan Tajumulco (highest point in Central America) 4,220 m",
+  "coastline": "400 km"
+ },
+ "GUM": {
+  "gec": "gq",
+  "population": "169,532 (2024 est.)",
+  "life": "78 years (2024 est.)",
+  "gdp": "$35,600 (2016 est.)",
+  "elevation": "Mount Lamlam 406 m",
+  "coastline": "125.5 km"
+ },
+ "GUY": {
+  "gec": "gy",
+  "population": "794,099 (2024 est.)",
+  "life": "72.4 years (2024 est.)",
+  "gdp": "$70,300 (2024 est.)",
+  "elevation": "Laberintos del Norte on Mount Roraima 2,775 m",
+  "coastline": "459 km"
+ },
+ "HKG": {
+  "gec": "hk",
+  "population": "7,305,556 (2025 est.)",
+  "life": "84 years (2024 est.)",
+  "gdp": "$66,200 (2024 est.)",
+  "elevation": "Tai Mo Shan 958 m",
+  "coastline": "733 km"
+ },
+ "HND": {
+  "gec": "ho",
+  "population": "9,529,188 (2024 est.)",
+  "life": "73.1 years (2024 est.)",
+  "gdp": "$6,600 (2024 est.)",
+  "elevation": "Cerro Las Minas 2,870 m",
+  "coastline": "823 km (Caribbean Sea 669 km; Gulf of Fonseca 163 km)"
+ },
+ "HRV": {
+  "gec": "hr",
+  "population": "4,071,208 (2025 est.)",
+  "life": "77.7 years (2024 est.)",
+  "gdp": "$42,600 (2024 est.)",
+  "elevation": "Dinara 1,831 m",
+  "coastline": "5,835 km (mainland 1,777 km; islands 4,058 km)"
+ },
+ "HTI": {
+  "gec": "ha",
+  "population": "11,898,812 (2025 est.)",
+  "life": "65.6 years (2024 est.)",
+  "gdp": "$2,800 (2024 est.)",
+  "elevation": "Pic la Selle 2,674 m",
+  "coastline": "1,771 km"
+ },
+ "HUN": {
+  "gec": "hu",
+  "population": "9,855,745 (2024 est.)",
+  "life": "76 years (2024 est.)",
+  "gdp": "$40,700 (2024 est.)",
+  "elevation": "Kekes 1,014 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "IDN": {
+  "gec": "id",
+  "population": "283,587,097 (2025 est.)",
+  "life": "73.6 years (2024 est.)",
+  "gdp": "$14,500 (2024 est.)",
+  "elevation": "Puncak Jaya 4,884 m",
+  "coastline": "54,716 km"
+ },
+ "IMN": {
+  "gec": "im",
+  "population": "92,666 (2025 est.)",
+  "life": "82.5 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Snaefell 621 m",
+  "coastline": "160 km"
+ },
+ "IND": {
+  "gec": "in",
+  "population": "1,419,316,933 (2025 est.)",
+  "life": "68.2 years (2024 est.)",
+  "gdp": "$9,800 (2024 est.)",
+  "elevation": "Kanchenjunga 8,586 m",
+  "coastline": "7,000 km"
+ },
+ "IRL": {
+  "gec": "ei",
+  "population": "5,233,461 (2024 est.)",
+  "life": "82 years (2024 est.)",
+  "gdp": "$115,300 (2024 est.)",
+  "elevation": "Carrauntoohil 1,041 m",
+  "coastline": "1,448 km"
+ },
+ "IRN": {
+  "gec": "ir",
+  "population": "89,177,357 (2025 est.)",
+  "life": "75.6 years (2024 est.)",
+  "gdp": "$16,200 (2024 est.)",
+  "elevation": "Kuh-e Damavand 5,625 m",
+  "coastline": "2,440 km"
+ },
+ "IRQ": {
+  "gec": "iz",
+  "population": "42,917,742 (2025 est.)",
+  "life": "73.7 years (2024 est.)",
+  "gdp": "$12,700 (2024 est.)",
+  "elevation": "Cheekha Dar (Kurdish for \"Black Tent\") 3,611 m",
+  "coastline": "58 km"
+ },
+ "ISL": {
+  "gec": "ic",
+  "population": "364,036 (2024 est.)",
+  "life": "84 years (2024 est.)",
+  "gdp": "$65,600 (2024 est.)",
+  "elevation": "Hvannadalshnukur (at Vatnajokull Glacier) 2,110 m",
+  "coastline": "4,970 km"
+ },
+ "ISR": {
+  "gec": "is",
+  "population": "9,402,617 (2024 est.)",
+  "life": "83.1 years (2024 est.)",
+  "gdp": "$47,300 (2024 est.)",
+  "elevation": "Mitspe Shlagim 2,224 m; note - this is the highest named point, the actual highest point is an unnamed dome slightly to the west of Mitspe Shlagim at 2,236 m; both points are on the northeastern border of Israel, along the southern end of the Anti-Lebanon mountain range",
+  "coastline": "273 km"
+ },
+ "ITA": {
+  "gec": "it",
+  "population": "60,924,851 (2025 est.)",
+  "life": "83 years (2024 est.)",
+  "gdp": "$53,100 (2024 est.)",
+  "elevation": "Mont Blanc (Monte Bianco) de Courmayeur (a secondary peak of Mont Blanc) 4,748 m",
+  "coastline": "7,600 km"
+ },
+ "JAM": {
+  "gec": "jm",
+  "population": "2,938,503 (2025 est.)",
+  "life": "76.3 years (2024 est.)",
+  "gdp": "$10,300 (2024 est.)",
+  "elevation": "Blue Mountain Peak 2,256 m",
+  "coastline": "1,022 km"
+ },
+ "JEY": {
+  "gec": "je",
+  "population": "103,944 (2025 est.)",
+  "life": "83 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Les Platons 136 m",
+  "coastline": "70 km"
+ },
+ "JOR": {
+  "gec": "jo",
+  "population": "11,312,507 (2025 est.)",
+  "life": "76.5 years (2024 est.)",
+  "gdp": "$9,500 (2024 est.)",
+  "elevation": "Jabal Umm ad Dami 1,854 m",
+  "coastline": "26 km"
+ },
+ "JPN": {
+  "gec": "ja",
+  "population": "123,201,945 (2024 est.)",
+  "life": "85.2 years (2024 est.)",
+  "gdp": "$46,100 (2024 est.)",
+  "elevation": "Mount Fuji 3,776 m",
+  "coastline": "29,751 km"
+ },
+ "KAZ": {
+  "gec": "kz",
+  "population": "20,432,662 (2025 est.)",
+  "life": "73.3 years (2024 est.)",
+  "gdp": "$35,900 (2024 est.)",
+  "elevation": "Pik Khan-Tengri 7,010 m<br>note - the northern most 7,000 meter peak in the World",
+  "coastline": "0 km (landlocked)"
+ },
+ "KEN": {
+  "gec": "ke",
+  "population": "55,751,717 (2025 est.)",
+  "life": "70.4 years (2024 est.)",
+  "gdp": "$5,800 (2024 est.)",
+  "elevation": "Mount Kenya 5,199 m",
+  "coastline": "536 km"
+ },
+ "KGZ": {
+  "gec": "kg",
+  "population": "6,219,751 (2025 est.)",
+  "life": "72.9 years (2024 est.)",
+  "gdp": "$7,000 (2024 est.)",
+  "elevation": "Jengish Chokusu (Pik Pobedy) 7,439 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "KHM": {
+  "gec": "cb",
+  "population": "17,230,333 (2025 est.)",
+  "life": "71.4 years (2024 est.)",
+  "gdp": "$7,000 (2024 est.)",
+  "elevation": "Phnum Aoral 1,810 m",
+  "coastline": "443 km"
+ },
+ "KIR": {
+  "gec": "kr",
+  "population": "116,545 (2024 est.)",
+  "life": "68.5 years (2024 est.)",
+  "gdp": "$3,300 (2024 est.)",
+  "elevation": "unnamed elevation on Banaba 81 m",
+  "coastline": "1,143 km"
+ },
+ "KNA": {
+  "gec": "sc",
+  "population": "55,434 (2025 est.)",
+  "life": "77.6 years (2024 est.)",
+  "gdp": "$31,300 (2024 est.)",
+  "elevation": "Mount Liamuiga 1,156 m",
+  "coastline": "135 km"
+ },
+ "KOR": {
+  "gec": "ks",
+  "population": "51,486,343 (2025 est.)",
+  "life": "83.4 years (2024 est.)",
+  "gdp": "$50,400 (2023 est.)",
+  "elevation": "Halla-san 1,950 m",
+  "coastline": "2,413 km"
+ },
+ "KWT": {
+  "gec": "ku",
+  "population": "3,172,511 (2025 est.)",
+  "life": "79.6 years (2024 est.)",
+  "gdp": "$45,400 (2024 est.)",
+  "elevation": "3.6 km W. of Al-Salmi Border Post 300 m",
+  "coastline": "499 km"
+ },
+ "LAO": {
+  "gec": "la",
+  "population": "7,953,556 (2024 est.)",
+  "life": "69 years (2024 est.)",
+  "gdp": "$8,600 (2024 est.)",
+  "elevation": "Phu Bia 2,817 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "LBN": {
+  "gec": "le",
+  "population": "5,364,482 (2024 est.)",
+  "life": "79.2 years (2024 est.)",
+  "gdp": "$11,300 (2023 est.)",
+  "elevation": "Qornet es Saouda 3,088 m",
+  "coastline": "225 km"
+ },
+ "LBR": {
+  "gec": "li",
+  "population": "5,563,541 (2025 est.)",
+  "life": "61.6 years (2024 est.)",
+  "gdp": "$1,700 (2024 est.)",
+  "elevation": "Mount Wuteve 1,447 m",
+  "coastline": "579 km"
+ },
+ "LBY": {
+  "gec": "ly",
+  "population": "7,361,263 (2024 est.)",
+  "life": "77.7 years (2024 est.)",
+  "gdp": "$12,300 (2024 est.)",
+  "elevation": "Bikku Bitti 2,267 m",
+  "coastline": "1,770 km"
+ },
+ "LCA": {
+  "gec": "st",
+  "population": "168,462 (2025 est.)",
+  "life": "79.4 years (2024 est.)",
+  "gdp": "$24,300 (2024 est.)",
+  "elevation": "Mount Gimie 948 m",
+  "coastline": "158 km"
+ },
+ "LIE": {
+  "gec": "ls",
+  "population": "40,547 (2025 est.)",
+  "life": "83 years (2024 est.)",
+  "gdp": "$210,600 (2024 est.)",
+  "elevation": "Vorder-Grauspitz 2,599 m",
+  "coastline": "0 km (doubly landlocked)"
+ },
+ "LKA": {
+  "gec": "ce",
+  "population": "22,050,561 (2025 est.)",
+  "life": "76.8 years (2024 est.)",
+  "gdp": "$13,800 (2024 est.)",
+  "elevation": "Pidurutalagala 2,524 m",
+  "coastline": "1,340 km"
+ },
+ "LSO": {
+  "gec": "lt",
+  "population": "2,222,962 (2025 est.)",
+  "life": "60.2 years (2024 est.)",
+  "gdp": "$2,600 (2024 est.)",
+  "elevation": "Thabana Ntlenyana 3,482 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "LTU": {
+  "gec": "lh",
+  "population": "2,815,687 (2025 est.)",
+  "life": "76.1 years (2024 est.)",
+  "gdp": "$47,200 (2024 est.)",
+  "elevation": "Aukstojas 294 m",
+  "coastline": "90 km"
+ },
+ "LUX": {
+  "gec": "lu",
+  "population": "671,254 (2024 est.)",
+  "life": "83.4 years (2024 est.)",
+  "gdp": "$128,200 (2024 est.)",
+  "elevation": "Buurgplaatz 559 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "LVA": {
+  "gec": "lg",
+  "population": "1,888,439 (2025 est.)",
+  "life": "76.4 years (2024 est.)",
+  "gdp": "$38,900 (2024 est.)",
+  "elevation": "Gaizina Kalns 312 m",
+  "coastline": "498 km"
+ },
+ "MAC": {
+  "gec": "mc",
+  "population": "644,426 (2024 est.)",
+  "life": "85.3 years (2024 est.)",
+  "gdp": "$112,800 (2024 est.)",
+  "elevation": "Alto Coloane 172 m",
+  "coastline": "41 km"
+ },
+ "MAF": {
+  "gec": "rn",
+  "population": "33,093 (2025 est.)",
+  "life": "81 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Pic du Paradis 424 m",
+  "coastline": "58.9 km (for entire island)"
+ },
+ "MAR": {
+  "gec": "mo",
+  "population": "37,387,585 (2024 est.)",
+  "life": "74.2 years (2024 est.)",
+  "gdp": "$9,100 (2024 est.)",
+  "elevation": "Jebel Toubkal 4,165 m",
+  "coastline": "2,945 km"
+ },
+ "MCO": {
+  "gec": "mn",
+  "population": "32,047 (2025 est.)",
+  "life": "89.8 years (2024 est.)",
+  "gdp": "$270,100 (2024 est.)",
+  "elevation": "Chemin des Revoires on Mont Agel 162 m",
+  "coastline": "4.1 km"
+ },
+ "MDA": {
+  "gec": "md",
+  "population": "3,578,930 (2025 est.)",
+  "life": "70.1 years (2024 est.)",
+  "gdp": "$16,500 (2024 est.)",
+  "elevation": "Dealul Balanesti 430 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "MDG": {
+  "gec": "ma",
+  "population": "31,345,040 (2025 est.)",
+  "life": "68.8 years (2024 est.)",
+  "gdp": "$1,700 (2024 est.)",
+  "elevation": "Maromokotro 2,876 m",
+  "coastline": "4,828 km"
+ },
+ "MDV": {
+  "gec": "mv",
+  "population": "388,858 (2024 est.)",
+  "life": "77.4 years (2024 est.)",
+  "gdp": "$23,400 (2024 est.)",
+  "elevation": "8th tee, golf course, Villingi Island 5 m",
+  "coastline": "644 km"
+ },
+ "MEX": {
+  "gec": "mx",
+  "population": "130,739,927 (2024 est.)",
+  "life": "74.6 years (2024 est.)",
+  "gdp": "$22,000 (2024 est.)",
+  "elevation": "Volcan Pico de Orizaba 5,636 m",
+  "coastline": "9,330 km"
+ },
+ "MHL": {
+  "gec": "rm",
+  "population": "82,011 (2024 est.)",
+  "life": "75.2 years (2024 est.)",
+  "gdp": "$7,200 (2024 est.)",
+  "elevation": "East-central Airik Island, Maloelap Atoll 14 m",
+  "coastline": "370.4 km"
+ },
+ "MKD": {
+  "gec": "mk",
+  "population": "2,137,556 (2025 est.)",
+  "life": "77.3 years (2024 est.)",
+  "gdp": "$24,500 (2024 est.)",
+  "elevation": "Golem Korab (Maja e Korabit) 2,764 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "MLI": {
+  "gec": "ml",
+  "population": "22,634,423 (2025 est.)",
+  "life": "63.2 years (2024 est.)",
+  "gdp": "$2,900 (2024 est.)",
+  "elevation": "Hombori Tondo 1,155 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "MLT": {
+  "gec": "mt",
+  "population": "521,828 (2025 est.)",
+  "life": "83.6 years (2024 est.)",
+  "gdp": "$60,500 (2024 est.)",
+  "elevation": "Ta'Dmejrek on Dingli Cliffs 253 m",
+  "coastline": "196.8 km (excludes 56 km for the island of Gozo)"
+ },
+ "MMR": {
+  "gec": "bm",
+  "population": "57,931,718 (2025 est.)",
+  "life": "70.3 years (2024 est.)",
+  "gdp": "$5,300 (2024 est.)",
+  "elevation": "Gamlang Razi 5,870 m",
+  "coastline": "1,930 km"
+ },
+ "MNE": {
+  "gec": "mj",
+  "population": "599,849 (2024 est.)",
+  "life": "78.2 years (2024 est.)",
+  "gdp": "$27,900 (2024 est.)",
+  "elevation": "Zia Kolata 2,534 m",
+  "coastline": "293.5 km"
+ },
+ "MNG": {
+  "gec": "mg",
+  "population": "3,281,676 (2024 est.)",
+  "life": "71.9 years (2024 est.)",
+  "gdp": "$16,800 (2024 est.)",
+  "elevation": "Nayramadlin Orgil (Khuiten Peak) 4,374 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "MNP": {
+  "gec": "cq",
+  "population": "51,118 (2024 est.)",
+  "life": "77.1 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Agrihan Volcano 965 m",
+  "coastline": "1,482 km"
+ },
+ "MOZ": {
+  "gec": "mz",
+  "population": "34,206,144 (2025 est.)",
+  "life": "58.3 years (2024 est.)",
+  "gdp": "$1,500 (2024 est.)",
+  "elevation": "Monte Binga 2,436 m",
+  "coastline": "2,470 km"
+ },
+ "MRT": {
+  "gec": "mr",
+  "population": "5,202,109 (2025 est.)",
+  "life": "65.9 years (2024 est.)",
+  "gdp": "$6,400 (2024 est.)",
+  "elevation": "Kediet Ijill 915 m",
+  "coastline": "754 km"
+ },
+ "MSR": {
+  "gec": "mh",
+  "population": "5,468 (2024 est.)",
+  "life": "76.1 years (2024 est.)",
+  "gdp": "$19,300 (2024 est.)",
+  "elevation": "Soufriere Hills volcano pre-eruption height was 915 m; current lava dome is subject to periodic build up and collapse; estimated dome height was 1,050 m in 2015",
+  "coastline": "40 km"
+ },
+ "MUS": {
+  "gec": "mp",
+  "population": "1,311,375 (2025 est.)",
+  "life": "75.4 years (2024 est.)",
+  "gdp": "$27,300 (2024 est.)",
+  "elevation": "Mont Piton 828 m",
+  "coastline": "177 km"
+ },
+ "MWI": {
+  "gec": "mi",
+  "population": "21,763,309 (2024 est.)",
+  "life": "73 years (2024 est.)",
+  "gdp": "$1,600 (2024 est.)",
+  "elevation": "Sapitwa (Mount Mlanje) 3,002 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "MYS": {
+  "gec": "my",
+  "population": "34,905,275 (2025 est.)",
+  "life": "76.6 years (2024 est.)",
+  "gdp": "$34,100 (2024 est.)",
+  "elevation": "Gunung Kinabalu 4,095 m",
+  "coastline": "4,675 km (Peninsular Malaysia 2,068 km; East Malaysia 2,607 km)"
+ },
+ "NAM": {
+  "gec": "wa",
+  "population": "2,852,777 (2025 est.)",
+  "life": "65.9 years (2024 est.)",
+  "gdp": "$10,300 (2024 est.)",
+  "elevation": "Konigstein on Brandberg 2,573 m",
+  "coastline": "1,572 km"
+ },
+ "NCL": {
+  "gec": "nc",
+  "population": "307,612 (2025 est.)",
+  "life": "79.3 years (2024 est.)",
+  "gdp": "$34,600 (2024 est.)",
+  "elevation": "Mont Panie 1,628 m",
+  "coastline": "2,254 km"
+ },
+ "NER": {
+  "gec": "ng",
+  "population": "27,322,555 (2025 est.)",
+  "life": "60.9 years (2024 est.)",
+  "gdp": "$1,800 (2024 est.)",
+  "elevation": "Idoukal-n-Taghes 2,022 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "NGA": {
+  "gec": "ni",
+  "population": "244,344,065 (2025 est.)",
+  "life": "62.2 years (2024 est.)",
+  "gdp": "$5,700 (2024 est.)",
+  "elevation": "Chappal Waddi 2,419 m",
+  "coastline": "853 km"
+ },
+ "NIC": {
+  "gec": "nu",
+  "population": "6,739,380 (2025 est.)",
+  "life": "74.7 years (2024 est.)",
+  "gdp": "$7,700 (2024 est.)",
+  "elevation": "Mogoton 2,085 m",
+  "coastline": "910 km"
+ },
+ "NIU": {
+  "gec": "ne",
+  "population": "1,815 (2024 est.)",
+  "life": null,
+  "gdp": "$11,100 (2021 est.)",
+  "elevation": "unnamed elevation 1.4 km east of Hikutavake 80 m",
+  "coastline": "64 km"
+ },
+ "NLD": {
+  "gec": "nl",
+  "population": "17,833,885 (2025 est.)",
+  "life": "81.9 years (2024 est.)",
+  "gdp": "$70,900 (2024 est.)",
+  "elevation": "Mount Scenery (on the island of Saba in the Caribbean, now considered an integral part of the Netherlands following the dissolution of the Netherlands Antilles) 862 m",
+  "coastline": "451 km"
+ },
+ "NOR": {
+  "gec": "no",
+  "population": "5,509,733 (2024 est.)",
+  "life": "82.9 years (2024 est.)",
+  "gdp": "$91,100 (2024 est.)",
+  "elevation": "Galdhopiggen 2,469 m",
+  "coastline": "25,148 km"
+ },
+ "NPL": {
+  "gec": "np",
+  "population": "31,334,402 (2025 est.)",
+  "life": "73 years (2024 est.)",
+  "gdp": "$5,000 (2024 est.)",
+  "elevation": "Mount Everest (highest peak in Asia and highest point on earth above sea level) 8,849 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "NRU": {
+  "gec": "nr",
+  "population": "9,930 (2025 est.)",
+  "life": "68.6 years (2024 est.)",
+  "gdp": "$12,600 (2024 est.)",
+  "elevation": "Command Ridge 70 m",
+  "coastline": "30 km"
+ },
+ "NZL": {
+  "gec": "nz",
+  "population": "5,161,211 (2024 est.)",
+  "life": "82.9 years (2024 est.)",
+  "gdp": "$48,200 (2024 est.)",
+  "elevation": "Aoraki/Mount Cook 3,724 m; note - the mountain's height was 3,764 m until 14 December 1991 when it lost about 10 m in an avalanche of rock and ice; erosion of the ice cap since then has brought the height down another 30 m",
+  "coastline": "15,134 km"
+ },
+ "OMN": {
+  "gec": "mu",
+  "population": "3,969,824 (2025 est.)",
+  "life": "77.4 years (2024 est.)",
+  "gdp": "$36,700 (2024 est.)",
+  "elevation": "Jabal Shams 3,004 m",
+  "coastline": "2,092 km"
+ },
+ "PAK": {
+  "gec": "pk",
+  "population": "257,047,044 (2025 est.)",
+  "life": "70.3 years (2024 est.)",
+  "gdp": "$5,500 (2024 est.)",
+  "elevation": "K2 (Mt. Godwin-Austen) 8,611 m",
+  "coastline": "1,046 km"
+ },
+ "PAN": {
+  "gec": "pm",
+  "population": "4,536,008 (2025 est.)",
+  "life": "79.2 years (2024 est.)",
+  "gdp": "$36,400 (2024 est.)",
+  "elevation": "Volcan Baru 3,475 m",
+  "coastline": "2,490 km"
+ },
+ "PCN": {
+  "gec": "pc",
+  "population": "50 (2025 est.)",
+  "life": null,
+  "gdp": null,
+  "elevation": "Palwala Valley Point on Big Ridge 347 m",
+  "coastline": "51 km"
+ },
+ "PER": {
+  "gec": "pe",
+  "population": "32,768,614 (2025 est.)",
+  "life": "68.9 years (2024 est.)",
+  "gdp": "$15,700 (2024 est.)",
+  "elevation": "Nevado Huascaran 6,746 m",
+  "coastline": "2,414 km"
+ },
+ "PHL": {
+  "gec": "rp",
+  "population": "118,277,063 (2024 est.)",
+  "life": "70.8 years (2024 est.)",
+  "gdp": "$10,400 (2024 est.)",
+  "elevation": "Mount Apo 2,954 m",
+  "coastline": "36,289 km"
+ },
+ "PLW": {
+  "gec": "ps",
+  "population": "21,947 (2025 est.)",
+  "life": "75.2 years (2024 est.)",
+  "gdp": "$15,800 (2023 est.)",
+  "elevation": "Mount Ngerchelchuus 242 m",
+  "coastline": "1,519 km"
+ },
+ "PNG": {
+  "gec": "pp",
+  "population": "10,273,996 (2025 est.)",
+  "life": "70.1 years (2024 est.)",
+  "gdp": "$4,300 (2024 est.)",
+  "elevation": "Mount Wilhelm 4,509 m",
+  "coastline": "5,152 km"
+ },
+ "POL": {
+  "gec": "pl",
+  "population": "38,746,310 (2024 est.)",
+  "life": "76.7 years (2024 est.)",
+  "gdp": "$45,100 (2024 est.)",
+  "elevation": "Rysy 2,499 m",
+  "coastline": "440 km"
+ },
+ "PRI": {
+  "gec": "rq",
+  "population": "2,984,841 (2025 est.)",
+  "life": "82.1 years (2024 est.)",
+  "gdp": "$44,100 (2024 est.)",
+  "elevation": "Cerro de Punta 1,338 m",
+  "coastline": "501 km"
+ },
+ "PRK": {
+  "gec": "kn",
+  "population": "26,402,841 (2025 est.)",
+  "life": "73.5 years (2024 est.)",
+  "gdp": "$600 (2023 est.)",
+  "elevation": "Paektu-san 2,744 m",
+  "coastline": "2,495 km"
+ },
+ "PRT": {
+  "gec": "po",
+  "population": "10,194,277 (2025 est.)",
+  "life": "81.9 years (2024 est.)",
+  "gdp": "$41,900 (2024 est.)",
+  "elevation": "Ponta do Pico (Pico or Pico Alto) on Ilha do Pico in the Azores 2,351 m",
+  "coastline": "1,793 km"
+ },
+ "PRY": {
+  "gec": "pa",
+  "population": "7,604,044 (2025 est.)",
+  "life": "78.8 years (2024 est.)",
+  "gdp": "$16,300 (2024 est.)",
+  "elevation": "Cerro Pero 842 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "PYF": {
+  "gec": "fp",
+  "population": "305,507 (2025 est.)",
+  "life": "78.9 years (2024 est.)",
+  "gdp": "$23,300 (2024 est.)",
+  "elevation": "Mont Orohena 2,241 m",
+  "coastline": "2,525 km"
+ },
+ "QAT": {
+  "gec": "qa",
+  "population": "2,568,426 (2025 est.)",
+  "life": "80.3 years (2024 est.)",
+  "gdp": "$110,900 (2024 est.)",
+  "elevation": "Tuwayyir al Hamir 103 m",
+  "coastline": "563 km"
+ },
+ "ROU": {
+  "gec": "ro",
+  "population": "18,148,155 (2024 est.)",
+  "life": "76.9 years (2024 est.)",
+  "gdp": "$40,600 (2024 est.)",
+  "elevation": "Moldoveanu 2,544 m",
+  "coastline": "225 km"
+ },
+ "RUS": {
+  "gec": "rs",
+  "population": "140,134,279 (2025 est.)",
+  "life": "72.3 years (2024 est.)",
+  "gdp": "$41,700 (2024 est.)",
+  "elevation": "Gora El'brus (highest point in Europe) 5,642 m",
+  "coastline": "37,653 km"
+ },
+ "RWA": {
+  "gec": "rw",
+  "population": "13,623,302 (2024 est.)",
+  "life": "66.6 years (2024 est.)",
+  "gdp": "$3,300 (2024 est.)",
+  "elevation": "Volcan Karisimbi 4,519 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "SAU": {
+  "gec": "sa",
+  "population": "36,544,431 (2024 est.)",
+  "life": "77.2 years (2024 est.)",
+  "gdp": "$62,700 (2024 est.)",
+  "elevation": "As Sarawat range, 3,000 m",
+  "coastline": "2,640 km"
+ },
+ "SDN": {
+  "gec": "su",
+  "population": "50,467,278 (2024 est.)",
+  "life": "67.8 years (2024 est.)",
+  "gdp": "$1,900 (2024 est.)",
+  "elevation": "Jabal Marrah 3,042 m",
+  "coastline": "853 km"
+ },
+ "SEN": {
+  "gec": "sg",
+  "population": "18,847,519 (2024 est.)",
+  "life": "70.6 years (2024 est.)",
+  "gdp": "$4,500 (2024 est.)",
+  "elevation": "unnamed elevation 2.8 km southeast of Nepen Diaka 648 m",
+  "coastline": "531 km"
+ },
+ "SGP": {
+  "gec": "sn",
+  "population": "6,080,545 (2025 est.)",
+  "life": "86.7 years (2024 est.)",
+  "gdp": "$132,600 (2024 est.)",
+  "elevation": "Bukit Timah 166 m",
+  "coastline": "193 km"
+ },
+ "SLB": {
+  "gec": "bp",
+  "population": "738,774 (2025 est.)",
+  "life": "77.2 years (2024 est.)",
+  "gdp": "$2,500 (2024 est.)",
+  "elevation": "Mount Popomanaseu 2,335 m",
+  "coastline": "5,313 km"
+ },
+ "SLE": {
+  "gec": "sl",
+  "population": "9,331,203 (2025 est.)",
+  "life": "59.4 years (2024 est.)",
+  "gdp": "$3,100 (2024 est.)",
+  "elevation": "Loma Mansa (Bintimani) 1,948 m",
+  "coastline": "402 km"
+ },
+ "SLV": {
+  "gec": "es",
+  "population": "6,334,723 (2025 est.)",
+  "life": "75.9 years (2024 est.)",
+  "gdp": "$11,700 (2024 est.)",
+  "elevation": "Cerro El Pital 2,730 m",
+  "coastline": "307 km"
+ },
+ "SMR": {
+  "gec": "sm",
+  "population": "35,291 (2025 est.)",
+  "life": "84.2 years (2024 est.)",
+  "gdp": "$70,900 (2022 est.)",
+  "elevation": "Monte Titano 739 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "SOM": {
+  "gec": "so",
+  "population": "20,324,160 (2025 est.)",
+  "life": "56.5 years (2024 est.)",
+  "gdp": "$1,400 (2024 est.)",
+  "elevation": "Mount Shimbiris 2,460 m",
+  "coastline": "3,025 km"
+ },
+ "SPM": {
+  "gec": "sb",
+  "population": "5,070 (2025 est.)",
+  "life": "81.8 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Morne de la Grande Montagne 240 m",
+  "coastline": "120 km"
+ },
+ "SRB": {
+  "gec": "ri",
+  "population": "6,652,212 (2024 est.)",
+  "life": "75.3 years (2024 est.)",
+  "gdp": "$26,900 (2024 est.)",
+  "elevation": "Midzor 2,169 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "SSD": {
+  "gec": "od",
+  "population": "12,703,714 (2024 est.)",
+  "life": "60.3 years (2024 est.)",
+  "gdp": "$400 (2023 est.)",
+  "elevation": "Kinyeti 3,187 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "STP": {
+  "gec": "tp",
+  "population": "223,561 (2024 est.)",
+  "life": "67.7 years (2024 est.)",
+  "gdp": "$5,500 (2024 est.)",
+  "elevation": "Pico de Sao Tome 2,024 m",
+  "coastline": "209 km"
+ },
+ "SUR": {
+  "gec": "ns",
+  "population": "653,605 (2025 est.)",
+  "life": "72.7 years (2024 est.)",
+  "gdp": "$19,400 (2024 est.)",
+  "elevation": "Juliana Top 1,230 m",
+  "coastline": "386 km"
+ },
+ "SVK": {
+  "gec": "lo",
+  "population": "5,563,649 (2024 est.)",
+  "life": "77.2 years (2024 est.)",
+  "gdp": "$40,300 (2024 est.)",
+  "elevation": "Gerlachovsky Stit 2,655 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "SVN": {
+  "gec": "si",
+  "population": "2,097,893 (2024 est.)",
+  "life": "82.2 years (2024 est.)",
+  "gdp": "$48,500 (2024 est.)",
+  "elevation": "Triglav 2,864 m",
+  "coastline": "46.6 km"
+ },
+ "SWE": {
+  "gec": "sw",
+  "population": "10,643,745 (2025 est.)",
+  "life": "82.9 years (2024 est.)",
+  "gdp": "$63,300 (2024 est.)",
+  "elevation": "Kebnekaise South 2,100 m",
+  "coastline": "3,218 km"
+ },
+ "SWZ": {
+  "gec": "wz",
+  "population": "1,137,268 (2025 est.)",
+  "life": "60.7 years (2024 est.)",
+  "gdp": "$10,400 (2024 est.)",
+  "elevation": "Emlembe 1,862 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "SXM": {
+  "gec": "nn",
+  "population": "46,738 (2025 est.)",
+  "life": "79.7 years (2024 est.)",
+  "gdp": "$45,800 (2024 est.)",
+  "elevation": "250 m SW of Mount Flagstaff summit, 383 m",
+  "coastline": "58.9 km (for entire island)"
+ },
+ "SYC": {
+  "gec": "se",
+  "population": "98,187 (2024 est.)",
+  "life": "76.6 years (2024 est.)",
+  "gdp": "$29,200 (2024 est.)",
+  "elevation": "Morne Seychellois 905 m",
+  "coastline": "491 km"
+ },
+ "SYR": {
+  "gec": "sy",
+  "population": "24,261,882 (2025 est.)",
+  "life": "74.8 years (2024 est.)",
+  "gdp": "$4,200 (2023 est.)",
+  "elevation": "Mount Hermon (Jabal a-Shayk) 2,814 m",
+  "coastline": "193 km"
+ },
+ "TCA": {
+  "gec": "tk",
+  "population": "60,439 (2024 est.)",
+  "life": "81.3 years (2024 est.)",
+  "gdp": "$33,400 (2024 est.)",
+  "elevation": "Blue Hill on Providenciales and Flamingo Hill on East Caicos 48 m",
+  "coastline": "389 km"
+ },
+ "TCD": {
+  "gec": "cd",
+  "population": "19,674,004 (2025 est.)",
+  "life": "60 years (2024 est.)",
+  "gdp": "$2,600 (2024 est.)",
+  "elevation": "Emi Koussi 3,445 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "TGO": {
+  "gec": "to",
+  "population": "9,143,439 (2025 est.)",
+  "life": "72.1 years (2024 est.)",
+  "gdp": "$2,800 (2024 est.)",
+  "elevation": "Mont Agou 986 m",
+  "coastline": "56 km"
+ },
+ "THA": {
+  "gec": "th",
+  "population": "70,025,248 (2025 est.)",
+  "life": "78.2 years (2024 est.)",
+  "gdp": "$21,700 (2024 est.)",
+  "elevation": "Doi Inthanon 2,565 m",
+  "coastline": "3,219 km"
+ },
+ "TJK": {
+  "gec": "ti",
+  "population": "10,593,876 (2025 est.)",
+  "life": "71.9 years (2024 est.)",
+  "gdp": "$4,800 (2024 est.)",
+  "elevation": "Qullai Somoniyon 7,495 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "TKL": {
+  "gec": "tl",
+  "population": "2,453 (2024 est.)",
+  "life": null,
+  "gdp": "$6,004 (2017 est.)",
+  "elevation": "unnamed location 5 m",
+  "coastline": "101 km"
+ },
+ "TKM": {
+  "gec": "tx",
+  "population": "5,744,151 (2024 est.)",
+  "life": "72.4 years (2024 est.)",
+  "gdp": "$18,000 (2024 est.)",
+  "elevation": "Gora Ayribaba 3,139 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "TLS": {
+  "gec": "tt",
+  "population": "1,404,785 (2025 est.)",
+  "life": "70.5 years (2024 est.)",
+  "gdp": "$4,200 (2024 est.)",
+  "elevation": "Foho Tatamailau 2,963 m",
+  "coastline": "706 km"
+ },
+ "TON": {
+  "gec": "tn",
+  "population": "104,519 (2025 est.)",
+  "life": "78 years (2024 est.)",
+  "gdp": "$7,100 (2023 est.)",
+  "elevation": "Kao Volcano on Kao Island 1,046 m",
+  "coastline": "419 km"
+ },
+ "TTO": {
+  "gec": "td",
+  "population": "1,410,170 (2025 est.)",
+  "life": "76.5 years (2024 est.)",
+  "gdp": "$31,700 (2024 est.)",
+  "elevation": "El Cerro del Aripo 940 m",
+  "coastline": "362 km"
+ },
+ "TUN": {
+  "gec": "ts",
+  "population": "11,962,995 (2025 est.)",
+  "life": "77.3 years (2024 est.)",
+  "gdp": "$12,700 (2024 est.)",
+  "elevation": "Jebel ech Chambi 1,544 m",
+  "coastline": "1,148 km"
+ },
+ "TUR": {
+  "gec": "tu",
+  "population": "84,625,585 (2025 est.)",
+  "life": "76.7 years (2024 est.)",
+  "gdp": "$35,300 (2024 est.)",
+  "elevation": "Mount Ararat 5,137 m",
+  "coastline": "7,200 km"
+ },
+ "TUV": {
+  "gec": "tv",
+  "population": "11,824 (2025 est.)",
+  "life": "69 years (2024 est.)",
+  "gdp": "$5,800 (2023 est.)",
+  "elevation": "unnamed location 5 m",
+  "coastline": "24 km"
+ },
+ "TWN": {
+  "gec": "tw",
+  "population": "23,600,776 (2025 est.)",
+  "life": "81.6 years (2024 est.)",
+  "gdp": "$32,300 (2023 est.)",
+  "elevation": "Yu Shan 3,952 m",
+  "coastline": "1,566.3 km"
+ },
+ "TZA": {
+  "gec": "tz",
+  "population": "69,145,464 (2025 est.)",
+  "life": "70.8 years (2024 est.)",
+  "gdp": "$3,700 (2024 est.)",
+  "elevation": "Kilimanjaro (highest point in Africa) 5,895 m",
+  "coastline": "1,424 km"
+ },
+ "UGA": {
+  "gec": "ug",
+  "population": "50,863,850 (2025 est.)",
+  "life": "69.7 years (2024 est.)",
+  "gdp": "$2,900 (2024 est.)",
+  "elevation": "Margherita Peak on Mount Stanley 5,110 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "UKR": {
+  "gec": "up",
+  "population": "35,661,826 (2024 est.)",
+  "life": "70.5 years (2024 est.)",
+  "gdp": "$16,300 (2024 est.)",
+  "elevation": "Hora Hoverla 2,061 m",
+  "coastline": "2,782 km"
+ },
+ "URY": {
+  "gec": "uy",
+  "population": "3,449,444 (2025 est.)",
+  "life": "78.9 years (2024 est.)",
+  "gdp": "$32,000 (2024 est.)",
+  "elevation": "Cerro Catedral 514 m",
+  "coastline": "660 km"
+ },
+ "USA": {
+  "gec": "us",
+  "population": "338,016,259 (2025 est.)",
+  "life": "80.9 years (2024 est.)",
+  "gdp": "$75,500 (2024 est.)",
+  "elevation": "Mount McKinley 6,190 m (highest point in North America)",
+  "coastline": "19,924 km"
+ },
+ "UZB": {
+  "gec": "uz",
+  "population": "37,015,151 (2025 est.)",
+  "life": "76.2 years (2024 est.)",
+  "gdp": "$10,500 (2024 est.)",
+  "elevation": "Xazrat Sulton Tog' 4,643 m",
+  "coastline": "0 km (doubly landlocked)"
+ },
+ "VAT": {
+  "gec": "vt",
+  "population": "1,000 (2024)",
+  "life": null,
+  "gdp": null,
+  "elevation": "Vatican Gardens (Vatican Hill) 78 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "VCT": {
+  "gec": "vc",
+  "population": "100,647 (2024 est.)",
+  "life": "77.2 years (2024 est.)",
+  "gdp": "$18,700 (2024 est.)",
+  "elevation": "La Soufriere 1,234 m",
+  "coastline": "84 km"
+ },
+ "VEN": {
+  "gec": "ve",
+  "population": "31,755,435 (2025 est.)",
+  "life": "74.5 years (2024 est.)",
+  "gdp": "$4,900 (2023 est.)",
+  "elevation": "Pico Bolivar 4,978 m",
+  "coastline": "2,800 km"
+ },
+ "VGB": {
+  "gec": "vq",
+  "population": "103,792 (2025 est.)",
+  "life": "80.7 years (2024 est.)",
+  "gdp": "$46,500 (2022 est.)",
+  "elevation": "Crown Mountain 474 m",
+  "coastline": "188 km"
+ },
+ "VNM": {
+  "gec": "vm",
+  "population": "106,688,169 (2025 est.)",
+  "life": "76.1 years (2024 est.)",
+  "gdp": "$14,400 (2024 est.)",
+  "elevation": "Fan Si Pan 3,144 m",
+  "coastline": "3,444 km (excludes islands)"
+ },
+ "VUT": {
+  "gec": "nh",
+  "population": "318,007 (2024 est.)",
+  "life": "75.7 years (2024 est.)",
+  "gdp": "$3,200 (2024 est.)",
+  "elevation": "Tabwemasana 1,877 m",
+  "coastline": "2,528 km"
+ },
+ "WLF": {
+  "gec": "wf",
+  "population": "15,998 (2025 est.)",
+  "life": "81.1 years (2024 est.)",
+  "gdp": null,
+  "elevation": "Mont Singavi (on Futuna) 522 m",
+  "coastline": "129 km"
+ },
+ "WSM": {
+  "gec": "ws",
+  "population": "210,223 (2025 est.)",
+  "life": "75.7 years (2024 est.)",
+  "gdp": "$6,900 (2024 est.)",
+  "elevation": "Mount Silisili 1,857 m",
+  "coastline": "403 km"
+ },
+ "XKX": {
+  "gec": "kv",
+  "population": "1,977,093 (2024 est.)",
+  "life": "73.1 years (2024 est.)",
+  "gdp": "$16,400 (2024 est.)",
+  "elevation": "Gjeravica/Deravica 2,656 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "YEM": {
+  "gec": "ym",
+  "population": "34,505,496 (2025 est.)",
+  "life": "68.2 years (2024 est.)",
+  "gdp": "$200 (2024 est.)",
+  "elevation": "Jabal an Nabi Shu'ayb 3,666 m",
+  "coastline": "1,906 km"
+ },
+ "ZAF": {
+  "gec": "sf",
+  "population": "61,089,926 (2025 est.)",
+  "life": "71.9 years (2024 est.)",
+  "gdp": "$13,600 (2024 est.)",
+  "elevation": "Ntheledi (Mafadi) 3,450 m",
+  "coastline": "2,798 km"
+ },
+ "ZMB": {
+  "gec": "za",
+  "population": "22,021,971 (2025 est.)",
+  "life": "66.9 years (2024 est.)",
+  "gdp": "$3,700 (2024 est.)",
+  "elevation": "Mafinga Central 2,330 m",
+  "coastline": "0 km (landlocked)"
+ },
+ "ZWE": {
+  "gec": "zi",
+  "population": "17,472,752 (2025 est.)",
+  "life": "67.2 years (2024 est.)",
+  "gdp": "$3,500 (2024 est.)",
+  "elevation": "Inyangani 2,592 m",
+  "coastline": "0 km (landlocked)"
+ }
+}

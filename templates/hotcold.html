@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play wide">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <span>Guesses <b id="count">0</b></span>
+  </div>
+
+  <div class="map-frame" id="map"></div>
+  <div class="legend heat-legend" aria-label="Colour key">
+    <span>Far</span>
+    <span class="swatch heat0" title="6,000 km or more"></span>
+    <span class="swatch heat1" title="3,000–6,000 km"></span>
+    <span class="swatch heat2" title="1,500–3,000 km"></span>
+    <span class="swatch heat3" title="500–1,500 km"></span>
+    <span class="swatch heat4" title="under 500 km"></span>
+    <span>Close</span>
+    <span class="legend-gap"></span>
+    <span class="swatch hit"></span> Mystery country
+  </div>
+
+  <form class="answer-form" id="guess-form" autocomplete="off">
+    <input id="guess" type="text" placeholder="Guess the mystery country…" autocomplete="off" autocapitalize="off"
+           autocorrect="off" spellcheck="false" aria-label="Your guess">
+    <button type="submit" class="primary">Guess</button>
+    <button type="button" class="ghost" id="give-up">Give up</button>
+  </form>
+  <p class="message" id="message" aria-live="polite">Each guess shows how far away the mystery country is and which way to go. The closer, the hotter.</p>
+
+  <div class="reveal" id="reveal" hidden>
+    <div class="verdict" id="verdict"></div>
+    <p class="fact" id="fact"></p>
+    <p class="info" id="info"></p>
+    <button type="button" class="primary" id="again">New mystery country <kbd>Enter</kbd></button>
+  </div>
+
+  <ol class="guesses" id="guesses" aria-label="Your guesses, closest first"></ol>
+</section>
+
+<script src="{{ url_for('static', filename='worldmap.js') }}"></script>
+<script src="{{ url_for('static', filename='hotcold.js') }}"></script>
+{% endblock %}

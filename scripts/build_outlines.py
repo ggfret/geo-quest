@@ -195,9 +195,12 @@ def locator(polygons):
     rings = [simplify([world_xy(x, y) for x, y in unwrap(ring)], 0.15) for poly in polygons for ring in poly]
     largest = max(polygons, key=lambda p: ring_area(p[0]))[0]
     cx, cy = world_xy(sum(x for x, _ in largest) / len(largest), sum(y for _, y in largest) / len(largest))
-    main, _ = main_cluster(polygons)
-    xs = [world_xy(x, y)[0] for poly in main for x, y in unwrap(poly[0])]
-    ys = [world_xy(x, y)[1] for poly in main for x, y in unwrap(poly[0])]
+    main, lon0 = main_cluster(polygons)
+    # Measure every piece on the same side of the date line as the main landmass (Fiji's islands
+    # straddle it), so the box stays compact instead of stretching across the whole map.
+    near = [(lon0 + wrap(x - lon0), y) for poly in main for x, y in poly[0]]
+    xs = [world_xy(x, y)[0] for x, y in near]
+    ys = [world_xy(x, y)[1] for x, y in near]
     box = [round(min(xs), 1), round(min(ys), 1), round(max(xs), 1), round(max(ys), 1)]
     return {"path": to_path(rings, decimals=1), "cx": round(cx), "cy": round(cy), "box": box}
 

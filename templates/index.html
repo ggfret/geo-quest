@@ -1,28 +1,54 @@
 {% extends "base.html" %}
 
+{% macro game_card(game) %}
+  {% set k = known.get(game.slug, {}) %}
+  <a class="game-card" href="/{{ game.slug }}">
+    <div class="game-icon">{{ game.icon }}</div>
+    <div class="game-body">
+      <h3>{{ game.name }}</h3>
+      <p>{{ game.blurb }}</p>
+    </div>
+    <div class="game-foot">
+      <span>{{ me.per_game.get(game.slug, 0) }} XP</span>
+      {% if k.pool %}<span>{{ k.known }} / {{ k.pool }} known</span>{% endif %}
+      {% if due.get(game.slug) %}<span class="badge due">{{ due[game.slug] }} to review</span>{% endif %}
+    </div>
+  </a>
+{% endmacro %}
+
 {% block content %}
 <section class="intro">
   <h1>Learn the world, one guess at a time.</h1>
   <p>{{ country_count }} countries and territories. The site learns what you know and asks more about what you don't.</p>
 </section>
 
+<section class="today">
+  <div class="today-item">
+    <span class="today-big">🔥 {{ me.streak }}</span>
+    <span>{% if me.played_today %}day streak — see you tomorrow!{% elif me.streak %}day streak — play today to keep it{% else %}Play today to start a streak{% endif %}</span>
+  </div>
+  <div class="today-item">
+    <span class="today-big">{{ [me.today_xp, me.daily_goal] | min }}<small>/{{ me.daily_goal }} XP</small></span>
+    <div class="bar"><div style="width: {{ ([me.today_xp / me.daily_goal, 1] | min) * 100 }}%"></div></div>
+    <span>{% if me.today_xp >= me.daily_goal %}Daily goal reached ✅{% else %}Daily goal{% endif %}</span>
+  </div>
+  <div class="today-item">
+    <span class="today-big">🔁 {{ due_total }}</span>
+    <span>{% if due_total %}due for review — <a href="/{{ review_game.slug }}">start with {{ review_game.name }}</a>{% else %}nothing due for review{% endif %}</span>
+  </div>
+  <a class="today-item" href="{{ url_for('leaderboard_page') }}">
+    <span class="today-big">#{{ rank or "–" }}<small> of {{ players }}</small></span>
+    <span>this week · {{ me.week_xp }} XP</span>
+  </a>
+</section>
+
+<h2 class="section-title">Quizzes</h2>
 <section class="games">
-  {% for game in games %}
-    {% set xp = me.per_game.get(game.slug, 0) %}
-    {% if game.ready %}
-      <a class="game-card" href="/{{ game.slug }}">
-    {% else %}
-      <div class="game-card soon">
-    {% endif %}
-        <div class="game-icon">{{ game.icon }}</div>
-        <div class="game-body">
-          <h2>{{ game.name }}</h2>
-          <p>{{ game.blurb }}</p>
-        </div>
-        <div class="game-foot">
-          {% if game.ready %}<span>{{ xp }} XP</span>{% else %}<span class="badge">Coming soon</span>{% endif %}
-        </div>
-    {% if game.ready %}</a>{% else %}</div>{% endif %}
-  {% endfor %}
+  {% for game in quizzes %}{{ game_card(game) }}{% endfor %}
+</section>
+
+<h2 class="section-title">Map games</h2>
+<section class="games">
+  {% for game in map_games %}{{ game_card(game) }}{% endfor %}
 </section>
 {% endblock %}

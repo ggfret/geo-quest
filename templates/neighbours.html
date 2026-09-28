@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play wide">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <span>Found <b id="found-count">0 / 0</b></span>
+  </div>
+
+  <div class="map-prompt">
+    <img id="flag" class="flag tiny" alt="" hidden>
+    <span>Name every country that borders <b id="country">…</b></span>
+  </div>
+
+  <div class="map-frame" id="map"></div>
+  <div class="legend" aria-label="Colour key">
+    <span class="swatch target"></span> The country
+    <span class="swatch hit"></span> Found
+    <span class="swatch wrong"></span> Wrong guess
+    <span class="swatch miss"></span> Missed
+  </div>
+
+  <p class="lead" id="summary"></p>
+  <form class="answer-form" id="guess-form" autocomplete="off">
+    <input id="guess" type="text" placeholder="Type a neighbour…" autocomplete="off" autocapitalize="off"
+           autocorrect="off" spellcheck="false" aria-label="A neighbouring country">
+    <button type="submit" class="primary">Guess</button>
+    <button type="button" class="ghost" id="give-up">Give up</button>
+  </form>
+  <p class="message" id="message" aria-live="polite"></p>
+
+  <div class="reveal" id="reveal" hidden>
+    <div class="verdict" id="verdict"></div>
+    <p class="fact" id="missed"></p>
+    <p class="info" id="info"></p>
+    <button type="button" class="primary" id="again">Next country <kbd>Enter</kbd></button>
+  </div>
+
+  <ul class="guess-log" id="log" aria-label="Your guesses, newest first"></ul>
+</section>
+
+<script src="{{ url_for('static', filename='worldmap.js') }}"></script>
+<script src="{{ url_for('static', filename='neighbours.js') }}"></script>
+{% endblock %}

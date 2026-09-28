@@ -46,6 +46,28 @@ class Result:
     guessed_id: str = None     # which item the guess matched, if any (for "you confused X with Y")
 
 
+def identify(guess, names_by_id):
+    """Which item does this guess name? Returns (item id, typo) or (None, False).
+
+    Same forgiveness as check(): exact names first, then small typos when only one item is that close.
+    """
+    g = normalize(guess)
+    if not g:
+        return None, False
+    for item_id, names in names_by_id.items():
+        if any(normalize(n) == g for n in names):
+            return item_id, False
+    closest = sorted(
+        (min((edit_distance(g, normalize(n)), typo_allowance(normalize(n))) for n in names), item_id)
+        for item_id, names in names_by_id.items()
+    )
+    (best_dist, allowance), best_id = closest[0]
+    tie = len(closest) > 1 and closest[1][0][0] == best_dist
+    if best_dist <= allowance and not tie:
+        return best_id, True
+    return None, False
+
+
 def check(guess, target_id, names_by_id):
     """Is `guess` a correct name for `target_id`?
 

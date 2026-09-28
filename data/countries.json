@@ -5963,9 +5963,7 @@
   "continent": "Asia",
   "subregion": "Southern Asia",
   "type": "sovereign",
-  "borders": [
-   "IND"
-  ],
+  "borders": [],
   "landlocked": false,
   "area_km2": 65610,
   "latlng": [

@@ -101,6 +101,9 @@ DISPLAY_NAME = {"SHN": "Saint Helena"}
 # Codes the dataset gets "wrong" for our purposes.
 ID_FIX = {"UNK": "XKX"}  # Kosovo: world-countries uses UNK, most tools use XKX
 
+# Land borders the dataset lists that don't exist.
+NOT_BORDERS = {("LKA", "IND")}  # Sri Lanka and India only share a sea
+
 
 def is_latin(text):
     """True if every letter is a plain Latin letter once accents are removed."""
@@ -154,7 +157,7 @@ def main():
             "continent": continent(c),
             "subregion": c["subregion"],
             "type": kind(cid, c),
-            "borders": [ID_FIX.get(b, b) for b in c["borders"]],
+            "borders": [ID_FIX.get(b, b) for b in c["borders"] if (cid, ID_FIX.get(b, b)) not in NOT_BORDERS],
             "landlocked": c["landlocked"],
             "area_km2": c["area"],
             "latlng": c["latlng"],

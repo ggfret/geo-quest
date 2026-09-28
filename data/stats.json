@@ -1,0 +1,2030 @@
+{
+ "ABW": {
+  "population": 125063,
+  "area": 180,
+  "gdp": 40500.0,
+  "life": 78.5,
+  "elevation": 188,
+  "peak": "Ceru Jamanota",
+  "coastline": 68.5
+ },
+ "AFG": {
+  "population": 49474805,
+  "area": 652230,
+  "gdp": 2000.0,
+  "life": 54.4,
+  "elevation": 7492,
+  "peak": "Noshak",
+  "coastline": 0.0
+ },
+ "AGO": {
+  "population": 38984796,
+  "area": 1246700,
+  "gdp": 7300.0,
+  "life": 62.9,
+  "elevation": 2620,
+  "peak": "Moco",
+  "coastline": 1600.0
+ },
+ "AIA": {
+  "population": 19416,
+  "area": 91,
+  "gdp": 31000.0,
+  "life": 82.6,
+  "elevation": 73,
+  "peak": "Crocus Hill",
+  "coastline": 61.0
+ },
+ "ALB": {
+  "population": 2551837,
+  "area": 28748,
+  "gdp": 18900.0,
+  "life": 79.9,
+  "elevation": 2764,
+  "peak": "Maja e Korabit",
+  "coastline": 362.0
+ },
+ "AND": {
+  "population": 85370,
+  "area": 468,
+  "gdp": 65900.0,
+  "life": 83.8,
+  "elevation": 2946,
+  "peak": "Pic de Coma Pedrosa",
+  "coastline": 0.0
+ },
+ "ARE": {
+  "population": 10093593,
+  "area": 83600,
+  "gdp": 68600.0,
+  "life": 79.9,
+  "elevation": 1905,
+  "peak": "Jabal Bil 'Ays",
+  "coastline": 1318.0
+ },
+ "ARG": {
+  "population": 45418098,
+  "area": 2780400,
+  "gdp": 26500.0,
+  "life": 78.8,
+  "elevation": 6962,
+  "peak": "Cerro Aconcagua",
+  "coastline": 4989.0
+ },
+ "ARM": {
+  "population": 2963837,
+  "area": 29743,
+  "gdp": 20100.0,
+  "life": 76.7,
+  "elevation": 4090,
+  "peak": "Aragats Lerrnagagat'",
+  "coastline": 0.0
+ },
+ "ASM": {
+  "population": 43268,
+  "area": 199,
+  "life": 75.8,
+  "elevation": 964,
+  "peak": "Lata Mountain",
+  "coastline": 116.0
+ },
+ "ATG": {
+  "population": 102634,
+  "area": 442,
+  "gdp": 29600.0,
+  "life": 78.3,
+  "elevation": 402,
+  "peak": "Mount Obama",
+  "coastline": 153.0
+ },
+ "AUS": {
+  "population": 27490921,
+  "area": 7692024,
+  "gdp": 60100.0,
+  "life": 83.5,
+  "elevation": 2228,
+  "peak": "Mount Kosciuszko",
+  "coastline": 25760.0
+ },
+ "AUT": {
+  "population": 9174390,
+  "area": 83871,
+  "gdp": 63300.0,
+  "life": 82.7,
+  "elevation": 3798,
+  "peak": "Grossglockner",
+  "coastline": 0.0
+ },
+ "AZE": {
+  "population": 10694370,
+  "area": 86600,
+  "gdp": 22100.0,
+  "life": 75.9,
+  "elevation": 4466,
+  "peak": "Bazarduzu Dagi",
+  "coastline": 0.0
+ },
+ "BDI": {
+  "population": 13590102,
+  "area": 27834,
+  "gdp": 800.0,
+  "life": 68.1,
+  "elevation": 2685,
+  "peak": "unnamed elevation on Mukike Range",
+  "coastline": 0.0
+ },
+ "BEL": {
+  "population": 11960170,
+  "area": 30528,
+  "gdp": 63100.0,
+  "life": 82.3,
+  "elevation": 694,
+  "peak": "Botrange",
+  "coastline": 66.5
+ },
+ "BEN": {
+  "population": 15186090,
+  "area": 112622,
+  "gdp": 3900.0,
+  "life": 63.0,
+  "elevation": 675,
+  "peak": "unnamed elevation",
+  "coastline": 121.0
+ },
+ "BFA": {
+  "population": 23490300,
+  "area": 272967,
+  "gdp": 2500.0,
+  "life": 64.2,
+  "elevation": 749,
+  "peak": "Tena Kourou",
+  "coastline": 0.0
+ },
+ "BGD": {
+  "population": 174370536,
+  "area": 147570,
+  "gdp": 8500.0,
+  "life": 75.2,
+  "elevation": 1060,
+  "peak": "Mowdok Taung",
+  "coastline": 580.0
+ },
+ "BGR": {
+  "population": 6737997,
+  "area": 110879,
+  "gdp": 34100.0,
+  "life": 76.1,
+  "elevation": 2925,
+  "peak": "Musala",
+  "coastline": 354.0
+ },
+ "BHR": {
+  "population": 1566888,
+  "area": 765,
+  "gdp": 59100.0,
+  "life": 80.4,
+  "elevation": 135,
+  "peak": "Jabal ad Dukhan",
+  "coastline": 161.0
+ },
+ "BHS": {
+  "population": 415306,
+  "area": 13943,
+  "gdp": 36200.0,
+  "life": 76.7,
+  "elevation": 64,
+  "peak": "1.3 km NE of Old Bight on Cat Island",
+  "coastline": 3542.0
+ },
+ "BIH": {
+  "population": 3653499,
+  "area": 51209,
+  "gdp": 20400.0,
+  "life": 78.5,
+  "elevation": 2386,
+  "peak": "Maglic",
+  "coastline": 20.0
+ },
+ "BLM": {
+  "population": 7079,
+  "area": 21,
+  "life": 81.0,
+  "elevation": 286,
+  "peak": "Morne du Vitet"
+ },
+ "BLR": {
+  "population": 9460972,
+  "area": 207600,
+  "gdp": 29000.0,
+  "life": 74.7,
+  "elevation": 346,
+  "peak": "Dzyarzhynskaya Hara",
+  "coastline": 0.0
+ },
+ "BLZ": {
+  "population": 421960,
+  "area": 22966,
+  "gdp": 13300.0,
+  "life": 74.3,
+  "elevation": 1124,
+  "peak": "Doyle's Delight",
+  "coastline": 386.0
+ },
+ "BMU": {
+  "population": 72800,
+  "area": 54,
+  "gdp": 105300.0,
+  "life": 82.5,
+  "elevation": 79,
+  "peak": "Town Hill",
+  "coastline": 103.0
+ },
+ "BOL": {
+  "population": 12436103,
+  "area": 1098581,
+  "gdp": 9800.0,
+  "life": 72.5,
+  "elevation": 6542,
+  "peak": "Nevado Sajama",
+  "coastline": 0.0
+ },
+ "BRA": {
+  "population": 221359387,
+  "area": 8515767,
+  "gdp": 19600.0,
+  "life": 76.3,
+  "elevation": 2994,
+  "peak": "Pico da Neblina",
+  "coastline": 7491.0
+ },
+ "BRB": {
+  "population": 304139,
+  "area": 430,
+  "gdp": 19900.0,
+  "life": 79.0,
+  "elevation": 336,
+  "peak": "Mount Hillaby",
+  "coastline": 97.0
+ },
+ "BRN": {
+  "population": 491900,
+  "area": 5765,
+  "gdp": 79200.0,
+  "life": 78.9,
+  "elevation": 1850,
+  "peak": "Bukit Pagon",
+  "coastline": 161.0
+ },
+ "BTN": {
+  "population": 892877,
+  "area": 38394,
+  "gdp": 14600.0,
+  "life": 73.7,
+  "elevation": 7570,
+  "peak": "Gangkar Puensum",
+  "coastline": 0.0
+ },
+ "BWA": {
+  "population": 2521534,
+  "area": 582000,
+  "gdp": 18100.0,
+  "life": 66.4,
+  "elevation": 1495,
+  "peak": "Manyelanong Hill",
+  "coastline": 0.0
+ },
+ "CAF": {
+  "population": 5750570,
+  "area": 622984,
+  "gdp": 1100.0,
+  "life": 56.4,
+  "elevation": 1410,
+  "peak": "Mont Ngaoui",
+  "coastline": 0.0
+ },
+ "CAN": {
+  "population": 39187155,
+  "area": 9984670,
+  "gdp": 56700.0,
+  "life": 84.2,
+  "elevation": 5959,
+  "peak": "Mount Logan",
+  "coastline": 202080.0
+ },
+ "CHE": {
+  "population": 8925741,
+  "area": 41284,
+  "gdp": 82000.0,
+  "life": 83.9,
+  "elevation": 4634,
+  "peak": "Dufourspitze on Monte Rosa",
+  "coastline": 0.0
+ },
+ "CHL": {
+  "population": 19091343,
+  "area": 756102,
+  "gdp": 30200.0,
+  "life": 80.3,
+  "elevation": 6893,
+  "peak": "Nevado Ojos del Salado",
+  "coastline": 6435.0
+ },
+ "CHN": {
+  "population": 1407181209,
+  "area": 9706961,
+  "gdp": 23800.0,
+  "life": 78.7,
+  "elevation": 8849,
+  "peak": "Mount Everest",
+  "coastline": 14500.0
+ },
+ "CIV": {
+  "population": 31855971,
+  "area": 322463,
+  "gdp": 6700.0,
+  "life": 63.2,
+  "elevation": 1752,
+  "peak": "Monts Nimba",
+  "coastline": 515.0
+ },
+ "CMR": {
+  "population": 31518954,
+  "area": 475442,
+  "gdp": 4900.0,
+  "life": 64.2,
+  "elevation": 4045,
+  "peak": "Fako on Mont Cameroun",
+  "coastline": 402.0
+ },
+ "COD": {
+  "population": 119038825,
+  "area": 2344858,
+  "gdp": 1500.0,
+  "life": 62.6,
+  "elevation": 5110,
+  "peak": "Pic Marguerite on Mont Ngaliema",
+  "coastline": 37.0
+ },
+ "COG": {
+  "population": 6097665,
+  "area": 342000,
+  "gdp": 6200.0,
+  "life": 72.9,
+  "elevation": 1020,
+  "peak": "Mont Nabeba",
+  "coastline": 169.0
+ },
+ "COK": {
+  "population": 7592,
+  "area": 236,
+  "gdp": 29800.0,
+  "life": 77.6,
+  "elevation": 652,
+  "peak": "Te Manga",
+  "coastline": 120.0
+ },
+ "COL": {
+  "population": 49842298,
+  "area": 1141748,
+  "gdp": 18500.0,
+  "life": 74.9,
+  "elevation": 5730,
+  "peak": "Pico Cristobal Colon",
+  "coastline": 3208.0
+ },
+ "COM": {
+  "population": 911707,
+  "area": 1862,
+  "gdp": 3600.0,
+  "life": 67.8,
+  "elevation": 2360,
+  "peak": "Karthala",
+  "coastline": 340.0
+ },
+ "CPV": {
+  "population": 611014,
+  "area": 4033,
+  "gdp": 9900.0,
+  "life": 74.3,
+  "elevation": 2829,
+  "peak": "Mt. Fogo",
+  "coastline": 965.0
+ },
+ "CRI": {
+  "population": 5304932,
+  "area": 51100,
+  "gdp": 27000.0,
+  "life": 80.3,
+  "elevation": 3819,
+  "peak": "Cerro Chirripo",
+  "coastline": 1290.0
+ },
+ "CUB": {
+  "population": 10059519,
+  "area": 109884,
+  "gdp": 23700.0,
+  "life": 80.1,
+  "elevation": 1974,
+  "peak": "Pico Turquino",
+  "coastline": 3735.0
+ },
+ "CUW": {
+  "population": 153289,
+  "area": 444,
+  "gdp": 27700.0,
+  "life": 79.9,
+  "elevation": 372,
+  "peak": "Mt. Christoffel",
+  "coastline": 364.0
+ },
+ "CYM": {
+  "population": 66653,
+  "area": 264,
+  "gdp": 78100.0,
+  "life": 82.5,
+  "elevation": 50,
+  "peak": "1 km SW of The Bluff on Cayman Brac",
+  "coastline": 160.0
+ },
+ "CYP": {
+  "population": 1332293,
+  "area": 9251,
+  "gdp": 53300.0,
+  "life": 80.2,
+  "elevation": 1951,
+  "peak": "Mount Olympus",
+  "coastline": 648.0
+ },
+ "CZE": {
+  "population": 10838703,
+  "area": 78865,
+  "gdp": 48000.0,
+  "life": 78.6,
+  "elevation": 1602,
+  "peak": "Snezka",
+  "coastline": 0.0
+ },
+ "DEU": {
+  "population": 84012284,
+  "area": 357114,
+  "gdp": 62800.0,
+  "life": 81.9,
+  "elevation": 2963,
+  "peak": "Zugspitze",
+  "coastline": 2389.0
+ },
+ "DJI": {
+  "population": 1013703,
+  "area": 23200,
+  "gdp": 6800.0,
+  "life": 65.9,
+  "elevation": 2021,
+  "peak": "Moussa Ali",
+  "coastline": 314.0
+ },
+ "DMA": {
+  "population": 74661,
+  "area": 751,
+  "gdp": 18700.0,
+  "life": 78.7,
+  "elevation": 1447,
+  "peak": "Morne Diablotins",
+  "coastline": 148.0
+ },
+ "DNK": {
+  "population": 6051491,
+  "area": 43094,
+  "gdp": 73700.0,
+  "life": 82.1,
+  "elevation": 171,
+  "peak": "Store Mollehoj",
+  "coastline": 7314.0
+ },
+ "DOM": {
+  "population": 10899292,
+  "area": 48671,
+  "gdp": 24200.0,
+  "life": 72.6,
+  "elevation": 3098,
+  "peak": "Pico Duarte",
+  "coastline": 1288.0
+ },
+ "DZA": {
+  "population": 47735685,
+  "area": 2381741,
+  "gdp": 15400.0,
+  "life": 77.9,
+  "elevation": 2908,
+  "peak": "Tahat",
+  "coastline": 998.0
+ },
+ "ECU": {
+  "population": 18479841,
+  "area": 276841,
+  "gdp": 13900.0,
+  "life": 74.9,
+  "coastline": 2237.0
+ },
+ "EGY": {
+  "population": 112870457,
+  "area": 1002450,
+  "gdp": 16800.0,
+  "life": 75.0,
+  "elevation": 2629,
+  "peak": "Mount Catherine",
+  "coastline": 2450.0
+ },
+ "ERI": {
+  "population": 6416435,
+  "area": 117600,
+  "gdp": 700.0,
+  "life": 67.5,
+  "elevation": 3018,
+  "peak": "Soira",
+  "coastline": 2234.0
+ },
+ "ESH": {
+  "population": 652271,
+  "area": 266000,
+  "life": 64.5,
+  "elevation": 805,
+  "peak": "unnamed elevation",
+  "coastline": 1110.0
+ },
+ "ESP": {
+  "population": 47280433,
+  "area": 505992,
+  "gdp": 48400.0,
+  "life": 83.0,
+  "elevation": 3718,
+  "peak": "Pico de Teide on Canary Islands",
+  "coastline": 4964.0
+ },
+ "EST": {
+  "population": 1340478,
+  "area": 45227,
+  "gdp": 41500.0,
+  "life": 78.4,
+  "elevation": 318,
+  "peak": "Suur Munamagi",
+  "coastline": 3794.0
+ },
+ "ETH": {
+  "population": 121372632,
+  "area": 1104300,
+  "gdp": 2900.0,
+  "life": 67.7,
+  "elevation": 4550,
+  "peak": "Ras Dejen",
+  "coastline": 0.0
+ },
+ "FIN": {
+  "population": 5550449,
+  "area": 338424,
+  "gdp": 55600.0,
+  "life": 82.2,
+  "elevation": 1328,
+  "peak": "Halti",
+  "coastline": 1250.0
+ },
+ "FJI": {
+  "population": 951611,
+  "area": 18272,
+  "gdp": 14100.0,
+  "life": 74.8,
+  "elevation": 1324,
+  "peak": "Tomanivi",
+  "coastline": 1129.0
+ },
+ "FRA": {
+  "population": 68512806,
+  "area": 551695,
+  "gdp": 54500.0,
+  "life": 82.6,
+  "coastline": 4853.0
+ },
+ "FRO": {
+  "population": 52933,
+  "area": 1393,
+  "gdp": 70400.0,
+  "life": 81.7,
+  "elevation": 882,
+  "peak": "Slaettaratindur",
+  "coastline": 1117.0
+ },
+ "FSM": {
+  "population": 99603,
+  "area": 702,
+  "gdp": 3800.0,
+  "life": 75.0,
+  "elevation": 782,
+  "peak": "Nanlaud on Pohnpei",
+  "coastline": 6112.0
+ },
+ "GAB": {
+  "population": 2513738,
+  "area": 267668,
+  "gdp": 18900.0,
+  "life": 70.4,
+  "elevation": 1050,
+  "peak": "Mont Bengoue",
+  "coastline": 885.0
+ },
+ "GBR": {
+  "population": 68751311,
+  "area": 242900,
+  "gdp": 52500.0,
+  "life": 82.2,
+  "elevation": 1345,
+  "peak": "Ben Nevis",
+  "coastline": 12429.0
+ },
+ "GEO": {
+  "population": 4900961,
+  "area": 69700,
+  "gdp": 25000.0,
+  "life": 72.8,
+  "elevation": 5193,
+  "peak": "Mt'a Shkhara",
+  "coastline": 310.0
+ },
+ "GGY": {
+  "population": 67923,
+  "area": 78,
+  "life": 83.6,
+  "elevation": 114,
+  "peak": "Le Moulin on Sark",
+  "coastline": 50.0
+ },
+ "GHA": {
+  "population": 35336133,
+  "area": 238533,
+  "gdp": 7100.0,
+  "life": 70.1,
+  "elevation": 885,
+  "peak": "Mount Afadjato",
+  "coastline": 539.0
+ },
+ "GIB": {
+  "population": 29733,
+  "area": 6,
+  "life": 80.9,
+  "elevation": 426,
+  "peak": "Rock of Gibraltar",
+  "coastline": 12.0
+ },
+ "GIN": {
+  "population": 14374590,
+  "area": 245857,
+  "gdp": 4000.0,
+  "life": 64.6,
+  "elevation": 1752,
+  "peak": "Mont Nimba",
+  "coastline": 320.0
+ },
+ "GMB": {
+  "population": 2523327,
+  "area": 10689,
+  "gdp": 3000.0,
+  "life": 68.4,
+  "elevation": 63,
+  "peak": "unnamed elevation",
+  "coastline": 80.0
+ },
+ "GNB": {
+  "population": 2132325,
+  "area": 36125,
+  "gdp": 2700.0,
+  "life": 64.5,
+  "elevation": 277,
+  "peak": "Dongol Ronde",
+  "coastline": 350.0
+ },
+ "GNQ": {
+  "population": 1795834,
+  "area": 28051,
+  "gdp": 15500.0,
+  "life": 63.9,
+  "elevation": 3008,
+  "peak": "Pico Basile",
+  "coastline": 296.0
+ },
+ "GRC": {
+  "population": 10424536,
+  "area": 131990,
+  "gdp": 37800.0,
+  "life": 81.9,
+  "coastline": 13676.0
+ },
+ "GRD": {
+  "population": 114621,
+  "area": 344,
+  "gdp": 17700.0,
+  "life": 76.3,
+  "elevation": 840,
+  "peak": "Mount Saint Catherine",
+  "coastline": 121.0
+ },
+ "GRL": {
+  "population": 57751,
+  "area": 2166086,
+  "gdp": 71000.0,
+  "life": 74.5,
+  "elevation": 3694,
+  "peak": "Gunnbjorn Fjeld",
+  "coastline": 44087.0
+ },
+ "GTM": {
+  "population": 18255216,
+  "area": 108889,
+  "gdp": 12600.0,
+  "life": 73.5,
+  "elevation": 4220,
+  "peak": "Volcan Tajumulco",
+  "coastline": 400.0
+ },
+ "GUM": {
+  "population": 169532,
+  "area": 549,
+  "gdp": 35600.0,
+  "life": 78.0,
+  "elevation": 406,
+  "peak": "Mount Lamlam",
+  "coastline": 125.5
+ },
+ "GUY": {
+  "population": 794099,
+  "area": 214969,
+  "gdp": 70300.0,
+  "life": 72.4,
+  "elevation": 2775,
+  "peak": "Laberintos del Norte on Mount Roraima",
+  "coastline": 459.0
+ },
+ "HKG": {
+  "population": 7305556,
+  "area": 1104,
+  "gdp": 66200.0,
+  "life": 84.0,
+  "elevation": 958,
+  "peak": "Tai Mo Shan",
+  "coastline": 733.0
+ },
+ "HND": {
+  "population": 9529188,
+  "area": 112492,
+  "gdp": 6600.0,
+  "life": 73.1,
+  "elevation": 2870,
+  "peak": "Cerro Las Minas",
+  "coastline": 823.0
+ },
+ "HRV": {
+  "population": 4071208,
+  "area": 56594,
+  "gdp": 42600.0,
+  "life": 77.7,
+  "elevation": 1831,
+  "peak": "Dinara",
+  "coastline": 5835.0
+ },
+ "HTI": {
+  "population": 11898812,
+  "area": 27750,
+  "gdp": 2800.0,
+  "life": 65.6,
+  "elevation": 2674,
+  "peak": "Pic la Selle",
+  "coastline": 1771.0
+ },
+ "HUN": {
+  "population": 9855745,
+  "area": 93028,
+  "gdp": 40700.0,
+  "life": 76.0,
+  "elevation": 1014,
+  "peak": "Kekes",
+  "coastline": 0.0
+ },
+ "IDN": {
+  "population": 283587097,
+  "area": 1904569,
+  "gdp": 14500.0,
+  "life": 73.6,
+  "elevation": 4884,
+  "peak": "Puncak Jaya",
+  "coastline": 54716.0
+ },
+ "IMN": {
+  "population": 92666,
+  "area": 572,
+  "life": 82.5,
+  "elevation": 621,
+  "peak": "Snaefell",
+  "coastline": 160.0
+ },
+ "IND": {
+  "population": 1419316933,
+  "area": 3287590,
+  "gdp": 9800.0,
+  "life": 68.2,
+  "elevation": 8586,
+  "peak": "Kanchenjunga",
+  "coastline": 7000.0
+ },
+ "IRL": {
+  "population": 5233461,
+  "area": 70273,
+  "gdp": 115300.0,
+  "life": 82.0,
+  "elevation": 1041,
+  "peak": "Carrauntoohil",
+  "coastline": 1448.0
+ },
+ "IRN": {
+  "population": 89177357,
+  "area": 1648195,
+  "gdp": 16200.0,
+  "life": 75.6,
+  "elevation": 5625,
+  "peak": "Kuh-e Damavand",
+  "coastline": 2440.0
+ },
+ "IRQ": {
+  "population": 42917742,
+  "area": 438317,
+  "gdp": 12700.0,
+  "life": 73.7,
+  "elevation": 3611,
+  "peak": "Cheekha Dar",
+  "coastline": 58.0
+ },
+ "ISL": {
+  "population": 364036,
+  "area": 103000,
+  "gdp": 65600.0,
+  "life": 84.0,
+  "elevation": 2110,
+  "peak": "Hvannadalshnukur",
+  "coastline": 4970.0
+ },
+ "ISR": {
+  "population": 9402617,
+  "area": 20770,
+  "gdp": 47300.0,
+  "life": 83.1,
+  "elevation": 2224,
+  "peak": "Mitspe Shlagim",
+  "coastline": 273.0
+ },
+ "ITA": {
+  "population": 60924851,
+  "area": 301336,
+  "gdp": 53100.0,
+  "life": 83.0,
+  "elevation": 4748,
+  "peak": "Mont Blanc de Courmayeur",
+  "coastline": 7600.0
+ },
+ "JAM": {
+  "population": 2938503,
+  "area": 10991,
+  "gdp": 10300.0,
+  "life": 76.3,
+  "elevation": 2256,
+  "peak": "Blue Mountain Peak",
+  "coastline": 1022.0
+ },
+ "JEY": {
+  "population": 103944,
+  "area": 116,
+  "life": 83.0,
+  "elevation": 136,
+  "peak": "Les Platons",
+  "coastline": 70.0
+ },
+ "JOR": {
+  "population": 11312507,
+  "area": 89342,
+  "gdp": 9500.0,
+  "life": 76.5,
+  "elevation": 1854,
+  "peak": "Jabal Umm ad Dami",
+  "coastline": 26.0
+ },
+ "JPN": {
+  "population": 123201945,
+  "area": 377930,
+  "gdp": 46100.0,
+  "life": 85.2,
+  "elevation": 3776,
+  "peak": "Mount Fuji",
+  "coastline": 29751.0
+ },
+ "KAZ": {
+  "population": 20432662,
+  "area": 2724900,
+  "gdp": 35900.0,
+  "life": 73.3,
+  "elevation": 7010,
+  "peak": "Pik Khan-Tengri",
+  "coastline": 0.0
+ },
+ "KEN": {
+  "population": 55751717,
+  "area": 580367,
+  "gdp": 5800.0,
+  "life": 70.4,
+  "elevation": 5199,
+  "peak": "Mount Kenya",
+  "coastline": 536.0
+ },
+ "KGZ": {
+  "population": 6219751,
+  "area": 199951,
+  "gdp": 7000.0,
+  "life": 72.9,
+  "elevation": 7439,
+  "peak": "Jengish Chokusu",
+  "coastline": 0.0
+ },
+ "KHM": {
+  "population": 17230333,
+  "area": 181035,
+  "gdp": 7000.0,
+  "life": 71.4,
+  "elevation": 1810,
+  "peak": "Phnum Aoral",
+  "coastline": 443.0
+ },
+ "KIR": {
+  "population": 116545,
+  "area": 811,
+  "gdp": 3300.0,
+  "life": 68.5,
+  "elevation": 81,
+  "peak": "unnamed elevation on Banaba",
+  "coastline": 1143.0
+ },
+ "KNA": {
+  "population": 55434,
+  "area": 261,
+  "gdp": 31300.0,
+  "life": 77.6,
+  "elevation": 1156,
+  "peak": "Mount Liamuiga",
+  "coastline": 135.0
+ },
+ "KOR": {
+  "population": 51486343,
+  "area": 100210,
+  "gdp": 50400.0,
+  "life": 83.4,
+  "elevation": 1950,
+  "peak": "Halla-san",
+  "coastline": 2413.0
+ },
+ "KWT": {
+  "population": 3172511,
+  "area": 17818,
+  "gdp": 45400.0,
+  "life": 79.6,
+  "elevation": 300,
+  "peak": "3.6 km W. of Al-Salmi Border Post",
+  "coastline": 499.0
+ },
+ "LAO": {
+  "population": 7953556,
+  "area": 236800,
+  "gdp": 8600.0,
+  "life": 69.0,
+  "elevation": 2817,
+  "peak": "Phu Bia",
+  "coastline": 0.0
+ },
+ "LBN": {
+  "population": 5364482,
+  "area": 10452,
+  "gdp": 11300.0,
+  "life": 79.2,
+  "elevation": 3088,
+  "peak": "Qornet es Saouda",
+  "coastline": 225.0
+ },
+ "LBR": {
+  "population": 5563541,
+  "area": 111369,
+  "gdp": 1700.0,
+  "life": 61.6,
+  "elevation": 1447,
+  "peak": "Mount Wuteve",
+  "coastline": 579.0
+ },
+ "LBY": {
+  "population": 7361263,
+  "area": 1759540,
+  "gdp": 12300.0,
+  "life": 77.7,
+  "elevation": 2267,
+  "peak": "Bikku Bitti",
+  "coastline": 1770.0
+ },
+ "LCA": {
+  "population": 168462,
+  "area": 616,
+  "gdp": 24300.0,
+  "life": 79.4,
+  "elevation": 948,
+  "peak": "Mount Gimie",
+  "coastline": 158.0
+ },
+ "LIE": {
+  "population": 40547,
+  "area": 160,
+  "gdp": 210600.0,
+  "life": 83.0,
+  "elevation": 2599,
+  "peak": "Vorder-Grauspitz",
+  "coastline": 0.0
+ },
+ "LKA": {
+  "population": 22050561,
+  "area": 65610,
+  "gdp": 13800.0,
+  "life": 76.8,
+  "elevation": 2524,
+  "peak": "Pidurutalagala",
+  "coastline": 1340.0
+ },
+ "LSO": {
+  "population": 2222962,
+  "area": 30355,
+  "gdp": 2600.0,
+  "life": 60.2,
+  "elevation": 3482,
+  "peak": "Thabana Ntlenyana",
+  "coastline": 0.0
+ },
+ "LTU": {
+  "population": 2815687,
+  "area": 65300,
+  "gdp": 47200.0,
+  "life": 76.1,
+  "elevation": 294,
+  "peak": "Aukstojas",
+  "coastline": 90.0
+ },
+ "LUX": {
+  "population": 671254,
+  "area": 2586,
+  "gdp": 128200.0,
+  "life": 83.4,
+  "elevation": 559,
+  "peak": "Buurgplaatz",
+  "coastline": 0.0
+ },
+ "LVA": {
+  "population": 1888439,
+  "area": 64559,
+  "gdp": 38900.0,
+  "life": 76.4,
+  "elevation": 312,
+  "peak": "Gaizina Kalns",
+  "coastline": 498.0
+ },
+ "MAC": {
+  "population": 644426,
+  "area": 30,
+  "gdp": 112800.0,
+  "life": 85.3,
+  "elevation": 172,
+  "peak": "Alto Coloane",
+  "coastline": 41.0
+ },
+ "MAF": {
+  "population": 33093,
+  "area": 53,
+  "life": 81.0,
+  "elevation": 424,
+  "peak": "Pic du Paradis",
+  "coastline": 58.9
+ },
+ "MAR": {
+  "population": 37387585,
+  "area": 446550,
+  "gdp": 9100.0,
+  "life": 74.2,
+  "elevation": 4165,
+  "peak": "Jebel Toubkal",
+  "coastline": 2945.0
+ },
+ "MCO": {
+  "population": 32047,
+  "area": 2.02,
+  "gdp": 270100.0,
+  "life": 89.8,
+  "elevation": 162,
+  "peak": "Chemin des Revoires on Mont Agel",
+  "coastline": 4.1
+ },
+ "MDA": {
+  "population": 3578930,
+  "area": 33846,
+  "gdp": 16500.0,
+  "life": 70.1,
+  "elevation": 430,
+  "peak": "Dealul Balanesti",
+  "coastline": 0.0
+ },
+ "MDG": {
+  "population": 31345040,
+  "area": 587041,
+  "gdp": 1700.0,
+  "life": 68.8,
+  "elevation": 2876,
+  "peak": "Maromokotro",
+  "coastline": 4828.0
+ },
+ "MDV": {
+  "population": 388858,
+  "area": 300,
+  "gdp": 23400.0,
+  "life": 77.4,
+  "elevation": 5,
+  "peak": "8th tee, golf course, Villingi Island",
+  "coastline": 644.0
+ },
+ "MEX": {
+  "population": 130739927,
+  "area": 1964375,
+  "gdp": 22000.0,
+  "life": 74.6,
+  "elevation": 5636,
+  "peak": "Volcan Pico de Orizaba",
+  "coastline": 9330.0
+ },
+ "MHL": {
+  "population": 82011,
+  "area": 181,
+  "gdp": 7200.0,
+  "life": 75.2,
+  "elevation": 14,
+  "peak": "East-central Airik Island, Maloelap Atoll",
+  "coastline": 370.4
+ },
+ "MKD": {
+  "population": 2137556,
+  "area": 25713,
+  "gdp": 24500.0,
+  "life": 77.3,
+  "elevation": 2764,
+  "peak": "Golem Korab",
+  "coastline": 0.0
+ },
+ "MLI": {
+  "population": 22634423,
+  "area": 1240192,
+  "gdp": 2900.0,
+  "life": 63.2,
+  "elevation": 1155,
+  "peak": "Hombori Tondo",
+  "coastline": 0.0
+ },
+ "MLT": {
+  "population": 521828,
+  "area": 316,
+  "gdp": 60500.0,
+  "life": 83.6,
+  "elevation": 253,
+  "peak": "Ta'Dmejrek on Dingli Cliffs",
+  "coastline": 196.8
+ },
+ "MMR": {
+  "population": 57931718,
+  "area": 676578,
+  "gdp": 5300.0,
+  "life": 70.3,
+  "elevation": 5870,
+  "peak": "Gamlang Razi",
+  "coastline": 1930.0
+ },
+ "MNE": {
+  "population": 599849,
+  "area": 13812,
+  "gdp": 27900.0,
+  "life": 78.2,
+  "elevation": 2534,
+  "peak": "Zia Kolata",
+  "coastline": 293.5
+ },
+ "MNG": {
+  "population": 3281676,
+  "area": 1564110,
+  "gdp": 16800.0,
+  "life": 71.9,
+  "elevation": 4374,
+  "peak": "Nayramadlin Orgil",
+  "coastline": 0.0
+ },
+ "MNP": {
+  "population": 51118,
+  "area": 464,
+  "life": 77.1,
+  "elevation": 965,
+  "peak": "Agrihan Volcano",
+  "coastline": 1482.0
+ },
+ "MOZ": {
+  "population": 34206144,
+  "area": 801590,
+  "gdp": 1500.0,
+  "life": 58.3,
+  "elevation": 2436,
+  "peak": "Monte Binga",
+  "coastline": 2470.0
+ },
+ "MRT": {
+  "population": 5202109,
+  "area": 1030700,
+  "gdp": 6400.0,
+  "life": 65.9,
+  "elevation": 915,
+  "peak": "Kediet Ijill",
+  "coastline": 754.0
+ },
+ "MSR": {
+  "population": 5468,
+  "area": 102,
+  "gdp": 19300.0,
+  "life": 76.1,
+  "elevation": 915,
+  "peak": "Soufriere Hills volcano pre-eruption height was",
+  "coastline": 40.0
+ },
+ "MUS": {
+  "population": 1311375,
+  "area": 2040,
+  "gdp": 27300.0,
+  "life": 75.4,
+  "elevation": 828,
+  "peak": "Mont Piton",
+  "coastline": 177.0
+ },
+ "MWI": {
+  "population": 21763309,
+  "area": 118484,
+  "gdp": 1600.0,
+  "life": 73.0,
+  "elevation": 3002,
+  "peak": "Sapitwa",
+  "coastline": 0.0
+ },
+ "MYS": {
+  "population": 34905275,
+  "area": 330803,
+  "gdp": 34100.0,
+  "life": 76.6,
+  "elevation": 4095,
+  "peak": "Gunung Kinabalu",
+  "coastline": 4675.0
+ },
+ "NAM": {
+  "population": 2852777,
+  "area": 825615,
+  "gdp": 10300.0,
+  "life": 65.9,
+  "elevation": 2573,
+  "peak": "Konigstein on Brandberg",
+  "coastline": 1572.0
+ },
+ "NCL": {
+  "population": 307612,
+  "area": 18575,
+  "gdp": 34600.0,
+  "life": 79.3,
+  "elevation": 1628,
+  "peak": "Mont Panie",
+  "coastline": 2254.0
+ },
+ "NER": {
+  "population": 27322555,
+  "area": 1267000,
+  "gdp": 1800.0,
+  "life": 60.9,
+  "elevation": 2022,
+  "peak": "Idoukal-n-Taghes",
+  "coastline": 0.0
+ },
+ "NGA": {
+  "population": 244344065,
+  "area": 923768,
+  "gdp": 5700.0,
+  "life": 62.2,
+  "elevation": 2419,
+  "peak": "Chappal Waddi",
+  "coastline": 853.0
+ },
+ "NIC": {
+  "population": 6739380,
+  "area": 130373,
+  "gdp": 7700.0,
+  "life": 74.7,
+  "elevation": 2085,
+  "peak": "Mogoton",
+  "coastline": 910.0
+ },
+ "NIU": {
+  "population": 1815,
+  "area": 260,
+  "gdp": 11100.0,
+  "elevation": 80,
+  "peak": "unnamed elevation 1.4 km east of Hikutavake",
+  "coastline": 64.0
+ },
+ "NLD": {
+  "population": 17833885,
+  "area": 41850,
+  "gdp": 70900.0,
+  "life": 81.9,
+  "elevation": 862,
+  "peak": "Mount Scenery",
+  "coastline": 451.0
+ },
+ "NOR": {
+  "population": 5509733,
+  "area": 323802,
+  "gdp": 91100.0,
+  "life": 82.9,
+  "elevation": 2469,
+  "peak": "Galdhopiggen",
+  "coastline": 25148.0
+ },
+ "NPL": {
+  "population": 31334402,
+  "area": 147181,
+  "gdp": 5000.0,
+  "life": 73.0,
+  "elevation": 8849,
+  "peak": "Mount Everest",
+  "coastline": 0.0
+ },
+ "NRU": {
+  "population": 9930,
+  "area": 21,
+  "gdp": 12600.0,
+  "life": 68.6,
+  "elevation": 70,
+  "peak": "Command Ridge",
+  "coastline": 30.0
+ },
+ "NZL": {
+  "population": 5161211,
+  "area": 270467,
+  "gdp": 48200.0,
+  "life": 82.9,
+  "elevation": 3724,
+  "peak": "Aoraki/Mount Cook",
+  "coastline": 15134.0
+ },
+ "OMN": {
+  "population": 3969824,
+  "area": 309500,
+  "gdp": 36700.0,
+  "life": 77.4,
+  "elevation": 3004,
+  "peak": "Jabal Shams",
+  "coastline": 2092.0
+ },
+ "PAK": {
+  "population": 257047044,
+  "area": 881912,
+  "gdp": 5500.0,
+  "life": 70.3,
+  "elevation": 8611,
+  "peak": "K2",
+  "coastline": 1046.0
+ },
+ "PAN": {
+  "population": 4536008,
+  "area": 75417,
+  "gdp": 36400.0,
+  "life": 79.2,
+  "elevation": 3475,
+  "peak": "Volcan Baru",
+  "coastline": 2490.0
+ },
+ "PCN": {
+  "population": 50,
+  "area": 47,
+  "elevation": 347,
+  "peak": "Palwala Valley Point on Big Ridge",
+  "coastline": 51.0
+ },
+ "PER": {
+  "population": 32768614,
+  "area": 1285216,
+  "gdp": 15700.0,
+  "life": 68.9,
+  "elevation": 6746,
+  "peak": "Nevado Huascaran",
+  "coastline": 2414.0
+ },
+ "PHL": {
+  "population": 118277063,
+  "area": 342353,
+  "gdp": 10400.0,
+  "life": 70.8,
+  "elevation": 2954,
+  "peak": "Mount Apo",
+  "coastline": 36289.0
+ },
+ "PLW": {
+  "population": 21947,
+  "area": 459,
+  "gdp": 15800.0,
+  "life": 75.2,
+  "elevation": 242,
+  "peak": "Mount Ngerchelchuus",
+  "coastline": 1519.0
+ },
+ "PNG": {
+  "population": 10273996,
+  "area": 462840,
+  "gdp": 4300.0,
+  "life": 70.1,
+  "elevation": 4509,
+  "peak": "Mount Wilhelm",
+  "coastline": 5152.0
+ },
+ "POL": {
+  "population": 38746310,
+  "area": 312679,
+  "gdp": 45100.0,
+  "life": 76.7,
+  "elevation": 2499,
+  "peak": "Rysy",
+  "coastline": 440.0
+ },
+ "PRI": {
+  "population": 2984841,
+  "area": 8870,
+  "gdp": 44100.0,
+  "life": 82.1,
+  "elevation": 1338,
+  "peak": "Cerro de Punta",
+  "coastline": 501.0
+ },
+ "PRK": {
+  "population": 26402841,
+  "area": 120538,
+  "gdp": 600.0,
+  "life": 73.5,
+  "elevation": 2744,
+  "peak": "Paektu-san",
+  "coastline": 2495.0
+ },
+ "PRT": {
+  "population": 10194277,
+  "area": 92090,
+  "gdp": 41900.0,
+  "life": 81.9,
+  "elevation": 2351,
+  "peak": "Ponta do Pico on Ilha do Pico in the Azores",
+  "coastline": 1793.0
+ },
+ "PRY": {
+  "population": 7604044,
+  "area": 406752,
+  "gdp": 16300.0,
+  "life": 78.8,
+  "elevation": 842,
+  "peak": "Cerro Pero",
+  "coastline": 0.0
+ },
+ "PYF": {
+  "population": 305507,
+  "area": 4167,
+  "gdp": 23300.0,
+  "life": 78.9,
+  "elevation": 2241,
+  "peak": "Mont Orohena",
+  "coastline": 2525.0
+ },
+ "QAT": {
+  "population": 2568426,
+  "area": 11586,
+  "gdp": 110900.0,
+  "life": 80.3,
+  "elevation": 103,
+  "peak": "Tuwayyir al Hamir",
+  "coastline": 563.0
+ },
+ "ROU": {
+  "population": 18148155,
+  "area": 238391,
+  "gdp": 40600.0,
+  "life": 76.9,
+  "elevation": 2544,
+  "peak": "Moldoveanu",
+  "coastline": 225.0
+ },
+ "RUS": {
+  "population": 140134279,
+  "area": 17098242,
+  "gdp": 41700.0,
+  "life": 72.3,
+  "elevation": 5642,
+  "peak": "Gora El'brus",
+  "coastline": 37653.0
+ },
+ "RWA": {
+  "population": 13623302,
+  "area": 26338,
+  "gdp": 3300.0,
+  "life": 66.6,
+  "elevation": 4519,
+  "peak": "Volcan Karisimbi",
+  "coastline": 0.0
+ },
+ "SAU": {
+  "population": 36544431,
+  "area": 2149690,
+  "gdp": 62700.0,
+  "life": 77.2,
+  "elevation": 3000,
+  "peak": "As Sarawat range,",
+  "coastline": 2640.0
+ },
+ "SDN": {
+  "population": 50467278,
+  "area": 1886068,
+  "gdp": 1900.0,
+  "life": 67.8,
+  "elevation": 3042,
+  "peak": "Jabal Marrah",
+  "coastline": 853.0
+ },
+ "SEN": {
+  "population": 18847519,
+  "area": 196722,
+  "gdp": 4500.0,
+  "life": 70.6,
+  "elevation": 648,
+  "peak": "unnamed elevation 2.8 km southeast of Nepen Diaka",
+  "coastline": 531.0
+ },
+ "SGP": {
+  "population": 6080545,
+  "area": 710,
+  "gdp": 132600.0,
+  "life": 86.7,
+  "elevation": 166,
+  "peak": "Bukit Timah",
+  "coastline": 193.0
+ },
+ "SLB": {
+  "population": 738774,
+  "area": 28896,
+  "gdp": 2500.0,
+  "life": 77.2,
+  "elevation": 2335,
+  "peak": "Mount Popomanaseu",
+  "coastline": 5313.0
+ },
+ "SLE": {
+  "population": 9331203,
+  "area": 71740,
+  "gdp": 3100.0,
+  "life": 59.4,
+  "elevation": 1948,
+  "peak": "Loma Mansa",
+  "coastline": 402.0
+ },
+ "SLV": {
+  "population": 6334723,
+  "area": 21041,
+  "gdp": 11700.0,
+  "life": 75.9,
+  "elevation": 2730,
+  "peak": "Cerro El Pital",
+  "coastline": 307.0
+ },
+ "SMR": {
+  "population": 35291,
+  "area": 61,
+  "gdp": 70900.0,
+  "life": 84.2,
+  "elevation": 739,
+  "peak": "Monte Titano",
+  "coastline": 0.0
+ },
+ "SOM": {
+  "population": 20324160,
+  "area": 637657,
+  "gdp": 1400.0,
+  "life": 56.5,
+  "elevation": 2460,
+  "peak": "Mount Shimbiris",
+  "coastline": 3025.0
+ },
+ "SPM": {
+  "population": 5070,
+  "area": 242,
+  "life": 81.8,
+  "elevation": 240,
+  "peak": "Morne de la Grande Montagne",
+  "coastline": 120.0
+ },
+ "SRB": {
+  "population": 6652212,
+  "area": 88361,
+  "gdp": 26900.0,
+  "life": 75.3,
+  "elevation": 2169,
+  "peak": "Midzor",
+  "coastline": 0.0
+ },
+ "SSD": {
+  "population": 12703714,
+  "area": 619745,
+  "gdp": 400.0,
+  "life": 60.3,
+  "elevation": 3187,
+  "peak": "Kinyeti",
+  "coastline": 0.0
+ },
+ "STP": {
+  "population": 223561,
+  "area": 964,
+  "gdp": 5500.0,
+  "life": 67.7,
+  "elevation": 2024,
+  "peak": "Pico de Sao Tome",
+  "coastline": 209.0
+ },
+ "SUR": {
+  "population": 653605,
+  "area": 163820,
+  "gdp": 19400.0,
+  "life": 72.7,
+  "elevation": 1230,
+  "peak": "Juliana Top",
+  "coastline": 386.0
+ },
+ "SVK": {
+  "population": 5563649,
+  "area": 49037,
+  "gdp": 40300.0,
+  "life": 77.2,
+  "elevation": 2655,
+  "peak": "Gerlachovsky Stit",
+  "coastline": 0.0
+ },
+ "SVN": {
+  "population": 2097893,
+  "area": 20273,
+  "gdp": 48500.0,
+  "life": 82.2,
+  "elevation": 2864,
+  "peak": "Triglav",
+  "coastline": 46.6
+ },
+ "SWE": {
+  "population": 10643745,
+  "area": 450295,
+  "gdp": 63300.0,
+  "life": 82.9,
+  "elevation": 2100,
+  "peak": "Kebnekaise South",
+  "coastline": 3218.0
+ },
+ "SWZ": {
+  "population": 1137268,
+  "area": 17364,
+  "gdp": 10400.0,
+  "life": 60.7,
+  "elevation": 1862,
+  "peak": "Emlembe",
+  "coastline": 0.0
+ },
+ "SXM": {
+  "population": 46738,
+  "area": 34,
+  "gdp": 45800.0,
+  "life": 79.7,
+  "elevation": 383,
+  "peak": "250 m SW of Mount Flagstaff summit,",
+  "coastline": 58.9
+ },
+ "SYC": {
+  "population": 98187,
+  "area": 452,
+  "gdp": 29200.0,
+  "life": 76.6,
+  "elevation": 905,
+  "peak": "Morne Seychellois",
+  "coastline": 491.0
+ },
+ "SYR": {
+  "population": 24261882,
+  "area": 185180,
+  "gdp": 4200.0,
+  "life": 74.8,
+  "elevation": 2814,
+  "peak": "Mount Hermon",
+  "coastline": 193.0
+ },
+ "TCA": {
+  "population": 60439,
+  "area": 948,
+  "gdp": 33400.0,
+  "life": 81.3,
+  "elevation": 48,
+  "peak": "Blue Hill on Providenciales and Flamingo Hill on East Caicos",
+  "coastline": 389.0
+ },
+ "TCD": {
+  "population": 19674004,
+  "area": 1284000,
+  "gdp": 2600.0,
+  "life": 60.0,
+  "elevation": 3445,
+  "peak": "Emi Koussi",
+  "coastline": 0.0
+ },
+ "TGO": {
+  "population": 9143439,
+  "area": 56785,
+  "gdp": 2800.0,
+  "life": 72.1,
+  "elevation": 986,
+  "peak": "Mont Agou",
+  "coastline": 56.0
+ },
+ "THA": {
+  "population": 70025248,
+  "area": 513120,
+  "gdp": 21700.0,
+  "life": 78.2,
+  "elevation": 2565,
+  "peak": "Doi Inthanon",
+  "coastline": 3219.0
+ },
+ "TJK": {
+  "population": 10593876,
+  "area": 143100,
+  "gdp": 4800.0,
+  "life": 71.9,
+  "elevation": 7495,
+  "peak": "Qullai Somoniyon",
+  "coastline": 0.0
+ },
+ "TKL": {
+  "population": 2453,
+  "area": 12,
+  "gdp": 6004.0,
+  "elevation": 5,
+  "peak": "unnamed location",
+  "coastline": 101.0
+ },
+ "TKM": {
+  "population": 5744151,
+  "area": 488100,
+  "gdp": 18000.0,
+  "life": 72.4,
+  "elevation": 3139,
+  "peak": "Gora Ayribaba",
+  "coastline": 0.0
+ },
+ "TLS": {
+  "population": 1404785,
+  "area": 14874,
+  "gdp": 4200.0,
+  "life": 70.5,
+  "elevation": 2963,
+  "peak": "Foho Tatamailau",
+  "coastline": 706.0
+ },
+ "TON": {
+  "population": 104519,
+  "area": 747,
+  "gdp": 7100.0,
+  "life": 78.0,
+  "elevation": 1046,
+  "peak": "Kao Volcano on Kao Island",
+  "coastline": 419.0
+ },
+ "TTO": {
+  "population": 1410170,
+  "area": 5130,
+  "gdp": 31700.0,
+  "life": 76.5,
+  "elevation": 940,
+  "peak": "El Cerro del Aripo",
+  "coastline": 362.0
+ },
+ "TUN": {
+  "population": 11962995,
+  "area": 163610,
+  "gdp": 12700.0,
+  "life": 77.3,
+  "elevation": 1544,
+  "peak": "Jebel ech Chambi",
+  "coastline": 1148.0
+ },
+ "TUR": {
+  "population": 84625585,
+  "area": 783562,
+  "gdp": 35300.0,
+  "life": 76.7,
+  "elevation": 5137,
+  "peak": "Mount Ararat",
+  "coastline": 7200.0
+ },
+ "TUV": {
+  "population": 11824,
+  "area": 26,
+  "gdp": 5800.0,
+  "life": 69.0,
+  "elevation": 5,
+  "peak": "unnamed location",
+  "coastline": 24.0
+ },
+ "TWN": {
+  "population": 23600776,
+  "area": 36193,
+  "gdp": 32300.0,
+  "life": 81.6,
+  "elevation": 3952,
+  "peak": "Yu Shan",
+  "coastline": 1566.3
+ },
+ "TZA": {
+  "population": 69145464,
+  "area": 945087,
+  "gdp": 3700.0,
+  "life": 70.8,
+  "elevation": 5895,
+  "peak": "Kilimanjaro",
+  "coastline": 1424.0
+ },
+ "UGA": {
+  "population": 50863850,
+  "area": 241550,
+  "gdp": 2900.0,
+  "life": 69.7,
+  "elevation": 5110,
+  "peak": "Margherita Peak on Mount Stanley",
+  "coastline": 0.0
+ },
+ "UKR": {
+  "population": 35661826,
+  "area": 603500,
+  "gdp": 16300.0,
+  "life": 70.5,
+  "elevation": 2061,
+  "peak": "Hora Hoverla",
+  "coastline": 2782.0
+ },
+ "URY": {
+  "population": 3449444,
+  "area": 181034,
+  "gdp": 32000.0,
+  "life": 78.9,
+  "elevation": 514,
+  "peak": "Cerro Catedral",
+  "coastline": 660.0
+ },
+ "USA": {
+  "population": 338016259,
+  "area": 9372610,
+  "gdp": 75500.0,
+  "life": 80.9,
+  "elevation": 6190,
+  "peak": "Mount McKinley",
+  "coastline": 19924.0
+ },
+ "UZB": {
+  "population": 37015151,
+  "area": 447400,
+  "gdp": 10500.0,
+  "life": 76.2,
+  "elevation": 4643,
+  "peak": "Xazrat Sulton Tog'",
+  "coastline": 0.0
+ },
+ "VAT": {
+  "population": 1000,
+  "area": 0.44,
+  "elevation": 78,
+  "peak": "Vatican Gardens",
+  "coastline": 0.0
+ },
+ "VCT": {
+  "population": 100647,
+  "area": 389,
+  "gdp": 18700.0,
+  "life": 77.2,
+  "elevation": 1234,
+  "peak": "La Soufriere",
+  "coastline": 84.0
+ },
+ "VEN": {
+  "population": 31755435,
+  "area": 916445,
+  "gdp": 4900.0,
+  "life": 74.5,
+  "elevation": 4978,
+  "peak": "Pico Bolivar",
+  "coastline": 2800.0
+ },
+ "VGB": {
+  "population": 103792,
+  "area": 151,
+  "gdp": 46500.0,
+  "life": 80.7,
+  "elevation": 474,
+  "peak": "Crown Mountain",
+  "coastline": 188.0
+ },
+ "VNM": {
+  "population": 106688169,
+  "area": 331212,
+  "gdp": 14400.0,
+  "life": 76.1,
+  "elevation": 3144,
+  "peak": "Fan Si Pan",
+  "coastline": 3444.0
+ },
+ "VUT": {
+  "population": 318007,
+  "area": 12189,
+  "gdp": 3200.0,
+  "life": 75.7,
+  "elevation": 1877,
+  "peak": "Tabwemasana",
+  "coastline": 2528.0
+ },
+ "WLF": {
+  "population": 15998,
+  "area": 142,
+  "life": 81.1,
+  "elevation": 522,
+  "peak": "Mont Singavi",
+  "coastline": 129.0
+ },
+ "WSM": {
+  "population": 210223,
+  "area": 2842,
+  "gdp": 6900.0,
+  "life": 75.7,
+  "elevation": 1857,
+  "peak": "Mount Silisili",
+  "coastline": 403.0
+ },
+ "XKX": {
+  "population": 1977093,
+  "area": 10908,
+  "gdp": 16400.0,
+  "life": 73.1,
+  "elevation": 2656,
+  "peak": "Gjeravica/Deravica",
+  "coastline": 0.0
+ },
+ "YEM": {
+  "population": 34505496,
+  "area": 527968,
+  "gdp": 200.0,
+  "life": 68.2,
+  "elevation": 3666,
+  "peak": "Jabal an Nabi Shu'ayb",
+  "coastline": 1906.0
+ },
+ "ZAF": {
+  "population": 61089926,
+  "area": 1221037,
+  "gdp": 13600.0,
+  "life": 71.9,
+  "elevation": 3450,
+  "peak": "Ntheledi",
+  "coastline": 2798.0
+ },
+ "ZMB": {
+  "population": 22021971,
+  "area": 752612,
+  "gdp": 3700.0,
+  "life": 66.9,
+  "elevation": 2330,
+  "peak": "Mafinga Central",
+  "coastline": 0.0
+ },
+ "ZWE": {
+  "population": 17472752,
+  "area": 390757,
+  "gdp": 3500.0,
+  "life": 67.2,
+  "elevation": 2592,
+  "peak": "Inyangani",
+  "coastline": 0.0
+ }
+}

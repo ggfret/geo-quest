@@ -10,7 +10,8 @@
 <section class="intro">
   <h1>My Knowledge</h1>
   <p>Based on {{ stats.total_answers }} answer{{ "" if stats.total_answers == 1 else "s" }}.
-     A country counts as <b>known</b> once you've got it right about four times in a row.</p>
+     A country counts as <b>known</b> once you've got it right about four times in a row. Knowledge fades:
+     known countries come back for review after a while, and the gaps grow each time you remember them.</p>
 </section>
 
 {% if not stats.total_answers %}
@@ -22,17 +23,30 @@
 
 <section class="k-tiles">
   {% for g in games %}
-    {% set s = stats.games.get(g.slug) %}
+    {% set s = stats.games.get(g.slug, {}) %}
     <a class="k-tile" href="/{{ g.slug }}">
       <div class="k-tile-head">{{ g.icon }} {{ g.name }}</div>
-      <div class="k-big">{{ s.known }}<span> / {{ s.pool }} known</span></div>
-      <div class="bar"><div style="width: {{ (s.known / s.pool * 100) | round(1) }}%"></div></div>
+      {% if s.pool %}
+        <div class="k-big">{{ s.known }}<span> / {{ s.pool }} known</span></div>
+        <div class="bar"><div style="width: {{ (s.known / s.pool * 100) | round(1) }}%"></div></div>
+      {% elif g.slug == "higherlower" %}
+        {% set streaks = stats.bests.higherlower.values() | map(attribute="score") | list %}
+        <div class="k-big">{{ streaks | max if streaks else "–" }}<span> best streak</span></div>
+      {% endif %}
       <div class="k-small">
-        {% if s.answered %}{{ pct(s.accuracy) }} right · {{ s.answered }} answers · {{ s.xp }} XP
-        {% else %}Not played yet{% endif %}
+        {% if s.answered %}{{ pct(s.accuracy) }} right · {{ s.answered }} answer{{ "" if s.answered == 1 else "s" }} · {{ s.xp }} XP{% else %}Not played yet{% endif %}
+        {% if stats.due.get(g.slug) %}<span class="badge due">{{ stats.due[g.slug] }} to review</span>{% endif %}
       </div>
     </a>
   {% endfor %}
+</section>
+
+<section class="card">
+  <div class="k-head">
+    <h2>XP per day</h2>
+    <span class="muted small">Last 30 days · dashed line: daily goal ({{ me.daily_goal }} XP)</span>
+  </div>
+  <div class="chart" id="xp-chart"></div>
 </section>
 
 {% if stats.best_areas or stats.worst_areas %}
@@ -41,7 +55,7 @@
     <h2>Easiest for you</h2>
     {% for a in stats.best_areas %}
       <div class="k-area"><span>{{ game_by_slug[a.game].icon }} {{ game_by_slug[a.game].name }} · {{ a.region }}</span><b>{{ pct(a.accuracy) }}</b><small>of {{ a.answered }}</small></div>
-    {% else %}<p class="muted">Keep playing — you need at least 5 answers in an area.</p>{% endfor %}
+    {% else %}<p class="muted">Keep playing: you need at least 5 answers in an area.</p>{% endfor %}
   </div>
   <div class="card">
     <h2>Needs work</h2>
@@ -56,10 +70,10 @@
   <div class="k-head">
     <h2>Mastery map</h2>
     <div class="tabs" id="map-tabs" role="tablist">
-      {% for g in games %}<button type="button" role="tab" data-game="{{ g.slug }}">{{ g.icon }} {{ g.name }}</button>{% endfor %}
+      {% for g in map_tabs %}<button type="button" role="tab" data-game="{{ g.slug }}">{{ g.icon }} {{ g.name }}</button>{% endfor %}
     </div>
   </div>
-  <div class="k-map" id="k-map"><div class="tooltip" id="tooltip" hidden></div></div>
+  <div class="k-map map-frame" id="k-map"><div class="tooltip" id="tooltip" hidden></div></div>
   <div class="k-langs" id="k-langs" hidden></div>
   <div class="legend" aria-label="Legend">
     <span class="swatch unseen"></span> Not seen
@@ -67,6 +81,8 @@
       {% for i in range(6) %}<span class="swatch m{{ i }}"></span>{% endfor %}
     </span>
     Struggling → Mastered
+    <span class="legend-gap"></span>
+    <span class="swatch due-swatch"></span> Due for review
   </div>
 </section>
 
@@ -88,12 +104,61 @@
   <div class="card">
     <h2>Most common mix-ups</h2>
     {% for m in stats.mixups %}
-      <div class="k-area"><span>{{ game_by_slug[m.game].icon }} {{ m.answer }} <span class="muted">— you said</span> {{ m.guessed }}</span><b>×{{ m.times }}</b></div>
+      {% set said = {"pin": "you pinned", "neighbours": "you thought it borders", "higherlower": "you said"}.get(m.game, "you said") %}
+      <div class="k-area"><span>{{ game_by_slug[m.game].icon }} {{ m.answer }} <span class="muted">— {{ said }}</span> {{ m.guessed }}</span><b>×{{ m.times }}</b></div>
     {% else %}<p class="muted">No mix-ups yet.</p>{% endfor %}
   </div>
 </section>
 
-<script id="stats" type="application/json">{{ {"areas": stats.areas, "mastery": stats.mastery, "pools": pools, "names": names, "lang_groups": lang_groups} | tojson }}</script>
+<section class="card">
+  <h2>Your records in the map games</h2>
+  <div class="records-grid">
+    <div>
+      <h3>⏱️ Name them all</h3>
+      {% for slug, name in nameall_variants.items() %}
+        {% set b = stats.bests.nameall.get(slug) %}
+        <div class="k-area"><span>{{ name }}</span><b>{{ b.score ~ " / " ~ b.total if b else "–" }}</b>{% if b %}<small>{{ b.seconds // 60 }}:{{ "%02d" | format(b.seconds % 60) }}</small>{% endif %}</div>
+      {% endfor %}
+    </div>
+    <div>
+      <h3>⬆️ Higher or Lower</h3>
+      {% for slug, name in higherlower_variants.items() %}
+        {% set b = stats.bests.higherlower.get(slug) %}
+        <div class="k-area"><span>{{ name }}</span><b>{{ b.score if b else "–" }}</b><small>best streak</small></div>
+      {% endfor %}
+    </div>
+    <div>
+      <h3>🗺️ Other map games</h3>
+      <div class="k-area"><span>🔥 Hot & Cold</span><b>{{ "%.1f" | format(stats.bests.hotcold.average) if stats.bests.hotcold else "–" }}</b><small>guesses on average</small></div>
+      <div class="k-area"><span>📍 Pin it</span><b>{{ pct(stats.bests.pin.accuracy) if stats.bests.pin else "–" }}</b><small>of your last pins hit</small></div>
+      <div class="k-area"><span>🤝 Neighbours</span><b>{{ stats.bests.neighbours.perfect if stats.bests.neighbours else 0 }}</b><small>perfect rounds</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  {% set unlocked = stats.achievements | selectattr("unlocked_at") | list %}
+  <div class="k-head">
+    <h2>Achievements</h2>
+    <span class="muted small">{{ unlocked | length }} of {{ stats.achievements | length }} unlocked</span>
+  </div>
+  <div class="badges">
+    {% for a in stats.achievements %}
+      <div class="badge-card{% if not a.unlocked_at %} locked{% endif %}" title="{{ a.description }}{% if a.unlocked_at %} · unlocked {{ a.unlocked_at[:10] }}{% endif %}">
+        <span class="badge-icon">{{ a.icon }}</span>
+        <b>{{ a.name }}</b>
+        <small>{{ a.description }}</small>
+        <small class="badge-xp">+{{ a.xp }} XP</small>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script id="stats" type="application/json">{{ {"areas": stats.areas, "mastery": stats.mastery, "pools": pools, "names": names,
+  "lang_groups": lang_groups, "daily": stats.daily, "goal": me.daily_goal,
+  "country_games": map_tabs | map(attribute="slug") | reject("equalto", "languages") | list,
+  "game_names": games | map(attribute="name") | list, "game_slugs": games | map(attribute="slug") | list} | tojson }}</script>
+<script src="{{ url_for('static', filename='worldmap.js') }}"></script>
 <script src="{{ url_for('static', filename='knowledge.js') }}"></script>
 {% endif %}
 {% endblock %}

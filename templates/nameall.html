@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play wide">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <a href="{{ url_for('leaderboard_page', tab='records') }}">Records →</a>
+  </div>
+
+  <div id="chooser">
+    <p class="lead">Pick a region and name as many countries as you can before the time runs out.
+      Correct names are accepted as soon as you've typed them. Territories like Greenland don't count.</p>
+    <div class="variant-grid">
+      {% for v in variants %}
+        <button type="button" class="variant" data-variant="{{ v.slug }}">
+          <b>{{ v.name }}</b>
+          <span>{{ v.total }} countries · {{ v.minutes }} min</span>
+          <span class="best">{% if v.best %}Your best: {{ v.best.score }}/{{ v.total }}{% else %}Not played yet{% endif %}</span>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="board" hidden>
+    <div class="map-frame" id="map"></div>
+
+    <div id="game">
+      <div class="run-bar">
+        <span class="timer" id="timer" aria-live="off">0:00</span>
+        <span class="run-title" id="run-title"></span>
+        <span class="run-score"><b id="score">0</b> / <span id="total">0</span></span>
+        <button type="button" class="ghost small-btn" id="finish">I'm finished</button>
+      </div>
+      <input id="guess" class="big-input" type="text" placeholder="Type a country…" autocomplete="off"
+             autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type a country">
+      <p class="message" id="message" aria-live="polite"></p>
+    </div>
+
+    <div id="result" hidden>
+      <div class="verdict" id="verdict"></div>
+      <p class="fact" id="missed"></p>
+      <div class="actions left">
+        <button type="button" class="primary" id="again">Play again</button>
+        <button type="button" class="ghost" id="choose">Choose another region</button>
+      </div>
+    </div>
+
+    <div class="chips" id="found-list"></div>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='worldmap.js') }}"></script>
+<script src="{{ url_for('static', filename='nameall.js') }}"></script>
+{% endblock %}

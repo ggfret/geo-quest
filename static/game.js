@@ -1,20 +1,13 @@
-// Shared play loop for every game: ask → answer (typed or multiple choice) → explain → next.
-const $ = (id) => document.getElementById(id);
+// Shared play loop for the quizzes: ask → answer (typed or multiple choice) → explain → next.
+// Uses the helpers in common.js ($, esc, api, celebrate).
 const slug = $("play").dataset.game;
 
 let current = null;   // { item_id, prompt } being asked now
 let upcoming = null;  // next question, fetched early so "Next" is instant
 let session = { right: 0, total: 0 };
 
-// If the login has expired, go to the login page and come back here afterwards.
-function checkLogin(res) {
-  if (res.status === 401) location.href = `/login?next=${encodeURIComponent(location.pathname)}`;
-  return res;
-}
-
 async function fetchQuestion() {
-  const res = checkLogin(await fetch(`/api/${slug}/next`));
-  const question = await res.json();
+  const question = await api(`/api/${slug}/next`);
   if (question.prompt.image) new Image().src = question.prompt.image; // preload
   return question;
 }
@@ -95,15 +88,10 @@ async function submit(skip = false, choice = null) {
   $("answer-form").hidden = true;
   document.querySelectorAll(".choice").forEach((b) => (b.disabled = true));
 
-  const res = checkLogin(await fetch(`/api/${slug}/answer`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ item_id: current.item_id, guess, skip, context: current.prompt.context }),
-  }));
+  const r = await api(`/api/${slug}/answer`, { item_id: current.item_id, guess, skip, context: current.prompt.context });
   answering = false;
-  const r = await res.json();
   showResult(r, guess);
-  updateHeader(r.me);
+  celebrate(r);
   fetchQuestion().then((q) => (upcoming = q));
 }
 
@@ -111,7 +99,7 @@ function showResult(r, guess) {
   session.total += 1;
   if (r.correct) session.right += 1;
   $("session").textContent = `${session.right} / ${session.total}`;
-  $("streak").textContent = r.streak;
+  $("streak-count").textContent = r.streak;
 
   const verdict = $("verdict");
   verdict.className = "verdict " + (r.correct ? "good" : "bad");
@@ -142,7 +130,7 @@ function showResult(r, guess) {
 }
 
 // Mini world map, zoomed to the answer (and to your wrong guess, if you named another country).
-const SVG_NS = "http://www.w3.org/2000/svg";
+const LOCATOR_NS = "http://www.w3.org/2000/svg";
 const worldMap = fetch("/static/world.svg").then((r) => r.text());
 
 async function showLocator(places, guessed = []) {
@@ -154,7 +142,7 @@ async function showLocator(places, guessed = []) {
   const [, , mapW, mapH] = svg.getAttribute("viewBox").split(" ").map(Number);
 
   const add = (tag, attrs) => {
-    const el = document.createElementNS(SVG_NS, tag);
+    const el = document.createElementNS(LOCATOR_NS, tag);
     for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
     svg.append(el);
   };
@@ -178,27 +166,6 @@ async function showLocator(places, guessed = []) {
   }
 }
 
-// Header XP bar (rendered by the server on page load, updated here after each answer).
-let lastLevel = null;
-function updateHeader(me) {
-  $("lvl").textContent = `Lv ${me.level}`;
-  $("title").textContent = me.title;
-  $("xptext").textContent = `${me.into} / ${me.need} XP`;
-  $("xpbar").style.width = `${(me.into / me.need) * 100}%`;
-  if (lastLevel !== null && me.level > lastLevel) toast(`Level ${me.level}! You're now a ${me.title}.`);
-  lastLevel = me.level;
-}
-
-function toast(text) {
-  const el = document.createElement("div");
-  el.className = "toast";
-  el.textContent = text;
-  document.body.append(el);
-  setTimeout(() => el.remove(), 3000);
-}
-
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-
 $("answer-form").addEventListener("submit", (e) => { e.preventDefault(); submit(); });
 $("skip").addEventListener("click", () => submit(true));
 $("next").addEventListener("click", ask);
@@ -208,5 +175,4 @@ document.addEventListener("keydown", (e) => {
   if (n >= 1 && n <= buttons.length) buttons[n - 1].click();
 });
 
-fetch("/api/me").then((r) => r.json()).then((me) => (lastLevel = me.level));
 ask();

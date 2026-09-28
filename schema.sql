@@ -48,3 +48,42 @@ CREATE TABLE IF NOT EXISTS login_failures (
     username TEXT NOT NULL,
     at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE INDEX IF NOT EXISTS idx_attempts_user_time ON attempts(user_id, created_at);
+
+-- Games with several steps per round (Hot & Cold, Neighbours, Name them all, Higher or Lower).
+-- A run is one round; its answers still go into `attempts`, this keeps the round itself.
+CREATE TABLE IF NOT EXISTS runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    game TEXT NOT NULL,
+    variant TEXT NOT NULL DEFAULT '',      -- continent for Name them all, stat for Higher or Lower
+    state TEXT NOT NULL DEFAULT '{}',      -- JSON: the round's progress (mystery country, guesses, ...)
+    score INTEGER NOT NULL DEFAULT 0,      -- countries named / streak / guesses used / neighbours found
+    total INTEGER,                         -- how many there were to find, where that applies
+    solved INTEGER NOT NULL DEFAULT 0,     -- 1 if the round was won (Hot & Cold found, all neighbours named, ...)
+    seconds INTEGER,                       -- how long the round took
+    bonus_xp INTEGER NOT NULL DEFAULT 0,   -- XP on top of the per-answer XP (e.g. naming a whole continent)
+    started_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    finished_at TEXT                       -- NULL while still playing
+);
+CREATE INDEX IF NOT EXISTS idx_runs_user_game ON runs(user_id, game, finished_at);
+
+-- Badges, unlocked once per player.
+CREATE TABLE IF NOT EXISTS achievements (
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    code TEXT NOT NULL,
+    xp INTEGER NOT NULL DEFAULT 0,
+    unlocked_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id, code)
+);
+
+-- Every bit of XP in one place: answers, round bonuses and achievement rewards.
+-- Levels, the daily goal and the leaderboards all add up this view.
+DROP VIEW IF EXISTS xp_events;
+CREATE VIEW xp_events AS
+    SELECT user_id, game, xp, created_at AS at FROM attempts WHERE xp > 0
+    UNION ALL
+    SELECT user_id, game, bonus_xp, finished_at FROM runs WHERE bonus_xp > 0 AND finished_at IS NOT NULL
+    UNION ALL
+    SELECT user_id, 'achievements', xp, unlocked_at FROM achievements WHERE xp > 0;

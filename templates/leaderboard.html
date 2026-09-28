@@ -2,34 +2,99 @@
 
 {% block title %}Leaderboard · Geo Quest{% endblock %}
 
+{% macro who(name, is_me, champion=False) %}
+  {{ name }}{% if champion %} <span title="Won last week">👑</span>{% endif %}{% if is_me %} <span class="muted">(you)</span>{% endif %}
+{% endmacro %}
+
 {% block content %}
 <section class="intro">
   <h1>Leaderboard</h1>
-  <p>Everyone on this site, ranked by total XP.</p>
+  <p>{% if tab == "week" %}This week's league resets every Monday (UTC), so everyone gets a fresh start. 👑 marks last week's winner.
+     {% elif tab == "all" %}Everyone's totals since they started.
+     {% else %}The best results in the map games. Skill, not time spent.{% endif %}</p>
 </section>
 
+<nav class="tabs page-tabs" aria-label="Leaderboard views">
+  <a href="{{ url_for('leaderboard_page', tab='week') }}" {% if tab == "week" %}aria-current="page"{% endif %}>This week</a>
+  <a href="{{ url_for('leaderboard_page', tab='all') }}" {% if tab == "all" %}aria-current="page"{% endif %}>All time</a>
+  <a href="{{ url_for('leaderboard_page', tab='records') }}" {% if tab == "records" %}aria-current="page"{% endif %}>Records</a>
+</nav>
+
+{% if tab != "records" %}
 <section class="card">
   <div class="table-wrap">
     <table class="k-table leaderboard">
       <thead>
-        <tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Level</th>
-            <th scope="col" class="num">XP</th><th scope="col" class="num">Last 7 days</th>
-            <th scope="col" class="num">Answers</th><th scope="col" class="num">Right</th></tr>
+        <tr>
+          <th scope="col">#</th><th scope="col">Player</th><th scope="col">Level</th>
+          {% if tab == "week" %}
+            <th scope="col" class="num">XP this week</th><th scope="col" class="num">🔥 Streak</th><th scope="col" class="num">Total XP</th>
+          {% else %}
+            <th scope="col" class="num">Total XP</th><th scope="col" class="num">Known</th><th scope="col" class="num">🔥 Streak</th>
+          {% endif %}
+          <th scope="col" class="num">🏅 Badges</th>
+        </tr>
       </thead>
       <tbody>
         {% for r in rows %}
-          <tr{% if me and r.name == me.name %} class="you"{% endif %}>
+          <tr{% if r.id == me_id %} class="you"{% endif %}>
             <td>{{ loop.index }}</td>
-            <th scope="row">{{ r.name }}{% if me and r.name == me.name %} <span class="muted">(you)</span>{% endif %}</th>
+            <th scope="row">{{ who(r.name, r.id == me_id, r.champion) }}</th>
             <td>{{ r.level }}</td>
-            <td class="num">{{ r.xp }}</td>
-            <td class="num">{{ r.week_xp }}</td>
-            <td class="num">{{ r.answers }}</td>
-            <td class="num">{% if r.answers %}{{ (r.accuracy * 100) | round | int }}%{% else %}—{% endif %}</td>
+            {% if tab == "week" %}
+              <td class="num"><b>{{ r.week_xp }}</b></td><td class="num">{{ r.streak }}</td><td class="num">{{ r.xp }}</td>
+            {% else %}
+              <td class="num"><b>{{ r.xp }}</b></td><td class="num">{{ r.known }}</td><td class="num">{{ r.streak }}</td>
+            {% endif %}
+            <td class="num">{{ r.badges }}</td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
+  {% if rows | length < 2 %}<p class="muted small">Leagues are more fun with friends. Send them the link!</p>{% endif %}
 </section>
+
+{% else %}
+<section class="records-grid wide-records">
+  <div class="card">
+    <h2>⏱️ Name them all</h2>
+    {% for slug, name in nameall_variants.items() %}
+      <h3>{{ name }}</h3>
+      {% for r in records.nameall.get(slug, []) %}
+        <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span>
+          <b>{{ r.score }} / {{ r.total }}</b><small>{{ r.seconds // 60 }}:{{ "%02d" | format(r.seconds % 60) }}</small></div>
+      {% else %}<p class="muted small">No rounds yet.</p>{% endfor %}
+    {% endfor %}
+  </div>
+  <div class="card">
+    <h2>⬆️ Higher or Lower</h2>
+    {% for slug, name in higherlower_variants.items() %}
+      <h3>{{ name }}</h3>
+      {% for r in records.higherlower.get(slug, []) %}
+        <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ r.score }}</b><small>streak</small></div>
+      {% else %}<p class="muted small">No rounds yet.</p>{% endfor %}
+    {% endfor %}
+  </div>
+  <div class="card">
+    <h2>🔥 Hot & Cold</h2>
+    <p class="muted small">Fewest guesses on average over the last 10 solved rounds (at least 3).</p>
+    {% for r in records.hotcold %}
+      <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ "%.1f" | format(r.average) }}</b><small>guesses</small></div>
+    {% else %}<p class="muted small">No one has solved 3 rounds yet.</p>{% endfor %}
+
+    <h2 class="spaced">📍 Pin it</h2>
+    <p class="muted small">Share of the last 20 pins that hit the country (at least 10 pins).</p>
+    {% for r in records.pin %}
+      <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ (r.accuracy * 100) | round | int }}%</b><small>of {{ r.pins }}</small></div>
+    {% else %}<p class="muted small">No one has dropped 10 pins yet.</p>{% endfor %}
+
+    <h2 class="spaced">🤝 Neighbours</h2>
+    <p class="muted small">Rounds where every neighbour was named.</p>
+    {% for r in records.neighbours %}
+      <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ r.perfect }}</b><small>perfect</small></div>
+    {% else %}<p class="muted small">No perfect rounds yet.</p>{% endfor %}
+  </div>
+</section>
+{% endif %}
 {% endblock %}

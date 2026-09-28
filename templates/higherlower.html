@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}{{ game.name }} · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="card play">
+  <div class="meta">
+    <a href="{{ url_for('index') }}">← All games</a>
+    <span>{{ game.icon }} {{ game.name }}</span>
+    <span>Streak <b id="streak-count">0</b></span>
+  </div>
+
+  <div id="chooser">
+    <p class="lead">Is the second country higher or lower? Keep going until you're wrong. The pairs get closer as your streak grows.</p>
+    <div class="variant-grid">
+      {% for v in variants %}
+        <button type="button" class="variant" data-variant="{{ v.slug }}">
+          <b>{{ v.name }}</b>
+          <span class="best">{% if v.best is not none %}Best streak: {{ v.best }}{% else %}Not played yet{% endif %}</span>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="game" hidden>
+    <p class="hl-question" id="question"></p>
+    <div class="hl-cards">
+      <div class="hl-card" id="card-a">
+        <img class="flag" alt="">
+        <h3 class="hl-name"></h3>
+        <div class="hl-value"></div>
+        <div class="hl-label"></div>
+      </div>
+      <div class="hl-vs">vs</div>
+      <div class="hl-card" id="card-b">
+        <img class="flag" alt="">
+        <h3 class="hl-name"></h3>
+        <div class="hl-value">?</div>
+        <div class="hl-buttons">
+          <button type="button" class="primary" id="higher">▲ Higher</button>
+          <button type="button" class="primary" id="lower">▼ Lower</button>
+        </div>
+      </div>
+    </div>
+    <p class="fact center" id="note"></p>
+    <p class="map-help">Keys: ↑ higher · ↓ lower</p>
+  </div>
+
+  <div id="result" hidden>
+    <div class="verdict" id="verdict"></div>
+    <div class="actions">
+      <button type="button" class="primary" id="again">Play again <kbd>Enter</kbd></button>
+      <button type="button" class="ghost" id="choose">Choose another stat</button>
+    </div>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='higherlower.js') }}"></script>
+{% endblock %}
