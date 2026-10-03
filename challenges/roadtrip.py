@@ -237,7 +237,7 @@ def pairs(level):
 
 
 def pick_pair(db, user_id, level):
-    rows = db.execute("SELECT state FROM runs WHERE user_id = ? AND game = 'roadtrip' ORDER BY id DESC LIMIT ?",
+    rows = db.execute("SELECT state FROM runs WHERE user_id = %s AND game = 'roadtrip' ORDER BY id DESC LIMIT %s",
                       (user_id, RECENT_PAIRS)).fetchall()
     recent = {frozenset((s["start"], s["end"])) for s in (json.loads(r[0]) for r in rows)}
     options = [p for p in pairs(level) if frozenset(p) not in recent] or pairs(level)

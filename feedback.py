@@ -20,7 +20,7 @@ def save(db, user_id, kind, message, page, context):
         raise FeedbackError("Write a few words about it.")
     context_json = json.dumps(context if isinstance(context, dict) else {}, ensure_ascii=False)
     db.execute(
-        "INSERT INTO feedback (user_id, kind, message, page, context) VALUES (?, ?, ?, ?, ?)",
+        "INSERT INTO feedback (user_id, kind, message, page, context) VALUES (%s, %s, %s, %s, %s)",
         (user_id, kind, message[:MAX_MESSAGE], str(page or "")[:200], context_json[:MAX_CONTEXT]),
     )
     db.commit()
@@ -31,15 +31,15 @@ def listing(db, user_id):
     rows = db.execute(
         """SELECT f.id, f.kind, f.message, f.page, f.context, f.done, f.created_at, u.name
            FROM feedback f JOIN users u ON u.id = f.user_id
-           WHERE ? = ? OR f.user_id = ?
+           WHERE %(me)s::int = %(owner)s::int OR f.user_id = %(me)s
            ORDER BY f.done, f.id DESC""",
-        (user_id, OWNER_ID, user_id),
+        {"me": user_id, "owner": OWNER_ID},
     ).fetchall()
     return [{**dict(r), "context": json.loads(r["context"]), "label": KINDS.get(r["kind"], r["kind"])} for r in rows]
 
 
 def set_done(db, user_id, feedback_id, done):
     """The owner can tick off anything; others only their own reports."""
-    db.execute("UPDATE feedback SET done = ? WHERE id = ? AND (? = ? OR user_id = ?)",
-               (int(done), feedback_id, user_id, OWNER_ID, user_id))
+    db.execute("UPDATE feedback SET done = %(done)s WHERE id = %(id)s AND (%(me)s::int = %(owner)s::int OR user_id = %(me)s)",
+               {"done": int(done), "id": feedback_id, "me": user_id, "owner": OWNER_ID})
     db.commit()

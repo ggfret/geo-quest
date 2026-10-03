@@ -1,11 +1,11 @@
 import os
 import re
 import secrets
-import sqlite3
 from datetime import timedelta
 from pathlib import Path
 
 from flask import Flask, abort, jsonify, redirect, render_template, request, session, url_for
+from psycopg import sql
 
 import achievements
 import auth
@@ -15,7 +15,7 @@ import knowledge
 import leaderboard
 import progress
 from answers import Result, check
-from database import close_db, current_user_id, get_db
+from database import LOCAL_URL, close_db, connect, create_database_if_missing, current_user_id, get_db, is_local
 from games import COUNTRIES, GAME_BY_SLUG, GAMES, LANGS, LANGUAGES, OUTLINES, item_rows
 
 BASE_DIR = Path(__file__).parent
@@ -25,7 +25,7 @@ ALL_GAMES = [*GAMES, *challenges.CHALLENGES]
 
 app = Flask(__name__)
 app.config.update(
-    DATABASE=Path(os.environ.get("GEO_DATABASE", BASE_DIR / "geo.db")),  # GEO_DATABASE: use another database file
+    DATABASE_URL=os.environ.get("DATABASE_URL", LOCAL_URL),  # online: the Neon address; locally: Postgres on this computer
     PERMANENT_SESSION_LIFETIME=timedelta(days=30),
     SESSION_COOKIE_SAMESITE="Lax",
     SESSION_COOKIE_SECURE=os.environ.get("GEO_HTTPS") == "1",  # online: only send the login cookie over HTTPS
@@ -50,15 +50,22 @@ app.secret_key = load_secret_key()
 
 
 def init_db():
-    with sqlite3.connect(app.config["DATABASE"]) as db:
-        db.executescript((BASE_DIR / "schema.sql").read_text())
-        auth.migrate(db)
+    """Create the tables if they aren't there yet, and refill `items` from the data files."""
+    url = app.config["DATABASE_URL"]
+    if is_local(url):
+        create_database_if_missing(url)  # the first run on this computer
+    with connect(url) as db:  # commits at the end
+        # Days, weeks and streaks are counted in UTC, and times are shown as UTC.
+        db.execute(sql.SQL("ALTER DATABASE {} SET timezone TO 'UTC'").format(sql.Identifier(db.info.dbname)))
+        db.execute("SET timezone TO 'UTC'")
+        db.execute((BASE_DIR / "schema.sql").read_text())
         db.execute("DELETE FROM items")
-        db.executemany("INSERT INTO items (game, item_id, name, region) VALUES (?, ?, ?, ?)",
-                       [*item_rows(), *challenges.item_rows()])
+        with db.cursor() as cur:
+            cur.executemany("INSERT INTO items (game, item_id, name, region) VALUES (%s, %s, %s, %s)",
+                            [*item_rows(), *challenges.item_rows()])
 
 
-PUBLIC_ENDPOINTS = {"login", "signup", "static"}
+PUBLIC_ENDPOINTS = {"login", "signup", "static", "healthz"}
 
 
 @app.before_request
@@ -69,6 +76,12 @@ def require_login():
     if request.path.startswith("/api/"):
         return jsonify({"error": "Please log in."}), 401
     return redirect(url_for("login", next=request.path))
+
+
+@app.get("/healthz")
+def healthz():
+    """For Render to check the site is up. Doesn't touch the database, so Neon can sleep when nobody plays."""
+    return "ok"
 
 
 def start_session(user_id):
@@ -90,7 +103,7 @@ def inject_progress():
     user_id = current_user_id()
     if not user_id:
         return {"me": None}
-    name = get_db().execute("SELECT name FROM users WHERE id = ?", (user_id,)).fetchone()
+    name = get_db().execute("SELECT name FROM users WHERE id = %s", (user_id,)).fetchone()
     return {"me": {**progress.summary(get_db(), user_id), "name": name["name"] if name else "?"}}
 
 

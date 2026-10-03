@@ -13,7 +13,7 @@ def players(db):
         SELECT u.id, u.name,
                COALESCE(SUM(e.xp), 0) AS xp,
                COALESCE(SUM(CASE WHEN e.at >= {progress.WEEK_START} THEN e.xp END), 0) AS week_xp,
-               (SELECT COUNT(*) FROM mastery m WHERE m.user_id = u.id AND m.box >= ?) AS known,
+               (SELECT COUNT(*) FROM mastery m WHERE m.user_id = u.id AND m.box >= %s) AS known,
                (SELECT COUNT(*) FROM achievements a WHERE a.user_id = u.id) AS badges
         FROM users u
         LEFT JOIN xp_events e ON e.user_id = u.id
@@ -45,7 +45,7 @@ def last_week_champion(db):
     """Who had the most XP last week (Monday to Sunday, UTC), if at least two people played."""
     rows = db.execute(
         f"""SELECT user_id, SUM(xp) AS xp FROM xp_events
-            WHERE at >= date({progress.WEEK_START}, '-7 days') AND at < {progress.WEEK_START}
+            WHERE at >= {progress.WEEK_START} - interval '7 days' AND at < {progress.WEEK_START}
             GROUP BY user_id ORDER BY xp DESC""",
     ).fetchall()
     return rows[0][0] if len(rows) >= 2 and rows[0][1] > rows[1][1] else None
@@ -60,12 +60,12 @@ def best_runs(db, game, user_id=None):
                    ROW_NUMBER() OVER (PARTITION BY r.variant, r.user_id
                                       ORDER BY r.score DESC, r.seconds ASC, r.id ASC) AS rank
             FROM runs r JOIN users u ON u.id = r.user_id
-            WHERE r.game = ? AND r.finished_at IS NOT NULL AND u.password_hash IS NOT NULL
-        )
-        WHERE rank = 1 AND (? IS NULL OR user_id = ?)
+            WHERE r.game = %(game)s AND r.finished_at IS NOT NULL AND u.password_hash IS NOT NULL
+        ) AS ranked
+        WHERE rank = 1 AND (%(user)s::int IS NULL OR user_id = %(user)s)
         ORDER BY variant, score DESC, seconds ASC
         """,
-        (game, user_id, user_id),
+        {"game": game, "user": user_id},
     ).fetchall()
     result = {}
     for row in rows:
@@ -77,17 +77,17 @@ def hotcold_averages(db, user_id=None, last=10, minimum=3):
     """Average guesses over each player's last 10 solved Hot & Cold rounds (fewer is better)."""
     rows = db.execute(
         """
-        SELECT name, user_id, AVG(score) AS average, COUNT(*) AS rounds FROM (
+        SELECT name, user_id, AVG(score)::float AS average, COUNT(*) AS rounds FROM (
             SELECT u.name, r.user_id, r.score,
                    ROW_NUMBER() OVER (PARTITION BY r.user_id ORDER BY r.id DESC) AS n
             FROM runs r JOIN users u ON u.id = r.user_id
             WHERE r.game = 'hotcold' AND r.solved = 1 AND u.password_hash IS NOT NULL
-        )
-        WHERE n <= ? AND (? IS NULL OR user_id = ?)
-        GROUP BY user_id HAVING COUNT(*) >= ?
+        ) AS recent
+        WHERE n <= %(last)s AND (%(user)s::int IS NULL OR user_id = %(user)s)
+        GROUP BY user_id, name HAVING COUNT(*) >= %(minimum)s
         ORDER BY average ASC
         """,
-        (last, user_id, user_id, minimum),
+        {"last": last, "user": user_id, "minimum": minimum},
     ).fetchall()
     return [dict(r) for r in rows]
 
@@ -96,17 +96,17 @@ def pin_accuracy(db, user_id=None, last=20, minimum=10):
     """Share of each player's last 20 pins that hit the country."""
     rows = db.execute(
         """
-        SELECT name, user_id, AVG(correct) AS accuracy, COUNT(*) AS pins FROM (
+        SELECT name, user_id, AVG(correct)::float AS accuracy, COUNT(*) AS pins FROM (
             SELECT u.name, a.user_id, a.correct,
                    ROW_NUMBER() OVER (PARTITION BY a.user_id ORDER BY a.id DESC) AS n
             FROM attempts a JOIN users u ON u.id = a.user_id
             WHERE a.game = 'pin' AND u.password_hash IS NOT NULL
-        )
-        WHERE n <= ? AND (? IS NULL OR user_id = ?)
-        GROUP BY user_id HAVING COUNT(*) >= ?
+        ) AS recent
+        WHERE n <= %(last)s AND (%(user)s::int IS NULL OR user_id = %(user)s)
+        GROUP BY user_id, name HAVING COUNT(*) >= %(minimum)s
         ORDER BY accuracy DESC, pins DESC
         """,
-        (last, user_id, user_id, minimum),
+        {"last": last, "user": user_id, "minimum": minimum},
     ).fetchall()
     return [dict(r) for r in rows]
 
@@ -118,12 +118,12 @@ def neighbour_rounds(db, user_id=None):
         SELECT u.name, r.user_id, SUM(r.solved) AS perfect, COUNT(*) AS rounds
         FROM runs r JOIN users u ON u.id = r.user_id
         WHERE r.game = 'neighbours' AND r.finished_at IS NOT NULL AND u.password_hash IS NOT NULL
-          AND (? IS NULL OR r.user_id = ?)
-        GROUP BY r.user_id
+          AND (%(user)s::int IS NULL OR r.user_id = %(user)s)
+        GROUP BY r.user_id, u.name
         HAVING SUM(r.solved) > 0
         ORDER BY perfect DESC, rounds ASC
         """,
-        (user_id, user_id),
+        {"user": user_id},
     ).fetchall()
     return [dict(r) for r in rows]
 
@@ -133,16 +133,16 @@ def perfect_trips(db, user_id=None):
     rows = db.execute(
         """
         SELECT u.name, r.user_id,
-               SUM(r.solved = 1 AND r.score = r.total) AS perfect,
-               SUM(r.solved = 1 AND r.score = r.total AND r.variant = 'hard') AS hard
+               COUNT(*) FILTER (WHERE r.solved = 1 AND r.score = r.total) AS perfect,
+               COUNT(*) FILTER (WHERE r.solved = 1 AND r.score = r.total AND r.variant = 'hard') AS hard
         FROM runs r JOIN users u ON u.id = r.user_id
         WHERE r.game = 'roadtrip' AND r.finished_at IS NOT NULL AND u.password_hash IS NOT NULL
-          AND (? IS NULL OR r.user_id = ?)
-        GROUP BY r.user_id
-        HAVING perfect > 0
+          AND (%(user)s::int IS NULL OR r.user_id = %(user)s)
+        GROUP BY r.user_id, u.name
+        HAVING COUNT(*) FILTER (WHERE r.solved = 1 AND r.score = r.total) > 0
         ORDER BY hard DESC, perfect DESC
         """,
-        (user_id, user_id),
+        {"user": user_id},
     ).fetchall()
     return [dict(r) for r in rows]
 

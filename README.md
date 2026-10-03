@@ -2,7 +2,7 @@
 
 A geography learning website with eleven games, XP and levels, day streaks, a weekly league with friends, achievements, and a page that shows what you know, what you keep mixing up and what's due for review.
 
-Built with [Flask](https://flask.palletsprojects.com/) and SQLite, with plain JavaScript and no build step.
+Built with [Flask](https://flask.palletsprojects.com/) and PostgreSQL, with plain JavaScript and no build step. It runs online on Render with the database on Neon, both on free plans (see [DEPLOY.md](DEPLOY.md)).
 
 ## The games
 
@@ -43,7 +43,14 @@ After every answer you get something to help you remember: a fact card, a lookal
 
 ## Getting started
 
-You need Python 3.10 or newer.
+You need Python 3.10 or newer and PostgreSQL. On a Mac with [Homebrew](https://brew.sh):
+
+```bash
+brew install postgresql@17
+brew services start postgresql@17   # keeps it running in the background, also after a restart
+```
+
+Then:
 
 ```bash
 git clone https://github.com/ggfret/geo-quest.git
@@ -56,11 +63,13 @@ python app.py
 
 Then open http://127.0.0.1:5070.
 
-Create an account on the sign-up page. Progress is saved in `geo.db`, which is created on first run and ignored by git, so it stays on your machine. To use another database file or port, set `GEO_DATABASE` or `PORT`, e.g. `GEO_DATABASE=test.db PORT=5071 python app.py`.
+Create an account on the sign-up page. Progress is saved in the Postgres database `geoquest` on your computer, which the app creates on its first run. To use another database or port, set `DATABASE_URL` or `PORT`, e.g. `DATABASE_URL=postgresql:///geoquest_demo PORT=5071 python app.py`.
+
+Coming from an older version that saved progress in `geo.db` (SQLite)? Copy it over once with `python scripts/copy_progress.py geo.db postgresql:///geoquest`.
 
 Logins are kept in a signed cookie. Locally, the signing key is generated into `instance/secret_key` (also ignored by git). To put the site online for friends, follow [DEPLOY.md](DEPLOY.md).
 
-Run the tests with `pytest`.
+Run the tests with `pytest`. They use their own database, `geoquest_test`, and empty it before every test.
 
 ## Project structure
 
@@ -76,13 +85,14 @@ feedback.py         Saving and listing the 💬 feedback reports
 leaderboard.py      The weekly league, all-time totals and records
 knowledge.py        SQL queries behind the My Knowledge page
 auth.py             Sign up and log in (hashed passwords, login throttling)
-database.py         The SQLite connection and the logged-in user
+database.py         The Postgres connection (rows readable as row[0] or row["name"]) and the logged-in user
 schema.sql          Tables: users, attempts, mastery, items, runs, achievements, feedback, plus the xp_events view
 templates/          HTML pages (Jinja templates)
 static/             common.js (shared helpers), worldmap.js (zoomable map), one script per game, style.css
 data/               Game data (countries, flags, capitals, outlines, ethnicities, languages, stats)
 data/raw/           The downloaded source datasets
-scripts/            Rebuild data/ from data/raw/
+scripts/            Rebuild data/ from data/raw/, and copy_progress.py to move accounts between databases
+render.yaml         How Render runs the site (free web service, gunicorn, environment variables)
 tests/              pytest tests
 ```
 

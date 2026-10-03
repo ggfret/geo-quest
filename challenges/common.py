@@ -91,16 +91,18 @@ def neighbours_of(cid):
 
 def start_run(db, user_id, game, state, variant="", total=None):
     run_id = db.execute(
-        "INSERT INTO runs (user_id, game, variant, state, total) VALUES (?, ?, ?, ?, ?)",
+        "INSERT INTO runs (user_id, game, variant, state, total) VALUES (%s, %s, %s, %s, %s) RETURNING id",
         (user_id, game, variant, json.dumps(state), total),
-    ).lastrowid
+    ).fetchone()[0]
     db.commit()
     return run_id
 
 
 def open_run(db, user_id, game, run_id):
     """The player's unfinished run, or a 404/409 error."""
-    row = db.execute("SELECT * FROM runs WHERE id = ? AND user_id = ? AND game = ?", (run_id, user_id, game)).fetchone()
+    if not isinstance(run_id, int):
+        abort(404)
+    row = db.execute("SELECT * FROM runs WHERE id = %s AND user_id = %s AND game = %s", (run_id, user_id, game)).fetchone()
     if row is None:
         abort(404)
     if row["finished_at"] is not None:
@@ -111,24 +113,25 @@ def open_run(db, user_id, game, run_id):
 def latest_open_run(db, user_id, game):
     """An unfinished round to pick up again (e.g. after leaving the page), or None."""
     row = db.execute(
-        "SELECT * FROM runs WHERE user_id = ? AND game = ? AND finished_at IS NULL ORDER BY id DESC LIMIT 1",
+        "SELECT * FROM runs WHERE user_id = %s AND game = %s AND finished_at IS NULL ORDER BY id DESC LIMIT 1",
         (user_id, game),
     ).fetchone()
     return (row, json.loads(row["state"])) if row else (None, None)
 
 
 def save_run(db, run_id, state, score=None):
-    db.execute("UPDATE runs SET state = ?, score = COALESCE(?, score) WHERE id = ?", (json.dumps(state), score, run_id))
+    db.execute("UPDATE runs SET state = %s, score = COALESCE(%s, score) WHERE id = %s", (json.dumps(state), score, run_id))
     db.commit()
 
 
 def finish_run(db, run_id, state, score, solved=False, bonus_xp=0, max_seconds=None):
     """Close the round. Its length is measured by the server, capped at the time limit if there is one."""
-    db.execute(
-        """UPDATE runs SET state = ?, score = ?, solved = ?, bonus_xp = ?, finished_at = CURRENT_TIMESTAMP,
-                  seconds = MIN(CAST(ROUND((julianday('now') - julianday(started_at)) * 86400) AS INTEGER), COALESCE(?, 1e9))
-           WHERE id = ?""",
+    seconds = db.execute(
+        """UPDATE runs SET state = %s, score = %s, solved = %s, bonus_xp = %s, finished_at = now(),
+                  seconds = LEAST(ROUND(EXTRACT(EPOCH FROM now() - started_at))::int, COALESCE(%s::int, 1000000000))
+           WHERE id = %s
+           RETURNING seconds""",
         (json.dumps(state), score, int(solved), bonus_xp, max_seconds, run_id),
-    )
+    ).fetchone()[0]
     db.commit()
-    return db.execute("SELECT seconds FROM runs WHERE id = ?", (run_id,)).fetchone()[0]
+    return seconds

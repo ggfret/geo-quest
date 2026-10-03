@@ -33,7 +33,7 @@ def report(db, user_id):
         "daily": daily_xp(db, user_id),
         "achievements": achievements.listing(db, user_id),
         "bests": leaderboard.personal_bests(db, user_id),
-        "total_answers": db.execute("SELECT COUNT(*) FROM attempts WHERE user_id = ?", (user_id,)).fetchone()[0],
+        "total_answers": db.execute("SELECT COUNT(*) FROM attempts WHERE user_id = %s", (user_id,)).fetchone()[0],
     }
 
 
@@ -45,18 +45,18 @@ def per_game(db, user_id):
             SELECT i.game,
                    COUNT(*) AS pool,
                    COUNT(m.item_id) AS seen,
-                   SUM(m.box >= ?) AS known
+                   COUNT(*) FILTER (WHERE m.box >= %s) AS known
             FROM items i
-            LEFT JOIN mastery m ON m.user_id = ? AND m.game = i.game AND m.item_id = i.item_id
+            LEFT JOIN mastery m ON m.user_id = %s AND m.game = i.game AND m.item_id = i.item_id
             GROUP BY i.game
         ),
         answers AS (
-            SELECT game, COUNT(*) AS answered, AVG(correct) AS accuracy
-            FROM attempts WHERE user_id = ?
+            SELECT game, COUNT(*) AS answered, AVG(correct)::float AS accuracy
+            FROM attempts WHERE user_id = %s
             GROUP BY game
         ),
         xp AS (
-            SELECT game, SUM(xp) AS xp FROM xp_events WHERE user_id = ? GROUP BY game
+            SELECT game, SUM(xp) AS xp FROM xp_events WHERE user_id = %s GROUP BY game
         )
         SELECT games.game, pool.pool, COALESCE(pool.seen, 0) AS seen, COALESCE(pool.known, 0) AS known,
                COALESCE(answers.answered, 0) AS answered, answers.accuracy, COALESCE(xp.xp, 0) AS xp
@@ -74,10 +74,10 @@ def areas(db, user_id):
     """Accuracy per game and region (continent, or writing system for languages)."""
     rows = db.execute(
         """
-        SELECT a.game, i.region, COUNT(*) AS answered, AVG(a.correct) AS accuracy
+        SELECT a.game, i.region, COUNT(*) AS answered, AVG(a.correct)::float AS accuracy
         FROM attempts a
         JOIN items i ON i.game = a.game AND i.item_id = a.item_id
-        WHERE a.user_id = ?
+        WHERE a.user_id = %s
         GROUP BY a.game, i.region
         ORDER BY a.game, i.region
         """,
@@ -91,12 +91,12 @@ def items(db, user_id, hardest, limit=8):
     order, only = ("ASC", "m.correct < m.seen") if hardest else ("DESC", "m.correct > 0")
     rows = db.execute(
         f"""
-        SELECT m.game, i.name, m.seen, m.correct, m.box, 1.0 * m.correct / m.seen AS accuracy
+        SELECT m.game, i.name, m.seen, m.correct, m.box, m.correct::float / m.seen AS accuracy
         FROM mastery m
         JOIN items i ON i.game = m.game AND i.item_id = m.item_id
-        WHERE m.user_id = ? AND m.seen >= ? AND {only}
+        WHERE m.user_id = %s AND m.seen >= %s AND {only}
         ORDER BY accuracy {order}, m.seen DESC
-        LIMIT ?
+        LIMIT %s
         """,
         (user_id, MIN_ITEM_ANSWERS, limit),
     ).fetchall()
@@ -114,10 +114,10 @@ def mixups(db, user_id, limit=10):
         FROM attempts a
         LEFT JOIN items t ON t.game = a.game AND t.item_id = a.item_id
         LEFT JOIN items g ON g.game = a.game AND g.item_id = a.guessed_id
-        WHERE a.user_id = ? AND a.correct = 0 AND a.guessed_id IS NOT NULL AND a.guessed_id != a.item_id
-        GROUP BY a.game, a.item_id, a.guessed_id
+        WHERE a.user_id = %s AND a.correct = 0 AND a.guessed_id IS NOT NULL AND a.guessed_id != a.item_id
+        GROUP BY a.game, a.item_id, a.guessed_id, t.name, g.name
         ORDER BY times DESC, MAX(a.id) DESC
-        LIMIT ?
+        LIMIT %s
         """,
         (user_id, limit),
     ).fetchall()
@@ -129,7 +129,7 @@ def mastery_by_game(db, user_id):
     result = {}
     rows = db.execute(
         f"SELECT m.game, m.item_id, m.box, m.seen, m.correct, m.box >= 1 AND {progress.DUE_SQL} AS due "
-        "FROM mastery m WHERE m.user_id = ?",
+        "FROM mastery m WHERE m.user_id = %s",
         (user_id,),
     )
     for row in rows:
@@ -140,8 +140,8 @@ def mastery_by_game(db, user_id):
 def daily_xp(db, user_id, days=CHART_DAYS):
     """XP per day for the last 30 days (UTC), oldest first, including days with none."""
     per_day = {day: xp for day, xp in db.execute(
-        "SELECT date(at), SUM(xp) FROM xp_events WHERE user_id = ? AND at >= date('now', ?) GROUP BY date(at)",
-        (user_id, f"-{days - 1} days"),
+        "SELECT at::date, SUM(xp) FROM xp_events WHERE user_id = %s AND at >= current_date - %s::int GROUP BY at::date",
+        (user_id, days - 1),
     )}
     today = progress.today_utc()
     result = []

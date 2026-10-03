@@ -12,14 +12,14 @@ def answer(db, user, day_offset, game="flags", item="NOR", correct=1, xp=10):
     """An answer given `day_offset` days ago (0 = today)."""
     db.execute(
         "INSERT INTO attempts (user_id, game, item_id, guess, correct, xp, created_at) "
-        "VALUES (?, ?, ?, '', ?, ?, datetime('now', ?))",
-        (user, game, item, correct, xp, f"-{day_offset} days"),
+        "VALUES (%s, %s, %s, '', %s, %s, now() - %s * interval '1 day')",
+        (user, game, item, correct, xp, day_offset),
     )
     db.commit()
 
 
 def add_player(db, name):
-    return db.execute("INSERT INTO users (name, password_hash) VALUES (?, 'x')", (name,)).lastrowid
+    return db.execute("INSERT INTO users (name, password_hash) VALUES (%s, 'x') RETURNING id", (name,)).fetchone()[0]
 
 
 # ---------- Day streak and daily goal ----------
@@ -50,13 +50,13 @@ def test_daily_and_weekly_xp(client, db):
 # ---------- Knowledge fades ----------
 
 def test_due_for_review(client, db):
-    db.executemany(
+    db.cursor().executemany(
         "INSERT INTO mastery (user_id, game, item_id, seen, correct, box, last_seen) "
-        "VALUES (1, 'flags', ?, 5, 5, ?, datetime('now', ?))",
-        [("NOR", 5, "-40 days"),   # mastered, but 40 days ago: due (every 30 days)
-         ("SWE", 5, "-2 days"),    # mastered 2 days ago: not due
-         ("FIN", 2, "-4 days"),    # box 2 comes back after 3 days: due
-         ("DNK", 0, "-1 days")],   # still struggling: not counted as 'review'
+        "VALUES (1, 'flags', %s, 5, 5, %s, now() - %s::interval)",
+        [("NOR", 5, "40 days"),   # mastered, but 40 days ago: due (every 30 days)
+         ("SWE", 5, "2 days"),    # mastered 2 days ago: not due
+         ("FIN", 2, "4 days"),    # box 2 comes back after 3 days: due
+         ("DNK", 0, "1 day")],    # still struggling: not counted as 'review'
     )
     db.commit()
     assert progress.due_counts(db, 1) == {"flags": 1 + 1}
@@ -65,10 +65,10 @@ def test_due_for_review(client, db):
 
 
 def test_items_that_are_not_due_come_up_less(client, db):
-    db.executemany(
+    db.cursor().executemany(
         "INSERT INTO mastery (user_id, game, item_id, seen, correct, box, last_seen) "
-        "VALUES (1, 'flags', ?, 3, 3, 3, datetime('now', ?))",
-        [("NOR", "-10 days"), ("SWE", "-1 days")],  # box 3 = every 7 days: Norway is due, Sweden isn't
+        "VALUES (1, 'flags', %s, 3, 3, 3, now() - %s::interval)",
+        [("NOR", "10 days"), ("SWE", "1 day")],  # box 3 = every 7 days: Norway is due, Sweden isn't
     )
     db.commit()
     picks = Counter(progress.pick_next(db, 1, "flags", ["NOR", "SWE"]) for _ in range(2000))
@@ -113,7 +113,7 @@ def test_map_game_achievements(client, db):
 
 def test_weekly_league_and_champion(client, db):
     ana, ben = add_player(db, "ana"), add_player(db, "ben")
-    week_start_offset = db.execute("SELECT julianday('now') - julianday(date('now', 'weekday 0', '-6 days'))").fetchone()[0]
+    week_start_offset = db.execute("SELECT EXTRACT(EPOCH FROM now() - date_trunc('week', now())) / 86400").fetchone()[0]
     last_week = int(week_start_offset) + 3  # a day in last week
     answer(db, ana, last_week, xp=500)
     answer(db, ben, last_week, xp=100)
@@ -135,7 +135,7 @@ def test_records(client, db):
     ana = add_player(db, "ana")
     for user, score, seconds in [(1, 30, 400), (1, 35, 500), (ana, 35, 300)]:
         db.execute("INSERT INTO runs (user_id, game, variant, score, total, seconds, finished_at) "
-                   "VALUES (?, 'nameall', 'africa', ?, 54, ?, CURRENT_TIMESTAMP)", (user, score, seconds))
+                   "VALUES (%s, 'nameall', 'africa', %s, 54, %s, now())", (user, score, seconds))
     db.commit()
     africa = leaderboard.records(db)["nameall"]["africa"]
     assert [(r["name"], r["score"], r["seconds"]) for r in africa] == [("ana", 35, 300), ("tester", 35, 500)]
@@ -144,7 +144,7 @@ def test_records(client, db):
 
     for variant, score in [("hard", 8), ("easy", 3), ("easy", 5)]:  # two perfect trips, one with wasted guesses
         db.execute("INSERT INTO runs (user_id, game, variant, score, total, solved, finished_at) "
-                   "VALUES (?, 'roadtrip', ?, ?, ?, 1, CURRENT_TIMESTAMP)", (ana, variant, score, 3 if variant == "easy" else 8))
+                   "VALUES (%s, 'roadtrip', %s, %s, %s, 1, now())", (ana, variant, score, 3 if variant == "easy" else 8))
     db.commit()
     assert leaderboard.records(db)["roadtrip"] == [{"name": "ana", "user_id": ana, "perfect": 2, "hard": 1}]
     assert leaderboard.personal_bests(db, 1)["roadtrip"] is None

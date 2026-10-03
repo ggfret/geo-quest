@@ -9,25 +9,18 @@ USERNAME = re.compile(r"^[A-Za-z0-9_]{3,20}$")
 MIN_PASSWORD = 8
 LEGACY_USER_ID = 1  # progress saved before accounts existed belongs to this user, who has no password
 MAX_FAILURES = 5    # wrong passwords per username ...
-LOCKOUT = "-10 minutes"  # ... within this window, before logins are paused
+LOCKOUT = "10 minutes"  # ... within this window, before logins are paused
 
 
 class AuthError(ValueError):
     """A problem to show on the form, e.g. 'That username is taken.'"""
 
 
-def migrate(db):
-    """Add the password column to databases created before accounts existed."""
-    columns = {row[1] for row in db.execute("PRAGMA table_info(users)")}
-    if "password_hash" not in columns:
-        db.execute("ALTER TABLE users ADD COLUMN password_hash TEXT")
-
-
 def unclaimed_answers(db):
     """How many answers were saved before accounts existed and haven't been claimed yet."""
     row = db.execute(
         """SELECT COUNT(a.id) FROM users u JOIN attempts a ON a.user_id = u.id
-           WHERE u.id = ? AND u.password_hash IS NULL""",
+           WHERE u.id = %s AND u.password_hash IS NULL""",
         (LEGACY_USER_ID,),
     ).fetchone()
     return row[0]
@@ -44,7 +37,7 @@ def sign_up(db, username, password, claim_legacy=False, invite="", required_invi
     if len(password) < MIN_PASSWORD:
         raise AuthError(f"Passwords need at least {MIN_PASSWORD} characters.")
     taken = db.execute(
-        "SELECT 1 FROM users WHERE lower(name) = lower(?) AND password_hash IS NOT NULL", (username,)
+        "SELECT 1 FROM users WHERE lower(name) = lower(%s) AND password_hash IS NOT NULL", (username,)
     ).fetchone()
     if taken:
         raise AuthError("That username is taken.")
@@ -52,14 +45,14 @@ def sign_up(db, username, password, claim_legacy=False, invite="", required_invi
     password_hash = generate_password_hash(password)
     if claim_legacy and unclaimed_answers(db):
         db.execute(
-            "UPDATE users SET name = ?, password_hash = ? WHERE id = ?",
+            "UPDATE users SET name = %s, password_hash = %s WHERE id = %s",
             (username, password_hash, LEGACY_USER_ID),
         )
         user_id = LEGACY_USER_ID
     else:
         user_id = db.execute(
-            "INSERT INTO users (name, password_hash) VALUES (?, ?)", (username, password_hash)
-        ).lastrowid
+            "INSERT INTO users (name, password_hash) VALUES (%s, %s) RETURNING id", (username, password_hash)
+        ).fetchone()[0]
     db.commit()
     return user_id
 
@@ -68,21 +61,21 @@ def log_in(db, username, password):
     """Return the user's id if the password is right. Pauses a username after too many wrong passwords."""
     username = username.strip().lower()
     failures = db.execute(
-        "SELECT COUNT(*) FROM login_failures WHERE username = ? AND at >= datetime('now', ?)",
+        "SELECT COUNT(*) FROM login_failures WHERE username = %s AND at >= now() - %s::interval",
         (username, LOCKOUT),
     ).fetchone()[0]
     if failures >= MAX_FAILURES:
         raise AuthError("Too many wrong passwords. Try again in 10 minutes.")
 
     row = db.execute(
-        "SELECT id, password_hash FROM users WHERE lower(name) = ? AND password_hash IS NOT NULL",
+        "SELECT id, password_hash FROM users WHERE lower(name) = %s AND password_hash IS NOT NULL",
         (username,),
     ).fetchone()
     if row is None or not check_password_hash(row["password_hash"], password):
-        db.execute("INSERT INTO login_failures (username) VALUES (?)", (username,))
+        db.execute("INSERT INTO login_failures (username) VALUES (%s)", (username,))
         db.commit()
         raise AuthError("Wrong username or password.")
-    db.execute("DELETE FROM login_failures WHERE username = ?", (username,))
+    db.execute("DELETE FROM login_failures WHERE username = %s", (username,))
     db.commit()
     return row["id"]
 

@@ -1,0 +1,19 @@
+# Render Blueprint: the Geo Quest website on Render's free plan. The database is on Neon (free).
+# In Render: New > Blueprint > pick this GitHub repo. It asks for DATABASE_URL: paste Neon's address.
+# See DEPLOY.md for the whole walkthrough.
+services:
+  - type: web
+    name: geo-quest
+    runtime: python
+    plan: free
+    region: frankfurt
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 1 --threads 4 --timeout 120 --bind 0.0.0.0:$PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_URL     # the Neon connection string (secret: you paste it in the dashboard)
+        sync: false
+      - key: GEO_SECRET_KEY   # signs the login cookie; Render makes a random one
+        generateValue: true
+      - key: GEO_HTTPS        # only send the login cookie over HTTPS
+        value: "1"

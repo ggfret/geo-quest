@@ -10,9 +10,9 @@ COUNTRY_IDS = list(COUNTRY_BY_ID)
 
 def force_state(db, run_id, **changes):
     """Set up a round with a known mystery country / pair, so the test doesn't depend on chance."""
-    state = json.loads(db.execute("SELECT state FROM runs WHERE id = ?", (run_id,)).fetchone()[0])
+    state = json.loads(db.execute("SELECT state FROM runs WHERE id = %s", (run_id,)).fetchone()[0])
     state.update(changes)
-    db.execute("UPDATE runs SET state = ? WHERE id = ?", (json.dumps(state), run_id))
+    db.execute("UPDATE runs SET state = %s WHERE id = %s", (json.dumps(state), run_id))
     db.commit()
 
 
@@ -86,7 +86,7 @@ def test_hotcold_round(client, db):
     solved = guess("France")
     assert solved["status"] == "solved" and solved["answer"] == "France" and solved["guesses_used"] == 3
     assert solved["xp"] == 20  # 35 - 5 x 3 guesses
-    assert tuple(db.execute("SELECT solved, score FROM runs WHERE id = ?", (run,)).fetchone()) == (1, 3)
+    assert tuple(db.execute("SELECT solved, score FROM runs WHERE id = %s", (run,)).fetchone()) == (1, 3)
     assert client.post("/api/hotcold/guess", json={"run_id": run, "guess": "Spain"}).status_code == 409
 
 
@@ -187,7 +187,7 @@ def test_higher_or_lower(client, db):
     force_state(db, run, a="IND", b="NOR", kind="population")
     wrong = client.post("/api/higherlower/guess", json={"run_id": run, "choice": "higher"}).get_json()
     assert not wrong["correct"] and wrong["streak"] == 1 and wrong["new_best"]
-    assert tuple(db.execute("SELECT score, finished_at IS NOT NULL FROM runs WHERE id = ?", (run,)).fetchone()) == (1, 1)
+    assert tuple(db.execute("SELECT score, finished_at IS NOT NULL FROM runs WHERE id = %s", (run,)).fetchone()) == (1, 1)
     assert db.execute("SELECT COUNT(*) FROM mastery WHERE game = 'higherlower'").fetchone()[0] == 0
 
 
@@ -299,7 +299,7 @@ def trip(client, db, level="easy", **state):
     run = client.post("/api/roadtrip/start", json={"level": level}).get_json()
     assert run["level"] == level and run["guesses"] == []
     force_state(db, run["run_id"], **{"start": "NOR", "end": "KOR", "max_guesses": 6, **state})
-    db.execute("UPDATE runs SET total = 2 WHERE id = ?", (run["run_id"],))  # 2 countries between Norway and South Korea
+    db.execute("UPDATE runs SET total = 2 WHERE id = %s", (run["run_id"],))  # 2 countries between Norway and South Korea
     db.commit()
     return lambda text: client.post("/api/roadtrip/guess", json={"run_id": run["run_id"], "guess": text}).get_json()
 

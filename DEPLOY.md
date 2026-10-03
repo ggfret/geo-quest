@@ -1,72 +1,68 @@
-# Putting Geo Quest online (PythonAnywhere, free)
+# Putting Geo Quest online (Render + Neon, both free)
 
-This puts the site at `https://YOURNAME.pythonanywhere.com`. Replace `YOURNAME` everywhere below with your PythonAnywhere username.
+The website runs on [Render](https://render.com) and everyone's accounts and scores are kept in a Postgres
+database on [Neon](https://neon.com). Render's free plan can't keep files, which is why the database lives
+on Neon. Both free plans are permanent and need no credit card for this.
 
-The free plan keeps files permanently, so the SQLite database (everyone's accounts and progress) survives restarts.
+The address will be something like `https://geo-quest.onrender.com`.
 
-## 1. Create an account
+## 1. Create the database on Neon
 
-Sign up for a free **Beginner** account at <https://www.pythonanywhere.com/>. Your username becomes the web address.
+1. Sign up at <https://neon.com> (signing in with GitHub is quickest).
+2. Create a project:
+   - **Name:** `geo-quest`
+   - **Postgres version:** 17
+   - **Region:** AWS Europe Central 1 (Frankfurt), the same place the website will run
+3. On the project dashboard, click **Connect** and copy the **connection string**. It starts with
+   `postgresql://` and contains a password, so treat it like one: don't post it anywhere.
 
-## 2. Download the code
+## 2. Optional: bring your progress from your own computer
 
-Open the **Consoles** tab, start a **Bash** console, and run:
+Do this before anyone signs up online, because it only copies into an empty database. In Terminal:
 
 ```bash
-git clone https://github.com/ggfret/geo-quest.git
-cd geo-quest
-python3.11 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+cd ~/Claude/geo-quest
+.venv/bin/python scripts/copy_progress.py postgresql:///geoquest "PASTE-THE-NEON-CONNECTION-STRING"
 ```
 
-## 3. Create the web app
+Keep the quotes around the connection string. It prints how many rows it copied. You'll log in online with
+the same username and password as on your computer.
 
-1. Open the **Web** tab and click **Add a new web app**.
-2. Choose **Manual configuration** (not the "Flask" option, which would create an empty app), then **Python 3.11**.
-3. On the web app's page, under **Virtualenv**, enter: `/home/YOURNAME/geo-quest/.venv`
-4. Under **Code**, click the link to the **WSGI configuration file**. Delete everything in it and paste this, filling in your username and an invite code of your choice:
+## 3. Create the website on Render
 
-   ```python
-   import os
-   import sys
+1. In the Render dashboard, click **New** → **Blueprint**.
+2. Connect your GitHub account if asked, and pick the **geo-quest** repository.
+3. Render reads `render.yaml` from the repository and shows one web service, `geo-quest`, on the free plan.
+   It asks for **DATABASE_URL**: paste the Neon connection string.
+4. Click **Apply** (or **Deploy Blueprint**). The first build takes a few minutes.
 
-   os.environ["GEO_HTTPS"] = "1"                   # only send the login cookie over HTTPS
-   os.environ["GEO_INVITE_CODE"] = "pick-a-code"   # friends need this to sign up; delete the line to let anyone sign up
+When it says **Live**, open the address shown at the top of the service page.
 
-   path = "/home/YOURNAME/geo-quest"
-   if path not in sys.path:
-       sys.path.insert(0, path)
+If you didn't copy your progress in step 2, **sign up first, before your friends**: the first account
+(number 1) is the owner, who sees everyone's 💬 feedback at `/feedback`.
 
-   from app import app as application
-   ```
-
-   Save the file.
-5. Under **Security**, turn on **Force HTTPS**.
-6. Click the big green **Reload** button at the top.
-
-Open `https://YOURNAME.pythonanywhere.com`, sign up, and send your friends the link and the invite code.
-
-## 4. Optional: bring your progress from your own computer
-
-1. On your computer, sign up on the local site first and keep the "Keep the progress already on this computer" box ticked, so the progress belongs to your account.
-2. In the **Files** tab on PythonAnywhere, go to `/home/YOURNAME/geo-quest/` and upload `geo.db` from your `geo-quest` folder.
-3. **Reload** the web app. Log in with the same username and password as on your computer.
-
-Do this before any friends sign up, because uploading replaces the online database.
+Anyone with the link can sign up. To make sign-up need a code instead, add an environment variable
+`GEO_INVITE_CODE` with a code of your choice (service → **Environment**), and share the code with friends.
 
 ## Updating the site later
 
-After pushing new code to GitHub, open a Bash console on PythonAnywhere and run:
-
-```bash
-cd ~/geo-quest && git pull && .venv/bin/pip install -r requirements.txt
-```
-
-Then click **Reload** on the Web tab.
+Push to GitHub. Render notices and redeploys by itself in a few minutes; the database isn't touched.
 
 ## Good to know
 
-- **Keep it running:** free web apps have to be renewed every few months. The Web tab shows a button to extend it, and PythonAnywhere emails you before it expires.
-- **Backups:** the whole database is one file, `geo.db`. Download it from the Files tab now and then.
-- **Errors:** if the site shows "Something went wrong", the **error log** link on the Web tab says why.
-- The login signing key is created automatically in `instance/secret_key` on the server. Deleting that file logs everyone out, but nobody loses progress.
+- **Sleeping:** with nobody on it for 15 minutes, the free website sleeps. The next visitor waits about a
+  minute while it wakes up; after that it's quick. The database also sleeps after 5 idle minutes, but wakes
+  in about a second.
+- **Free limits:** Render gives 750 hours a month (enough for one site running all the time). Neon gives
+  1 GB of storage (years of answers for a group of friends) and 100 compute hours a month, and only counts
+  the time the database is awake.
+- **Errors:** the service's **Logs** tab on Render shows what went wrong.
+- **Backups:** Neon keeps a short history you can restore from (**Branches** / **Restore** in its dashboard).
+  For a copy on your own computer:
+
+  ```bash
+  /opt/homebrew/opt/postgresql@17/bin/pg_dump "PASTE-THE-NEON-CONNECTION-STRING" > geo-quest-backup.sql
+  ```
+
+- **Logins:** Render created a random `GEO_SECRET_KEY` that signs the login cookie. Changing it logs
+  everyone out, but nobody loses progress.

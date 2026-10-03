@@ -1,6 +1,6 @@
 """XP, levels, day streaks, the daily goal, and choosing what to ask next (spaced repetition).
 
-Dates are in UTC, like SQLite's 'now'.
+Dates are in UTC (the database works in UTC, see app.init_db).
 """
 
 import random
@@ -24,10 +24,17 @@ MAX_STREAK_BONUS = 10
 WEAK_ITEM_XP = 5    # bonus for getting a country right that you usually miss
 DAILY_GOAL = 50     # XP per day
 
-# Monday 00:00 UTC of the current week, in SQLite.
-WEEK_START = "date('now', 'weekday 0', '-6 days')"
+# Monday 00:00 UTC of the current week.
+WEEK_START = "date_trunc('week', now())"
+
+
+def days_since(column):
+    """SQL for the days (with decimals) since a time column."""
+    return f"EXTRACT(EPOCH FROM now() - {column}) / 86400"
+
+
 # True when a mastery row (aliased m) is due for review; box 0 is always due.
-DUE_SQL = ("julianday('now') - julianday(m.last_seen) >= CASE m.box "
+DUE_SQL = (f"{days_since('m.last_seen')} >= CASE m.box "
            + " ".join(f"WHEN {box} THEN {days}" for box, days in enumerate(REVIEW_DAYS)) + " END")
 
 
@@ -57,11 +64,11 @@ def today_utc():
 def summary(db, user_id):
     """Everything the header shows: level, XP per game, today's XP, this week's XP and the day streak."""
     per_game = {game: xp for game, xp in db.execute(
-        "SELECT game, SUM(xp) FROM xp_events WHERE user_id = ? GROUP BY game", (user_id,))}
+        "SELECT game, SUM(xp) FROM xp_events WHERE user_id = %s GROUP BY game", (user_id,))}
     today_xp, week_xp = db.execute(
-        f"""SELECT COALESCE(SUM(CASE WHEN at >= date('now') THEN xp END), 0),
+        f"""SELECT COALESCE(SUM(CASE WHEN at >= current_date THEN xp END), 0),
                    COALESCE(SUM(CASE WHEN at >= {WEEK_START} THEN xp END), 0)
-            FROM xp_events WHERE user_id = ?""",
+            FROM xp_events WHERE user_id = %s""",
         (user_id,),
     ).fetchone()
     return {
@@ -77,7 +84,7 @@ def summary(db, user_id):
 def day_streak(db, user_id):
     """Days in a row with at least one answer, counting back from today (or yesterday, if today's still to come)."""
     days = [date.fromisoformat(d) for (d,) in db.execute(
-        "SELECT DISTINCT date(created_at) FROM attempts WHERE user_id = ? ORDER BY 1 DESC LIMIT 400", (user_id,))]
+        "SELECT DISTINCT created_at::date FROM attempts WHERE user_id = %s ORDER BY 1 DESC LIMIT 400", (user_id,))]
     today = today_utc()
     if not days or days[0] < today - timedelta(days=1):
         return {"streak": 0, "played_today": False}
@@ -93,7 +100,7 @@ def day_streak(db, user_id):
 def current_streak(db, user_id, game):
     """Correct answers in a row, most recent first."""
     rows = db.execute(
-        "SELECT correct FROM attempts WHERE user_id = ? AND game = ? ORDER BY id DESC LIMIT 50",
+        "SELECT correct FROM attempts WHERE user_id = %s AND game = %s ORDER BY id DESC LIMIT 50",
         (user_id, game),
     ).fetchall()
     streak = 0
@@ -109,14 +116,14 @@ def pick_next(db, user_id, game, item_ids):
     known = {
         item_id: (box, age)
         for item_id, box, age in db.execute(
-            "SELECT item_id, box, julianday('now') - julianday(last_seen) FROM mastery WHERE user_id = ? AND game = ?",
+            f"SELECT item_id, box, ({days_since('last_seen')})::float FROM mastery WHERE user_id = %s AND game = %s",
             (user_id, game),
         )
     }
     recent = {
         item_id
         for (item_id,) in db.execute(
-            "SELECT item_id FROM attempts WHERE user_id = ? AND game = ? ORDER BY id DESC LIMIT ?",
+            "SELECT item_id FROM attempts WHERE user_id = %s AND game = %s ORDER BY id DESC LIMIT %s",
             (user_id, game, RECENT_TO_SKIP),
         )
     }
@@ -139,7 +146,7 @@ def record(db, user_id, game, item_id, guess, result, xp=None, mastery=True, com
     mastery: False for answers that aren't about knowing one item (Higher or Lower).
     """
     row = db.execute(
-        "SELECT seen, box FROM mastery WHERE user_id = ? AND game = ? AND item_id = ?",
+        "SELECT seen, box FROM mastery WHERE user_id = %s AND game = %s AND item_id = %s",
         (user_id, game, item_id),
     ).fetchone() if mastery else None
     seen, box = (row[0], row[1]) if row else (0, 0)
@@ -155,16 +162,16 @@ def record(db, user_id, game, item_id, guess, result, xp=None, mastery=True, com
 
     db.execute(
         """INSERT INTO attempts (user_id, game, item_id, guess, correct, typo, guessed_id, xp)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+           VALUES (%s, %s, %s, %s, %s, %s, %s, %s)""",
         (user_id, game, item_id, guess, int(result.correct), int(result.typo), result.guessed_id, xp),
     )
     if mastery:
         db.execute(
             """INSERT INTO mastery (user_id, game, item_id, seen, correct, box, last_seen)
-               VALUES (?, ?, ?, 1, ?, ?, CURRENT_TIMESTAMP)
+               VALUES (%s, %s, %s, 1, %s, %s, now())
                ON CONFLICT (user_id, game, item_id) DO UPDATE SET
-                   seen = seen + 1,
-                   correct = correct + excluded.correct,
+                   seen = mastery.seen + 1,
+                   correct = mastery.correct + excluded.correct,
                    box = excluded.box,
                    last_seen = excluded.last_seen""",
             (user_id, game, item_id, int(result.correct), new_box),
@@ -177,6 +184,6 @@ def record(db, user_id, game, item_id, guess, result, xp=None, mastery=True, com
 def due_counts(db, user_id):
     """{game: how many learned items are due for review} (box 0 'struggling' items aren't counted)."""
     return {game: n for game, n in db.execute(
-        f"SELECT m.game, COUNT(*) FROM mastery m WHERE m.user_id = ? AND m.box >= 1 AND {DUE_SQL} GROUP BY m.game",
+        f"SELECT m.game, COUNT(*) FROM mastery m WHERE m.user_id = %s AND m.box >= 1 AND {DUE_SQL} GROUP BY m.game",
         (user_id,),
     )}

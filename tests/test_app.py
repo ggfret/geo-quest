@@ -1,5 +1,4 @@
 import re
-import sqlite3
 
 import pytest
 
@@ -134,7 +133,7 @@ def test_knowledge_page_empty(client):
     assert "Nothing here yet" in page
 
 
-def test_knowledge_report(client):
+def test_knowledge_report(client, db):
     answer = lambda game, item, guess: client.post(f"/api/{game}/answer", json={"item_id": item, "guess": guess})
     for _ in range(3):
         answer("flags", "TCD", "Romania")     # the same mix-up three times
@@ -142,10 +141,8 @@ def test_knowledge_report(client):
         answer("flags", item, guess)
     answer("languages", "Ukrainian", "Russian")
 
-    geo_app_db = sqlite3.connect(geo_app.app.config["DATABASE"])
-    geo_app_db.row_factory = sqlite3.Row
     import knowledge
-    report = knowledge.report(geo_app_db, 1)
+    report = knowledge.report(db, 1)
 
     assert report["total_answers"] == 9
     flags = report["games"]["flags"]
@@ -208,20 +205,10 @@ def test_players_have_separate_progress(anon):
     assert board.index("ana") < board.index("ben")  # ana has more XP, so she's first
 
 
-def test_claiming_progress_from_before_accounts(tmp_path, monkeypatch):
-    """A database from before accounts: user 1 'me' with answers and no password."""
-    db_path = tmp_path / "old.db"
-    old = sqlite3.connect(db_path)
-    old.executescript("""
-        CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL UNIQUE,
-                            created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
-        INSERT INTO users (id, name) VALUES (1, 'me');
-    """)
-    old.close()
-    monkeypatch.setitem(geo_app.app.config, "DATABASE", db_path)
-    geo_app.init_db()  # adds the password column
-    with sqlite3.connect(db_path) as db:
-        db.execute("INSERT INTO attempts (user_id, game, item_id, guess, correct, xp) VALUES (1, 'flags', 'NOR', 'Norway', 1, 10)")
+def test_claiming_progress_from_before_accounts(anon, db):
+    """Progress from before accounts: user 1 'me' with answers and no password."""
+    db.execute("INSERT INTO users (name) VALUES ('me')")
+    db.execute("INSERT INTO attempts (user_id, game, item_id, guess, correct, xp) VALUES (1, 'flags', 'NOR', 'Norway', 1, 10)")
 
     browser = geo_app.app.test_client()
     assert "Keep the progress already on this computer (1 answers)" in browser.get("/signup").get_data(as_text=True)
