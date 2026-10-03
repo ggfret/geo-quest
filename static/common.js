@@ -95,3 +95,34 @@ document.addEventListener("DOMContentLoaded", () => {
   const box = $("xpbox");
   if (box) updateHeader(JSON.parse(box.dataset.me));
 });
+
+// ---------- 💬 Feedback: a note plus where you were ----------
+// Game pages keep `feedbackContext` up to date with the question or round on screen.
+let feedbackContext = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dialog = $("feedback-dialog");
+  if (!dialog) return;
+  $("feedback-open").addEventListener("click", () => {
+    const bits = Object.entries(feedbackContext).map(([k, v]) => `${k}: ${v}`);
+    $("feedback-where").textContent = `Sent with: ${location.pathname}${bits.length ? " · " + bits.join(" · ") : ""}`;
+    $("feedback-error").hidden = true;
+    dialog.showModal();
+    $("feedback-message").focus();
+  });
+  $("feedback-cancel").addEventListener("click", () => dialog.close());
+  $("feedback-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const kind = new FormData(e.target).get("kind");
+    try {
+      await api("/api/feedback", { kind, message: $("feedback-message").value, page: location.pathname, context: feedbackContext });
+    } catch (err) {
+      $("feedback-error").textContent = "Couldn't send it. Write a few words and try again.";
+      $("feedback-error").hidden = false;
+      return;
+    }
+    $("feedback-message").value = "";
+    dialog.close();
+    toast("Thanks! Your feedback was saved.", "level");
+  });
+});

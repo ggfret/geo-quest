@@ -18,18 +18,19 @@
     <span class="swatch heat2" title="1,500–3,000 km"></span>
     <span class="swatch heat3" title="500–1,500 km"></span>
     <span class="swatch heat4" title="under 500 km"></span>
-    <span>Close</span>
+    <span class="swatch heat5" title="shares a border with it"></span>
+    <span>Neighbour</span>
     <span class="legend-gap"></span>
     <span class="swatch hit"></span> Mystery country
   </div>
 
   <form class="answer-form" id="guess-form" autocomplete="off">
-    <input id="guess" type="text" placeholder="Guess the mystery country…" autocomplete="off" autocapitalize="off"
-           autocorrect="off" spellcheck="false" aria-label="Your guess">
+    <input id="guess" name="search-guess" type="search" placeholder="Guess the mystery country…" autocomplete="off" autocapitalize="off"
+           autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your guess">
     <button type="submit" class="primary">Guess</button>
     <button type="button" class="ghost" id="give-up">Give up</button>
   </form>
-  <p class="message" id="message" aria-live="polite">Each guess shows how far away the mystery country is and which way to go. The closer, the hotter.</p>
+  <p class="message" id="message" aria-live="polite">Each guess shows how far away the mystery country is and which way to go. The closer, the darker the red.</p>
 
   <div class="reveal" id="reveal" hidden>
     <div class="verdict" id="verdict"></div>

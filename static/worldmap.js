@@ -134,6 +134,32 @@ class WorldMap {
     return this.places[id]?.box;
   }
 
+  // Which country is at a map point (from onPick)? Smallest first, so a click on Vatican City or Lesotho
+  // picks it rather than the country around it. A click in the sea picks a tiny island country if one
+  // is within a few pixels (Malta, Tuvalu), and otherwise nothing.
+  countryAt(p) {
+    if (!this.bySize) {
+      const area = ([x0, y0, x1, y1]) => (x1 - x0) * (y1 - y0);
+      this.bySize = Object.keys(this.places).sort((a, b) => area(this.places[a].box) - area(this.places[b].box));
+    }
+    const unitsPerPixel = this.view.w / this.svg.getBoundingClientRect().width;
+    const reach = 14 * unitsPerPixel;
+    let nearest = null, best = Infinity;
+    for (const id of this.bySize) {
+      const [x0, y0, x1, y1] = this.places[id].box;
+      for (const dx of [0, -this.W, this.W]) {  // shapes that poke past the date line
+        const x = p.x + dx;
+        const d = Math.hypot(Math.max(x0 - x, 0, x - x1), Math.max(y0 - p.y, 0, p.y - y1));
+        if (d === 0 && this.paths[id]?.isPointInFill(new DOMPoint(x, p.y))) return id;
+        if (d < best && Math.max(x1 - x0, y1 - y0) < reach * 2) {
+          nearest = id;
+          best = d;
+        }
+      }
+    }
+    return best <= reach ? nearest : null;
+  }
+
   // A point on the map, moved onto the main copy of the world (x between 0 and the map width).
   normalize(p) {
     return { x: ((p.x % this.W) + this.W) % this.W, y: p.y };

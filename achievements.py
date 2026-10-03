@@ -74,7 +74,7 @@ def weeks_won(db, u):
           AND (SELECT COUNT(*) FROM weekly w3 WHERE w3.week = w.week) >= 2""", u)
 
 
-ALL_GAMES = 10
+ALL_GAMES = 11
 
 ACHIEVEMENTS = [
     # Getting going
@@ -84,7 +84,7 @@ ACHIEVEMENTS = [
                 lambda db, u: answers(db, u) >= 100),
     Achievement("thousand", "🏔️", "Thousand", "Give 1,000 answers.", 200,
                 lambda db, u: answers(db, u) >= 1000),
-    Achievement("all_rounder", "🎯", "All-rounder", "Play all ten games.", 50,
+    Achievement("all_rounder", "🎯", "All-rounder", "Play all eleven games.", 50,
                 lambda db, u: games_played(db, u) >= ALL_GAMES),
     # Habits
     Achievement("goal_getter", "✅", "Goal getter", f"Reach the daily goal of {progress.DAILY_GOAL} XP.", 20,
@@ -119,6 +119,10 @@ ACHIEVEMENTS = [
                 lambda db, u: run_exists(db, u, "hotcold", "solved = 1 AND score <= 3")),
     Achievement("good_neighbour", "🤝", "Good neighbour", "Name every neighbour of a country with 8 or more.", 80,
                 lambda db, u: run_exists(db, u, "neighbours", "solved = 1 AND total >= 8")),
+    Achievement("road_tripper", "🚗", "Road tripper", "Finish 10 road trips.", 50,
+                lambda db, u: _one(db, "SELECT COUNT(*) FROM runs WHERE user_id = ? AND game = 'roadtrip' AND solved = 1", u) >= 10),
+    Achievement("shortcut", "🛣️", "Shortcut", "Find the shortest route on Hard without a wasted guess.", 100,
+                lambda db, u: run_exists(db, u, "roadtrip", "variant = 'hard' AND solved = 1 AND score = total")),
     Achievement("full_house", "⏱️", "Full house", "Name every country of a continent.", 100,
                 lambda db, u: run_exists(db, u, "nameall", "variant != 'world' AND score = total")),
     Achievement("world_traveller", "✈️", "World traveller", "Name 100 countries in one World round.", 100,

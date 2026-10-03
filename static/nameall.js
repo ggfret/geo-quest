@@ -11,6 +11,7 @@ let ticker = null;
 async function start(chosen) {
   variant = chosen;
   run = await api("/api/nameall/start", { variant });
+  feedbackContext = { game: "nameall", round: run.run_id, region: variant };
   lookup = new Map();
   for (const t of run.targets) for (const n of t.names) lookup.set(n, t.id);
   found = [];

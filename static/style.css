@@ -183,8 +183,6 @@ a.k-tile:hover { border-color: var(--accent); }
 
 .k-map { position: relative; }
 .k-map svg { width: 100%; height: auto; display: block; }
-.k-map path { stroke: var(--surface); stroke-width: .5px; vector-effect: non-scaling-stroke; }
-.k-map path:hover { stroke: var(--text); stroke-width: 1.2px; }
 .m0 { fill: var(--m0); background: var(--m0); } .m1 { fill: var(--m1); background: var(--m1); }
 .m2 { fill: var(--m2); background: var(--m2); } .m3 { fill: var(--m3); background: var(--m3); }
 .m4 { fill: var(--m4); background: var(--m4); } .m5 { fill: var(--m5); background: var(--m5); }
@@ -269,13 +267,16 @@ a.today-item:hover { border-color: var(--accent); }
 :root {
   --ocean: #e9eef3;
   --land: #d9d5cc;
-  --heat0: #fbe3cc; --heat1: #f6b87f; --heat2: #ec8a45; --heat3: #d2601f; --heat4: #a8400c;
+  /* Hot & Cold: light beige far away, then darker and darker red; the darkest shares a border */
+  --heat0: #f3e9d2; --heat1: #ebc9a0; --heat2: #e0946a; --heat3: #cc5442; --heat4: #a82a2a; --heat5: #6e0f14;
+  --detour: #f2c12e;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --ocean: #1a1d22;
     --land: #3a3d44;
-    --heat0: #4a2a18; --heat1: #7c3d16; --heat2: #b8591c; --heat3: #e98134; --heat4: #ffb26e;
+    --heat0: #8a7d62; --heat1: #b08a5e; --heat2: #c4673f; --heat3: #c9372c; --heat4: #a11d22; --heat5: #6a0a10;
+    --detour: #e0b13a;
   }
 }
 .play.wide { max-width: none; }
@@ -293,10 +294,10 @@ a.today-item:hover { border-color: var(--accent); }
 .world .country.target, .ring.target { fill: var(--accent); }
 .world .country.heat0, .ring.heat0 { fill: var(--heat0); } .world .country.heat1, .ring.heat1 { fill: var(--heat1); }
 .world .country.heat2, .ring.heat2 { fill: var(--heat2); } .world .country.heat3, .ring.heat3 { fill: var(--heat3); }
-.world .country.heat4, .ring.heat4 { fill: var(--heat4); }
+.world .country.heat4, .ring.heat4 { fill: var(--heat4); } .world .country.heat5, .ring.heat5 { fill: var(--heat5); }
 .world .ring { fill-opacity: .25; stroke: currentColor; stroke-width: 2px; vector-effect: non-scaling-stroke; }
 .ring.hit { color: var(--good); } .ring.miss { color: var(--bad); } .ring.target { color: var(--accent); }
-.ring.heat0, .ring.heat1, .ring.heat2, .ring.heat3, .ring.heat4 { color: var(--heat3); }
+.ring.heat0, .ring.heat1, .ring.heat2, .ring.heat3, .ring.heat4, .ring.heat5 { color: var(--heat4); }
 .world .pin { fill: var(--text); stroke: var(--surface); stroke-width: 2px; vector-effect: non-scaling-stroke; }
 .world .miss-line { stroke: var(--text); stroke-width: 1.5px; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; }
 .map-controls { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; line-height: 1; }
@@ -311,7 +312,7 @@ a.today-item:hover { border-color: var(--accent); }
 .legend-gap { width: 12px; }
 .swatch.hit { background: var(--good); } .swatch.miss { background: var(--bad); } .swatch.target { background: var(--accent); }
 .swatch.heat0 { background: var(--heat0); } .swatch.heat1 { background: var(--heat1); } .swatch.heat2 { background: var(--heat2); }
-.swatch.heat3 { background: var(--heat3); } .swatch.heat4 { background: var(--heat4); }
+.swatch.heat3 { background: var(--heat3); } .swatch.heat4 { background: var(--heat4); } .swatch.heat5 { background: var(--heat5); }
 .heat-legend { margin: 10px 0 14px; }
 
 /* Hot & Cold guesses, closest first */
@@ -321,7 +322,7 @@ a.today-item:hover { border-color: var(--accent); }
 .g-name { font-weight: 700; display: flex; align-items: center; gap: 8px; flex: 1 1 auto; min-width: 7em; }
 .g-name::before { content: ""; width: 12px; height: 12px; border-radius: 3px; background: var(--swatch); flex: none; }
 .guesses li.heat0 { --swatch: var(--heat0); } .guesses li.heat1 { --swatch: var(--heat1); } .guesses li.heat2 { --swatch: var(--heat2); }
-.guesses li.heat3 { --swatch: var(--heat3); } .guesses li.heat4 { --swatch: var(--heat4); }
+.guesses li.heat3 { --swatch: var(--heat3); } .guesses li.heat4 { --swatch: var(--heat4); } .guesses li.heat5 { --swatch: var(--heat5); }
 .g-km { font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
 .g-arrow { font-size: 20px; text-align: center; }
 .g-prox { height: 6px; flex: 0 0 56px; background: var(--surface); border-radius: 99px; overflow: hidden; }
@@ -373,9 +374,9 @@ a.today-item:hover { border-color: var(--accent); }
 .world .country.m0 { fill: var(--m0); } .world .country.m1 { fill: var(--m1); } .world .country.m2 { fill: var(--m2); }
 .world .country.m3 { fill: var(--m3); } .world .country.m4 { fill: var(--m4); } .world .country.m5 { fill: var(--m5); }
 .world .country.unseen { fill: var(--m-unseen); } .world .country.outside { fill: var(--m-outside); }
-.k-map .country.due, .world .country.due { stroke: var(--text); stroke-width: 1.2px; stroke-dasharray: 3 2; }
+.world .country.due { stroke: var(--k-border); stroke-width: 1.8px; stroke-dasharray: 3 2; }
 .chip.due { outline: 1.5px dashed var(--text); outline-offset: 1px; }
-.swatch.due-swatch { background: var(--m3); outline: 1.5px dashed var(--text); outline-offset: -1px; }
+.swatch.due-swatch { background: var(--m3); outline: 1.5px dashed var(--k-border); outline-offset: -1px; }
 .badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
 .badge-card { display: flex; flex-direction: column; gap: 3px; padding: 12px; border-radius: 12px; background: var(--surface-2); font-size: 14px; }
 .badge-card.locked { opacity: .45; filter: grayscale(1); }
@@ -436,3 +437,58 @@ h2.spaced { margin-top: 22px; }
   100% { opacity: 0; transform: translate(-50%, -300%) scale(1); }
 }
 .toast.error { background: var(--bad); }
+
+/* ---------- 💬 Feedback ---------- */
+.feedback-button {
+  position: fixed; right: 16px; bottom: 16px; z-index: 15; padding: 10px 14px; font-size: 14px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 99px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
+}
+.feedback-button:hover { border-color: var(--accent); }
+.feedback-dialog { width: min(460px, calc(100vw - 32px)); border: 1px solid var(--border); border-radius: 16px;
+  background: var(--surface); color: var(--text); padding: 20px; }
+.feedback-dialog::backdrop { background: rgba(0,0,0,.45); }
+.feedback-dialog h2 { margin: 0 0 12px; font-size: 19px; }
+.feedback-dialog textarea { width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--border);
+  border-radius: 10px; background: var(--bg); color: var(--text); resize: vertical; }
+.kind-picker { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.kind-picker label { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--border);
+  border-radius: 99px; cursor: pointer; font-size: 14px; }
+.kind-picker label:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.report { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.report:last-child { border-bottom: 0; }
+.report.done { opacity: .5; }
+.report-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.report-done { margin-left: auto; }
+.report p { margin: 6px 0 0; white-space: pre-wrap; }
+
+/* ---------- 🚗 Road trip ---------- */
+.world .country.detour, .ring.detour { fill: var(--detour); }
+.ring.detour { color: var(--detour); }
+.world .country.route, .ring.route { fill: color-mix(in srgb, var(--good) 40%, var(--land)); }
+.ring.route { color: var(--good); }
+.swatch.detour { background: var(--detour); }
+.trip { gap: 10px 14px; }
+.trip-end { display: inline-flex; align-items: center; gap: 10px; }
+.trip-arrow { color: var(--muted); font-weight: 400; }
+.trip-info { text-align: center; color: var(--muted); margin: 0 0 4px; }
+.trip-info b { color: var(--text); }
+.says-green { color: var(--good); }
+.says-yellow { color: color-mix(in srgb, var(--detour) 60%, var(--text)); }
+.says-red { color: var(--bad); }
+.guess-log li.detour { background: color-mix(in srgb, var(--detour) 22%, var(--surface)); }
+.guess-log li.detour::before { content: "↝"; color: color-mix(in srgb, var(--detour) 60%, var(--text)); }
+
+/* Answer boxes are type="search" so browsers don't offer to fill in your address; keep them looking like text boxes. */
+input[type="search"] { -webkit-appearance: none; appearance: none; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; display: none; }
+
+/* Pin it: the country you've selected, before you confirm */
+.world .country.picked, .ring.picked { fill: var(--accent); }
+.ring.picked { color: var(--accent); }
+
+/* My Knowledge mastery map: black borders, and thicker black dashes for the countries due for review */
+:root { --k-border: #000; }
+.k-map .world .country { stroke: var(--k-border); stroke-width: .6px; }
+.k-map .world .country:hover { stroke: var(--accent); stroke-width: 1.4px; }
+.k-map .world .country.due { stroke: var(--k-border); stroke-width: 1.8px; }

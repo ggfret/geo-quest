@@ -1,6 +1,6 @@
 # Geo Quest
 
-A geography learning website with ten games, XP and levels, day streaks, a weekly league with friends, achievements, and a page that shows what you know, what you keep mixing up and what's due for review.
+A geography learning website with eleven games, XP and levels, day streaks, a weekly league with friends, achievements, and a page that shows what you know, what you keep mixing up and what's due for review.
 
 Built with [Flask](https://flask.palletsprojects.com/) and SQLite, with plain JavaScript and no build step.
 
@@ -20,9 +20,10 @@ Built with [Flask](https://flask.palletsprojects.com/) and SQLite, with plain Ja
 
 | Game | How it works |
 |---|---|
-| 📍 Pin it | Click where a country is on a zoomable blank map. A hit counts if you're inside it (or within 50 km, for tiny countries and coasts); near misses still earn some XP. |
-| 🔥 Hot & Cold | Guess a mystery country. Each guess shows the distance, a direction arrow and whether it's a neighbour, and colours the map warmer as you get closer. |
+| 📍 Pin it | Click the country on a zoomable blank map (it lights up), then confirm. Tiny countries can be picked by clicking in the sea next to them, or within 50 km; near misses (a neighbour, or across a short stretch of sea) still earn some XP. |
+| 🔥 Hot & Cold | Guess a mystery country. Each guess shows the distance, a direction arrow and whether it's a neighbour, and colours the map from light beige (far away) to darker and darker red, darkest for a neighbour. |
 | 🤝 Neighbours | Name every country that borders the one shown. They fill in on the map; three wrong names end the round. |
+| 🚗 Road trip | Get from one country to another over land, crossing as few countries as possible. Name the countries in between, in any order: green is on a shortest route (there can be several, and every green has to fit on the same one), yellow is a detour, red can't be on the way (an island, another continent, or a dead end like Portugal). Easy, Medium and Hard: 2–4, 5–6 and 7–10 countries in between, with Hard also going through small and lesser-known ones. |
 | ⏱️ Name them all | Name every country of a continent (or all 197) before the timer runs out. Names are accepted the moment they're typed; afterwards the map shows what you forgot. |
 | ⬆️ Higher or Lower | Is country B's population, area, GDP per person, life expectancy or highest point higher or lower than country A's? The pairs get closer as your streak grows. |
 
@@ -33,9 +34,10 @@ After every answer you get something to help you remember: a fact card, a lookal
 - **Forgiving typing:** accents, upper/lower case and small typos are fine, and alternative names count ("USA", "Holland", "Burma"). A *different* real country is always wrong, and is saved as a mix-up.
 - **Spaced repetition that fades:** each country has a mastery level from 0 to 5 in each game. Weak and new countries come up often. Known ones come back for review after 1, 3, 7, 14 and then 30 days, so you don't forget them.
 - **XP, levels, a 🔥 day streak and a daily goal** of 50 XP, shown in the header.
-- **Accounts and leaderboards:** a weekly league that resets every Monday (👑 for last week's winner), all-time totals, and records for the map games (best Name them all per continent, longest Higher or Lower streak, and more).
-- **25 achievements**, each worth some XP, from "First steps" to "The whole world".
+- **Accounts and leaderboards:** a weekly league that resets every Monday (👑 for last week's winner), all-time totals, and records for the map games (best Name them all per continent, longest Higher or Lower streak, perfect road trips, and more).
+- **27 achievements**, each worth some XP, from "First steps" to "The whole world".
 - **My Knowledge page:** XP per day, mastery maps per game (with what's due for review), accuracy by continent, your hardest countries, your most common mix-ups, your records and your badges.
+- **💬 Feedback button** on every page: report a bug, an idea or a wrong fact, with the page and question attached. The first account (the owner) sees everyone's reports at `/feedback` and can tick them off.
 - 233 countries and territories, including partly recognised states (Taiwan, Kosovo) and self-governing territories (Greenland, Faroe Islands, Hong Kong).
 - Responsive layout with automatic light and dark mode.
 
@@ -65,16 +67,17 @@ Run the tests with `pytest`.
 ```
 app.py              Flask routes: pages, the quiz API, the leaderboard and the Knowledge page
 games.py            The five quizzes: what each asks, which answers count, what it explains afterwards
-challenges/         The five map games, one module each (pin, hotcold, neighbours, nameall, higherlower)
+challenges/         The six map games, one module each (pin, hotcold, neighbours, roadtrip, nameall, higherlower)
 answers.py          The answer checker (accents, alternative names, typo tolerance)
 geo.py              Map geometry: projection, distances, directions, which country a click is in
 progress.py         XP, levels, day streaks, the daily goal and spaced repetition (what to ask next)
-achievements.py     The 25 badges and when they unlock
+achievements.py     The 27 badges and when they unlock
+feedback.py         Saving and listing the 💬 feedback reports
 leaderboard.py      The weekly league, all-time totals and records
 knowledge.py        SQL queries behind the My Knowledge page
 auth.py             Sign up and log in (hashed passwords, login throttling)
 database.py         The SQLite connection and the logged-in user
-schema.sql          Tables: users, attempts, mastery, items, runs, achievements, plus the xp_events view
+schema.sql          Tables: users, attempts, mastery, items, runs, achievements, feedback, plus the xp_events view
 templates/          HTML pages (Jinja templates)
 static/             common.js (shared helpers), worldmap.js (zoomable map), one script per game, style.css
 data/               Game data (countries, flags, capitals, outlines, ethnicities, languages, stats)
@@ -87,7 +90,9 @@ tests/              pytest tests
 
 Every answer is saved as a row in the `attempts` table, and each country's mastery level (0–5) in each game is kept in `mastery`. A correct answer moves it up one level and a wrong answer down two. When picking the next question, `progress.pick_next` weights countries by their level and by whether they're due for review, so a struggling country comes up far more often than a mastered one that isn't due yet.
 
-The map games that take several steps (Hot & Cold, Neighbours, Name them all, Higher or Lower) save each round in `runs`, so a round survives leaving the page. All XP, from answers, round bonuses and badges, is added up by the `xp_events` view, which the levels, the daily goal and the leaderboards read.
+The map games that take several steps (Hot & Cold, Neighbours, Road trip, Name them all, Higher or Lower) save each round in `runs`, so a round survives leaving the page. All XP, from answers, round bonuses and badges, is added up by the `xp_events` view, which the levels, the daily goal and the leaderboards read.
+
+Road trip treats the borders as a graph. A breadth-first search finds the shortest routes; a country is green if it's on one of them that also passes through your earlier green countries (a shortest route moves one step further away with each country, so two countries fit together if their distances from the start differ by exactly the steps between them). For any other country, a small minimum-cost flow finds the shortest route through it that never visits a country twice: if there is one it's yellow (a detour of so many countries), if not it's red.
 
 The My Knowledge page and the leaderboards are plain SQL over those tables, joined with `items` (every askable country or language with its continent or writing system).
 

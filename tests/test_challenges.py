@@ -1,8 +1,11 @@
-"""The map games: Pin it, Hot & Cold, Neighbours, Name them all, Higher or Lower."""
+"""The map games: Pin it, Hot & Cold, Neighbours, Road trip, Name them all, Higher or Lower."""
 
 import json
 
 import geo
+from games import COUNTRY_BY_ID
+
+COUNTRY_IDS = list(COUNTRY_BY_ID)
 
 
 def force_state(db, run_id, **changes):
@@ -15,37 +18,53 @@ def force_state(db, run_id, **changes):
 
 # ---------- Pin it ----------
 
-def pin(client, target, lon, lat):
+def pin(client, target, lon, lat, pick=None):
+    """Click a point; like the browser, select the country there (or `pick`, e.g. a tiny island next to the click)."""
+    from challenges.common import country_at
     x, y = geo.world_xy(lon, lat)
-    return client.post("/api/pin/answer", json={"item_id": target, "x": x, "y": y}).get_json()
+    return client.post("/api/pin/answer", json={"item_id": target, "pick": pick or country_at(x, y), "x": x, "y": y}).get_json()
 
 
-def test_pin_inside_the_country(client):
+def test_pin_the_right_country(client):
     assert client.get("/api/pin/next").get_json()["name"]
     r = pin(client, "NOR", 10.75, 59.9)  # Oslo
-    assert r["correct"] and r["distance_km"] == 0 and r["xp"] == 10
+    assert r["correct"] and r["distance_km"] == 0 and r["xp"] == 10 and r["line"] is None
     assert r["target"]["path"] and "Sweden" in r["fact"]
 
 
-def test_pin_in_the_wrong_country(client):
-    r = pin(client, "NOR", 11.97, 57.71)  # Gothenburg, about 150 km from Norway
-    assert not r["correct"] and r["clicked"] == "Sweden"
-    assert 0 < r["distance_km"] < 300 and r["xp"] == 4  # close: some XP
-    assert r["clicked_place"]["id"] == "SWE"
+def test_pin_the_wrong_country(client):
+    r = pin(client, "NOR", 11.97, 57.71)  # Gothenburg
+    assert not r["correct"] and r["picked"] == "Sweden" and r["picked_place"]["id"] == "SWE"
+    assert r["neighbour"] and r["distance_km"] == 0 and r["xp"] == 4 and r["line"] is None
+
+    r = pin(client, "NOR", 9.5, 56.2)  # Denmark: across the sea, about 100 km from Norway
+    assert not r["correct"] and not r["neighbour"] and 30 < r["distance_km"] < 300 and r["xp"] == 4
+    assert len(r["line"]) == 4
 
     far = pin(client, "NOR", -58.4, -34.6)  # Buenos Aires
     assert not far["correct"] and far["distance_km"] > 10000 and far["xp"] == 0
 
 
 def test_pin_tiny_countries_have_some_leeway(client):
-    assert pin(client, "VAT", 12.50, 41.90)["correct"]            # Rome, next to Vatican City
-    assert not pin(client, "LUX", 6.2, 50.6)["correct"]            # Belgium, near Luxembourg: a real country, so wrong
-    assert pin(client, "NLD", 3.9, 52.1)["correct"]                # in the sea just off the Dutch coast
+    assert pin(client, "VAT", 12.50, 41.90)["correct"]               # Rome (Italy), right next to Vatican City
+    assert not pin(client, "LUX", 6.2, 50.6)["correct"]               # Belgium, near Luxembourg: big enough to click
+    assert pin(client, "MLT", 14.6, 35.6, pick="MLT")["correct"]      # in the sea next to Malta, which lights up
+    assert not pin(client, "MLT", 14.0, 37.5)["correct"]              # Sicily, too far from Malta
+
+
+def test_pin_gap_between_big_countries_is_quick():
+    import time
+    from challenges.pin import gap
+    started = time.perf_counter()
+    km, line = gap("USA", "RUS")  # Alaska to Chukotka, across the Bering Strait
+    assert km < 300 and line and time.perf_counter() - started < 0.5
 
 
 def test_pin_rejects_bad_input(client):
     assert client.post("/api/pin/answer", json={"item_id": "NOR"}).status_code == 400
-    assert client.post("/api/pin/answer", json={"item_id": "XXX", "x": 1, "y": 1}).status_code == 400
+    assert client.post("/api/pin/answer", json={"item_id": "NOR", "pick": "XXX"}).status_code == 400
+    assert client.post("/api/pin/answer", json={"item_id": "XXX", "pick": "NOR"}).status_code == 400
+    assert client.post("/api/pin/answer", json={"item_id": "NOR", "pick": "NOR", "x": "a", "y": 1}).status_code == 400
 
 
 # ---------- Hot & Cold ----------
@@ -207,6 +226,125 @@ def test_regions_are_framed_across_the_date_line():
 
 
 def test_pins_past_the_date_line(client):
+    from challenges.common import country_at
     x, y = geo.world_xy(178.5, 66.0)  # the far-eastern tip of Russia
-    r = client.post("/api/pin/answer", json={"item_id": "RUS", "x": x % 1000, "y": y}).get_json()
+    assert country_at(x % 1000, y) == "RUS"
+    r = client.post("/api/pin/answer", json={"item_id": "RUS", "pick": "RUS", "x": x % 1000, "y": y}).get_json()
     assert r["correct"] and r["distance_km"] == 0
+
+
+# ---------- Road trip ----------
+
+def test_road_trip_colours():
+    from challenges.roadtrip import between, judge
+    assert between("NOR", "KOR") == 2
+    colour = lambda x: judge("NOR", "KOR", x)["colour"]
+    assert colour("RUS") == colour("PRK") == "green"          # Norway → Russia → North Korea → South Korea
+    assert colour("CHN") == colour("FIN") == "yellow"         # possible, but a detour
+    assert judge("NOR", "KOR", "CHN")["extra"] == 1
+    assert colour("JPN") == colour("USA") == colour("PRT") == "red"
+    assert "island" in judge("NOR", "KOR", "JPN")["why"]
+    assert "not connected" in judge("NOR", "KOR", "USA")["why"]
+    assert "dead end" in judge("NOR", "KOR", "PRT")["why"]     # Portugal only borders Spain
+
+
+def test_road_trip_several_shortest_routes():
+    from challenges.roadtrip import count_shortest_routes, judge, on_shortest_route
+    assert on_shortest_route("EGY", "KEN") == {"SDN", "ETH", "SSD"}  # via Sudan, then Ethiopia or South Sudan
+    assert count_shortest_routes("EGY", "KEN") == 2
+    assert judge("EGY", "KEN", "UGA")["colour"] == "yellow"
+
+
+def test_road_trip_greens_must_fit_on_one_route():
+    from challenges.roadtrip import judge
+    # Pakistan → Guinea goes ... Libya, then Niger or Algeria, then Mali: one or the other, never both.
+    guesses = []
+    for x, colour in [("MLI", "green"), ("NER", "green"), ("DZA", "yellow"), ("LBY", "green")]:
+        verdict = judge("PAK", "GIN", x, guesses)
+        assert verdict["colour"] == colour, x
+        guesses.append(verdict)
+    assert "not the one through Niger" in guesses[2]["why"]
+    # Named the other way round, Algeria is the green one.
+    first = judge("PAK", "GIN", "DZA")
+    assert judge("PAK", "GIN", "NER", [first])["colour"] == "yellow"
+    # Iraq and Türkiye are alternatives too, but each fits with Egypt.
+    egypt = judge("PAK", "GIN", "EGY")
+    assert judge("PAK", "GIN", "IRQ", [egypt])["colour"] == judge("PAK", "GIN", "TUR", [egypt])["colour"] == "green"
+
+
+def test_road_trip_green_means_the_shortest_route_through_it():
+    from challenges.roadtrip import between, distances, judge, route_through
+    for a, b in [("FRA", "IND"), ("ZAF", "EGY"), ("CHL", "MEX")]:
+        for x in distances(a):
+            if x in (a, b):
+                continue
+            j, length = judge(a, b, x), route_through(a, b, x)
+            assert (j["colour"] == "green") == (length == between(a, b)), (a, b, x)
+            assert (j["colour"] == "red") == (length is None), (a, b, x)
+
+
+def test_road_trip_levels():
+    from challenges.roadtrip import LEVELS, between, familiar, one_shortest_route, pairs
+    for level, rules in LEVELS.items():
+        low, high = rules["between"]
+        assert len(pairs(level)) > 300, level
+        for a, b in pairs(level)[::50]:
+            assert low <= between(a, b) <= high
+            if level != "hard":
+                assert familiar(a) and familiar(b)
+                assert len(one_shortest_route(a, b, [c for c in COUNTRY_IDS if familiar(c)])) == between(a, b)
+
+
+def trip(client, db, level="easy", **state):
+    run = client.post("/api/roadtrip/start", json={"level": level}).get_json()
+    assert run["level"] == level and run["guesses"] == []
+    force_state(db, run["run_id"], **{"start": "NOR", "end": "KOR", "max_guesses": 6, **state})
+    db.execute("UPDATE runs SET total = 2 WHERE id = ?", (run["run_id"],))  # 2 countries between Norway and South Korea
+    db.commit()
+    return lambda text: client.post("/api/roadtrip/guess", json={"run_id": run["run_id"], "guess": text}).get_json()
+
+
+def test_road_trip_round(client, db):
+    guess = trip(client, db)
+    assert guess("Japan")["verdict"]["colour"] == "red"
+    assert guess("china")["verdict"]["colour"] == "yellow"
+    assert guess("Norway")["status"] == "endpoint"
+    assert guess("Atlantis")["status"] == "unknown"
+    r = guess("Russia")
+    assert r["verdict"]["colour"] == "green" and not r.get("finished")
+    assert guess("russia")["status"] == "repeat"
+    r = guess("North Korea")
+    assert r["finished"] and r["won"] and not r["perfect"] and r["used"] == 4
+    assert r["xp"] == 15 - 3 * 2  # two wasted guesses
+    assert [c["name"] for c in r["your_route"]] == ["Russia", "North Korea"] and r["other_routes"] == 0
+    assert client.post("/api/roadtrip/guess", json={"run_id": r["run_id"], "guess": "China"}).status_code == 409
+
+
+def test_road_trip_perfect_and_resume(client, db):
+    assert client.post("/api/roadtrip/start", json={}).get_json()["run_id"] is None  # nothing to pick up
+    guess = trip(client, db, level="hard")
+    guess("Russia")
+    resumed = client.post("/api/roadtrip/start", json={}).get_json()
+    assert [g["name"] for g in resumed["guesses"]] == ["Russia"]
+    r = guess("North Korea")
+    assert r["perfect"] and r["xp"] == 40
+    assert "shortcut" in {a["code"] for a in r["unlocked"]}
+
+
+def test_road_trip_out_of_guesses_and_give_up(client, db):
+    guess = trip(client, db, max_guesses=2)
+    guess("Russia")
+    r = guess("Japan")
+    assert r["finished"] and not r["won"] and r["xp"] == 2  # 2 XP for the one green country
+    assert [c["name"] for c in r["shortest_route"]] == ["Russia", "North Korea"]
+    assert set(r["on_shortest"]) == {"RUS", "PRK"}
+
+    guess = trip(client, db)
+    guess("China")
+    run_id = db.execute("SELECT MAX(id) FROM runs").fetchone()[0]
+    r = client.post("/api/roadtrip/give-up", json={"run_id": run_id}).get_json()
+    assert r["finished"] and not r["won"] and r["xp"] == 0
+
+
+def test_road_trip_rejects_bad_level(client):
+    assert client.post("/api/roadtrip/start", json={"level": "extreme"}).status_code == 400

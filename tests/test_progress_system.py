@@ -94,6 +94,11 @@ def test_streak_and_goal_achievements(client, db):
     assert {"first_steps", "goal_getter", "daily_habit"} <= codes and "month_of_maps" not in codes
 
 
+def test_all_rounder_counts_every_game():
+    import app
+    assert achievements.ALL_GAMES == len(app.ALL_GAMES)
+
+
 def test_map_game_achievements(client, db):
     db.execute("INSERT INTO runs (user_id, game, variant, score, total, solved, finished_at) "
                "VALUES (1, 'hotcold', '', 1, NULL, 1, CURRENT_TIMESTAMP)")
@@ -136,6 +141,13 @@ def test_records(client, db):
     assert [(r["name"], r["score"], r["seconds"]) for r in africa] == [("ana", 35, 300), ("tester", 35, 500)]
     assert leaderboard.personal_bests(db, 1)["nameall"]["africa"]["score"] == 35
     assert "ana" in client.get("/leaderboard?tab=records").get_data(as_text=True)
+
+    for variant, score in [("hard", 8), ("easy", 3), ("easy", 5)]:  # two perfect trips, one with wasted guesses
+        db.execute("INSERT INTO runs (user_id, game, variant, score, total, solved, finished_at) "
+                   "VALUES (?, 'roadtrip', ?, ?, ?, 1, CURRENT_TIMESTAMP)", (ana, variant, score, 3 if variant == "easy" else 8))
+    db.commit()
+    assert leaderboard.records(db)["roadtrip"] == [{"name": "ana", "user_id": ana, "perfect": 2, "hard": 1}]
+    assert leaderboard.personal_bests(db, 1)["roadtrip"] is None
 
 
 def test_knowledge_page_with_everything(client):

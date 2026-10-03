@@ -1,7 +1,8 @@
 // 🔥 Hot & Cold: guess the mystery country; distance, direction and colour guide you.
 const map = new WorldMap($("map"), { zoomable: true, label: "World map with your guesses coloured by how close they are" });
+// Far away is light beige, then darker and darker red; a country that shares a border is the darkest.
 const HEAT = [[500, "heat4"], [1500, "heat3"], [3000, "heat2"], [6000, "heat1"], [Infinity, "heat0"]];
-const heat = (km) => HEAT.find(([max]) => km < max)[1];
+const heat = (g) => (g.neighbour ? "heat5" : HEAT.find(([max]) => g.km < max)[1]);
 let run = null;
 let finished = false;
 const INTRO = $("message").textContent;
@@ -15,6 +16,7 @@ async function start(fresh = false) {
   const r = await api("/api/hotcold/start", { new: fresh });
   run = r.run_id;
   finished = false;
+  feedbackContext = { game: "hotcold", round: run };
   map.clear();
   render(r.guesses);
   if (r.guesses.length) focusOn(r.guesses[r.guesses.length - 1], false);
@@ -26,14 +28,14 @@ async function start(fresh = false) {
 }
 
 function render(guesses) {
-  for (const [, cls] of HEAT) map.unmark(cls);
-  for (const g of guesses) map.mark(g.id, heat(g.km));
+  for (const cls of ["heat5", ...HEAT.map(([, cls]) => cls)]) map.unmark(cls);
+  for (const g of guesses) map.mark(g.id, heat(g));
   $("count").textContent = guesses.length;
   const list = $("guesses");
   list.innerHTML = "";
   for (const g of [...guesses].sort((a, b) => a.km - b.km)) {
     const li = document.createElement("li");
-    li.className = heat(g.km);
+    li.className = heat(g);
     li.innerHTML = `
       <span class="g-name"></span>
       <span class="g-km">${g.km.toLocaleString()} km</span>

@@ -7,6 +7,7 @@ async function start(fresh = false) {
   const r = await api("/api/neighbours/start", { new: fresh });
   run = r.run_id;
   finished = false;
+  feedbackContext = { game: "neighbours", round: run, country: r.country.name };
   map.clear();
   render(r);
   map.fit([r.view], { pad: 0.35, minW: 60 });

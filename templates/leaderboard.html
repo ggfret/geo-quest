@@ -94,6 +94,12 @@
     {% for r in records.neighbours %}
       <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ r.perfect }}</b><small>perfect</small></div>
     {% else %}<p class="muted small">No perfect rounds yet.</p>{% endfor %}
+
+    <h2 class="spaced">🚗 Road trip</h2>
+    <p class="muted small">Perfect trips: a shortest route without a wasted guess. Hard ones count first.</p>
+    {% for r in records.roadtrip %}
+      <div class="k-area{% if r.user_id == me_id %} you{% endif %}"><span>{{ loop.index }}. {{ who(r.name, r.user_id == me_id) }}</span><b>{{ r.perfect }}</b><small>perfect · {{ r.hard }} on Hard</small></div>
+    {% else %}<p class="muted small">No perfect trips yet.</p>{% endfor %}
   </div>
 </section>
 {% endif %}

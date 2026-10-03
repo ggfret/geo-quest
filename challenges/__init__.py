@@ -1,4 +1,4 @@
-"""The map games: Pin it, Hot & Cold, Neighbours, Name them all and Higher or Lower.
+"""The map games: Pin it, Hot & Cold, Neighbours, Road trip, Name them all and Higher or Lower.
 
 Each game is one module with its own page and API routes, registered on this blueprint.
 """
@@ -9,9 +9,9 @@ from games import COUNTRY_BY_ID
 
 bp = Blueprint("challenges", __name__)
 
-from challenges import hotcold, higherlower, nameall, neighbours, pin  # noqa: E402  (registers the routes)
+from challenges import hotcold, higherlower, nameall, neighbours, pin, roadtrip  # noqa: E402  (registers the routes)
 
-CHALLENGES = [pin.GAME, hotcold.GAME, neighbours.GAME, nameall.GAME, higherlower.GAME]
+CHALLENGES = [pin.GAME, hotcold.GAME, neighbours.GAME, roadtrip.GAME, nameall.GAME, higherlower.GAME]
 
 
 def item_rows():

@@ -1,19 +1,20 @@
-// 📍 Pin it: drop a pin where you think the country is, then see how close you were.
-const map = new WorldMap($("map"), { zoomable: true, label: "World map: click where the country is" });
+// 📍 Pin it: click the country you think it is (it lights up), confirm, and see how close you were.
+const map = new WorldMap($("map"), { zoomable: true, label: "World map: click the country" });
 const session = { right: 0, total: 0 };
 let current = null;   // { item_id, name, flag }
-let point = null;     // where the pin is, in map coordinates
-let pinEl = null;
+let picked = null;    // the country you've selected
+let point = null;     // where you clicked, in map coordinates
 let answered = false;
+const HELP = $("map-help").textContent;
 
 async function next() {
   current = await api("/api/pin/next");
   answered = false;
-  point = null;
-  pinEl = null;
+  picked = point = null;
   map.clear();
   map.reset();
   $("prompt-name").textContent = current.name;
+  feedbackContext = { game: "pin", question: current.item_id };
   $("prompt-flag").src = current.flag;
   $("prompt-flag").alt = `Flag of ${current.name}`;
   $("prompt-flag").hidden = false;
@@ -21,22 +22,31 @@ async function next() {
   $("ask").hidden = false;
   $("banner").hidden = true;
   $("reveal").hidden = true;
+  $("map-help").textContent = HELP;
 }
 
+// Select the country you clicked (no name: that would give it away). Click another to change your mind.
 map.onPick = (p) => {
   if (answered || !current) return;
-  map.remove(pinEl);
-  pinEl = map.pin(p.x, p.y, "pin");
+  const id = map.countryAt(p);
+  if (!id) {
+    $("map-help").textContent = "That's the sea: click on a country. Tiny ones: zoom in, or click just next to them.";
+    return;
+  }
+  $("map-help").textContent = HELP;
+  map.unmark("picked");
+  map.mark(id, "picked");
+  picked = id;
   point = p;
   $("confirm").disabled = false;
   $("confirm").focus({ preventScroll: true });
 };
 
 async function confirmPin() {
-  if (!point || answered) return;
+  if (!picked || answered) return;
   answered = true;
   $("confirm").disabled = true;
-  const r = await api("/api/pin/answer", { item_id: current.item_id, x: point.x, y: point.y });
+  const r = await api("/api/pin/answer", { item_id: current.item_id, pick: picked, x: point.x, y: point.y });
   show(r);
   celebrate(r);
 }
@@ -50,25 +60,33 @@ function show(r) {
   // Draw on the copy of the world nearest to the answer, so a line never goes the long way round.
   const target = r.target;
   const cx = (target.box[0] + target.box[2]) / 2;
-  const clickX = map.closestCopy(r.click[0], cx);
+  map.unmark("picked");
   map.mark(target.id, "hit");
-  if (r.clicked_place) map.mark(r.clicked_place.id, "miss");
-  if (!r.correct) map.line(clickX, r.click[1], map.closestCopy(r.nearest[0], clickX), r.nearest[1]);
-  map.fit([target.box, [clickX, r.click[1], clickX, r.click[1]]], { pad: 2.5, minW: 150, animate: true });
+  const boxes = [target.box];
+  if (!r.correct) {
+    map.mark(r.picked_place.id, "miss");
+    const [x0, y0, x1, y1] = r.picked_place.box;
+    const shift = map.closestCopy((x0 + x1) / 2, cx) - (x0 + x1) / 2;
+    boxes.push([x0 + shift, y0, x1 + shift, y1]);
+    if (r.line) {
+      const [ax, ay, bx, by] = r.line;
+      const lineX = map.closestCopy(ax, cx);
+      map.line(lineX, ay, map.closestCopy(bx, lineX), by);
+    }
+  }
+  map.fit(boxes, { pad: 1.2, minW: 150, animate: true });
 
-  const km = r.distance_km.toLocaleString();
   const verdict = $("verdict");
   verdict.className = "verdict " + (r.correct ? "good" : "bad");
   if (r.correct) {
-    const how = r.distance_km === 0 ? "Right on target!" : `Close enough: ${km} km from its border.`;
-    verdict.innerHTML = `✓ ${esc(r.answer)}<small>${how}</small>`;
+    verdict.innerHTML = `✓ ${esc(r.answer)}<small>Right on target!</small>`;
   } else {
-    const where = r.clicked ? `You pinned ${esc(r.clicked)}.` : "Your pin landed in the sea.";
-    verdict.innerHTML = `✗ ${km} km off<small>${where} ${esc(r.answer)} is in green.</small>`;
+    const how = r.neighbour ? "right next door" : `${r.distance_km.toLocaleString()} km away`;
+    verdict.innerHTML = `✗ That's ${esc(r.picked)}<small>${how}. ${esc(r.answer)} is in green.</small>`;
   }
   $("banner").className = "map-banner " + (r.correct ? "good" : "bad");
   $("banner").hidden = false;
-  setTimeout(() => floatXp(r.xp, r.click), 520);  // once the map has glided to the answer
+  setTimeout(() => floatXp(r.xp, [point.x, point.y]), 520);  // once the map has glided to the answer
 
   $("fact").textContent = r.fact || "";
   $("info").textContent = r.info || "";
@@ -92,6 +110,7 @@ function floatXp(xp, [x, y]) {
 $("confirm").addEventListener("click", confirmPin);
 $("next").addEventListener("click", next);
 document.addEventListener("keydown", (e) => {
+  if (e.target.closest("dialog")) return;  // typing in the feedback box
   if (e.key !== "Enter") return;
   if (!answered && point) confirmPin();
   else if (answered && document.activeElement !== $("next")) next();

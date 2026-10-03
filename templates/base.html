@@ -44,7 +44,8 @@
     <footer class="site-footer">
       {% if me %}
         <form method="post" action="{{ url_for('logout') }}" class="logout">
-          Logged in as <b>{{ me.name }}</b> · <button type="submit" class="link-btn">Log out</button>
+          Logged in as <b>{{ me.name }}</b> · <a href="{{ url_for('feedback_page') }}">Feedback</a> ·
+          <button type="submit" class="link-btn">Log out</button>
         </form>
       {% endif %}
       Country data: <a href="https://github.com/mledoze/countries">mledoze/countries</a> (ODbL) ·
@@ -53,5 +54,27 @@
       Ethnic groups and statistics: <a href="https://github.com/factbook/factbook.json">CIA World Factbook</a>
     </footer>
   </div>
+
+  {% if me %}
+    <button type="button" class="feedback-button" id="feedback-open" title="Report a bug, an idea or a wrong fact">💬 Feedback</button>
+    <dialog class="feedback-dialog" id="feedback-dialog">
+      <form id="feedback-form" method="dialog">
+        <h2>Send feedback</h2>
+        <div class="kind-picker" role="radiogroup" aria-label="What kind of feedback">
+          <label><input type="radio" name="kind" value="bug" checked> 🐞 Bug</label>
+          <label><input type="radio" name="kind" value="idea"> 💡 Idea</label>
+          <label><input type="radio" name="kind" value="fact"> 📚 Wrong fact</label>
+        </div>
+        <textarea id="feedback-message" rows="4" maxlength="2000" required
+                  placeholder="What happened, or what would make it better?"></textarea>
+        <p class="muted small" id="feedback-where"></p>
+        <p class="form-error" id="feedback-error" hidden></p>
+        <div class="actions left">
+          <button type="submit" class="primary">Send</button>
+          <button type="button" class="ghost" id="feedback-cancel">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+  {% endif %}
 </body>
 </html>

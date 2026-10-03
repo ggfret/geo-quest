@@ -9,6 +9,7 @@ from flask import Flask, abort, jsonify, redirect, render_template, request, ses
 
 import achievements
 import auth
+import feedback
 import challenges
 import knowledge
 import leaderboard
@@ -190,6 +191,27 @@ def knowledge_page():
         nameall_variants=challenges.nameall.VARIANTS,
         higherlower_variants=challenges.higherlower.VARIANTS,
     )
+
+
+@app.post("/api/feedback")
+def api_feedback():
+    data = request.get_json(silent=True) or {}
+    try:
+        feedback.save(get_db(), current_user_id(), data.get("kind"), data.get("message"),
+                      data.get("page"), data.get("context"))
+    except feedback.FeedbackError as e:
+        return jsonify({"ok": False, "error": str(e)}), 400
+    return jsonify({"ok": True})
+
+
+@app.route("/feedback", methods=["GET", "POST"])
+def feedback_page():
+    db, user_id = get_db(), current_user_id()
+    if request.method == "POST":
+        feedback.set_done(db, user_id, int(request.form.get("id", 0)), request.form.get("done") == "1")
+        return redirect(url_for("feedback_page"))
+    return render_template("feedback.html", reports=feedback.listing(db, user_id),
+                           is_owner=user_id == feedback.OWNER_ID)
 
 
 @app.route("/api/map")

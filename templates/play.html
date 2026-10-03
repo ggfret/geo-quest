@@ -13,8 +13,8 @@
   <div class="prompt" id="prompt" aria-live="polite"></div>
 
   <form class="answer-form" id="answer-form" autocomplete="off">
-    <input id="guess" type="text" placeholder="{{ game.placeholder }}"
-           autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Your answer">
+    <input id="guess" name="search-guess" type="search" placeholder="{{ game.placeholder }}"
+           autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Your answer">
     <button type="submit" class="primary">Guess</button>
     <button type="button" class="ghost" id="skip">I don't know</button>
   </form>

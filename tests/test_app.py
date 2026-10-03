@@ -8,8 +8,8 @@ import app as geo_app
 
 @pytest.mark.parametrize("path", [
     "/", "/flags", "/capitals", "/outlines", "/languages", "/ethnicities",
-    "/pin", "/hotcold", "/neighbours", "/nameall", "/higherlower",
-    "/knowledge", "/leaderboard", "/leaderboard?tab=all", "/leaderboard?tab=records",
+    "/pin", "/hotcold", "/neighbours", "/roadtrip", "/nameall", "/higherlower",
+    "/knowledge", "/leaderboard", "/leaderboard?tab=all", "/leaderboard?tab=records", "/feedback",
 ])
 def test_pages_load(client, path):
     response = client.get(path)
@@ -249,3 +249,23 @@ def test_too_many_wrong_passwords(anon):
         anon.post("/login", data={"username": "ana", "password": "guess-guess"})
     locked = anon.post("/login", data={"username": "ana", "password": "12345678"})
     assert "Too many wrong passwords" in locked.get_data(as_text=True)
+
+
+# ---------- Feedback ----------
+
+def test_feedback(client, anon):
+    r = client.post("/api/feedback", json={"kind": "fact", "message": "Chad's fact is wrong",
+                                           "page": "/flags", "context": {"game": "flags", "question": "TCD"}})
+    assert r.get_json() == {"ok": True}
+    assert client.post("/api/feedback", json={"kind": "bug", "message": "  "}).status_code == 400
+    assert client.post("/api/feedback", json={"kind": "rant", "message": "x"}).status_code == 400
+
+    page = client.get("/feedback").get_data(as_text=True)
+    assert "Chad&#39;s fact is wrong" in page and "question: TCD" in page
+    client.post("/feedback", data={"id": 1, "done": "1"})
+    assert 'class="report done"' in client.get("/feedback").get_data(as_text=True)
+
+    # Another player only sees their own reports.
+    anon.post("/logout")
+    anon.post("/signup", data={"username": "ana", "password": "12345678"})
+    assert "Chad" not in anon.get("/feedback").get_data(as_text=True)

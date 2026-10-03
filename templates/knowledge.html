@@ -132,6 +132,7 @@
       <div class="k-area"><span>🔥 Hot & Cold</span><b>{{ "%.1f" | format(stats.bests.hotcold.average) if stats.bests.hotcold else "–" }}</b><small>guesses on average</small></div>
       <div class="k-area"><span>📍 Pin it</span><b>{{ pct(stats.bests.pin.accuracy) if stats.bests.pin else "–" }}</b><small>of your last pins hit</small></div>
       <div class="k-area"><span>🤝 Neighbours</span><b>{{ stats.bests.neighbours.perfect if stats.bests.neighbours else 0 }}</b><small>perfect rounds</small></div>
+      <div class="k-area"><span>🚗 Road trip</span><b>{{ stats.bests.roadtrip.perfect if stats.bests.roadtrip else 0 }}</b><small>perfect trips</small></div>
     </div>
   </div>
 </section>

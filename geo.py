@@ -83,6 +83,10 @@ class Shape:
                 j = i
         return inside
 
+    def corners(self):
+        """Every corner as ((x, y), (lat, lon))."""
+        return [(xy, ll) for ring, lls in zip(self.rings, self.latlon) for xy, ll in zip(ring, lls)]
+
     def nearest(self, lat, lon):
         """(distance in km, (x, y) of the nearest corner) from a point to this outline."""
         best, best_xy = float("inf"), None
@@ -103,6 +107,9 @@ class Dot:
 
     def contains(self, x, y):
         return False
+
+    def corners(self):
+        return [((self.x, self.y), (self.lat, self.lon))]
 
     def nearest(self, lat, lon):
         return distance_km(lat, lon, self.lat, self.lon), (self.x, self.y)

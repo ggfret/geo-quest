@@ -59,6 +59,7 @@ async function ask() {
   current = upcoming || (await fetchQuestion());
   upcoming = null;
   renderPrompt(current.prompt);
+  feedbackContext = { game: slug, question: current.item_id, ...(current.prompt.context !== undefined && { sentence: current.prompt.context }) };
   $("reveal").hidden = true;
   const choices = current.prompt.choices;
   $("answer-form").hidden = !!choices;
@@ -170,6 +171,7 @@ $("answer-form").addEventListener("submit", (e) => { e.preventDefault(); submit(
 $("skip").addEventListener("click", () => submit(true));
 $("next").addEventListener("click", ask);
 document.addEventListener("keydown", (e) => {
+  if (e.target.closest("dialog")) return;  // typing in the feedback box
   const n = Number(e.key);
   const buttons = document.querySelectorAll(".choice:not(:disabled)");
   if (n >= 1 && n <= buttons.length) buttons[n - 1].click();

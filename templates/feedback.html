@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Feedback · Geo Quest{% endblock %}
+
+{% block content %}
+<section class="intro">
+  <h1>Feedback</h1>
+  <p>Bugs, ideas and wrong facts sent with the 💬 button{% if is_owner %}, from everyone{% else %}, from you{% endif %}.
+     Each one remembers the page and question it was sent from.</p>
+</section>
+
+<section class="card">
+  {% for r in reports %}
+    <div class="report{% if r.done %} done{% endif %}">
+      <div class="report-head">
+        <b>{{ r.label }}</b>
+        <span class="muted small">#{{ r.id }} · {{ r.name }} · {{ r.created_at[:16] }} · {{ r.page }}</span>
+        <form method="post" class="report-done">
+          <input type="hidden" name="id" value="{{ r.id }}">
+          <input type="hidden" name="done" value="{{ 0 if r.done else 1 }}">
+          <button type="submit" class="ghost small-btn">{{ "Reopen" if r.done else "✓ Done" }}</button>
+        </form>
+      </div>
+      <p>{{ r.message }}</p>
+      {% if r.context %}
+        <p class="muted small">{% for k, v in r.context.items() %}{{ k }}: {{ v }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <p class="muted">No reports yet. Use the 💬 button at the bottom right of any page.</p>
+  {% endfor %}
+</section>
+{% endblock %}

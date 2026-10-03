@@ -1,4 +1,4 @@
-"""📍 Pin it: you're given a country and click where it is on the world map."""
+"""📍 Pin it: you're given a country and pick it on the world map (click it and it lights up)."""
 
 from flask import abort, jsonify, render_template, request
 
@@ -7,27 +7,49 @@ import geo
 import progress
 from answers import Result
 from challenges import bp
-from challenges.common import Challenge, country_at, inside, place, shapes
+from challenges.common import Challenge, neighbours_of, place, shapes
 from database import current_user_id, get_db
 from games import COUNTRY_BY_ID, OUTLINES, country_info, explain_outline, flag_url
 
 GAME = Challenge("pin", "Pin it", "📍", "Find the country on a blank map.", pool=sorted(OUTLINES))
 
-NEAR_KM = 50            # a hit, for tiny countries or a click just off the coast
+NEAR_KM = 50            # tiny countries (Vatican City, Malta, Tuvalu, ...): a click this close counts
 CLOSE_XP = [(300, 4), (1000, 2)]  # some XP for near misses: within 300 km -> 4 XP, within 1,000 km -> 2 XP
+CANDIDATES = 40         # corners compared when measuring the gap between two countries
 
 
-def score_click(target, x, y):
-    """Where did the click land, relative to the target country?"""
+def _closest_corners(corners, box, world_width=1000):
+    """The corners nearest to a box on the map (on the wrap-around map), to keep gap() fast for Canada or Russia."""
+    x0, y0, x1, y1 = box
+
+    def away(corner):
+        (x, y), _ = corner
+        dx = min(abs(x + s - min(max(x + s, x0), x1)) for s in (0, world_width, -world_width))
+        dy = y - min(max(y, y0), y1)
+        return dx * dx + dy * dy
+
+    return sorted(corners, key=away)[:CANDIDATES]
+
+
+def gap(a, b):
+    """How far apart two countries are: km between their outlines (0 if they share a border),
+    and the two closest points on the map, for drawing a line between them."""
+    if a == b or b in neighbours_of(a):
+        return 0, None
+    near_b = _closest_corners(shapes()[a].corners(), OUTLINES[b]["loc"]["box"])
+    near_a = _closest_corners(shapes()[b].corners(), OUTLINES[a]["loc"]["box"])
+    km, xy_a, xy_b = min((geo.distance_km(*ll_a, *ll_b), xy_a, xy_b) for xy_a, ll_a in near_b for xy_b, ll_b in near_a)
+    return km, (xy_a, xy_b)
+
+
+def is_correct(target, pick, x, y):
+    """Right if you picked the country. Tiny ones are hard to hit, so a click within 50 km of them counts too."""
+    if pick == target:
+        return True
+    if OUTLINES[target]["quiz"] or x is None:
+        return False
     lon, lat = geo.lonlat(x, y)
-    shape = shapes()[target]
-    if inside(shape, x, y):
-        return {"correct": True, "distance": 0, "nearest": (x, y), "clicked": target, "lat": lat, "lon": lon}
-    distance, nearest = shape.nearest(lat, lon)
-    clicked = country_at(x, y)
-    tiny = not OUTLINES[target]["quiz"]  # too small to hit reliably (Vatican City, Malta, Tuvalu, ...)
-    correct = distance <= NEAR_KM and (clicked is None or tiny)
-    return {"correct": correct, "distance": distance, "nearest": nearest, "clicked": clicked, "lat": lat, "lon": lon}
+    return shapes()[target].nearest(lat, lon)[0] <= NEAR_KM
 
 
 @bp.route("/pin")
@@ -44,30 +66,30 @@ def pin_next():
 @bp.post("/api/pin/answer")
 def pin_answer():
     data = request.get_json(silent=True) or {}
-    target = data.get("item_id")
+    target, pick = data.get("item_id"), data.get("pick")
+    if target not in GAME.pool or pick not in OUTLINES:
+        abort(400)
     try:
-        x, y = float(data["x"]), float(data["y"])
+        x, y = (float(data["x"]), float(data["y"])) if "x" in data else (None, None)
     except (KeyError, TypeError, ValueError):
         abort(400)
-    if target not in GAME.pool:
-        abort(400)
 
-    s = score_click(target, x, y)
-    clicked = s["clicked"] if s["clicked"] != target else None
-    xp = None if s["correct"] else next((points for km, points in CLOSE_XP if s["distance"] <= km), 0)
+    correct = is_correct(target, pick, x, y)
+    km, line = (0, None) if correct else gap(pick, target)
+    xp = None if correct else next((points for limit, points in CLOSE_XP if km <= limit), 0)
     db, user_id = get_db(), current_user_id()
-    xp = progress.record(db, user_id, "pin", target, f"{s['lat']:.2f}, {s['lon']:.2f}",
-                         Result(s["correct"], guessed_id=clicked), xp=xp)
+    xp = progress.record(db, user_id, "pin", target, COUNTRY_BY_ID[pick]["name"],
+                         Result(correct, guessed_id=None if correct else pick), xp=xp)
 
     return jsonify({
-        "correct": s["correct"],
-        "distance_km": round(s["distance"]),
+        "correct": correct,
+        "distance_km": round(km),
+        "neighbour": not correct and target in neighbours_of(pick),
         "answer": COUNTRY_BY_ID[target]["name"],
-        "clicked": COUNTRY_BY_ID[clicked]["name"] if clicked else None,
-        "click": [x, y],
-        "nearest": list(s["nearest"]),
+        "picked": COUNTRY_BY_ID[pick]["name"],
         "target": place(target),
-        "clicked_place": place(clicked) if clicked else None,
+        "picked_place": place(pick),
+        "line": [*line[0], *line[1]] if line else None,
         "xp": xp,
         "streak": progress.current_streak(db, user_id, "pin"),
         "fact": explain_outline(target, None, "")["fact"],

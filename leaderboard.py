@@ -128,6 +128,25 @@ def neighbour_rounds(db, user_id=None):
     return [dict(r) for r in rows]
 
 
+def perfect_trips(db, user_id=None):
+    """Road trips finished on a shortest route without a wasted guess, per player (and how many on Hard)."""
+    rows = db.execute(
+        """
+        SELECT u.name, r.user_id,
+               SUM(r.solved = 1 AND r.score = r.total) AS perfect,
+               SUM(r.solved = 1 AND r.score = r.total AND r.variant = 'hard') AS hard
+        FROM runs r JOIN users u ON u.id = r.user_id
+        WHERE r.game = 'roadtrip' AND r.finished_at IS NOT NULL AND u.password_hash IS NOT NULL
+          AND (? IS NULL OR r.user_id = ?)
+        GROUP BY r.user_id
+        HAVING perfect > 0
+        ORDER BY hard DESC, perfect DESC
+        """,
+        (user_id, user_id),
+    ).fetchall()
+    return [dict(r) for r in rows]
+
+
 def records(db):
     """The Records tab: the top players in each map game."""
     return {
@@ -136,6 +155,7 @@ def records(db):
         "hotcold": hotcold_averages(db)[:TOP],
         "pin": pin_accuracy(db)[:TOP],
         "neighbours": neighbour_rounds(db)[:TOP],
+        "roadtrip": perfect_trips(db)[:TOP],
     }
 
 
@@ -144,10 +164,12 @@ def personal_bests(db, user_id):
     hotcold = hotcold_averages(db, user_id, minimum=1)
     pin = pin_accuracy(db, user_id, minimum=1)
     neighbours = neighbour_rounds(db, user_id)
+    trips = perfect_trips(db, user_id)
     return {
         "nameall": {v: rows[0] for v, rows in best_runs(db, "nameall", user_id).items()},
         "higherlower": {v: rows[0] for v, rows in best_runs(db, "higherlower", user_id).items()},
         "hotcold": hotcold[0] if hotcold else None,
         "pin": pin[0] if pin else None,
         "neighbours": neighbours[0] if neighbours else None,
+        "roadtrip": trips[0] if trips else None,
     }

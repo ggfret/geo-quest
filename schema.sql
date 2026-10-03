@@ -87,3 +87,15 @@ CREATE VIEW xp_events AS
     SELECT user_id, game, bonus_xp, finished_at FROM runs WHERE bonus_xp > 0 AND finished_at IS NOT NULL
     UNION ALL
     SELECT user_id, 'achievements', xp, unlocked_at FROM achievements WHERE xp > 0;
+
+-- Bug reports and ideas sent with the 💬 button, with the page and question they were sent from.
+CREATE TABLE IF NOT EXISTS feedback (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL REFERENCES users(id),
+    kind TEXT NOT NULL,                  -- 'bug', 'idea' or 'fact' (a wrong fact or answer)
+    message TEXT NOT NULL,
+    page TEXT NOT NULL,                  -- e.g. '/flags'
+    context TEXT NOT NULL DEFAULT '{}',  -- JSON: the game and question/round on screen
+    done INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

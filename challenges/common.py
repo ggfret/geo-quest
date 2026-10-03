@@ -56,11 +56,12 @@ def union_box(ids):
     return [min(b[0] for b in boxes), min(b[1] for b in boxes), max(b[2] for b in boxes), max(b[3] for b in boxes)]
 
 
-def view_box(ids, world_width=1000):
+def view_box(ids, world_width=1000, drop_giant=True):
     """A box that frames these countries on the wrap-around map.
 
     Countries across the date line are moved next to the others (Samoa beside Australia, not on the
-    far left), and one giant that would squash everyone else (Russia, for Europe) is left out.
+    far left), and one giant that would squash everyone else (Russia, for Europe) is left out
+    unless drop_giant is False.
     """
     boxes = {cid: list(OUTLINES[cid]["loc"]["box"]) for cid in ids if cid in OUTLINES}
     width = lambda b: b[2] - b[0]
@@ -77,7 +78,7 @@ def view_box(ids, world_width=1000):
 
     biggest = max(boxes, key=lambda c: width(boxes[c]))
     rest = [k for k in boxes if k != biggest]
-    if rest and width(boxes[biggest]) > 2 * width(union(rest)):
+    if drop_giant and rest and width(boxes[biggest]) > 2 * width(union(rest)):
         return union(rest)
     return union(boxes)
 

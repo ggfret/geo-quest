@@ -19,6 +19,7 @@ function showPair(p) {
   fillCard("card-b", p.b, "?", p.label);
   $("question").innerHTML = `<b>${esc(p.b.name)}</b>: higher or lower ${esc(p.phrase)} than <b>${esc(p.a.name)}</b>?`;
   $("streak-count").textContent = p.streak;
+  feedbackContext = { game: "higherlower", stat: p.label, a: p.a.name, b: p.b.name };
   $("higher").disabled = $("lower").disabled = false;
 }
 
@@ -63,6 +64,7 @@ $("again").addEventListener("click", () => start(variant));
 $("choose").addEventListener("click", () => location.reload());
 document.querySelectorAll(".variant").forEach((b) => b.addEventListener("click", () => start(b.dataset.variant)));
 document.addEventListener("keydown", (e) => {
+  if (e.target.closest("dialog")) return;  // typing in the feedback box
   if (e.key === "ArrowUp") { e.preventDefault(); guess("higher"); }
   if (e.key === "ArrowDown") { e.preventDefault(); guess("lower"); }
 });
